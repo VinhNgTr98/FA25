@@ -1,0 +1,33 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace UsersInfoManagement_API.Models
+{
+    public class UsersInfo
+    {
+        [Key]
+        public int UsersInfoID { get; set; }
+
+        [Required, MaxLength(100)]
+        public string FullName { get; set; } = null!;
+
+        // Pomelo EFCore.MySql 7+ hỗ trợ DateOnly. Nếu bạn dùng version thấp, đổi sang DateTime?
+        public DateOnly? DateOfBirth { get; set; }
+
+        [MaxLength(255)]
+        public string? ProfilePictureUrl { get; set; }
+
+        [Required, MaxLength(100), EmailAddress]
+        public string Email { get; set; } = null!;
+
+        [MaxLength(15)]
+        public string? PhoneNumber { get; set; }
+
+        [MaxLength(255)]
+        public string? Address { get; set; }
+
+        [ForeignKey(nameof(User))]
+        public int UsersID { get; set; }
+        public User User { get; set; } = null!;
+    }
+}
