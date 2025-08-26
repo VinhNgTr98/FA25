@@ -1,78 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\",
+  "WorkspaceRootPath": "D:\\FPT\\FA25\\Code\\FA25\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46512690-9F65-4C5A-8410-437B443BA655}|WishListManagement_API\\WishListManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\wishlistmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{46512690-9F65-4C5A-8410-437B443BA655}|WishListManagement_API\\WishListManagement_API.csproj|solutionrelative:wishlistmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\data\\tourcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\data\\tourcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\controllers\\tourscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\controllers\\tourscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E73213FD-7BB6-4DA1-A1F8-B24AB1CC1DEB}|RoomManagement_API\\RoomManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roommanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E73213FD-7BB6-4DA1-A1F8-B24AB1CC1DEB}|RoomManagement_API\\RoomManagement_API.csproj|solutionrelative:roommanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{1F8D6230-B70C-4C80-9AC5-F725DFC11198}|OrderManagement_API\\OrderManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\ordermanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F8D6230-B70C-4C80-9AC5-F725DFC11198}|OrderManagement_API\\OrderManagement_API.csproj|solutionrelative:ordermanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{36A769E4-A356-4FCF-95D6-4501B327407D}|HotelsManagement_API\\HotelsManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\hotelsmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A769E4-A356-4FCF-95D6-4501B327407D}|HotelsManagement_API\\HotelsManagement_API.csproj|solutionrelative:hotelsmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\dtos\\tourreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\dtos\\tourreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\categories_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|solutionrelative:categories_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\model\\tour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\model\\tour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46512690-9F65-4C5A-8410-437B443BA655}|WishListManagement_API\\WishListManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\wishlistmanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{46512690-9F65-4C5A-8410-437B443BA655}|WishListManagement_API\\WishListManagement_API.csproj|solutionrelative:wishlistmanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\repositories\\tourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\repositories\\tourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\usersinfomanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\usersinfomanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\repositories\\interfaces\\itourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\repositories\\interfaces\\itourrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E73213FD-7BB6-4DA1-A1F8-B24AB1CC1DEB}|RoomManagement_API\\RoomManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roommanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E73213FD-7BB6-4DA1-A1F8-B24AB1CC1DEB}|RoomManagement_API\\RoomManagement_API.csproj|solutionrelative:roommanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\services\\tourservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\services\\tourservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1F8D6230-B70C-4C80-9AC5-F725DFC11198}|OrderManagement_API\\OrderManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\ordermanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1F8D6230-B70C-4C80-9AC5-F725DFC11198}|OrderManagement_API\\OrderManagement_API.csproj|solutionrelative:ordermanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\services\\interfaces\\itourservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\services\\interfaces\\itourservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36A769E4-A356-4FCF-95D6-4501B327407D}|HotelsManagement_API\\HotelsManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\hotelsmanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{36A769E4-A356-4FCF-95D6-4501B327407D}|HotelsManagement_API\\HotelsManagement_API.csproj|solutionrelative:hotelsmanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\dtos\\tourupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\dtos\\tourupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{36A769E4-A356-4FCF-95D6-4501B327407D}|HotelsManagement_API\\HotelsManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\hotelsmanagement_api\\hotelsmanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{36A769E4-A356-4FCF-95D6-4501B327407D}|HotelsManagement_API\\HotelsManagement_API.csproj|solutionrelative:hotelsmanagement_api\\hotelsmanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\dtos\\tourcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\dtos\\tourcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\tourmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\tourmanagement.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\tourmanagement.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\tourmanagement.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\categories_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|solutionrelative:categories_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\categories_api\\categorymanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|solutionrelative:categories_api\\categorymanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\tourmanagement\\profiles\\bookprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\profiles\\bookprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\controllers\\usersinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\controllers\\usersinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -111,230 +111,78 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Program.cs",
-              "RelativeDocumentMoniker": "TourManagement\\Program.cs",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Program.cs",
-              "RelativeToolTip": "TourManagement\\Program.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAQwFYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T09:03:10.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BookProfile.cs",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Profiles\\BookProfile.cs",
-              "RelativeDocumentMoniker": "TourManagement\\Profiles\\BookProfile.cs",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Profiles\\BookProfile.cs",
-              "RelativeToolTip": "TourManagement\\Profiles\\BookProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T09:39:02.766Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ITourRepository.cs",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Repositories\\Interfaces\\ITourRepository.cs",
-              "RelativeDocumentMoniker": "TourManagement\\Repositories\\Interfaces\\ITourRepository.cs",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Repositories\\Interfaces\\ITourRepository.cs",
-              "RelativeToolTip": "TourManagement\\Repositories\\Interfaces\\ITourRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T09:24:20.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TourRepository.cs",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Repositories\\TourRepository.cs",
-              "RelativeDocumentMoniker": "TourManagement\\Repositories\\TourRepository.cs",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Repositories\\TourRepository.cs",
-              "RelativeToolTip": "TourManagement\\Repositories\\TourRepository.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAkwC0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T09:24:39.381Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TourService.cs",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Services\\TourService.cs",
-              "RelativeDocumentMoniker": "TourManagement\\Services\\TourService.cs",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Services\\TourService.cs",
-              "RelativeToolTip": "TourManagement\\Services\\TourService.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAYwD0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T09:25:41.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ITourService.cs",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Services\\Interfaces\\ITourService.cs",
-              "RelativeDocumentMoniker": "TourManagement\\Services\\Interfaces\\ITourService.cs",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Services\\Interfaces\\ITourService.cs",
-              "RelativeToolTip": "TourManagement\\Services\\Interfaces\\ITourService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T09:24:58.782Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TourReadDTO.cs",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\DTOs\\TourReadDTO.cs",
-              "RelativeDocumentMoniker": "TourManagement\\DTOs\\TourReadDTO.cs",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\DTOs\\TourReadDTO.cs",
-              "RelativeToolTip": "TourManagement\\DTOs\\TourReadDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T09:33:33.393Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TourUpdateDTO.cs",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\DTOs\\TourUpdateDTO.cs",
-              "RelativeDocumentMoniker": "TourManagement\\DTOs\\TourUpdateDTO.cs",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\DTOs\\TourUpdateDTO.cs",
-              "RelativeToolTip": "TourManagement\\DTOs\\TourUpdateDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T09:34:12.705Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Tour.cs",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Model\\Tour.cs",
-              "RelativeDocumentMoniker": "TourManagement\\Model\\Tour.cs",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Model\\Tour.cs",
-              "RelativeToolTip": "TourManagement\\Model\\Tour.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAYwAYAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T08:35:28.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "TourManagement.csproj",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\TourManagement.csproj",
-              "RelativeDocumentMoniker": "TourManagement\\TourManagement.csproj",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\TourManagement.csproj",
-              "RelativeToolTip": "TourManagement\\TourManagement.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-14T08:54:51.93Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TourCreateDTO.cs",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\DTOs\\TourCreateDTO.cs",
-              "RelativeDocumentMoniker": "TourManagement\\DTOs\\TourCreateDTO.cs",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\DTOs\\TourCreateDTO.cs",
-              "RelativeToolTip": "TourManagement\\DTOs\\TourCreateDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T09:32:45.483Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TourContext.cs",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Data\\TourContext.cs",
-              "RelativeDocumentMoniker": "TourManagement\\Data\\TourContext.cs",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Data\\TourContext.cs",
-              "RelativeToolTip": "TourManagement\\Data\\TourContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T09:04:00.277Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\appsettings.json",
-              "RelativeDocumentMoniker": "TourManagement\\appsettings.json",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\appsettings.json",
-              "RelativeToolTip": "TourManagement\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-14T09:00:36.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "TourManagement\\appsettings.Development.json",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\appsettings.Development.json",
-              "RelativeToolTip": "TourManagement\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-14T09:58:08.383Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TourManagement.http",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\TourManagement.http",
-              "RelativeDocumentMoniker": "TourManagement\\TourManagement.http",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\TourManagement.http",
-              "RelativeToolTip": "TourManagement\\TourManagement.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-08-14T09:58:14.183Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ToursController.cs",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Controllers\\ToursController.cs",
-              "RelativeDocumentMoniker": "TourManagement\\Controllers\\ToursController.cs",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Controllers\\ToursController.cs",
-              "RelativeToolTip": "TourManagement\\Controllers\\ToursController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAuwCIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-14T10:57:58.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "TourManagement\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Properties\\launchSettings.json",
-              "RelativeToolTip": "TourManagement\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-14T11:32:01.846Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Dockerfile",
-              "RelativeDocumentMoniker": "TourManagement\\Dockerfile",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\TourManagement\\Dockerfile",
-              "RelativeToolTip": "TourManagement\\Dockerfile",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-14T12:19:45.327Z"
             }
           ]
         },
         {
           "DockedWidth": 1498,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\WishListManagement_API\\Program.cs",
+              "RelativeDocumentMoniker": "WishListManagement_API\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\WishListManagement_API\\Program.cs",
+              "RelativeToolTip": "WishListManagement_API\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T14:17:09.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Program.cs",
+              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Program.cs",
+              "RelativeToolTip": "UsersInfoManagement_API\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T14:17:00.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Program.cs",
+              "RelativeDocumentMoniker": "Users_API\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Program.cs",
+              "RelativeToolTip": "Users_API\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T14:16:51.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoomManagement_API\\Program.cs",
+              "RelativeDocumentMoniker": "RoomManagement_API\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoomManagement_API\\Program.cs",
+              "RelativeToolTip": "RoomManagement_API\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T14:16:20.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\OrderManagement_API\\Program.cs",
+              "RelativeDocumentMoniker": "OrderManagement_API\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\OrderManagement_API\\Program.cs",
+              "RelativeToolTip": "OrderManagement_API\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T14:16:11.037Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -342,6 +190,165 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\HotelsManagement_API\\Program.cs",
+              "RelativeDocumentMoniker": "HotelsManagement_API\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\HotelsManagement_API\\Program.cs",
+              "RelativeToolTip": "HotelsManagement_API\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T14:16:02.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\Program.cs",
+              "RelativeDocumentMoniker": "Categories_API\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\Program.cs",
+              "RelativeToolTip": "Categories_API\\Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-26T14:15:48.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\WishListManagement_API\\Dockerfile",
+              "RelativeDocumentMoniker": "WishListManagement_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\WishListManagement_API\\Dockerfile",
+              "RelativeToolTip": "WishListManagement_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-26T14:11:47.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoomManagement_API\\Dockerfile",
+              "RelativeDocumentMoniker": "RoomManagement_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoomManagement_API\\Dockerfile",
+              "RelativeToolTip": "RoomManagement_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-26T14:11:35.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\OrderManagement_API\\Dockerfile",
+              "RelativeDocumentMoniker": "OrderManagement_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\OrderManagement_API\\Dockerfile",
+              "RelativeToolTip": "OrderManagement_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-26T14:11:26.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HotelsManagement_API.csproj",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\HotelsManagement_API\\HotelsManagement_API.csproj",
+              "RelativeDocumentMoniker": "HotelsManagement_API\\HotelsManagement_API.csproj",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\HotelsManagement_API\\HotelsManagement_API.csproj",
+              "RelativeToolTip": "HotelsManagement_API\\HotelsManagement_API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-26T14:11:08.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\HotelsManagement_API\\Dockerfile",
+              "RelativeDocumentMoniker": "HotelsManagement_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\HotelsManagement_API\\Dockerfile",
+              "RelativeToolTip": "HotelsManagement_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-26T14:11:17.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Dockerfile",
+              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Dockerfile",
+              "RelativeToolTip": "UsersInfoManagement_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-26T14:11:02.307Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Dockerfile",
+              "RelativeDocumentMoniker": "Users_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Dockerfile",
+              "RelativeToolTip": "Users_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-26T14:10:30.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\Dockerfile",
+              "RelativeDocumentMoniker": "Categories_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\Dockerfile",
+              "RelativeToolTip": "Categories_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-26T14:09:50.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsersInfoManagement_API.csproj",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
+              "RelativeDocumentMoniker": "UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
+              "RelativeToolTip": "UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-22T05:35:37.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CategoryManagement_API.csproj",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\CategoryManagement_API.csproj",
+              "RelativeDocumentMoniker": "Categories_API\\CategoryManagement_API.csproj",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\CategoryManagement_API.csproj",
+              "RelativeToolTip": "Categories_API\\CategoryManagement_API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-26T14:09:31.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UsersInfoesController.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
+              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
+              "RelativeToolTip": "UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:35:42.047Z"
             }
           ]
         },
