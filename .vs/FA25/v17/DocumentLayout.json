@@ -1,14 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\",
+  "WorkspaceRootPath": "D:\\FPT\\FA25\\Code\\FA25\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\usersinfomanagement_api\\controllers\\usersinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\controllers\\usersinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{46512690-9F65-4C5A-8410-437B443BA655}|WishListManagement_API\\WishListManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\wishlistmanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{46512690-9F65-4C5A-8410-437B443BA655}|WishListManagement_API\\WishListManagement_API.csproj|solutionrelative:wishlistmanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\ky9fa24\\1\\2\\fa25\\fa25\\usersinfomanagement_api\\usersinfomanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\usersinfomanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\usersinfomanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E73213FD-7BB6-4DA1-A1F8-B24AB1CC1DEB}|RoomManagement_API\\RoomManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roommanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E73213FD-7BB6-4DA1-A1F8-B24AB1CC1DEB}|RoomManagement_API\\RoomManagement_API.csproj|solutionrelative:roommanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F8D6230-B70C-4C80-9AC5-F725DFC11198}|OrderManagement_API\\OrderManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\ordermanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1F8D6230-B70C-4C80-9AC5-F725DFC11198}|OrderManagement_API\\OrderManagement_API.csproj|solutionrelative:ordermanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A769E4-A356-4FCF-95D6-4501B327407D}|HotelsManagement_API\\HotelsManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\hotelsmanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{36A769E4-A356-4FCF-95D6-4501B327407D}|HotelsManagement_API\\HotelsManagement_API.csproj|solutionrelative:hotelsmanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A769E4-A356-4FCF-95D6-4501B327407D}|HotelsManagement_API\\HotelsManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\hotelsmanagement_api\\hotelsmanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{36A769E4-A356-4FCF-95D6-4501B327407D}|HotelsManagement_API\\HotelsManagement_API.csproj|solutionrelative:hotelsmanagement_api\\hotelsmanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\categories_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|solutionrelative:categories_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\categories_api\\categorymanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|solutionrelative:categories_api\\categorymanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\controllers\\usersinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\controllers\\usersinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,27 +93,144 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsersInfoesController.cs",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-22T05:35:42.047Z",
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\WishListManagement_API\\Dockerfile",
+              "RelativeDocumentMoniker": "WishListManagement_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\WishListManagement_API\\Dockerfile",
+              "RelativeToolTip": "WishListManagement_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-26T14:11:47.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoomManagement_API\\Dockerfile",
+              "RelativeDocumentMoniker": "RoomManagement_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoomManagement_API\\Dockerfile",
+              "RelativeToolTip": "RoomManagement_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-26T14:11:35.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\OrderManagement_API\\Dockerfile",
+              "RelativeDocumentMoniker": "OrderManagement_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\OrderManagement_API\\Dockerfile",
+              "RelativeToolTip": "OrderManagement_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-26T14:11:26.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HotelsManagement_API",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\HotelsManagement_API\\HotelsManagement_API.csproj",
+              "RelativeDocumentMoniker": "HotelsManagement_API\\HotelsManagement_API.csproj",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\HotelsManagement_API\\HotelsManagement_API.csproj",
+              "RelativeToolTip": "HotelsManagement_API\\HotelsManagement_API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-26T14:11:08.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\HotelsManagement_API\\Dockerfile",
+              "RelativeDocumentMoniker": "HotelsManagement_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\HotelsManagement_API\\Dockerfile",
+              "RelativeToolTip": "HotelsManagement_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-26T14:11:17.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Dockerfile",
+              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Dockerfile",
+              "RelativeToolTip": "UsersInfoManagement_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-26T14:11:02.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Dockerfile",
+              "RelativeDocumentMoniker": "Users_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Dockerfile",
+              "RelativeToolTip": "Users_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-26T14:10:30.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\Dockerfile",
+              "RelativeDocumentMoniker": "Categories_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\Dockerfile",
+              "RelativeToolTip": "Categories_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-26T14:09:50.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UsersInfoManagement_API",
-              "DocumentMoniker": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
+              "Title": "UsersInfoManagement_API.csproj",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
-              "ToolTip": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
               "RelativeToolTip": "UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-08-22T05:35:37.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryManagement_API",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\CategoryManagement_API.csproj",
+              "RelativeDocumentMoniker": "Categories_API\\CategoryManagement_API.csproj",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\CategoryManagement_API.csproj",
+              "RelativeToolTip": "Categories_API\\CategoryManagement_API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-26T14:09:31.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UsersInfoesController.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
+              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
+              "RelativeToolTip": "UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T05:35:42.047Z",
               "EditorCaption": ""
             },
             {

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\OrderManagement_API\\OrderManagement_API.csproj": {}
+    "D:\\FPT\\FA25\\Code\\FA25\\OrderManagement_API\\OrderManagement_API.csproj": {}
   },
   "projects": {
-    "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\OrderManagement_API\\OrderManagement_API.csproj": {
+    "D:\\FPT\\FA25\\Code\\FA25\\OrderManagement_API\\OrderManagement_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
+        "projectUniqueName": "D:\\FPT\\FA25\\Code\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
         "projectName": "OrderManagement_API",
-        "projectPath": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\Ky9Fa24\\1\\2\\FA25\\FA25\\OrderManagement_API\\obj\\",
+        "projectPath": "D:\\FPT\\FA25\\Code\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT\\FA25\\Code\\FA25\\OrderManagement_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -73,6 +74,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.10, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.22.1, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -110,7 +115,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("24848218-a321-468b-8156-0cfa02f2ddd3")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("HotelsManagement_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+292bfcf61d0c05cf079d50b9ec22cc771143db01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0180736b779dca4cede2fceee09deeb660c364c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("HotelsManagement_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HotelsManagement_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

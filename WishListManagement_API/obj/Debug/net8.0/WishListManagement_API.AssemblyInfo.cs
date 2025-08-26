@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("80cd9d13-8b1e-4c15-9f6e-2e3793ee1114")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("WishListManagement_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+292bfcf61d0c05cf079d50b9ec22cc771143db01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0180736b779dca4cede2fceee09deeb660c364c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("WishListManagement_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WishListManagement_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
