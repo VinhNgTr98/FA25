@@ -32,7 +32,7 @@ namespace TourManagement
             //swagger authen
             builder.Services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookAPI", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TourManagementAPI", Version = "v1" });
 
                 // Cấu hình hỗ trợ Bearer token
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
