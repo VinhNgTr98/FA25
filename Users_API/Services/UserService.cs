@@ -75,5 +75,11 @@ namespace Users_API.Services
             var saved = await _repo.UpdateAsync(u, ct);
             return saved == null ? null : _mapper.Map<UserReadDto>(saved);
         }
+
+        public async Task<UserReadDto?> GetByUsernameAsync(string username, CancellationToken ct)
+        {
+            var u = await _repo.GetByUsernameAsync(username, ct);
+            return u == null ? null : _mapper.Map<UserReadDto>(u);
+        }
     }
 }

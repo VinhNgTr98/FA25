@@ -51,5 +51,12 @@ namespace User_API.Repositories
             await _db.SaveChangesAsync(ct);
             return true;
         }
+
+        public async Task<User?> GetByUsernameAsync(string username, CancellationToken ct)
+        {
+            return await _db.User
+                            .AsNoTracking()
+                            .FirstOrDefaultAsync(u => u.UsersName == username, ct);
+        }
     }
 }

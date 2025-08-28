@@ -4,12 +4,13 @@ namespace User_API.DTOs
 {
     public class UserReadDto
     {
+        [Key]
         public int UserID { get; set; }
 
         [Required(ErrorMessage = "UserName is required")]
         [StringLength(100, ErrorMessage = "UserName must be less than 100 characters")]
         public string UserName { get; set; }
-
+        public string PasswordHash { get; set; } = default!;
         public bool IsHotelOwner { get; set; }
         public bool IsTourAgency { get; set; }
         public bool IsVehicleAgency { get; set; }

@@ -13,6 +13,7 @@ namespace Users_API.Services
 
         // tăng cảnh báo + tự khóa nếu >=5
         Task<UserReadDto?> IncreaseWarningAsync(int userId, int increaseBy, CancellationToken ct);
+        Task<UserReadDto?> GetByUsernameAsync(string username, CancellationToken ct);
     }
 
 }

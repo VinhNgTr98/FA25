@@ -1056,3 +1056,8 @@ D:\FPT\FA25\Code\FA25\Users_API\obj\Debug\net8.0\refint\UserManagement_API.dll
 D:\FPT\FA25\Code\FA25\Users_API\obj\Debug\net8.0\UserManagement_API.pdb
 D:\FPT\FA25\Code\FA25\Users_API\obj\Debug\net8.0\UserManagement_API.genruntimeconfig.cache
 D:\FPT\FA25\Code\FA25\Users_API\obj\Debug\net8.0\ref\UserManagement_API.dll
+D:\FPT\FA25\Code\FA25\Users_API\bin\Debug\net8.0\Microsoft.AspNetCore.OData.dll
+D:\FPT\FA25\Code\FA25\Users_API\bin\Debug\net8.0\Microsoft.OData.Core.dll
+D:\FPT\FA25\Code\FA25\Users_API\bin\Debug\net8.0\Microsoft.OData.Edm.dll
+D:\FPT\FA25\Code\FA25\Users_API\bin\Debug\net8.0\Microsoft.OData.ModelBuilder.dll
+D:\FPT\FA25\Code\FA25\Users_API\bin\Debug\net8.0\Microsoft.Spatial.dll
