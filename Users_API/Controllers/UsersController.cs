@@ -52,4 +52,11 @@ public class UsersController : ControllerBase
         var updated = await _svc.IncreaseWarningAsync(id, by, ct);
         return updated == null ? NotFound() : Ok(updated);
     }
+
+    [HttpGet("username/{username}")]
+    public async Task<ActionResult<UserReadDto>> GetByUsername(string username, CancellationToken ct)
+    {
+        var u = await _svc.GetByUsernameAsync(username, ct);
+        return u == null ? NotFound() : Ok(u);
+    }
 }
