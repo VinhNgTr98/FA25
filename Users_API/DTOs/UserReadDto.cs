@@ -9,7 +9,7 @@ namespace User_API.DTOs
 
         [Required(ErrorMessage = "UserName is required")]
         [StringLength(100, ErrorMessage = "UserName must be less than 100 characters")]
-        public string UserName { get; set; }
+        public string UsersName { get; set; }
         public string PasswordHash { get; set; } = default!;
         public bool IsHotelOwner { get; set; }
         public bool IsTourAgency { get; set; }

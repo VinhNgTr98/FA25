@@ -3572,7 +3572,7 @@
       },
       "UserReadDto": {
         "required": [
-          "userName"
+          "usersName"
         ],
         "type": "object",
         "properties": {
@@ -3580,7 +3580,7 @@
             "type": "integer",
             "format": "int32"
           },
-          "userName": {
+          "usersName": {
             "maxLength": 100,
             "minLength": 0,
             "type": "string"
