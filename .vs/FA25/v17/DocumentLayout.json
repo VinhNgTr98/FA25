@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "D:\\FPT\\FA25\\Code\\FA25\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\dtos\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\dtos\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -264,7 +272,7 @@
         },
         {
           "DockedWidth": 1610,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -276,7 +284,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "UserUpdateDto.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\UserUpdateDto.cs",
+              "RelativeDocumentMoniker": "Users_API\\DTOs\\UserUpdateDto.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\UserUpdateDto.cs",
+              "RelativeToolTip": "Users_API\\DTOs\\UserUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T15:17:14.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserCreateDto.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\UserCreateDto.cs",
+              "RelativeDocumentMoniker": "Users_API\\DTOs\\UserCreateDto.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\UserCreateDto.cs",
+              "RelativeToolTip": "Users_API\\DTOs\\UserCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T15:17:11.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Users_API\\Repositories\\UserRepository.cs",
@@ -284,12 +318,11 @@
               "RelativeToolTip": "Users_API\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAzwD0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T14:44:50.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T14:44:50.465Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Repositories\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Users_API\\Repositories\\IUserRepository.cs",
@@ -297,12 +330,11 @@
               "RelativeToolTip": "Users_API\\Repositories\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T14:44:36.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T14:44:36.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "ITourService.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\TourManagement\\Services\\Interfaces\\ITourService.cs",
               "RelativeDocumentMoniker": "TourManagement\\Services\\Interfaces\\ITourService.cs",
@@ -310,12 +342,11 @@
               "RelativeToolTip": "TourManagement\\Services\\Interfaces\\ITourService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T14:44:07.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T14:44:07.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "TourService.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\TourManagement\\Services\\TourService.cs",
               "RelativeDocumentMoniker": "TourManagement\\Services\\TourService.cs",
@@ -323,25 +354,24 @@
               "RelativeToolTip": "TourManagement\\Services\\TourService.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T14:44:02.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T14:44:02.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Users_API\\Services\\UserService.cs",
               "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Services\\UserService.cs",
               "RelativeToolTip": "Users_API\\Services\\UserService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAcwFQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwB0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-28T14:42:20.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Models\\User.cs",
               "RelativeDocumentMoniker": "Users_API\\Models\\User.cs",
@@ -354,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "IUserService.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "Users_API\\Services\\IUserService.cs",
@@ -362,12 +392,11 @@
               "RelativeToolTip": "Users_API\\Services\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T14:41:46.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T14:41:46.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "UsersController.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Users_API\\Controllers\\UsersController.cs",
@@ -375,38 +404,36 @@
               "RelativeToolTip": "Users_API\\Controllers\\UsersController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAwwBYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T14:35:02.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T14:35:02.208Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserManagement_API",
+              "DocumentIndex": 10,
+              "Title": "UserManagement_API.csproj",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\UserManagement_API.csproj",
               "RelativeDocumentMoniker": "Users_API\\UserManagement_API.csproj",
               "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\UserManagement_API.csproj",
               "RelativeToolTip": "Users_API\\UserManagement_API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-28T14:28:57.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T14:28:57.415Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "UserReadDto.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\UserReadDto.cs",
               "RelativeDocumentMoniker": "Users_API\\DTOs\\UserReadDto.cs",
               "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\UserReadDto.cs",
               "RelativeToolTip": "Users_API\\DTOs\\UserReadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-28T14:25:59.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\Dockerfile",
               "RelativeDocumentMoniker": "ImageManagement_API\\Dockerfile",
@@ -414,12 +441,11 @@
               "RelativeToolTip": "ImageManagement_API\\Dockerfile",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-27T07:59:52.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T07:59:52.586Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "ToursController.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\TourManagement\\Controllers\\ToursController.cs",
               "RelativeDocumentMoniker": "TourManagement\\Controllers\\ToursController.cs",
@@ -427,12 +453,11 @@
               "RelativeToolTip": "TourManagement\\Controllers\\ToursController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAA1wDIAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T07:55:38.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T07:55:38.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "ImageController.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\Controllers\\ImageController.cs",
               "RelativeDocumentMoniker": "ImageManagement_API\\Controllers\\ImageController.cs",
@@ -444,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "TourRepository.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\TourManagement\\Repositories\\TourRepository.cs",
               "RelativeDocumentMoniker": "TourManagement\\Repositories\\TourRepository.cs",
@@ -456,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "ITourRepository.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\TourManagement\\Repositories\\Interfaces\\ITourRepository.cs",
               "RelativeDocumentMoniker": "TourManagement\\Repositories\\Interfaces\\ITourRepository.cs",
@@ -468,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "ImageService.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\Services\\ImageService.cs",
               "RelativeDocumentMoniker": "ImageManagement_API\\Services\\ImageService.cs",
@@ -480,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "IImageService.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\Services\\Interfaces\\IImageService.cs",
               "RelativeDocumentMoniker": "ImageManagement_API\\Services\\Interfaces\\IImageService.cs",
@@ -492,7 +517,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "ImageRepository.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\Repositories\\ImageRepository.cs",
               "RelativeDocumentMoniker": "ImageManagement_API\\Repositories\\ImageRepository.cs",
@@ -504,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "IImageRepository.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\Repositories\\Interfaces\\IImageRepository.cs",
               "RelativeDocumentMoniker": "ImageManagement_API\\Repositories\\Interfaces\\IImageRepository.cs",
@@ -516,7 +541,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "ImageProfile.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\Profiles\\ImageProfile.cs",
               "RelativeDocumentMoniker": "ImageManagement_API\\Profiles\\ImageProfile.cs",
@@ -528,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "ImageUpdateDTO.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\DTOs\\ImageUpdateDTO.cs",
               "RelativeDocumentMoniker": "ImageManagement_API\\DTOs\\ImageUpdateDTO.cs",
@@ -540,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "ImageCreateDTO.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\DTOs\\ImageCreateDTO.cs",
               "RelativeDocumentMoniker": "ImageManagement_API\\DTOs\\ImageCreateDTO.cs",
@@ -552,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "ImageReadDTO.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\DTOs\\ImageReadDTO.cs",
               "RelativeDocumentMoniker": "ImageManagement_API\\DTOs\\ImageReadDTO.cs",
@@ -564,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\TourManagement\\Program.cs",
               "RelativeDocumentMoniker": "TourManagement\\Program.cs",
@@ -572,12 +597,11 @@
               "RelativeToolTip": "TourManagement\\Program.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAiwE0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T06:32:38.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T06:32:38.347Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\Program.cs",
               "RelativeDocumentMoniker": "ImageManagement_API\\Program.cs",
@@ -589,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "Image_APIContext.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\Data\\Image_APIContext.cs",
               "RelativeDocumentMoniker": "ImageManagement_API\\Data\\Image_APIContext.cs",
@@ -601,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "ImageManagement_API.csproj",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\ImageManagement_API.csproj",
               "RelativeDocumentMoniker": "ImageManagement_API\\ImageManagement_API.csproj",
@@ -609,12 +633,11 @@
               "RelativeToolTip": "ImageManagement_API\\ImageManagement_API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-27T05:24:18.307Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T05:24:18.307Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Users_APIContext.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Data\\Users_APIContext.cs",
               "RelativeDocumentMoniker": "Users_API\\Data\\Users_APIContext.cs",
@@ -622,12 +645,11 @@
               "RelativeToolTip": "Users_API\\Data\\Users_APIContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-27T06:32:21.749Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T06:32:21.749Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\TourManagement\\appsettings.json",
               "RelativeDocumentMoniker": "TourManagement\\appsettings.json",
@@ -639,7 +661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Image.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\Models\\Image.cs",
               "RelativeDocumentMoniker": "ImageManagement_API\\Models\\Image.cs",
@@ -651,7 +673,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "TourManagement.csproj",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\TourManagement\\TourManagement.csproj",
               "RelativeDocumentMoniker": "TourManagement\\TourManagement.csproj",
@@ -659,12 +681,11 @@
               "RelativeToolTip": "TourManagement\\TourManagement.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-27T06:30:00.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-27T06:30:00.596Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\appsettings.json",
               "RelativeDocumentMoniker": "ImageManagement_API\\appsettings.json",
@@ -676,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "ImageManagement_API\\appsettings.Development.json",
@@ -688,7 +709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "Tour.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\TourManagement\\Model\\Tour.cs",
               "RelativeDocumentMoniker": "TourManagement\\Model\\Tour.cs",
@@ -700,7 +721,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\OrderManagement_API\\Models\\Order.cs",
               "RelativeDocumentMoniker": "OrderManagement_API\\Models\\Order.cs",
@@ -712,7 +733,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "UsersInfo.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Models\\UsersInfo.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Models\\UsersInfo.cs",
@@ -724,7 +745,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Models\\User.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Models\\User.cs",
@@ -736,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\WishListManagement_API\\Program.cs",
               "RelativeDocumentMoniker": "WishListManagement_API\\Program.cs",
@@ -748,7 +769,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Program.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Program.cs",
@@ -760,7 +781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Program.cs",
               "RelativeDocumentMoniker": "Users_API\\Program.cs",
@@ -768,12 +789,11 @@
               "RelativeToolTip": "Users_API\\Program.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAArwEQAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T14:16:51.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-26T14:16:51.813Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoomManagement_API\\Program.cs",
               "RelativeDocumentMoniker": "RoomManagement_API\\Program.cs",
@@ -785,7 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\OrderManagement_API\\Program.cs",
               "RelativeDocumentMoniker": "OrderManagement_API\\Program.cs",
@@ -797,7 +817,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\HotelsManagement_API\\Program.cs",
               "RelativeDocumentMoniker": "HotelsManagement_API\\Program.cs",
@@ -809,7 +829,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\Program.cs",
               "RelativeDocumentMoniker": "Categories_API\\Program.cs",
@@ -821,7 +841,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\WishListManagement_API\\Dockerfile",
               "RelativeDocumentMoniker": "WishListManagement_API\\Dockerfile",
@@ -833,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoomManagement_API\\Dockerfile",
               "RelativeDocumentMoniker": "RoomManagement_API\\Dockerfile",
@@ -845,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\OrderManagement_API\\Dockerfile",
               "RelativeDocumentMoniker": "OrderManagement_API\\Dockerfile",
@@ -857,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "HotelsManagement_API.csproj",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\HotelsManagement_API\\HotelsManagement_API.csproj",
               "RelativeDocumentMoniker": "HotelsManagement_API\\HotelsManagement_API.csproj",
@@ -865,12 +885,11 @@
               "RelativeToolTip": "HotelsManagement_API\\HotelsManagement_API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-26T14:11:08.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-26T14:11:08.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\HotelsManagement_API\\Dockerfile",
               "RelativeDocumentMoniker": "HotelsManagement_API\\Dockerfile",
@@ -882,7 +901,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Dockerfile",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Dockerfile",
@@ -894,7 +913,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Dockerfile",
               "RelativeDocumentMoniker": "Users_API\\Dockerfile",
@@ -906,7 +925,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 54,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\Dockerfile",
               "RelativeDocumentMoniker": "Categories_API\\Dockerfile",
@@ -918,7 +937,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "UsersInfoManagement_API.csproj",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
@@ -926,12 +945,11 @@
               "RelativeToolTip": "UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-22T05:35:37.869Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-22T05:35:37.869Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 55,
               "Title": "CategoryManagement_API.csproj",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\CategoryManagement_API.csproj",
               "RelativeDocumentMoniker": "Categories_API\\CategoryManagement_API.csproj",
@@ -939,12 +957,11 @@
               "RelativeToolTip": "Categories_API\\CategoryManagement_API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-26T14:09:31.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-26T14:09:31.736Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 56,
               "Title": "UsersInfoesController.cs",
               "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
