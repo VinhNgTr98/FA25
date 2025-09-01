@@ -26,11 +26,13 @@ namespace TourAgencyManagement_API.Repositories
             return await _context.TourAgencies.FindAsync(id);
         }
 
-        public async Task AddAsync(TourAgency agency)
+        public async Task<TourAgency> AddAsync(TourAgency agency)
         {
             _context.TourAgencies.Add(agency);
             await _context.SaveChangesAsync();
+            return agency;
         }
+
 
         public async Task UpdateAsync(TourAgency agency)
         {
