@@ -244,3 +244,4 @@ D:\FPT\FA25\Code\FA25\TourAgencyManagement_API\obj\Debug\net8.0\refint\TourAgenc
 D:\FPT\FA25\Code\FA25\TourAgencyManagement_API\obj\Debug\net8.0\TourAgencyManagement_API.pdb
 D:\FPT\FA25\Code\FA25\TourAgencyManagement_API\obj\Debug\net8.0\TourAgencyManagement_API.genruntimeconfig.cache
 D:\FPT\FA25\Code\FA25\TourAgencyManagement_API\obj\Debug\net8.0\ref\TourAgencyManagement_API.dll
+D:\FPT\FA25\Code\FA25\TourAgencyManagement_API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TourAgencyManagement_API.DTOs;
 using TourAgencyManagement_API.Services;
+using TourAgencyManagement_API.Services.Interfaces;
 
 namespace TourAgencyManagement_API.Controllers
 {
@@ -8,21 +9,22 @@ namespace TourAgencyManagement_API.Controllers
     [Route("api/[controller]")]
     public class TourAgencyController : ControllerBase
     {
-        private readonly TourAgencyService _service;
+        private readonly ITourAgencyService _service;
 
-        public TourAgencyController(TourAgencyService service)
+        public TourAgencyController(ITourAgencyService service) // ✅ dùng interface
         {
             _service = service;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TourAgencyReadDTO>>> GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            return Ok(await _service.GetAllAsync());
+            var agencies = await _service.GetAllAsync();
+            return Ok(agencies);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<TourAgencyReadDTO>> GetById(Guid id)
+        public async Task<IActionResult> GetById(Guid id)
         {
             var agency = await _service.GetByIdAsync(id);
             if (agency == null) return NotFound();
@@ -30,26 +32,27 @@ namespace TourAgencyManagement_API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<TourAgencyReadDTO>> Create(TourAgencyCreateDTO dto)
+        public async Task<IActionResult> Create(TourAgencyCreateDTO dto)
         {
             var created = await _service.CreateAsync(dto);
-            return CreatedAtAction(nameof(GetById), new { id = created.TourAgencyId }, created);
+            return Ok(created);
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(Guid id, TourAgencyUpdateDTO dto)
         {
-            var success = await _service.UpdateAsync(id, dto);
-            if (!success) return NotFound();
+            var result = await _service.UpdateAsync(id, dto);
+            if (!result) return NotFound();
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {
-            var success = await _service.DeleteAsync(id);
-            if (!success) return NotFound();
+            var result = await _service.DeleteAsync(id);
+            if (!result) return NotFound();
             return NoContent();
         }
     }
+
 }

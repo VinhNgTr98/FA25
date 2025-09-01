@@ -32,9 +32,12 @@ namespace TourAgencyManagement_API.Services
         public async Task<TourAgencyReadDTO> CreateAsync(TourAgencyCreateDTO dto)
         {
             var agency = _mapper.Map<TourAgency>(dto);
-            await _repository.AddAsync(agency);
-            return _mapper.Map<TourAgencyReadDTO>(agency);
+            agency.TourAgencyId = Guid.NewGuid();
+
+            var created = await _repository.AddAsync(agency);
+            return _mapper.Map<TourAgencyReadDTO>(created);
         }
+
 
         public async Task<bool> UpdateAsync(Guid id, TourAgencyUpdateDTO dto)
         {
