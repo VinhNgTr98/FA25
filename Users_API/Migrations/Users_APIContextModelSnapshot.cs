@@ -51,8 +51,17 @@ namespace UserManagement_API.Migrations
                     b.Property<bool>("IsVehicleAgency")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<bool>("IsVerified")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<bool>("IsWebAdmin")
                         .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("OtpCode")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime?>("OtpExpires")
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("PasswordHash")
                         .IsRequired()
