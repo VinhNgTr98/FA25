@@ -12,7 +12,7 @@ using Users_API.Data;
 namespace UserManagement_API.Migrations
 {
     [DbContext(typeof(Users_APIContext))]
-    [Migration("20250819093223_init")]
+    [Migration("20250903101941_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -54,8 +54,17 @@ namespace UserManagement_API.Migrations
                     b.Property<bool>("IsVehicleAgency")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<bool>("IsVerified")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<bool>("IsWebAdmin")
                         .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("OtpCode")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime?>("OtpExpires")
+                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("PasswordHash")
                         .IsRequired()

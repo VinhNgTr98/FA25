@@ -26,5 +26,11 @@ namespace User_API.Models
         public int CountWarning { get; set; } = 0;
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+        public string? otp_code { get; set; }
+
+        public DateTime? otp_expires { get; set; }
+
+        public bool is_verified { get; set; } = false;
     }
 }

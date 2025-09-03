@@ -7,56 +7,40 @@ namespace User_API.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        private readonly Users_APIContext _db;
-        public UserRepository(Users_APIContext db) => _db = db;
+        private readonly Users_APIContext _ctx;
+        public UserRepository(Users_APIContext ctx) => _ctx = ctx;
 
-        public Task<User?> GetByIdAsync(int id, CancellationToken ct) =>
-            _db.User.FirstOrDefaultAsync(x => x.UserID == id, ct);
+        public async Task<List<User>> GetAllAsync(CancellationToken ct = default) =>
+            await _ctx.User.AsNoTracking().ToListAsync(ct);
 
-        public Task<List<User>> GetAllAsync(CancellationToken ct) =>
-            _db.User.AsNoTracking().OrderByDescending(x => x.CreatedAt).ToListAsync(ct);
+        public async Task<User?> GetByIdAsync(int id, CancellationToken ct = default) =>
+            await _ctx.User.FirstOrDefaultAsync(u => u.UserID == id, ct);
 
-        public async Task<User> AddAsync(User user, CancellationToken ct)
+        public async Task<User?> GetByUsernameAsync(string usersName, CancellationToken ct = default) =>
+            await _ctx.User.FirstOrDefaultAsync(u => u.UsersName == usersName, ct);
+
+        public async Task<bool> ExistsByUserNameAsync(string usersName, CancellationToken ct = default) =>
+            await _ctx.User.AnyAsync(u => u.UsersName == usersName, ct);
+
+        public async Task<User> CreateAsync(User user, CancellationToken ct = default)
         {
-            _db.User.Add(user);
-            await _db.SaveChangesAsync(ct);
+            await _ctx.User.AddAsync(user, ct);
+            await _ctx.SaveChangesAsync(ct);
             return user;
         }
 
-        public async Task<User?> UpdateAsync(User user, CancellationToken ct)
+        public async Task<User> UpdateAsync(User user, CancellationToken ct = default)
         {
-            var exist = await _db.User.FirstOrDefaultAsync(x => x.UserID == user.UserID, ct);
-            if (exist == null) return null;
-
-            // Chỉ set các trường cho phép
-            exist.UsersName = user.UsersName;
-            exist.IsHotelOwner = user.IsHotelOwner;
-            exist.IsTourAgency = user.IsTourAgency;
-            exist.IsVehicleAgency = user.IsVehicleAgency;
-            exist.IsWebAdmin = user.IsWebAdmin;
-            exist.IsSupervisor = user.IsSupervisor;
-
-            // IsActive có thể null trong UpdateDto -> nếu muốn cho update:
-            exist.IsActive = user.IsActive;
-
-            await _db.SaveChangesAsync(ct);
-            return exist;
+            _ctx.User.Update(user);
+            await _ctx.SaveChangesAsync(ct);
+            return user;
         }
 
-        public async Task<bool> DeleteAsync(int id, CancellationToken ct)
+        public async Task DeleteAsync(User user, CancellationToken ct = default)
         {
-            var u = await _db.User.FirstOrDefaultAsync(x => x.UserID == id, ct);
-            if (u == null) return false;
-            _db.User.Remove(u); // hoặc soft delete: u.IsActive=false;
-            await _db.SaveChangesAsync(ct);
-            return true;
-        }
-
-        public async Task<User?> GetByUsernameAsync(string username, CancellationToken ct)
-        {
-            return await _db.User
-                            .AsNoTracking()
-                            .FirstOrDefaultAsync(u => u.UsersName == username, ct);
+            _ctx.User.Remove(user);
+            await _ctx.SaveChangesAsync(ct);
         }
     }
 }
+

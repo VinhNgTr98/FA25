@@ -5,11 +5,13 @@ namespace User_API.Repositories
 {
     public interface IUserRepository
     {
-        Task<User?> GetByIdAsync(int id, CancellationToken ct);
-        Task<List<User>> GetAllAsync(CancellationToken ct);
-        Task<User> AddAsync(User user, CancellationToken ct);
-        Task<User?> UpdateAsync(User user, CancellationToken ct);
-        Task<bool> DeleteAsync(int id, CancellationToken ct);
-        Task<User?> GetByUsernameAsync(string username, CancellationToken ct);
+        Task<List<User>> GetAllAsync(CancellationToken ct = default);
+        Task<User?> GetByIdAsync(int id, CancellationToken ct = default);
+        Task<User?> GetByUsernameAsync(string usersName, CancellationToken ct = default);
+        Task<bool> ExistsByUserNameAsync(string usersName, CancellationToken ct = default);
+
+        Task<User> CreateAsync(User user, CancellationToken ct = default);
+        Task<User> UpdateAsync(User user, CancellationToken ct = default);
+        Task DeleteAsync(User user, CancellationToken ct = default);
     }
 }

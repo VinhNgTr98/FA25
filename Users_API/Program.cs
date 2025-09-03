@@ -1,33 +1,45 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OData.ModelBuilder;
 using Microsoft.OpenApi.Models;
+using System.Text;
+
 using User_API.Models;
-using User_API.Profiles;
-using User_API.DTOs;
 using User_API.Repositories;
 using Users_API.Data;
 using Users_API.Services;
-using Microsoft.OData.ModelBuilder;
+using User_API.DTOs;
 using Microsoft.AspNetCore.OData;
+using UserManagement_API.Services;
+
 var builder = WebApplication.CreateBuilder(args);
-//builder.Services.AddDbContext<Users_APIContext>(options =>
-//    options.UseSqlite(builder.Configuration.GetConnectionString("Users_APIContext") ?? throw new InvalidOperationException("Connection string 'Users_APIContext' not found.")));
+
+// ===== CORS =====
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
+// DbContext (MySQL)
 builder.Services.AddDbContext<Users_APIContext>(options =>
-options.UseMySql(
-builder.Configuration.GetConnectionString("DefaultConnection"),
-new MySqlServerVersion(new Version(8, 0, 36)) // đổi đúng version MySQL trên Railway
-)
-);
-// Add services to the container.
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        new MySqlServerVersion(new Version(8, 0, 36))
+));
 
-builder.Services.AddControllers();
-
-//swagger authen
+// ===== Swagger =====
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "UserManagementAPI", Version = "v1" });
 
-    // Cấu hình hỗ trợ Bearer token
+    // Bearer auth cho Swagger
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -35,59 +47,74 @@ builder.Services.AddSwaggerGen(c =>
         Scheme = "Bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "Nhập token theo dạng: Bearer {your JWT token}"
+        Description = "Nhập: Bearer {token}"
     });
-
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
             new OpenApiSecurityScheme
             {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
+                Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
             },
             Array.Empty<string>()
         }
     });
 });
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
-builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
-
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
-builder.Services.AddEndpointsApiExplorer();
+// ===== OData + Controllers =====
 var odataBuilder = new ODataConventionModelBuilder();
 odataBuilder.EntitySet<UserReadDto>("Users");
-// Add services to the container.
 
 builder.Services.AddControllers().AddOData(options => options
-  .AddRouteComponents("odata", odataBuilder.GetEdmModel())
-  .SetMaxTop(100)
-   .Count()
-   .Filter()
-   .OrderBy()
-   .Expand()
-   .Select());
+    .AddRouteComponents("odata", odataBuilder.GetEdmModel())
+    .SetMaxTop(100)
+    .Count()
+    .Filter()
+    .OrderBy()
+    .Expand()
+    .Select()
+);
+
+// ===== DI =====
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddSingleton<IJwtTokenService, JwtTokenService>(); // tạo access token
+
+// ===== JWT Auth =====
+var jwt = builder.Configuration.GetSection("Jwt");
+var keyBytes = Encoding.UTF8.GetBytes(jwt["Key"]!);
+
+builder.Services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(o =>
+    {
+        o.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = jwt["Issuer"],
+            ValidAudience = jwt["Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(keyBytes),
+            ClockSkew = TimeSpan.Zero
+        };
+    });
+
+builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
-
-// Configure the HTTP request pipeline.
-
-    app.UseSwagger();
-    app.UseSwaggerUI();
-
+// ===== middleware order =====
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
+// bật CORS (đặt trước Authentication/Authorization)
+app.UseCors("AllowAll");
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-
 app.Run();

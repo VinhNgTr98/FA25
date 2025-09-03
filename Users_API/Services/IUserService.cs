@@ -5,15 +5,15 @@ namespace Users_API.Services
 {
     public interface IUserService
     {
-        Task<UserReadDto?> GetAsync(int id, CancellationToken ct);
-        Task<List<UserReadDto>> GetAllAsync(CancellationToken ct);
-        Task<UserReadDto> CreateAsync(UserCreateDto dto, CancellationToken ct);
-        Task<UserReadDto?> UpdateAsync(UserUpdateDto dto, CancellationToken ct);
-        Task<bool> DeleteAsync(int id, CancellationToken ct);
+        Task<IEnumerable<UserReadDto>> GetAllAsync(CancellationToken ct = default);
+        Task<UserReadDto?> GetByIdAsync(int id, CancellationToken ct = default);
+        Task<UserReadDto> CreateAsync(UserCreateDto dto, CancellationToken ct = default);
+        Task<bool> UpdateAsync(int id, UserUpdateDto dto, CancellationToken ct = default);
+        Task<bool> DeleteAsync(int id, CancellationToken ct = default);
 
-        // tăng cảnh báo + tự khóa nếu >=5
-        Task<UserReadDto?> IncreaseWarningAsync(int userId, int increaseBy, CancellationToken ct);
-        Task<UserReadDto?> GetByUsernameAsync(string username, CancellationToken ct);
+        Task<UserReadDto?> GenerateOtpAsync(int userId, CancellationToken ct = default);
+        Task<bool> VerifyOtpAsync(int userId, string otpCode, CancellationToken ct = default);
+        Task<UserReadDto?> GetByUsernameAsync(string username, CancellationToken ct = default);
     }
 
 }
