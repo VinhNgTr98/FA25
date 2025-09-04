@@ -18,5 +18,6 @@ namespace UserManagement_API.DTOs
         public string AccessToken { get; set; } = default!;
         public DateTime ExpiresAt { get; set; }
         public string Message { get; internal set; }
+        public List<string> Roles { get; set; } = new();
     }
 }

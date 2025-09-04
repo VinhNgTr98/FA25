@@ -11,6 +11,8 @@ namespace Users_API.Services
         Task<bool> UpdateAsync(int id, UserUpdateDto dto, CancellationToken ct = default);
         Task<bool> DeleteAsync(int id, CancellationToken ct = default);
 
+        Task<List<string>?> GetRolesAsync(int userId, CancellationToken ct = default);
+
         Task<UserReadDto?> GenerateOtpAsync(int userId, CancellationToken ct = default);
         Task<bool> VerifyOtpAsync(int userId, string otpCode, CancellationToken ct = default);
         Task<UserReadDto?> GetByUsernameAsync(string username, CancellationToken ct = default);

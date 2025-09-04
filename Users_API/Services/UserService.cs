@@ -13,7 +13,6 @@ namespace Users_API.Services
         private readonly IUserRepository _repo;
         public UserService(IUserRepository repo) => _repo = repo;
 
-        // Map thủ công Entity -> DTO đọc
         private static UserReadDto MapToReadDto(User u) => new()
         {
             UserID = u.UserID,
@@ -112,6 +111,21 @@ namespace Users_API.Services
 
             await _repo.DeleteAsync(u, ct);
             return true;
+        }
+
+        public async Task<List<string>?> GetRolesAsync(int userId, CancellationToken ct = default)
+        {
+            var u = await _repo.GetByIdAsync(userId, ct);
+            if (u == null) return null;
+
+            var roles = new List<string>();
+            if (u.IsWebAdmin) roles.Add("Admin");
+            if (u.IsSupervisor) roles.Add("Supervisor");
+            if (u.IsHotelOwner) roles.Add("HotelOwner");
+            if (u.IsTourAgency) roles.Add("TourAgency");
+            if (u.IsVehicleAgency) roles.Add("VehicleAgency");
+
+            return roles;
         }
 
         public async Task<UserReadDto?> GenerateOtpAsync(int userId, CancellationToken ct = default)
