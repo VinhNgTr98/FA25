@@ -30,27 +30,27 @@ namespace Users_API.Controllers
             => Ok(await _svc.GetAllAsync(ct));
 
         /// <summary>Admin tạo user nội bộ (KHÔNG tạo UsersInfo)</summary>
-        //[HttpPost]
-        //[Authorize(Roles = "Admin")]
-        //public async Task<ActionResult<UserReadDto>> Create([FromBody] UserCreateDto dto, CancellationToken ct)
-        //{
-        //    var created = await _svc.CreateWithInfoAsync(new UserWithInfoCreateDto
-        //    {
-        //        UsersName = dto.UsersName,
-        //        Password = dto.Password,
-        //        IsHotelOwner = dto.IsHotelOwner,
-        //        IsTourAgency = dto.IsTourAgency,
-        //        IsVehicleAgency = dto.IsVehicleAgency,
-        //        IsWebAdmin = dto.IsWebAdmin,
-        //        IsSupervisor = dto.IsSupervisor,
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<UserReadDto>> Create([FromBody] UserCreateDto dto, CancellationToken ct)
+        {
+            var created = await _svc.CreateWithInfoAsync(new UserWithInfoCreateDto
+            {
+                UsersName = dto.UsersName,
+                Password = dto.Password,
+                IsHotelOwner = dto.IsHotelOwner,
+                IsTourAgency = dto.IsTourAgency,
+                IsVehicleAgency = dto.IsVehicleAgency,
+                IsWebAdmin = dto.IsWebAdmin,
+                IsSupervisor = dto.IsSupervisor,
 
-        //        // Nếu Admin muốn chỉ tạo User trơn, có thể gửi tối thiểu FullName/Email rỗng
-        //        FullName = "(no name)",
-        //        Email = "no-reply@example.com"
-        //    }, ct);
+                // Nếu Admin muốn chỉ tạo User trơn, có thể gửi tối thiểu FullName/Email rỗng
+                FullName = "(no name)",
+               Email = "no-reply@example.com"
+           }, ct);
 
-        //    return CreatedAtAction(nameof(GetById), new { id = created.UserID }, created);
-        //}
+            return CreatedAtAction(nameof(GetById), new { id = created.UserID }, created);
+        }
 
         /// <summary>Admin cập nhật bất kỳ user nào</summary>
         [HttpPut("{id:int}")]
