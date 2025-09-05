@@ -75,7 +75,7 @@ namespace Users_API.Controllers
 
         /// <summary>Lấy chi tiết user – Admin hoặc chính chủ</summary>
         [HttpGet("{id:int}")]
-        [Authorize]
+        //[Authorize]
         public async Task<ActionResult<UserReadDto>> GetById(int id, CancellationToken ct)
         {
             if (!IsAdmin && CurrentUserId != id) return Forbid();
@@ -85,7 +85,7 @@ namespace Users_API.Controllers
 
         /// <summary>Lấy chi tiết theo username – Admin, hoặc chính chủ (username khớp)</summary>
         [HttpGet("username/{username}")]
-        [Authorize]
+        //[Authorize]
         public async Task<ActionResult<UserReadDto>> GetByUsername(string username, CancellationToken ct)
         {
             if (!IsAdmin && !string.Equals(CurrentUserName, username, StringComparison.OrdinalIgnoreCase))
@@ -97,7 +97,7 @@ namespace Users_API.Controllers
 
         /// <summary>Người dùng xem thông tin của chính mình</summary>
         [HttpGet("me")]
-        [Authorize]
+        //[Authorize]
         public async Task<ActionResult<UserReadDto>> GetMe(CancellationToken ct)
         {
             if (CurrentUserId is null) return Unauthorized();
@@ -107,7 +107,7 @@ namespace Users_API.Controllers
 
         /// <summary>Người dùng tự cập nhật profile của mình</summary>
         [HttpPut("me")]
-        [Authorize]
+        //[Authorize]
         public async Task<IActionResult> UpdateMe([FromBody] UserUpdateDto dto, CancellationToken ct)
         {
             if (CurrentUserId is null) return Unauthorized();
@@ -117,7 +117,7 @@ namespace Users_API.Controllers
 
         /// <summary>Trả về roles hiện có trong JWT để FE hiển thị/disable UI.</summary>
         [HttpGet("me/roles")]
-        [Authorize]
+        //[Authorize]
         public ActionResult<object> GetMyRoles()
         {
             var roles = User.Claims
@@ -143,7 +143,7 @@ namespace Users_API.Controllers
 
         /// <summary>Xin OTP cho user chưa active (ví dụ sau khi đăng ký)</summary>
         [HttpPost("{id:int}/otp")]
-        [Authorize]
+        //[Authorize]
         public async Task<ActionResult<UserReadDto>> GenerateOtp(int id, CancellationToken ct)
         {
             if (!IsAdmin && CurrentUserId != id) return Forbid();
