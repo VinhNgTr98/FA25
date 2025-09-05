@@ -21,7 +21,7 @@ namespace User_API.Models
         public bool IsWebAdmin { get; set; } = false;
         public bool IsSupervisor { get; set; } = false;
 
-        public bool IsActive { get; set; } = true;
+        public bool IsActive { get; set; }
 
         public int CountWarning { get; set; } = 0;
 

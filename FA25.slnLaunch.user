@@ -3,31 +3,11 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "Categories_API\\CategoryManagement_API.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "HotelsManagement_API\\HotelsManagement_API.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "OrderManagement_API\\OrderManagement_API.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "RoomManagement_API\\RoomManagement_API.csproj",
-        "Action": "Start"
-      },
-      {
         "Path": "Users_API\\UserManagement_API.csproj",
         "Action": "Start"
       },
       {
         "Path": "UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "WishListManagement_API\\WishListManagement_API.csproj",
         "Action": "Start"
       }
     ]

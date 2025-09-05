@@ -33,11 +33,11 @@ namespace UsersInfoManagement_API.Data
                 e.Property(x => x.Address).HasMaxLength(255);
 
                 e.HasIndex(x => x.Email).IsUnique();
-                e.HasIndex(x => x.UsersID).IsUnique(); // 1–1: mỗi UsersID chỉ có 1 UsersInfo
+                e.HasIndex(x => x.UserID).IsUnique(); // 1–1: mỗi UsersID chỉ có 1 UsersInfo
 
                 e.HasOne(x => x.User)
                  .WithOne(u => u.UsersInfo)
-                 .HasForeignKey<UsersInfo>(x => x.UsersID)
+                 .HasForeignKey<UsersInfo>(x => x.UserID)
                  .OnDelete(DeleteBehavior.Cascade);
             });
 

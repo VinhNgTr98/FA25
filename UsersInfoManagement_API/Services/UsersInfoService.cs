@@ -28,18 +28,18 @@ namespace UsersInfoManagement_API.Services
             return entity is null ? null : _mapper.Map<UsersInfoReadDto>(entity);
         }
 
-        public async Task<UsersInfoReadDto?> GetByUserIdAsync(int usersId, CancellationToken ct = default)
+        public async Task<UsersInfoReadDto?> GetByUserIdAsync(int userId, CancellationToken ct = default)
         {
-            var entity = await _repo.GetByUserIdAsync(usersId, ct);
+            var entity = await _repo.GetByUserIdAsync(userId, ct);
             return entity is null ? null : _mapper.Map<UsersInfoReadDto>(entity);
         }
 
         public async Task<UsersInfoReadDto> CreateAsync(UsersInfoCreateDto dto, CancellationToken ct = default)
         {
-            if (!await _repo.UserExistsAsync(dto.UsersID, ct))
+            if (!await _repo.UserExistsAsync(dto.UserID, ct))
                 throw new InvalidOperationException("User không tồn tại");
 
-            if (await _repo.GetByUserIdAsync(dto.UsersID, ct) is not null)
+            if (await _repo.GetByUserIdAsync(dto.UserID, ct) is not null)
                 throw new InvalidOperationException("User đã có UsersInfo");
 
             if (await _repo.EmailExistsAsync(dto.Email, null, ct))
@@ -62,7 +62,7 @@ namespace UsersInfoManagement_API.Services
             }
 
             // (tuỳ chọn) không cho đổi UsersID
-            if (dto.UsersID.HasValue && dto.UsersID.Value != entity.UsersID)
+            if (dto.UserID.HasValue && dto.UserID.Value != entity.UserID)
                 throw new InvalidOperationException("Không cho phép đổi UsersID");
 
             _mapper.Map(dto, entity);

@@ -13,7 +13,7 @@ namespace Users_API.Services
         private readonly IUserRepository _repo;
         public UserService(IUserRepository repo) => _repo = repo;
 
-        // Map thủ công Entity -> DTO đọc
+        
         private static UserReadDto MapToReadDto(User u) => new()
         {
             UserID = u.UserID,
@@ -57,21 +57,18 @@ namespace Users_API.Services
             var entity = new User
             {
                 UsersName = dto.UsersName,
-                // CẦN package BCrypt.Net-Next để dùng dòng dưới:
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
 
-                IsHotelOwner = dto.IsHotelOwner,
-                IsTourAgency = dto.IsTourAgency,
-                IsVehicleAgency = dto.IsVehicleAgency,
-                IsWebAdmin = dto.IsWebAdmin,
-                IsSupervisor = dto.IsSupervisor,
+                IsWebAdmin = false,
+                IsSupervisor = false,
+                IsHotelOwner = false,
+                IsTourAgency = false,
+                IsVehicleAgency = false,
 
-                otp_code = dto.otp_code,
-                otp_expires = dto.otp_expires,
-
-                IsActive = true,
+                IsActive = dto.IsActive,   
                 is_verified = false,
-                CountWarning = 0,
+                otp_code = null,
+                otp_expires = null,
                 CreatedAt = DateTime.UtcNow
             };
 
@@ -133,16 +130,21 @@ namespace Users_API.Services
             var u = await _repo.GetByIdAsync(userId, ct);
             if (u == null) return false;
 
-            if (u.otp_code == otp_code && u.otp_expires.HasValue && u.otp_expires > DateTime.UtcNow)
+            if (string.IsNullOrWhiteSpace(u.otp_code) ||
+                !string.Equals(u.otp_code, otp_code, StringComparison.Ordinal) ||
+                u.otp_expires is null || u.otp_expires < DateTime.UtcNow)
             {
-                u.is_verified = true;
-                u.otp_code = null;
-                u.otp_expires = null;
-                await _repo.UpdateAsync(u, ct);
-                return true;
+                return false;
             }
 
-            return false;
+            u.is_verified = true;
+            u.IsActive = true;  
+            u.otp_code = null;
+            u.otp_expires = null;
+
+            await _repo.UpdateAsync(u, ct);
+            return true;
         }
+
     }
 }

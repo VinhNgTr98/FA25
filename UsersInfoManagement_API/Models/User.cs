@@ -18,6 +18,6 @@ namespace UsersInfoManagement_API.Models
         public int CountWarning { get; set; }
         public DateTime CreatedAt { get; set; }
 
-        public UsersInfo? UsersInfo { get; set; } // 1–1
+        public UsersInfo? UsersInfo { get; set; }
     }
 }

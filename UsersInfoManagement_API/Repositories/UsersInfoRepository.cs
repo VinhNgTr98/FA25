@@ -15,14 +15,14 @@ namespace UsersInfoManagement_API.Repositories
         public Task<UsersInfo?> GetByIdAsync(int id, CancellationToken ct = default)
             => _db.UsersInfo.FirstOrDefaultAsync(x => x.UsersInfoID == id, ct);
 
-        public Task<UsersInfo?> GetByUserIdAsync(int usersId, CancellationToken ct = default)
-            => _db.UsersInfo.AsNoTracking().FirstOrDefaultAsync(x => x.UsersID == usersId, ct);
+        public Task<UsersInfo?> GetByUserIdAsync(int userId, CancellationToken ct = default)
+            => _db.UsersInfo.AsNoTracking().FirstOrDefaultAsync(x => x.UserID == userId, ct);
 
         public Task<bool> EmailExistsAsync(string email, int? excludeId = null, CancellationToken ct = default)
             => _db.UsersInfo.AnyAsync(x => x.Email == email && (excludeId == null || x.UsersInfoID != excludeId), ct);
 
-        public Task<bool> UserExistsAsync(int usersId, CancellationToken ct = default)
-            => _db.Users.AnyAsync(u => u.UserID == usersId, ct); // map tới Users có sẵn
+        public Task<bool> UserExistsAsync(int userId, CancellationToken ct = default)
+            => _db.Users.AnyAsync(u => u.UserID == userId, ct); // map tới Users có sẵn
 
         public async Task<UsersInfo> AddAsync(UsersInfo entity, CancellationToken ct = default)
         {

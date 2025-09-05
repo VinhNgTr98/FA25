@@ -103,7 +103,7 @@ namespace UsersInfoManagement_API.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("varchar(255)");
 
-                    b.Property<int>("UsersID")
+                    b.Property<int>("UserID")
                         .HasColumnType("int");
 
                     b.HasKey("UsersInfoID");
@@ -111,7 +111,7 @@ namespace UsersInfoManagement_API.Migrations
                     b.HasIndex("Email")
                         .IsUnique();
 
-                    b.HasIndex("UsersID")
+                    b.HasIndex("UserID")
                         .IsUnique();
 
                     b.ToTable("UsersInfo", (string)null);
@@ -121,7 +121,7 @@ namespace UsersInfoManagement_API.Migrations
                 {
                     b.HasOne("UsersInfoManagement_API.Models.User", "User")
                         .WithOne("UsersInfo")
-                        .HasForeignKey("UsersInfoManagement_API.Models.UsersInfo", "UsersID")
+                        .HasForeignKey("UsersInfoManagement_API.Models.UsersInfo", "UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
