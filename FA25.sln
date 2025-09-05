@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelsManagement_API", "Hot
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomManagement_API", "RoomManagement_API\RoomManagement_API.csproj", "{E73213FD-7BB6-4DA1-A1F8-B24AB1CC1DEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement_API", "Users_API\UserManagement_API.csproj", "{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersInfoManagement_API", "UsersInfoManagement_API\UsersInfoManagement_API.csproj", "{98804D04-B7D8-4F68-8383-012B5408E81F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WishListManagement_API", "WishListManagement_API\WishListManagement_API.csproj", "{46512690-9F65-4C5A-8410-437B443BA655}"
@@ -24,6 +22,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleAgencyManagement_API", "VehicleAgencyManagement_API\VehicleAgencyManagement_API.csproj", "{41515CDE-1836-46C9-B93A-655C67985C34}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagement_API", "OrderManagement_API\OrderManagement_API.csproj", "{D1CFF043-AE8D-4966-9F28-1C145F9B1B28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement_API", "Users_API\UserManagement_API.csproj", "{3831436F-1F5A-485B-8525-09EA6561C6FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartManagement_Api", "CartManagement_Api\CartManagement_Api.csproj", "{44809844-1386-4EF2-BE54-991F7A9EF7C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +49,6 @@ Global
 		{E73213FD-7BB6-4DA1-A1F8-B24AB1CC1DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E73213FD-7BB6-4DA1-A1F8-B24AB1CC1DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E73213FD-7BB6-4DA1-A1F8-B24AB1CC1DEB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{042F4F5D-ABBF-4FBD-8494-2BFF84586A76}.Release|Any CPU.Build.0 = Release|Any CPU
 		{98804D04-B7D8-4F68-8383-012B5408E81F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{98804D04-B7D8-4F68-8383-012B5408E81F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98804D04-B7D8-4F68-8383-012B5408E81F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -75,6 +73,14 @@ Global
 		{D1CFF043-AE8D-4966-9F28-1C145F9B1B28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1CFF043-AE8D-4966-9F28-1C145F9B1B28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1CFF043-AE8D-4966-9F28-1C145F9B1B28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3831436F-1F5A-485B-8525-09EA6561C6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3831436F-1F5A-485B-8525-09EA6561C6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3831436F-1F5A-485B-8525-09EA6561C6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3831436F-1F5A-485B-8525-09EA6561C6FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44809844-1386-4EF2-BE54-991F7A9EF7C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44809844-1386-4EF2-BE54-991F7A9EF7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44809844-1386-4EF2-BE54-991F7A9EF7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44809844-1386-4EF2-BE54-991F7A9EF7C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
