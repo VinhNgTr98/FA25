@@ -1027,3 +1027,4 @@ C:\Users\ADMIN\Desktop\Code\1\FA25\UsersInfoManagement_API\obj\Debug\net8.0\refi
 C:\Users\ADMIN\Desktop\Code\1\FA25\UsersInfoManagement_API\obj\Debug\net8.0\UsersInfoManagement_API.pdb
 C:\Users\ADMIN\Desktop\Code\1\FA25\UsersInfoManagement_API\obj\Debug\net8.0\UsersInfoManagement_API.genruntimeconfig.cache
 C:\Users\ADMIN\Desktop\Code\1\FA25\UsersInfoManagement_API\obj\Debug\net8.0\ref\UsersInfoManagement_API.dll
+C:\Users\ADMIN\Desktop\Code\1\FA25\UsersInfoManagement_API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
