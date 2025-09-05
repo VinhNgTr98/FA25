@@ -155,7 +155,7 @@
               "RelativeDocumentMoniker": "Users_API\\Program.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Program.cs",
               "RelativeToolTip": "Users_API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-05T13:23:18.077Z",
               "EditorCaption": ""
@@ -182,8 +182,7 @@
               "RelativeToolTip": "Users_API\\Controllers\\AuthController.cs",
               "ViewState": "AgIAADkAAAAAAAAAAAAuwE0AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T11:54:39.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T11:54:39.173Z"
             },
             {
               "$type": "Document",
@@ -195,8 +194,7 @@
               "RelativeToolTip": "Users_API\\Controllers\\UsersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T11:50:39.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T11:50:39.917Z"
             },
             {
               "$type": "Document",
@@ -206,7 +204,7 @@
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Program.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Program.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-05T12:54:04.512Z",
               "EditorCaption": ""
