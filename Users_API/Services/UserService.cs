@@ -49,7 +49,7 @@ namespace Users_API.Services
             return u == null ? null : MapToReadDto(u);
         }
 
-        public async Task<UserReadDto> CreateAsync(UserCreateDto dto, CancellationToken ct = default)
+        public async Task<UserReadDto> CreateWithInfoAsync(UserWithInfoCreateDto dto, CancellationToken ct = default)
         {
             var existed = await _repo.ExistsByUserNameAsync(dto.UsersName, ct);
             if (existed) throw new InvalidOperationException("UsersName already exists");
@@ -58,23 +58,30 @@ namespace Users_API.Services
             {
                 UsersName = dto.UsersName,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
-
-                IsWebAdmin = false,
-                IsSupervisor = false,
-                IsHotelOwner = false,
-                IsTourAgency = false,
-                IsVehicleAgency = false,
-
-                IsActive = dto.IsActive,   
+                IsHotelOwner = dto.IsHotelOwner,
+                IsTourAgency = dto.IsTourAgency,
+                IsVehicleAgency = dto.IsVehicleAgency,
+                IsWebAdmin = dto.IsWebAdmin,
+                IsSupervisor = dto.IsSupervisor,
+                IsActive = false,
                 is_verified = false,
-                otp_code = null,
-                otp_expires = null,
-                CreatedAt = DateTime.UtcNow
+                CreatedAt = DateTime.UtcNow,
+
+                UsersInfo = new UsersInfo
+                {
+                    FullName = dto.FullName,
+                    DateOfBirth = dto.DateOfBirth,
+                    ProfilePictureUrl = dto.ProfilePictureUrl,
+                    Email = dto.Email,
+                    PhoneNumber = dto.PhoneNumber,
+                    Address = dto.Address
+                }
             };
 
             var saved = await _repo.CreateAsync(entity, ct);
             return MapToReadDto(saved);
         }
+
 
         public async Task<bool> UpdateAsync(int id, UserUpdateDto dto, CancellationToken ct = default)
         {
