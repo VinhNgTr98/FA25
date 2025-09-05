@@ -9,7 +9,7 @@ namespace Users_API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize] 
+    //[Authorize] 
     public class UsersController : ControllerBase
     {
         private readonly IUserService _svc;
@@ -196,6 +196,6 @@ namespace Users_API.Controllers
         }
 
 
-
+        ///////////////////////
     }
 }

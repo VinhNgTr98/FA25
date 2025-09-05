@@ -32,14 +32,14 @@ namespace UsersInfoManagement_API.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Address = table.Column<string>(type: "varchar(255)", maxLength: 255, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    UsersID = table.Column<int>(type: "int", nullable: false)
+                    UserID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_UsersInfo", x => x.UsersInfoID);
                     table.ForeignKey(
-                        name: "FK_UsersInfo_Users_UsersID",
-                        column: x => x.UsersID,
+                        name: "FK_UsersInfo_Users_UserID",
+                        column: x => x.UserID,
                         principalTable: "Users",
                         principalColumn: "UserID",
                         onDelete: ReferentialAction.Cascade);
@@ -53,9 +53,9 @@ namespace UsersInfoManagement_API.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_UsersInfo_UsersID",
+                name: "IX_UsersInfo_UserID",
                 table: "UsersInfo",
-                column: "UsersID",
+                column: "UserID",
                 unique: true);
         }
 

@@ -9,6 +9,6 @@
         public string Email { get; set; } = null!;
         public string? PhoneNumber { get; set; }
         public string? Address { get; set; }
-        public int UsersID { get; set; }
+        public int UserID { get; set; }
     }
 }

@@ -11,7 +11,6 @@ namespace UsersInfoManagement_API.Models
         [Required, MaxLength(100)]
         public string FullName { get; set; } = null!;
 
-        // Pomelo EFCore.MySql 7+ hỗ trợ DateOnly. Nếu bạn dùng version thấp, đổi sang DateTime?
         public DateOnly? DateOfBirth { get; set; }
 
         [MaxLength(255)]
@@ -27,7 +26,7 @@ namespace UsersInfoManagement_API.Models
         public string? Address { get; set; }
 
         [ForeignKey(nameof(User))]
-        public int UsersID { get; set; }
+        public int UserID { get; set; }
         public User User { get; set; } = null!;
     }
 }

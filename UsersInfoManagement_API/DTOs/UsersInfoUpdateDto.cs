@@ -15,6 +15,6 @@ namespace UsersInfoManagement_API.Dtos.UsersInfo
         public string? PhoneNumber { get; set; }
         [MaxLength(255)]
         public string? Address { get; set; }
-        public int? UsersID { get; set; } // thường KHÔNG cho phép đổi; nếu không muốn đổi thì bỏ field này
+        public int? UserID { get; set; } // thường KHÔNG cho phép đổi; nếu không muốn đổi thì bỏ field này
     }
 }

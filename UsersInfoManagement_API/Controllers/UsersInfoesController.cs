@@ -22,11 +22,11 @@ namespace UsersInfoManagement_API.Controllers
             return dto is null ? NotFound() : Ok(dto);
         }
 
-        // tiện FE: lấy theo UsersID
-        [HttpGet("~/api/users/{usersId:int}/info")]
-        public async Task<ActionResult<UsersInfoReadDto>> GetByUserId(int usersId, CancellationToken ct)
+        // tiện FE: lấy theo UserID
+        [HttpGet("~/api/users/{userId:int}/info")]
+        public async Task<ActionResult<UsersInfoReadDto>> GetByUserId(int userId, CancellationToken ct)
         {
-            var dto = await _service.GetByUserIdAsync(usersId, ct);
+            var dto = await _service.GetByUserIdAsync(userId, ct);
             return dto is null ? NotFound() : Ok(dto);
         }
         [HttpPost]

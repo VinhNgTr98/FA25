@@ -518,6 +518,38 @@
   },
   {
     "ContainingType": "Users_API.Controllers.UsersController",
+    "Method": "GenerateOrResendOtp",
+    "RelativePath": "api/Users/public/otp/generate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usersName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Users_API.Controllers.UsersController",
+    "Method": "PublicRegister",
+    "RelativePath": "api/Users/public/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "UserManagement_API.DTOs.UserCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Users_API.Controllers.UsersController",
     "Method": "GetByUsername",
     "RelativePath": "api/Users/username/{username}",
     "HttpMethod": "GET",

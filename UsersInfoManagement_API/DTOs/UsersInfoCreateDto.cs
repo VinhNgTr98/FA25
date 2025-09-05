@@ -16,6 +16,6 @@ namespace UsersInfoManagement_API.Dtos.UsersInfo
         [MaxLength(255)]
         public string? Address { get; set; }
         [Required]
-        public int UsersID { get; set; }
+        public int UserID { get; set; }
     }
 }
