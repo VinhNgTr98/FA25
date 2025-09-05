@@ -1,26 +1,18 @@
 ﻿using AutoMapper;
 using User_API.DTOs;
-using User_API.Models;
-using UserManagement_API.DTOs;
+using User_API.Models;                 // để map User entity
+using UserManagement_API.DTOs;         // để map UserCreateDto, UserUpdateDto, v.v.
 
-namespace User_API.Profiles
+namespace Users_API.Profiles
 {
     public class UserProfile : Profile
     {
         public UserProfile()
         {
-            // Entity -> ReadDto
-            CreateMap<User, UserReadDto>();
-
-            // CreateDto -> Entity (PasswordHash sẽ set trong Service)
-            CreateMap<UserCreateDto, User>()
-                .ForMember(d => d.PasswordHash, o => o.Ignore());
-
-            // UpdateDto -> Entity
-            CreateMap<UserUpdateDto, User>()
-                .ForMember(d => d.PasswordHash, o => o.Ignore())
-                .ForMember(d => d.CreatedAt, o => o.Ignore())
-                .ForMember(d => d.CountWarning, o => o.Ignore());
+            CreateMap<User, UserCreateDto>().ReverseMap();
+            CreateMap<User, UserUpdateDto>().ReverseMap();
+            CreateMap<User, UserReadDto>().ReverseMap();
+            CreateMap<User, UserWithInfoCreateDto>().ReverseMap(); // nếu muốn map luôn
         }
     }
 }

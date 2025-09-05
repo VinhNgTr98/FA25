@@ -16,8 +16,6 @@ namespace UserManagement_API.DTOs
         public bool IsWebAdmin { get; set; } = false;
         public bool IsSupervisor { get; set; } = false;
 
-        public bool IsActive { get; set; } = false;
-
         [MaxLength(10)]
         public string? otp_code { get; set; }
         public DateTime? otp_expires { get; set; }

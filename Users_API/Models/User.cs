@@ -32,5 +32,7 @@ namespace User_API.Models
         public DateTime? otp_expires { get; set; }
 
         public bool is_verified { get; set; } = false;
+
+        public UsersInfo? UsersInfo { get; set; }
     }
 }
