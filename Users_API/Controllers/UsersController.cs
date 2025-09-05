@@ -9,6 +9,7 @@ namespace Users_API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+   
     public class UsersController : ControllerBase
     {
         private readonly IUserService _svc;
@@ -25,36 +26,36 @@ namespace Users_API.Controllers
 
         /// <summary>Danh sách user – CHỈ Admin</summary>
         [HttpGet]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<ActionResult<IEnumerable<UserReadDto>>> GetAll(CancellationToken ct)
             => Ok(await _svc.GetAllAsync(ct));
 
-        /// <summary>Admin tạo user nội bộ (KHÔNG tạo UsersInfo)</summary>
-        //[HttpPost]
-        //[Authorize(Roles = "Admin")]
-        //public async Task<ActionResult<UserReadDto>> Create([FromBody] UserCreateDto dto, CancellationToken ct)
-        //{
-        //    var created = await _svc.CreateWithInfoAsync(new UserWithInfoCreateDto
-        //    {
-        //        UsersName = dto.UsersName,
-        //        Password = dto.Password,
-        //        IsHotelOwner = dto.IsHotelOwner,
-        //        IsTourAgency = dto.IsTourAgency,
-        //        IsVehicleAgency = dto.IsVehicleAgency,
-        //        IsWebAdmin = dto.IsWebAdmin,
-        //        IsSupervisor = dto.IsSupervisor,
+        // <summary>Admin tạo user nội bộ (KHÔNG tạo UsersInfo)</summary>
+        [HttpPost]
+       // [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<UserReadDto>> Create([FromBody] UserCreateDto dto, CancellationToken ct)
+        {
+            var created = await _svc.CreateWithInfoAsync(new UserWithInfoCreateDto
+            {
+                UsersName = dto.UsersName,
+                Password = dto.Password,
+                IsHotelOwner = dto.IsHotelOwner,
+                IsTourAgency = dto.IsTourAgency,
+                IsVehicleAgency = dto.IsVehicleAgency,
+                IsWebAdmin = dto.IsWebAdmin,
+                IsSupervisor = dto.IsSupervisor,
 
-        //        // Nếu Admin muốn chỉ tạo User trơn, có thể gửi tối thiểu FullName/Email rỗng
-        //        FullName = "(no name)",
-        //        Email = "no-reply@example.com"
-        //    }, ct);
+                // Nếu Admin muốn chỉ tạo User trơn, có thể gửi tối thiểu FullName/Email rỗng
+                FullName = "(no name)",
+                Email = "no-reply@example.com"
+            }, ct);
 
-        //    return CreatedAtAction(nameof(GetById), new { id = created.UserID }, created);
-        //}
+            return CreatedAtAction(nameof(GetById), new { id = created.UserID }, created);
+        }
 
         /// <summary>Admin cập nhật bất kỳ user nào</summary>
         [HttpPut("{id:int}")]
-        [Authorize(Roles = "Admin")]
+       // [Authorize(Roles = "Admin")]
         public async Task<IActionResult> AdminUpdate(int id, [FromBody] UserUpdateDto dto, CancellationToken ct)
         {
             var ok = await _svc.UpdateAsync(id, dto, ct);
@@ -63,7 +64,7 @@ namespace Users_API.Controllers
 
         /// <summary>Admin xoá user</summary>
         [HttpDelete("{id:int}")]
-        [Authorize(Roles = "Admin")]
+       // [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id, CancellationToken ct)
         {
             var ok = await _svc.DeleteAsync(id, ct);

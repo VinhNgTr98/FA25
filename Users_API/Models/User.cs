@@ -12,6 +12,7 @@ namespace User_API.Models
         [Required, MaxLength(100)]
         public string UsersName { get; set; } = default!;
 
+
         [Required, MaxLength(255)]
         public string PasswordHash { get; set; } = default!;
 
