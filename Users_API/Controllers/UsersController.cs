@@ -46,7 +46,7 @@ namespace Users_API.Controllers
                 IsTourAgency = dto.IsTourAgency,
                 IsVehicleAgency = dto.IsVehicleAgency,
                 IsWebAdmin = dto.IsWebAdmin,
-                IsSupervisor = dto.IsSupervisor
+                IsModerator = dto.IsModerator
             }, ct);
 
             

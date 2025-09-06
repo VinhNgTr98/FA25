@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using CartManagement_Api.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<CartManagement_ApiContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CartManagement_ApiContext") ?? throw new InvalidOperationException("Connection string 'CartManagement_ApiContext' not found.")));
 
 // Add services to the container.
 

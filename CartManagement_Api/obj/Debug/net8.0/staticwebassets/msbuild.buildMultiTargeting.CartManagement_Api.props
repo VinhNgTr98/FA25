@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\CartManagement_Api.props" />
-</Project>

@@ -48,7 +48,7 @@ namespace Users_API.Controllers
 
             var roles = new List<string>();
             if (user.IsWebAdmin) roles.Add("Admin");
-            if (user.IsSupervisor) roles.Add("Supervisor");
+            if (user.IsModerator) roles.Add("Moderator");
             if (user.IsHotelOwner) roles.Add("HotelOwner");
             if (user.IsTourAgency) roles.Add("TourAgency");
             if (user.IsVehicleAgency) roles.Add("VehicleAgency");
