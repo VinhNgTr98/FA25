@@ -18,7 +18,7 @@ namespace User_API.DTOs
         public bool IsTourAgency { get; set; }
         public bool IsVehicleAgency { get; set; }
         public bool IsWebAdmin { get; set; }
-        public bool IsSupervisor { get; set; }
+        public bool IsModerator { get; set; }
 
         public bool IsActive { get; set; }
         public int CountWarning { get; set; }

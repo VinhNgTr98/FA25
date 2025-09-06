@@ -4100,7 +4100,7 @@
           "isWebAdmin": {
             "type": "boolean"
           },
-          "isSupervisor": {
+          "isModerator": {
             "type": "boolean"
           },
           "otp_code": {
@@ -4149,7 +4149,7 @@
           "isWebAdmin": {
             "type": "boolean"
           },
-          "isSupervisor": {
+          "isModerator": {
             "type": "boolean"
           },
           "isActive": {
@@ -4213,7 +4213,7 @@
           "isWebAdmin": {
             "type": "boolean"
           },
-          "isSupervisor": {
+          "isModerator": {
             "type": "boolean"
           },
           "isActive": {
@@ -4273,7 +4273,7 @@
           "isWebAdmin": {
             "type": "boolean"
           },
-          "isSupervisor": {
+          "isModerator": {
             "type": "boolean"
           },
           "fullName": {

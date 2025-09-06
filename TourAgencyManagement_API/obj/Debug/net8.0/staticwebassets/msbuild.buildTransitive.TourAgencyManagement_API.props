@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\TourAgencyManagement_API.props" />
-</Project>

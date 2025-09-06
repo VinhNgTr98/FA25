@@ -23,7 +23,7 @@ namespace Users_API.Services
             IsTourAgency = u.IsTourAgency,
             IsVehicleAgency = u.IsVehicleAgency,
             IsWebAdmin = u.IsWebAdmin,
-            IsSupervisor = u.IsSupervisor,
+            IsModerator = u.IsModerator,
             IsActive = u.IsActive,
             CountWarning = u.CountWarning,
             CreatedAt = u.CreatedAt,
@@ -65,7 +65,7 @@ namespace Users_API.Services
                 IsTourAgency = dto.IsTourAgency,
                 IsVehicleAgency = dto.IsVehicleAgency,
                 IsWebAdmin = dto.IsWebAdmin,
-                IsSupervisor = dto.IsSupervisor,
+                IsModerator = dto.IsModerator,
                 IsActive = false,
                 is_verified = false,
                 CreatedAt = DateTime.UtcNow,
@@ -98,7 +98,7 @@ namespace Users_API.Services
             u.IsTourAgency = dto.IsTourAgency;
             u.IsVehicleAgency = dto.IsVehicleAgency;
             u.IsWebAdmin = dto.IsWebAdmin;
-            u.IsSupervisor = dto.IsSupervisor;
+            u.IsModerator = dto.IsModerator;
 
             if (dto.IsActive.HasValue) u.IsActive = dto.IsActive.Value;
             if (dto.CountWarning.HasValue) u.CountWarning = dto.CountWarning.Value;
