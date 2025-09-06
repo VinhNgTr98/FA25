@@ -5,6 +5,7 @@ using User_API.DTOs;
 using User_API.Models;
 using User_API.Repositories;
 using UserManagement_API.DTOs;
+using System.Security.Cryptography;
 
 namespace Users_API.Services
 {
@@ -52,6 +53,9 @@ namespace Users_API.Services
             return u == null ? null : MapToReadDto(u);
         }
 
+
+        
+
         public async Task<UserReadDto> CreateWithInfoAsync(UserWithInfoCreateDto dto, CancellationToken ct = default)
         {
             var existed = await _repo.ExistsByEmailAsync(dto.Email, ct);
@@ -62,6 +66,8 @@ namespace Users_API.Services
                 Email = dto.Email,
                 FullName = dto.FullName,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
+                otp_code = dto.otp_code,
+                otp_expires = dto.otp_expires,
                 IsHotelOwner = dto.IsHotelOwner,
                 IsTourAgency = dto.IsTourAgency,
                 IsVehicleAgency = dto.IsVehicleAgency,
@@ -121,6 +127,7 @@ namespace Users_API.Services
             await _repo.DeleteAsync(u, ct);
             return true;
         }
+
 
         public async Task<UserReadDto?> GenerateOtpAsync(int userId, CancellationToken ct = default)
         {
