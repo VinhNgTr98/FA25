@@ -148,7 +148,7 @@ namespace Users_API.Controllers
         [AllowAnonymous]
         public async Task<ActionResult<UserReadDto>> GenerateOtp(int id, CancellationToken ct)
         {
-            if (!IsAdmin && CurrentUserId != id) return Forbid();
+          
             var updated = await _svc.GenerateOtpAsync(id, ct);
             return updated == null ? NotFound() : Ok(updated);
         }

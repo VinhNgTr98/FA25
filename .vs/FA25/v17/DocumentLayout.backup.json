@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -230,7 +230,7 @@
               "RelativeDocumentMoniker": "Users_API\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Users_API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAhwJoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAuwJ0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-05T11:50:39.917Z",
               "EditorCaption": ""
@@ -249,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Users_API\\Repositories\\UserRepository.cs",
@@ -262,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Users_API\\Controllers\\AuthController.cs",
@@ -270,11 +270,12 @@
               "RelativeToolTip": "Users_API\\Controllers\\AuthController.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAgwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T11:54:39.173Z"
+              "WhenOpened": "2025-09-05T11:54:39.173Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Users_API\\Services\\UserService.cs",
@@ -287,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Repositories\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Users_API\\Repositories\\IUserRepository.cs",
