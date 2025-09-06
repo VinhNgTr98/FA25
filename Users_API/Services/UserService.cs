@@ -67,8 +67,8 @@ namespace Users_API.Services
                 FullName = dto.FullName,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
 
-                //otp_code = dto.otp_code,
-                //otp_expires = dto.otp_expires,
+                otp_code = dto.otp_code,
+                otp_expires = dto.otp_expires,
 
                 IsHotelOwner = dto.IsHotelOwner,
                 IsTourAgency = dto.IsTourAgency,
