@@ -5,8 +5,8 @@ namespace UserManagement_API.DTOs
     public class UserWithInfoCreateDto
     {
         // User
-        [Required, MaxLength(100)]
-        public string UsersName { get; set; } = default!;
+        [Required, MaxLength(100), EmailAddress]
+        public string Email { get; set; } = default!;
         [Required, MaxLength(255)]
         public string Password { get; set; } = default!;
 
@@ -23,11 +23,10 @@ namespace UserManagement_API.DTOs
         public DateOnly? DateOfBirth { get; set; }
         [MaxLength(255)]
         public string? ProfilePictureUrl { get; set; }
-        [Required, MaxLength(100), EmailAddress]
-        public string Email { get; set; } = null!;
         [MaxLength(15)]
         public string? PhoneNumber { get; set; }
         [MaxLength(255)]
         public string? Address { get; set; }
     }
+
 }

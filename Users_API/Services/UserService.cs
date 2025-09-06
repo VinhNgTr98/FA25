@@ -13,11 +13,12 @@ namespace Users_API.Services
         private readonly IUserRepository _repo;
         public UserService(IUserRepository repo) => _repo = repo;
 
-        
+
         private static UserReadDto MapToReadDto(User u) => new()
         {
             UserID = u.UserID,
-            UsersName = u.UsersName,
+            Email = u.Email,
+            FullName = u.FullName,
             IsHotelOwner = u.IsHotelOwner,
             IsTourAgency = u.IsTourAgency,
             IsVehicleAgency = u.IsVehicleAgency,
@@ -31,6 +32,7 @@ namespace Users_API.Services
             is_verified = u.is_verified
         };
 
+
         public async Task<IEnumerable<UserReadDto>> GetAllAsync(CancellationToken ct = default)
         {
             var list = await _repo.GetAllAsync(ct);
@@ -43,20 +45,21 @@ namespace Users_API.Services
             return u == null ? null : MapToReadDto(u);
         }
 
-        public async Task<UserReadDto?> GetByUsernameAsync(string username, CancellationToken ct = default)
+        public async Task<UserReadDto?> GetByEmailAsync(string email, CancellationToken ct = default)
         {
-            var u = await _repo.GetByUsernameAsync(username, ct);
+            var u = await _repo.GetByEmailAsync(email, ct);
             return u == null ? null : MapToReadDto(u);
         }
 
         public async Task<UserReadDto> CreateWithInfoAsync(UserWithInfoCreateDto dto, CancellationToken ct = default)
         {
-            var existed = await _repo.ExistsByUserNameAsync(dto.UsersName, ct);
-            if (existed) throw new InvalidOperationException("UsersName already exists");
+            var existed = await _repo.ExistsByEmailAsync(dto.Email, ct);
+            if (existed) throw new InvalidOperationException("Email already exists");
 
             var entity = new User
             {
-                UsersName = dto.UsersName,
+                Email = dto.Email,
+                FullName = dto.FullName,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
                 IsHotelOwner = dto.IsHotelOwner,
                 IsTourAgency = dto.IsTourAgency,
@@ -77,7 +80,6 @@ namespace Users_API.Services
                     Address = dto.Address
                 }
             };
-
             var saved = await _repo.CreateAsync(entity, ct);
             return MapToReadDto(saved);
         }
@@ -90,7 +92,8 @@ namespace Users_API.Services
             var u = await _repo.GetByIdAsync(id, ct);
             if (u == null) return false;
 
-            u.UsersName = dto.UsersName;
+            u.Email = dto.Email;
+            u.FullName = dto.FullName;
             u.IsHotelOwner = dto.IsHotelOwner;
             u.IsTourAgency = dto.IsTourAgency;
             u.IsVehicleAgency = dto.IsVehicleAgency;

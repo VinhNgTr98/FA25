@@ -4,6 +4,7 @@ using System.Security.Claims;
 using Users_API.Services;
 using User_API.DTOs;
 using UserManagement_API.DTOs;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 
 namespace Users_API.Controllers
 {
@@ -19,7 +20,8 @@ namespace Users_API.Controllers
         private int? CurrentUserId =>
             int.TryParse(User.FindFirstValue(ClaimTypes.NameIdentifier), out var id) ? id : null;
 
-        private string? CurrentUserName => User.Identity?.Name;
+
+        private string? CurrentUserEmail => User.FindFirstValue(ClaimTypes.Email);
         private bool IsAdmin => User.IsInRole("Admin");
 
         // ================= ADMIN ZONE =================
@@ -37,19 +39,17 @@ namespace Users_API.Controllers
         {
             var created = await _svc.CreateWithInfoAsync(new UserWithInfoCreateDto
             {
-                UsersName = dto.UsersName,
+                Email = dto.Email,
+                FullName = dto.FullName,
                 Password = dto.Password,
                 IsHotelOwner = dto.IsHotelOwner,
                 IsTourAgency = dto.IsTourAgency,
                 IsVehicleAgency = dto.IsVehicleAgency,
                 IsWebAdmin = dto.IsWebAdmin,
-                IsSupervisor = dto.IsSupervisor,
-
-                // Nếu Admin muốn chỉ tạo User trơn, có thể gửi tối thiểu FullName/Email rỗng
-                FullName = "(no name)",
-                Email = "no-reply@example.com"
+                IsSupervisor = dto.IsSupervisor
             }, ct);
 
+            
             return CreatedAtAction(nameof(GetById), new { id = created.UserID }, created);
         }
 
@@ -75,7 +75,7 @@ namespace Users_API.Controllers
 
         /// <summary>Lấy chi tiết user – Admin hoặc chính chủ</summary>
         [HttpGet("{id:int}")]
-        //[Authorize]
+       // [Authorize]
         public async Task<ActionResult<UserReadDto>> GetById(int id, CancellationToken ct)
         {
             if (!IsAdmin && CurrentUserId != id) return Forbid();
@@ -84,20 +84,20 @@ namespace Users_API.Controllers
         }
 
         /// <summary>Lấy chi tiết theo username – Admin, hoặc chính chủ (username khớp)</summary>
-        [HttpGet("username/{username}")]
-        //[Authorize]
-        public async Task<ActionResult<UserReadDto>> GetByUsername(string username, CancellationToken ct)
+        // [Authorize]
+        [HttpGet("email/{email}")]
+        public async Task<ActionResult<UserReadDto>> GetByEmail(string email, CancellationToken ct)
         {
-            if (!IsAdmin && !string.Equals(CurrentUserName, username, StringComparison.OrdinalIgnoreCase))
+            if (!IsAdmin && !string.Equals(CurrentUserEmail, email, StringComparison.OrdinalIgnoreCase))
                 return Forbid();
 
-            var u = await _svc.GetByUsernameAsync(username, ct);
+            var u = await _svc.GetByEmailAsync(email, ct);
             return u is null ? NotFound() : Ok(u);
         }
 
         /// <summary>Người dùng xem thông tin của chính mình</summary>
         [HttpGet("me")]
-        //[Authorize]
+       // [Authorize]
         public async Task<ActionResult<UserReadDto>> GetMe(CancellationToken ct)
         {
             if (CurrentUserId is null) return Unauthorized();
@@ -107,7 +107,7 @@ namespace Users_API.Controllers
 
         /// <summary>Người dùng tự cập nhật profile của mình</summary>
         [HttpPut("me")]
-        //[Authorize]
+       // [Authorize]
         public async Task<IActionResult> UpdateMe([FromBody] UserUpdateDto dto, CancellationToken ct)
         {
             if (CurrentUserId is null) return Unauthorized();
@@ -143,7 +143,7 @@ namespace Users_API.Controllers
 
         /// <summary>Xin OTP cho user chưa active (ví dụ sau khi đăng ký)</summary>
         [HttpPost("{id:int}/otp")]
-        //[Authorize]
+       // [Authorize]
         public async Task<ActionResult<UserReadDto>> GenerateOtp(int id, CancellationToken ct)
         {
             if (!IsAdmin && CurrentUserId != id) return Forbid();

@@ -36,6 +36,16 @@ namespace UserManagement_API.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
                     b.Property<bool>("IsActive")
                         .HasColumnType("tinyint(1)");
 
@@ -51,31 +61,86 @@ namespace UserManagement_API.Migrations
                     b.Property<bool>("IsVehicleAgency")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<bool>("IsVerified")
-                        .HasColumnType("tinyint(1)");
-
                     b.Property<bool>("IsWebAdmin")
                         .HasColumnType("tinyint(1)");
-
-                    b.Property<string>("OtpCode")
-                        .HasColumnType("longtext");
-
-                    b.Property<DateTime?>("OtpExpires")
-                        .HasColumnType("datetime(6)");
 
                     b.Property<string>("PasswordHash")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("varchar(255)");
 
-                    b.Property<string>("UsersName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("varchar(100)");
+                    b.Property<bool>("is_verified")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("otp_code")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime?>("otp_expires")
+                        .HasColumnType("datetime(6)");
 
                     b.HasKey("UserID");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("User_API.Models.UsersInfo", b =>
+                {
+                    b.Property<int>("UsersInfoID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("UsersInfoID"));
+
+                    b.Property<string>("Address")
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<DateOnly?>("DateOfBirth")
+                        .HasColumnType("date");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasMaxLength(15)
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<string>("ProfilePictureUrl")
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<int>("UserID")
+                        .HasColumnType("int");
+
+                    b.HasKey("UsersInfoID");
+
+                    b.HasIndex("UserID")
+                        .IsUnique();
+
+                    b.ToTable("UsersInfo");
+                });
+
+            modelBuilder.Entity("User_API.Models.UsersInfo", b =>
+                {
+                    b.HasOne("User_API.Models.User", "User")
+                        .WithOne("UsersInfo")
+                        .HasForeignKey("User_API.Models.UsersInfo", "UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("User_API.Models.User", b =>
+                {
+                    b.Navigation("UsersInfo");
                 });
 #pragma warning restore 612, 618
         }

@@ -7,8 +7,11 @@ namespace UserManagement_API.DTOs
         [Required]
         public int UserID { get; set; }
 
+        [Required, MaxLength(100), EmailAddress]
+        public string Email { get; set; } = default!;
+
         [Required, MaxLength(100)]
-        public string UsersName { get; set; } = default!;
+        public string FullName { get; set; } = default!;
 
         public bool IsHotelOwner { get; set; }
         public bool IsTourAgency { get; set; }
@@ -24,5 +27,6 @@ namespace UserManagement_API.DTOs
         public DateTime? otp_expires { get; set; }
         public bool? is_verified { get; set; }
     }
+
 }
 
