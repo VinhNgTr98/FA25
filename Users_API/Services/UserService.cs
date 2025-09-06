@@ -6,6 +6,8 @@ using User_API.Models;
 using User_API.Repositories;
 using UserManagement_API.DTOs;
 using System.Security.Cryptography;
+using Microsoft.Extensions.Logging;
+
 
 namespace Users_API.Services
 {
@@ -67,8 +69,8 @@ namespace Users_API.Services
                 FullName = dto.FullName,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
 
-                otp_code = dto.otp_code,
-                otp_expires = dto.otp_expires,
+                //otp_code = dto.otp_code,
+                //otp_expires = dto.otp_expires,
 
                 IsHotelOwner = dto.IsHotelOwner,
                 IsTourAgency = dto.IsTourAgency,
@@ -129,24 +131,24 @@ namespace Users_API.Services
             await _repo.DeleteAsync(u, ct);
             return true;
         }
-        private static string GenerateOtp6()
-        {
-            // OTP 6 chữ số, dùng CSPRNG
-            var value = RandomNumberGenerator.GetInt32(0, 1_000_000); // [0..999999]
-            return value.ToString("D6");
-        }
+        
 
         public async Task<UserReadDto?> GenerateOtpAsync(int userId, CancellationToken ct = default)
         {
             var u = await _repo.GetByIdAsync(userId, ct);
             if (u == null) return null;
 
-            u.otp_code = GenerateOtp6();               // OTP ngẫu nhiên 6 số
+            u.otp_code = GenerateOtp6();               
             u.otp_expires = DateTime.UtcNow.AddMinutes(5);
-            u.is_verified = false;                     // 0 khi vừa tạo
+            u.is_verified = false;                    
 
             var saved = await _repo.UpdateAsync(u, ct);
             return MapToReadDto(saved);
+        }
+        private static string GenerateOtp6()
+        {
+            var value = RandomNumberGenerator.GetInt32(0, 1_000_000);
+            return value.ToString("D6");
         }
 
         public async Task<bool> VerifyOtpAsync(int userId, string otp_code, CancellationToken ct = default)

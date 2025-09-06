@@ -138,13 +138,14 @@ namespace Users_API.Controllers
         public async Task<ActionResult<UserReadDto>> PublicRegisterWithInfo([FromBody] UserWithInfoCreateDto dto, CancellationToken ct)
         {
             var created = await _svc.CreateWithInfoAsync(dto, ct);
-            await _svc.GenerateOtpAsync(created.UserID, ct); // auto OTP
-            return CreatedAtAction(nameof(GetById), new { id = created.UserID }, created);
+            var withOtp = await _svc.GenerateOtpAsync(created.UserID, ct);  
+            return CreatedAtAction(nameof(GetById), new { id = withOtp.UserID }, withOtp); 
         }
 
         /// <summary>Xin OTP cho user chưa active (ví dụ sau khi đăng ký)</summary>
         [HttpPost("{id:int}/otp")]
        // [Authorize]
+        [AllowAnonymous]
         public async Task<ActionResult<UserReadDto>> GenerateOtp(int id, CancellationToken ct)
         {
             if (!IsAdmin && CurrentUserId != id) return Forbid();
