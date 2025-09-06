@@ -1058,6 +1058,25 @@
         }
       }
     },
+    "/health": {
+      "get": {
+        "tags": [
+          "UserManagement_API"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/StringDateTime<>f__AnonymousType5"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Users": {
       "get": {
         "tags": [
@@ -4063,6 +4082,20 @@
           }
         },
         "additionalProperties": { }
+      },
+      "StringDateTime<>f__AnonymousType5": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "timestamp": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
       },
       "UserCreateDto": {
         "required": [

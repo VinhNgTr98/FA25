@@ -8,7 +8,6 @@ using UserManagement_API.DTOs;
 using System.Security.Cryptography;
 using Microsoft.Extensions.Logging;
 
-
 namespace Users_API.Services
 {
     public class UserService : IUserService
@@ -16,13 +15,12 @@ namespace Users_API.Services
         private readonly IUserRepository _repo;
         public UserService(IUserRepository repo) => _repo = repo;
 
-
         private static UserReadDto MapToReadDto(User u) => new()
         {
             UserID = u.UserID,
             Email = u.Email,
             FullName = u.FullName,
-            Password = u.PasswordHash,   
+            Password = null, // KHÔNG trả về password hash về client
             IsHotelOwner = u.IsHotelOwner,
             IsTourAgency = u.IsTourAgency,
             IsVehicleAgency = u.IsVehicleAgency,
@@ -31,11 +29,10 @@ namespace Users_API.Services
             IsActive = u.IsActive,
             CountWarning = u.CountWarning,
             CreatedAt = u.CreatedAt,
-            otp_code = u.otp_code,
+            otp_code = u.otp_code, // Chỉ trả về khi cần debug, production nên null
             otp_expires = u.otp_expires,
             is_verified = u.is_verified
         };
-
 
         public async Task<IEnumerable<UserReadDto>> GetAllAsync(CancellationToken ct = default)
         {
@@ -55,9 +52,6 @@ namespace Users_API.Services
             return u == null ? null : MapToReadDto(u);
         }
 
-
-        
-
         public async Task<UserReadDto> CreateWithInfoAsync(UserWithInfoCreateDto dto, CancellationToken ct = default)
         {
             var existed = await _repo.ExistsByEmailAsync(dto.Email, ct);
@@ -68,9 +62,6 @@ namespace Users_API.Services
                 Email = dto.Email,
                 FullName = dto.FullName,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
-
-                //otp_code = dto.otp_code,
-                //otp_expires = dto.otp_expires,
 
                 IsHotelOwner = dto.IsHotelOwner,
                 IsTourAgency = dto.IsTourAgency,
@@ -94,7 +85,6 @@ namespace Users_API.Services
             var saved = await _repo.CreateAsync(entity, ct);
             return MapToReadDto(saved);
         }
-
 
         public async Task<bool> UpdateAsync(int id, UserUpdateDto dto, CancellationToken ct = default)
         {
@@ -131,20 +121,20 @@ namespace Users_API.Services
             await _repo.DeleteAsync(u, ct);
             return true;
         }
-        
 
         public async Task<UserReadDto?> GenerateOtpAsync(int userId, CancellationToken ct = default)
         {
             var u = await _repo.GetByIdAsync(userId, ct);
             if (u == null) return null;
 
-            u.otp_code = GenerateOtp6();               
+            u.otp_code = GenerateOtp6();
             u.otp_expires = DateTime.UtcNow.AddMinutes(5);
-            u.is_verified = false;                    
+            u.is_verified = false;
 
             var saved = await _repo.UpdateAsync(u, ct);
             return MapToReadDto(saved);
         }
+
         private static string GenerateOtp6()
         {
             var value = RandomNumberGenerator.GetInt32(0, 1_000_000);
@@ -164,14 +154,13 @@ namespace Users_API.Services
                 return false;
             }
 
-            u.is_verified = true;      
-            u.IsActive = true;         
-            u.otp_code = null;         
-            u.otp_expires = null;      
+            u.is_verified = true;
+            u.IsActive = true;
+            u.otp_code = null;
+            u.otp_expires = null;
 
             await _repo.UpdateAsync(u, ct);
             return true;
         }
-
     }
 }
