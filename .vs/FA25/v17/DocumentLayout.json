@@ -208,8 +208,7 @@
               "RelativeToolTip": "Users_API\\Services\\UserService.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAQwEYAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:42:41.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T12:42:41.895Z"
             },
             {
               "$type": "Document",
@@ -233,8 +232,7 @@
               "RelativeToolTip": "Users_API\\Repositories\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:42:18.416Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T12:42:18.416Z"
             },
             {
               "$type": "Document",
@@ -246,8 +244,7 @@
               "RelativeToolTip": "Users_API\\DTOs\\UserCreateDto.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T14:10:34.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T14:10:34.645Z"
             },
             {
               "$type": "Document",
@@ -404,7 +401,8 @@
               "RelativeToolTip": "CartManagement_Api\\CartManagement_Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-06T07:08:23.661Z"
+              "WhenOpened": "2025-09-06T07:08:23.661Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -416,7 +414,8 @@
               "RelativeToolTip": "ImageManagement_API\\ImageManagement_API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-05T14:00:05.658Z"
+              "WhenOpened": "2025-09-05T14:00:05.658Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -428,7 +427,8 @@
               "RelativeToolTip": "Categories_API\\CategoryManagement_API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-06T07:08:17.887Z"
+              "WhenOpened": "2025-09-06T07:08:17.887Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
