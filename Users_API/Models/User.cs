@@ -9,12 +9,16 @@ namespace User_API.Models
         [Key]
         public int UserID { get; set; }
 
-        [Required, MaxLength(100)]
-        public string UsersName { get; set; } = default!;
-
+        // Đổi từ UsersName -> Email
+        [Required, MaxLength(100), EmailAddress]
+        public string Email { get; set; } = default!;
 
         [Required, MaxLength(255)]
         public string PasswordHash { get; set; } = default!;
+
+        // ✅ Thêm trường FullName
+        [Required, MaxLength(100)]
+        public string FullName { get; set; } = default!;
 
         public bool IsHotelOwner { get; set; } = false;
         public bool IsTourAgency { get; set; } = false;

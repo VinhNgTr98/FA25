@@ -2279,14 +2279,14 @@
         }
       }
     },
-    "/api/Users/username/{username}": {
+    "/api/Users/email/{email}": {
       "get": {
         "tags": [
           "Users"
         ],
         "parameters": [
           {
-            "name": "username",
+            "name": "email",
             "in": "path",
             "required": true,
             "schema": {
@@ -3894,12 +3894,12 @@
       },
       "LoginRequestDto": {
         "required": [
-          "password",
-          "usersName"
+          "email",
+          "password"
         ],
         "type": "object",
         "properties": {
-          "usersName": {
+          "email": {
             "minLength": 1,
             "type": "string",
             "format": "email"
@@ -4066,18 +4066,25 @@
       },
       "UserCreateDto": {
         "required": [
-          "password",
-          "usersName"
+          "email",
+          "fullName",
+          "password"
         ],
         "type": "object",
         "properties": {
-          "usersName": {
+          "email": {
             "maxLength": 100,
             "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "format": "email"
           },
           "password": {
             "maxLength": 255,
+            "minLength": 1,
+            "type": "string"
+          },
+          "fullName": {
+            "maxLength": 100,
             "minLength": 1,
             "type": "string"
           },
@@ -4111,7 +4118,8 @@
       },
       "UserReadDto": {
         "required": [
-          "usersName"
+          "email",
+          "fullName"
         ],
         "type": "object",
         "properties": {
@@ -4119,9 +4127,14 @@
             "type": "integer",
             "format": "int32"
           },
-          "usersName": {
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "fullName": {
             "maxLength": 100,
-            "minLength": 0,
+            "minLength": 1,
             "type": "string"
           },
           "isHotelOwner": {
@@ -4167,8 +4180,9 @@
       },
       "UserUpdateDto": {
         "required": [
-          "userID",
-          "usersName"
+          "email",
+          "fullName",
+          "userID"
         ],
         "type": "object",
         "properties": {
@@ -4176,7 +4190,13 @@
             "type": "integer",
             "format": "int32"
           },
-          "usersName": {
+          "email": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "fullName": {
             "maxLength": 100,
             "minLength": 1,
             "type": "string"
@@ -4226,15 +4246,15 @@
         "required": [
           "email",
           "fullName",
-          "password",
-          "usersName"
+          "password"
         ],
         "type": "object",
         "properties": {
-          "usersName": {
+          "email": {
             "maxLength": 100,
             "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "format": "email"
           },
           "password": {
             "maxLength": 255,
@@ -4270,12 +4290,6 @@
             "maxLength": 255,
             "type": "string",
             "nullable": true
-          },
-          "email": {
-            "maxLength": 100,
-            "minLength": 1,
-            "type": "string",
-            "format": "email"
           },
           "phoneNumber": {
             "maxLength": 15,

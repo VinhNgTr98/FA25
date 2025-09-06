@@ -16,11 +16,11 @@ namespace User_API.Repositories
         public async Task<User?> GetByIdAsync(int id, CancellationToken ct = default) =>
             await _ctx.User.FirstOrDefaultAsync(u => u.UserID == id, ct);
 
-        public async Task<User?> GetByUsernameAsync(string usersName, CancellationToken ct = default) =>
-            await _ctx.User.FirstOrDefaultAsync(u => u.UsersName == usersName, ct);
+        public async Task<User?> GetByEmailAsync(string email, CancellationToken ct = default) =>
+            await _ctx.User.FirstOrDefaultAsync(u => u.Email == email, ct);
 
-        public async Task<bool> ExistsByUserNameAsync(string usersName, CancellationToken ct = default) =>
-            await _ctx.User.AnyAsync(u => u.UsersName == usersName, ct);
+        public async Task<bool> ExistsByEmailAsync(string email, CancellationToken ct = default) =>
+            await _ctx.User.AnyAsync(u => u.Email == email, ct);
 
         public async Task<User> CreateAsync(User user, CancellationToken ct = default)
         {
@@ -42,5 +42,6 @@ namespace User_API.Repositories
             await _ctx.SaveChangesAsync(ct);
         }
     }
+
 }
 

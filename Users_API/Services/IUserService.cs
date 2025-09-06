@@ -13,7 +13,8 @@ namespace Users_API.Services
 
         Task<UserReadDto?> GenerateOtpAsync(int userId, CancellationToken ct = default);
         Task<bool> VerifyOtpAsync(int userId, string otpCode, CancellationToken ct = default);
-        Task<UserReadDto?> GetByUsernameAsync(string username, CancellationToken ct = default);
+        Task<UserReadDto?> GetByEmailAsync(string email, CancellationToken ct = default);
     }
+
 
 }

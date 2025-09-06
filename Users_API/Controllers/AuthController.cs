@@ -25,53 +25,27 @@ namespace Users_API.Controllers
         [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<LoginResponseDto>> Login([FromBody] LoginRequestDto dto, CancellationToken ct)
         {
-            // validate input
-            if (string.IsNullOrWhiteSpace(dto.UsersName) || string.IsNullOrWhiteSpace(dto.Password))
+            if (string.IsNullOrWhiteSpace(dto.Email) || string.IsNullOrWhiteSpace(dto.Password))
             {
                 return BadRequest(new ProblemDetails
                 {
                     Title = "Login failed",
-                    Detail = "Username and password are required",
+                    Detail = "Email and password are required",
                     Status = StatusCodes.Status400BadRequest
                 });
             }
 
-            var user = await _repo.GetByUsernameAsync(dto.UsersName, ct);
+            var user = await _repo.GetByEmailAsync(dto.Email, ct);
 
-            // 1. User không tồn tại
             if (user == null)
-            {
-                return Unauthorized(new ProblemDetails
-                {
-                    Title = "Login failed",
-                    Detail = "User does not exist",
-                    Status = StatusCodes.Status401Unauthorized
-                });
-            }
+                return Unauthorized(new ProblemDetails { Title = "Login failed", Detail = "User does not exist", Status = 401 });
 
-            // 2. User bị inactive
             if (!user.IsActive)
-            {
-                return Unauthorized(new ProblemDetails
-                {
-                    Title = "Login failed",
-                    Detail = "User is inactive",
-                    Status = StatusCodes.Status401Unauthorized
-                });
-            }
+                return Unauthorized(new ProblemDetails { Title = "Login failed", Detail = "User is inactive", Status = 401 });
 
-            // 3. Sai mật khẩu
             if (!BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash))
-            {
-                return Unauthorized(new ProblemDetails
-                {
-                    Title = "Login failed",
-                    Detail = "Incorrect password",
-                    Status = StatusCodes.Status401Unauthorized
-                });
-            }
+                return Unauthorized(new ProblemDetails { Title = "Login failed", Detail = "Incorrect password", Status = 401 });
 
-            // 4. Roles từ flags
             var roles = new List<string>();
             if (user.IsWebAdmin) roles.Add("Admin");
             if (user.IsSupervisor) roles.Add("Supervisor");
@@ -79,8 +53,7 @@ namespace Users_API.Controllers
             if (user.IsTourAgency) roles.Add("TourAgency");
             if (user.IsVehicleAgency) roles.Add("VehicleAgency");
 
-            // 5. Tạo token
-            var accessToken = _jwt.CreateAccessToken(user.UserID, user.UsersName, roles, out var expiresAt);
+            var accessToken = _jwt.CreateAccessToken(user.UserID, user.Email, roles, out var expiresAt);
 
             return Ok(new LoginResponseDto
             {
@@ -89,5 +62,6 @@ namespace Users_API.Controllers
                 ExpiresAt = expiresAt
             });
         }
+
     }
 }
