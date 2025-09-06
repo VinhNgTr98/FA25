@@ -19,6 +19,7 @@ namespace Users_API.Services
             UserID = u.UserID,
             Email = u.Email,
             FullName = u.FullName,
+            Password = u.PasswordHash,   
             IsHotelOwner = u.IsHotelOwner,
             IsTourAgency = u.IsTourAgency,
             IsVehicleAgency = u.IsVehicleAgency,

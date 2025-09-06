@@ -4119,7 +4119,8 @@
       "UserReadDto": {
         "required": [
           "email",
-          "fullName"
+          "fullName",
+          "password"
         ],
         "type": "object",
         "properties": {
@@ -4134,6 +4135,11 @@
           },
           "fullName": {
             "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "password": {
+            "maxLength": 255,
             "minLength": 1,
             "type": "string"
           },
