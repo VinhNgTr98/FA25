@@ -1,1 +1,12 @@
-{"Version":1,"Hash":"hG1XLU5qH9C08Xak9Um5BQ0LPz+Y9PAyt2Ejcvat3G8=","Source":"VehicleAgencyManagement_API","BasePath":"_content/VehicleAgencyManagement_API","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "hG1XLU5qH9C08Xak9Um5BQ0LPz+Y9PAyt2Ejcvat3G8=",
+  "Source": "VehicleAgencyManagement_API",
+  "BasePath": "_content/VehicleAgencyManagement_API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
