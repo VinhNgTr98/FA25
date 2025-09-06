@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartManagement_Api", "CartM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserManagement_API", "Users_API\UserManagement_API.csproj", "{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CouponManagement_API", "CouponManagement_API\CouponManagement_API.csproj", "{663DF36B-0239-44C8-B4DC-646901078374}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserCouponManagement_API", "UserCouponManagement_API\UserCouponManagement_API.csproj", "{A326B69E-143E-4AF6-A956-F6A22A311139}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{663DF36B-0239-44C8-B4DC-646901078374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{663DF36B-0239-44C8-B4DC-646901078374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{663DF36B-0239-44C8-B4DC-646901078374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{663DF36B-0239-44C8-B4DC-646901078374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A326B69E-143E-4AF6-A956-F6A22A311139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A326B69E-143E-4AF6-A956-F6A22A311139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A326B69E-143E-4AF6-A956-F6A22A311139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A326B69E-143E-4AF6-A956-F6A22A311139}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

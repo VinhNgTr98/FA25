@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "0e3NuchOCAPJanCfiBlSSIWAdmmYequ6jNtiAZwRHvs=",
-  "Source": "RoomManagement_API",
-  "BasePath": "_content/RoomManagement_API",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"QlebYCDJbIn3qdzK33sYTMWWyNM+phLvbxQl3oZ1phQ=","Source":"RoomManagement_API","BasePath":"_content/RoomManagement_API","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[{"Identity":"D:\\FPT\\FA25\\Code\\FA25\\TourAgencyManagement_API\\TourAgencyManagement_API.csproj","Version":2,"Source":"TourAgencyManagement_API","GetPublishAssetsTargets":"ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems","AdditionalPublishProperties":"Configuration=Debug;Platform=AnyCPU","AdditionalPublishPropertiesToRemove":"WebPublishProfileFile;TargetFramework","GetBuildAssetsTargets":"GetCurrentProjectBuildStaticWebAssetItems","AdditionalBuildProperties":"Configuration=Debug;Platform=AnyCPU","AdditionalBuildPropertiesToRemove":"WebPublishProfileFile;TargetFramework"}],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

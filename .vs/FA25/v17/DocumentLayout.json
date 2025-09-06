@@ -1,144 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\",
+  "WorkspaceRootPath": "D:\\FPT\\FA25\\Code\\FA25\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{231B8680-4E27-419A-A44B-91E3F6B0CCB2}|ImageManagement_API\\ImageManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\imagemanagement_api\\imagemanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{231B8680-4E27-419A-A44B-91E3F6B0CCB2}|ImageManagement_API\\ImageManagement_API.csproj|solutionrelative:imagemanagement_api\\imagemanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usercouponmanagement_api\\models\\usercoupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|solutionrelative:usercouponmanagement_api\\models\\usercoupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Desktop\\Code\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usercouponmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|solutionrelative:usercouponmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{663DF36B-0239-44C8-B4DC-646901078374}|CouponManagement_API\\CouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\couponmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663DF36B-0239-44C8-B4DC-646901078374}|CouponManagement_API\\CouponManagement_API.csproj|solutionrelative:couponmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\data\\usersinfomanagement_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\data\\usersinfomanagement_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usercouponmanagement_api\\controllers\\usercouponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|solutionrelative:usercouponmanagement_api\\controllers\\usercouponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\services\\usersinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\services\\usersinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usercouponmanagement_api\\services\\usercouponservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|solutionrelative:usercouponmanagement_api\\services\\usercouponservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\services\\iusersinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\services\\iusersinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usercouponmanagement_api\\services\\interfaces\\iusercouponservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|solutionrelative:usercouponmanagement_api\\services\\interfaces\\iusercouponservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\repositories\\usersinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\repositories\\usersinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usercouponmanagement_api\\repositories\\usercouponrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|solutionrelative:usercouponmanagement_api\\repositories\\usercouponrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\repositories\\iusersinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\repositories\\iusersinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usercouponmanagement_api\\data\\usercouponcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|solutionrelative:usercouponmanagement_api\\data\\usercouponcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\profile\\usersinfoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\profile\\usersinfoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{663DF36B-0239-44C8-B4DC-646901078374}|CouponManagement_API\\CouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\couponmanagement_api\\data\\couponcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663DF36B-0239-44C8-B4DC-646901078374}|CouponManagement_API\\CouponManagement_API.csproj|solutionrelative:couponmanagement_api\\data\\couponcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\models\\usersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\models\\usersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usercouponmanagement_api\\repositories\\interfaces\\iusercouponrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|solutionrelative:usercouponmanagement_api\\repositories\\interfaces\\iusercouponrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usercouponmanagement_api\\profiles\\usercouponprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|solutionrelative:usercouponmanagement_api\\profiles\\usercouponprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\dtos\\usersinfoupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\dtos\\usersinfoupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usercouponmanagement_api\\dtos\\usercouponupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|solutionrelative:usercouponmanagement_api\\dtos\\usercouponupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\dtos\\usersinforeaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\dtos\\usersinforeaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usercouponmanagement_api\\dtos\\usercouponcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|solutionrelative:usercouponmanagement_api\\dtos\\usercouponcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\dtos\\usersinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\dtos\\usersinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usercouponmanagement_api\\dtos\\usercouponreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A326B69E-143E-4AF6-A956-F6A22A311139}|UserCouponManagement_API\\UserCouponManagement_API.csproj|solutionrelative:usercouponmanagement_api\\dtos\\usercouponreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\controllers\\usersinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\controllers\\usersinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\models\\usersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\models\\usersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\dtos\\userwithinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\userwithinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\dtos\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\dtos\\logindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\logindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\services\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\data\\users_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\data\\users_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{663DF36B-0239-44C8-B4DC-646901078374}|CouponManagement_API\\CouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\couponmanagement_api\\dtos\\couponreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663DF36B-0239-44C8-B4DC-646901078374}|CouponManagement_API\\CouponManagement_API.csproj|solutionrelative:couponmanagement_api\\dtos\\couponreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663DF36B-0239-44C8-B4DC-646901078374}|CouponManagement_API\\CouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\couponmanagement_api\\models\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663DF36B-0239-44C8-B4DC-646901078374}|CouponManagement_API\\CouponManagement_API.csproj|solutionrelative:couponmanagement_api\\models\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E73213FD-7BB6-4DA1-A1F8-B24AB1CC1DEB}|RoomManagement_API\\RoomManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roommanagement_api\\roommanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E73213FD-7BB6-4DA1-A1F8-B24AB1CC1DEB}|RoomManagement_API\\RoomManagement_API.csproj|solutionrelative:roommanagement_api\\roommanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|d:\\fpt\\fa25\\code\\fa25\\tourmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2735DFA4-DF9E-41C5-8B64-7D3993FE81B5}|TourManagement\\TourManagement.csproj|solutionrelative:tourmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{663DF36B-0239-44C8-B4DC-646901078374}|CouponManagement_API\\CouponManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\couponmanagement_api\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{663DF36B-0239-44C8-B4DC-646901078374}|CouponManagement_API\\CouponManagement_API.csproj|solutionrelative:couponmanagement_api\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -147,8 +89,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "DockedWidth": 982,
+          "SelectedChildIndex": 18,
           "Children": [
             {
               "$type": "Bookmark",
@@ -180,425 +122,263 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\UserService.cs",
-              "RelativeToolTip": "Users_API\\Services\\UserService.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAADwv2wAAAA4AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UserCouponController.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Controllers\\UserCouponController.cs",
+              "RelativeDocumentMoniker": "UserCouponManagement_API\\Controllers\\UserCouponController.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Controllers\\UserCouponController.cs",
+              "RelativeToolTip": "UserCouponManagement_API\\Controllers\\UserCouponController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:42:41.895Z",
+              "WhenOpened": "2025-09-06T10:28:27.248Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Users_API\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Users_API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "CouponContext.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\CouponManagement_API\\Data\\CouponContext.cs",
+              "RelativeDocumentMoniker": "CouponManagement_API\\Data\\CouponContext.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\CouponManagement_API\\Data\\CouponContext.cs",
+              "RelativeToolTip": "CouponManagement_API\\Data\\CouponContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T11:54:39.173Z"
+              "WhenOpened": "2025-09-06T10:26:58.096Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Users_API\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Models\\User.cs",
-              "RelativeToolTip": "Users_API\\Models\\User.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwBAAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "UserCouponContext.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Data\\UserCouponContext.cs",
+              "RelativeDocumentMoniker": "UserCouponManagement_API\\Data\\UserCouponContext.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Data\\UserCouponContext.cs",
+              "RelativeToolTip": "UserCouponManagement_API\\Data\\UserCouponContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:13:20.024Z"
+              "WhenOpened": "2025-09-06T10:26:24.559Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UsersInfo.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Models\\UsersInfo.cs",
-              "RelativeDocumentMoniker": "Users_API\\Models\\UsersInfo.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Models\\UsersInfo.cs",
-              "RelativeToolTip": "Users_API\\Models\\UsersInfo.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "UserCouponProfile.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Profiles\\UserCouponProfile.cs",
+              "RelativeDocumentMoniker": "UserCouponManagement_API\\Profiles\\UserCouponProfile.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Profiles\\UserCouponProfile.cs",
+              "RelativeToolTip": "UserCouponManagement_API\\Profiles\\UserCouponProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T13:53:48.809Z"
+              "WhenOpened": "2025-09-06T10:25:15.652Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\IUserService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\IUserService.cs",
-              "RelativeToolTip": "Users_API\\Services\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "UserCouponUpdateDTO.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\DTOs\\UserCouponUpdateDTO.cs",
+              "RelativeDocumentMoniker": "UserCouponManagement_API\\DTOs\\UserCouponUpdateDTO.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\DTOs\\UserCouponUpdateDTO.cs",
+              "RelativeToolTip": "UserCouponManagement_API\\DTOs\\UserCouponUpdateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:42:38.025Z"
+              "WhenOpened": "2025-09-06T10:24:57.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserCouponCreateDTO.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\DTOs\\UserCouponCreateDTO.cs",
+              "RelativeDocumentMoniker": "UserCouponManagement_API\\DTOs\\UserCouponCreateDTO.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\DTOs\\UserCouponCreateDTO.cs",
+              "RelativeToolTip": "UserCouponManagement_API\\DTOs\\UserCouponCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T10:24:49.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserCouponReadDTO.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\DTOs\\UserCouponReadDTO.cs",
+              "RelativeDocumentMoniker": "UserCouponManagement_API\\DTOs\\UserCouponReadDTO.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\DTOs\\UserCouponReadDTO.cs",
+              "RelativeToolTip": "UserCouponManagement_API\\DTOs\\UserCouponReadDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T10:24:30.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserCouponService.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Services\\UserCouponService.cs",
+              "RelativeDocumentMoniker": "UserCouponManagement_API\\Services\\UserCouponService.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Services\\UserCouponService.cs",
+              "RelativeToolTip": "UserCouponManagement_API\\Services\\UserCouponService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T10:23:47.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUserCouponService.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Services\\Interfaces\\IUserCouponService.cs",
+              "RelativeDocumentMoniker": "UserCouponManagement_API\\Services\\Interfaces\\IUserCouponService.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Services\\Interfaces\\IUserCouponService.cs",
+              "RelativeToolTip": "UserCouponManagement_API\\Services\\Interfaces\\IUserCouponService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T10:23:41.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserCouponRepository.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Repositories\\UserCouponRepository.cs",
+              "RelativeDocumentMoniker": "UserCouponManagement_API\\Repositories\\UserCouponRepository.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Repositories\\UserCouponRepository.cs",
+              "RelativeToolTip": "UserCouponManagement_API\\Repositories\\UserCouponRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T10:23:08.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IUserCouponRepository.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Repositories\\Interfaces\\IUserCouponRepository.cs",
+              "RelativeDocumentMoniker": "UserCouponManagement_API\\Repositories\\Interfaces\\IUserCouponRepository.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Repositories\\Interfaces\\IUserCouponRepository.cs",
+              "RelativeToolTip": "UserCouponManagement_API\\Repositories\\Interfaces\\IUserCouponRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T10:23:02.581Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ImageManagement_API.csproj",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\ImageManagement_API\\ImageManagement_API.csproj",
-              "RelativeDocumentMoniker": "ImageManagement_API\\ImageManagement_API.csproj",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\ImageManagement_API\\ImageManagement_API.csproj",
-              "RelativeToolTip": "ImageManagement_API\\ImageManagement_API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-05T14:00:05.658Z",
+              "Title": "UserCoupon.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Models\\UserCoupon.cs",
+              "RelativeDocumentMoniker": "UserCouponManagement_API\\Models\\UserCoupon.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Models\\UserCoupon.cs",
+              "RelativeToolTip": "UserCouponManagement_API\\Models\\UserCoupon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T10:22:10.659Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Users_API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Users_API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAwwFAAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "Coupon.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\CouponManagement_API\\Models\\Coupon.cs",
+              "RelativeDocumentMoniker": "CouponManagement_API\\Models\\Coupon.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\CouponManagement_API\\Models\\Coupon.cs",
+              "RelativeToolTip": "CouponManagement_API\\Models\\Coupon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T11:50:39.917Z"
+              "WhenOpened": "2025-09-06T10:19:40.871Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Users_API\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Users_API\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "CouponReadDTO.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\CouponManagement_API\\DTOs\\CouponReadDTO.cs",
+              "RelativeDocumentMoniker": "CouponManagement_API\\DTOs\\CouponReadDTO.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\CouponManagement_API\\DTOs\\CouponReadDTO.cs",
+              "RelativeToolTip": "CouponManagement_API\\DTOs\\CouponReadDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:42:20.522Z"
+              "WhenOpened": "2025-09-06T10:19:16.981Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Repositories\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Users_API\\Repositories\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Repositories\\IUserRepository.cs",
-              "RelativeToolTip": "Users_API\\Repositories\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:42:18.416Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "UserWithInfoCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserWithInfoCreateDto.cs",
-              "RelativeDocumentMoniker": "Users_API\\DTOs\\UserWithInfoCreateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserWithInfoCreateDto.cs",
-              "RelativeToolTip": "Users_API\\DTOs\\UserWithInfoCreateDto.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA5wA8AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:42:02.21Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UserUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserUpdateDto.cs",
-              "RelativeDocumentMoniker": "Users_API\\DTOs\\UserUpdateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserUpdateDto.cs",
-              "RelativeToolTip": "Users_API\\DTOs\\UserUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:42:11.29Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "UserReadDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserReadDto.cs",
-              "RelativeDocumentMoniker": "Users_API\\DTOs\\UserReadDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserReadDto.cs",
-              "RelativeToolTip": "Users_API\\DTOs\\UserReadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:42:08.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UserCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserCreateDto.cs",
-              "RelativeDocumentMoniker": "Users_API\\DTOs\\UserCreateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserCreateDto.cs",
-              "RelativeToolTip": "Users_API\\DTOs\\UserCreateDto.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T14:10:34.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "LoginDtos.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\LoginDtos.cs",
-              "RelativeDocumentMoniker": "Users_API\\DTOs\\LoginDtos.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\LoginDtos.cs",
-              "RelativeToolTip": "Users_API\\DTOs\\LoginDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:42:12.504Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "..\\..\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "..\\..\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T15:54:55.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "UserProfile.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Profiles\\UserProfile.cs",
-              "RelativeDocumentMoniker": "Users_API\\Profiles\\UserProfile.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Profiles\\UserProfile.cs",
-              "RelativeToolTip": "Users_API\\Profiles\\UserProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T14:07:35.862Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "JwtTokenService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\JwtTokenService.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\JwtTokenService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\JwtTokenService.cs",
-              "RelativeToolTip": "Users_API\\Services\\JwtTokenService.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T14:06:02.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "IJwtTokenService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\IJwtTokenService.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\IJwtTokenService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\IJwtTokenService.cs",
-              "RelativeToolTip": "Users_API\\Services\\IJwtTokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T14:06:01.061Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Program.cs",
-              "RelativeDocumentMoniker": "Users_API\\Program.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Program.cs",
-              "RelativeToolTip": "Users_API\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T13:23:18.077Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Users_APIContext.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Data\\Users_APIContext.cs",
-              "RelativeDocumentMoniker": "Users_API\\Data\\Users_APIContext.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Data\\Users_APIContext.cs",
-              "RelativeToolTip": "Users_API\\Data\\Users_APIContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T13:54:14.041Z"
+              "DocumentIndex": 17,
+              "Title": "RoomManagement_API",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoomManagement_API\\RoomManagement_API.csproj",
+              "RelativeDocumentMoniker": "RoomManagement_API\\RoomManagement_API.csproj",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoomManagement_API\\RoomManagement_API.csproj",
+              "RelativeToolTip": "RoomManagement_API\\RoomManagement_API.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-06T10:13:59.825Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Program.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Program.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Program.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAAA0AAAAAAAAAA==",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\CouponManagement_API\\Program.cs",
+              "RelativeDocumentMoniker": "CouponManagement_API\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\CouponManagement_API\\Program.cs",
+              "RelativeToolTip": "CouponManagement_API\\Program.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAjwEQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:54:04.512Z"
+              "WhenOpened": "2025-09-06T10:12:28.576Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsersInfoManagement_APIContext.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Data\\UsersInfoManagement_APIContext.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Data\\UsersInfoManagement_APIContext.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Data\\UsersInfoManagement_APIContext.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Data\\UsersInfoManagement_APIContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA1wCUAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\TourManagement\\Program.cs",
+              "RelativeDocumentMoniker": "TourManagement\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\TourManagement\\Program.cs",
+              "RelativeToolTip": "TourManagement\\Program.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAE0AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:54:56.272Z"
+              "WhenOpened": "2025-09-06T10:10:08.959Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsersInfoService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Services\\UsersInfoService.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Services\\UsersInfoService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Services\\UsersInfoService.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Services\\UsersInfoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Program.cs",
+              "RelativeDocumentMoniker": "UserCouponManagement_API\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UserCouponManagement_API\\Program.cs",
+              "RelativeToolTip": "UserCouponManagement_API\\Program.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAACIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:51:17.057Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IUsersInfoService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Services\\IUsersInfoService.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Services\\IUsersInfoService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Services\\IUsersInfoService.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Services\\IUsersInfoService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAADwvwsAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:51:08.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UsersInfoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Repositories\\UsersInfoRepository.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Repositories\\UsersInfoRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Repositories\\UsersInfoRepository.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Repositories\\UsersInfoRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBEAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:49:44.664Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IUsersInfoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Repositories\\IUsersInfoRepository.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Repositories\\IUsersInfoRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Repositories\\IUsersInfoRepository.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Repositories\\IUsersInfoRepository.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:49:32.441Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsersInfoProfile.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Profile\\UsersInfoProfile.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Profile\\UsersInfoProfile.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Profile\\UsersInfoProfile.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Profile\\UsersInfoProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:52:13.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UsersInfo.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Models\\UsersInfo.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Models\\UsersInfo.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Models\\UsersInfo.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Models\\UsersInfo.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAcwBsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:18:36.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Models\\User.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Models\\User.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Models\\User.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAswAgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:18:30.925Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UsersInfoUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoUpdateDto.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\DTOs\\UsersInfoUpdateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoUpdateDto.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\DTOs\\UsersInfoUpdateDto.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:52:45.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UsersInfoReadDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoReadDto.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\DTOs\\UsersInfoReadDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoReadDto.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\DTOs\\UsersInfoReadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:52:39.375Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UsersInfoCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoCreateDto.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\DTOs\\UsersInfoCreateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoCreateDto.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\DTOs\\UsersInfoCreateDto.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAcwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:52:34.345Z"
+              "WhenOpened": "2025-09-06T10:10:01.333Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Program.cs",
+              "RelativeDocumentMoniker": "Users_API\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Program.cs",
+              "RelativeToolTip": "Users_API\\Program.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:53:51.354Z"
+              "WhenOpened": "2025-09-06T10:17:08.967Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UsersInfoesController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAkwBcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "CouponController.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\CouponManagement_API\\Controllers\\CouponController.cs",
+              "RelativeDocumentMoniker": "CouponManagement_API\\Controllers\\CouponController.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\CouponManagement_API\\Controllers\\CouponController.cs",
+              "RelativeToolTip": "CouponManagement_API\\Controllers\\CouponController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:52:59.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAAAAMkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T11:51:22.11Z"
+              "WhenOpened": "2025-09-06T10:03:57.817Z",
+              "EditorCaption": ""
             }
           ]
         },
@@ -608,15 +388,15 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:62:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:62:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         },
@@ -627,11 +407,15 @@
             {
               "$type": "Bookmark",
               "Name": "ST:60:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             }
           ]
         },
         {
-          "DockedWidth": 1102,
+          "DockedWidth": 320,
           "SelectedChildIndex": -1,
           "Children": [
             {
