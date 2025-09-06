@@ -138,6 +138,10 @@ namespace Users_API.Controllers
         public async Task<ActionResult<UserReadDto>> PublicRegisterWithInfo([FromBody] UserWithInfoCreateDto dto, CancellationToken ct)
         {
             var created = await _svc.CreateWithInfoAsync(dto, ct);
+
+            // ✅ TỰ random OTP cho user mới:
+            await _svc.GenerateOtpAsync(created.UserID, ct);
+
             return CreatedAtAction(nameof(GetById), new { id = created.UserID }, created);
         }
 
