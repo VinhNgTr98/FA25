@@ -9,7 +9,7 @@ namespace Users_API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-
+    [AllowAnonymous]
     public class UsersController : ControllerBase
     {
         private readonly IUserService _svc;
