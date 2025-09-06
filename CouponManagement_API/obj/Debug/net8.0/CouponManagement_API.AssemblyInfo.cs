@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("b916b66f-734d-4f04-bedd-cd69bc77d100")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("CouponManagement_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1ba897a22ea79cf84ff2f98aed0f24060f9e63f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+991d5a4edce8d1764219a27d20f2ed033677f7b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("CouponManagement_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CouponManagement_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
