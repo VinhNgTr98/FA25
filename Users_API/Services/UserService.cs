@@ -66,8 +66,10 @@ namespace Users_API.Services
                 Email = dto.Email,
                 FullName = dto.FullName,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
-                otp_code = dto.otp_code,
-                otp_expires = dto.otp_expires,
+
+                //otp_code = dto.otp_code,
+                //otp_expires = dto.otp_expires,
+
                 IsHotelOwner = dto.IsHotelOwner,
                 IsTourAgency = dto.IsTourAgency,
                 IsVehicleAgency = dto.IsVehicleAgency,
@@ -127,17 +129,21 @@ namespace Users_API.Services
             await _repo.DeleteAsync(u, ct);
             return true;
         }
-
+        private static string GenerateOtp6()
+        {
+            // OTP 6 chữ số, dùng CSPRNG
+            var value = RandomNumberGenerator.GetInt32(0, 1_000_000); // [0..999999]
+            return value.ToString("D6");
+        }
 
         public async Task<UserReadDto?> GenerateOtpAsync(int userId, CancellationToken ct = default)
         {
             var u = await _repo.GetByIdAsync(userId, ct);
             if (u == null) return null;
 
-            var rnd = new Random();
-            u.otp_code = rnd.Next(100000, 999999).ToString();
+            u.otp_code = GenerateOtp6();               // OTP ngẫu nhiên 6 số
             u.otp_expires = DateTime.UtcNow.AddMinutes(5);
-            u.is_verified = false;
+            u.is_verified = false;                     // 0 khi vừa tạo
 
             var saved = await _repo.UpdateAsync(u, ct);
             return MapToReadDto(saved);
@@ -148,6 +154,7 @@ namespace Users_API.Services
             var u = await _repo.GetByIdAsync(userId, ct);
             if (u == null) return false;
 
+            // Kiểm tra mã/expiry
             if (string.IsNullOrWhiteSpace(u.otp_code) ||
                 !string.Equals(u.otp_code, otp_code, StringComparison.Ordinal) ||
                 u.otp_expires is null || u.otp_expires < DateTime.UtcNow)
@@ -155,10 +162,10 @@ namespace Users_API.Services
                 return false;
             }
 
-            u.is_verified = true;
-            u.IsActive = true;  
-            u.otp_code = null;
-            u.otp_expires = null;
+            u.is_verified = true;      
+            u.IsActive = true;         
+            u.otp_code = null;         
+            u.otp_expires = null;      
 
             await _repo.UpdateAsync(u, ct);
             return true;
