@@ -32,7 +32,9 @@ namespace User_API.Models
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
+
         public string? otp_code { get; set; }
+
 
         public DateTime? otp_expires { get; set; }
 

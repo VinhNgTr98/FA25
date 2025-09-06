@@ -10,10 +10,10 @@ namespace UserManagement_API.DTOs
         [Required, MaxLength(255)]
         public string Password { get; set; } = default!;
 
-        [MaxLength(10)]
-        public string? otp_code { get; set; }
+        //[MaxLength(10)]
+        //public string? otp_code { get; set; }
 
-        public DateTime? otp_expires { get; set; }
+        //public DateTime? otp_expires { get; set; }
 
         // Roles
         public bool IsHotelOwner { get; set; } = false;

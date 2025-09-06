@@ -4,7 +4,6 @@ using System.Security.Claims;
 using Users_API.Services;
 using User_API.DTOs;
 using UserManagement_API.DTOs;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 
 namespace Users_API.Controllers
 {
@@ -161,6 +160,7 @@ namespace Users_API.Controllers
             var ok = await _svc.VerifyOtpAsync(id, code, ct);
             return ok ? Ok(new { message = "User verified" })
                       : BadRequest(new { message = "OTP invalid or expired" });
+
         }
     }
 }
