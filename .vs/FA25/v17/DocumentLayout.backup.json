@@ -1,159 +1,159 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\",
+  "WorkspaceRootPath": "D:\\FPT\\FA25\\Code\\FA25\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\dtos\\userwithinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\dtos\\userwithinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\userwithinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\models\\usersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\models\\usersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\models\\usersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\services\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\services\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\dtos\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\dtos\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\dtos\\logindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\dtos\\logindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\logindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\cartmanagement_api\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|d:\\fpt\\fa25\\code\\fa25\\cartmanagement_api\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\cartmanagement_api\\cartmanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|d:\\fpt\\fa25\\code\\fa25\\cartmanagement_api\\cartmanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\cartmanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{231B8680-4E27-419A-A44B-91E3F6B0CCB2}|ImageManagement_API\\ImageManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\imagemanagement_api\\imagemanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{231B8680-4E27-419A-A44B-91E3F6B0CCB2}|ImageManagement_API\\ImageManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\imagemanagement_api\\imagemanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{231B8680-4E27-419A-A44B-91E3F6B0CCB2}|ImageManagement_API\\ImageManagement_API.csproj|solutionrelative:imagemanagement_api\\imagemanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\categories_api\\categorymanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\categories_api\\categorymanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|solutionrelative:categories_api\\categorymanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\cartmanagement_api\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|d:\\fpt\\fa25\\code\\fa25\\cartmanagement_api\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Desktop\\Code\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\data\\usersinfomanagement_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\data\\usersinfomanagement_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\data\\usersinfomanagement_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\services\\usersinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\services\\usersinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\services\\usersinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\services\\iusersinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\services\\iusersinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\services\\iusersinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\repositories\\usersinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\repositories\\usersinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\repositories\\usersinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\repositories\\iusersinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\repositories\\iusersinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\repositories\\iusersinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\profile\\usersinfoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\profile\\usersinfoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\profile\\usersinfoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\models\\usersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\models\\usersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\models\\usersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\dtos\\usersinfoupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\dtos\\usersinfoupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\dtos\\usersinfoupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\dtos\\usersinforeaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\dtos\\usersinforeaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\dtos\\usersinforeaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\dtos\\usersinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\dtos\\usersinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\dtos\\usersinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\controllers\\usersinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\usersinfomanagement_api\\controllers\\usersinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\controllers\\usersinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\data\\users_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\users_api\\data\\users_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD7DEE1-56A9-4EF6-9FFD-03A4F36F97A9}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\data\\users_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -164,7 +164,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -195,16 +195,12 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:67:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Users_API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Users_API\\Controllers\\UsersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -214,9 +210,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\IUserService.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Services\\IUserService.cs",
               "RelativeDocumentMoniker": "Users_API\\Services\\IUserService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\IUserService.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Services\\IUserService.cs",
               "RelativeToolTip": "Users_API\\Services\\IUserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -226,9 +222,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\UserService.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Users_API\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\UserService.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Services\\UserService.cs",
               "RelativeToolTip": "Users_API\\Services\\UserService.cs",
               "ViewState": "AgIAAH4AAAAAAAAAAAAQwKUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -238,9 +234,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "UsersInfo.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Models\\UsersInfo.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Models\\UsersInfo.cs",
               "RelativeDocumentMoniker": "Users_API\\Models\\UsersInfo.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Models\\UsersInfo.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Models\\UsersInfo.cs",
               "RelativeToolTip": "Users_API\\Models\\UsersInfo.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -250,9 +246,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Models\\User.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Models\\User.cs",
               "RelativeDocumentMoniker": "Users_API\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Models\\User.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Models\\User.cs",
               "RelativeToolTip": "Users_API\\Models\\User.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAApwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -262,9 +258,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "UserCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserCreateDto.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\UserCreateDto.cs",
               "RelativeDocumentMoniker": "Users_API\\DTOs\\UserCreateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserCreateDto.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\UserCreateDto.cs",
               "RelativeToolTip": "Users_API\\DTOs\\UserCreateDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -274,11 +270,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Program.cs",
               "RelativeDocumentMoniker": "Users_API\\Program.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Program.cs",
               "RelativeToolTip": "Users_API\\Program.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAQwI4AAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAQwFgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-05T13:23:18.077Z",
               "EditorCaption": ""
@@ -287,9 +283,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "JwtTokenService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\JwtTokenService.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Services\\JwtTokenService.cs",
               "RelativeDocumentMoniker": "Users_API\\Services\\JwtTokenService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\JwtTokenService.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Services\\JwtTokenService.cs",
               "RelativeToolTip": "Users_API\\Services\\JwtTokenService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -299,9 +295,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "UserWithInfoCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserWithInfoCreateDto.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\UserWithInfoCreateDto.cs",
               "RelativeDocumentMoniker": "Users_API\\DTOs\\UserWithInfoCreateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserWithInfoCreateDto.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\UserWithInfoCreateDto.cs",
               "RelativeToolTip": "Users_API\\DTOs\\UserWithInfoCreateDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -311,9 +307,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "IJwtTokenService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\IJwtTokenService.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Services\\IJwtTokenService.cs",
               "RelativeDocumentMoniker": "Users_API\\Services\\IJwtTokenService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\IJwtTokenService.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Services\\IJwtTokenService.cs",
               "RelativeToolTip": "Users_API\\Services\\IJwtTokenService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -323,9 +319,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Users_API\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Users_API\\Controllers\\AuthController.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAgwDMAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -335,9 +331,9 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Repositories\\UserRepository.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "Users_API\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "Users_API\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -347,9 +343,9 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Repositories\\IUserRepository.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Repositories\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Users_API\\Repositories\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Repositories\\IUserRepository.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Repositories\\IUserRepository.cs",
               "RelativeToolTip": "Users_API\\Repositories\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -359,9 +355,9 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "UserReadDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserReadDto.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\UserReadDto.cs",
               "RelativeDocumentMoniker": "Users_API\\DTOs\\UserReadDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserReadDto.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\UserReadDto.cs",
               "RelativeToolTip": "Users_API\\DTOs\\UserReadDto.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -371,9 +367,9 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "UserUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserUpdateDto.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\UserUpdateDto.cs",
               "RelativeDocumentMoniker": "Users_API\\DTOs\\UserUpdateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserUpdateDto.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\UserUpdateDto.cs",
               "RelativeToolTip": "Users_API\\DTOs\\UserUpdateDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -383,9 +379,9 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "LoginDtos.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\LoginDtos.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\LoginDtos.cs",
               "RelativeDocumentMoniker": "Users_API\\DTOs\\LoginDtos.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\LoginDtos.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\DTOs\\LoginDtos.cs",
               "RelativeToolTip": "Users_API\\DTOs\\LoginDtos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -395,9 +391,9 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\Models\\Cart.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\CartManagement_Api\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Models\\Cart.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\Models\\Cart.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\CartManagement_Api\\Models\\Cart.cs",
               "RelativeToolTip": "CartManagement_Api\\Models\\Cart.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -407,9 +403,9 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "CartManagement_Api.csproj",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\CartManagement_Api.csproj",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\CartManagement_Api\\CartManagement_Api.csproj",
               "RelativeDocumentMoniker": "CartManagement_Api\\CartManagement_Api.csproj",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\CartManagement_Api.csproj",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\CartManagement_Api\\CartManagement_Api.csproj",
               "RelativeToolTip": "CartManagement_Api\\CartManagement_Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -419,9 +415,9 @@
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "ImageManagement_API.csproj",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\ImageManagement_API\\ImageManagement_API.csproj",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\ImageManagement_API.csproj",
               "RelativeDocumentMoniker": "ImageManagement_API\\ImageManagement_API.csproj",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\ImageManagement_API\\ImageManagement_API.csproj",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\ImageManagement_API\\ImageManagement_API.csproj",
               "RelativeToolTip": "ImageManagement_API\\ImageManagement_API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -431,9 +427,9 @@
               "$type": "Document",
               "DocumentIndex": 19,
               "Title": "CategoryManagement_API.csproj",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Categories_API\\CategoryManagement_API.csproj",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\CategoryManagement_API.csproj",
               "RelativeDocumentMoniker": "Categories_API\\CategoryManagement_API.csproj",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Categories_API\\CategoryManagement_API.csproj",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Categories_API\\CategoryManagement_API.csproj",
               "RelativeToolTip": "Categories_API\\CategoryManagement_API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -443,9 +439,9 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "CartsController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\Controllers\\CartsController.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\CartManagement_Api\\Controllers\\CartsController.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Controllers\\CartsController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\Controllers\\CartsController.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\CartManagement_Api\\Controllers\\CartsController.cs",
               "RelativeToolTip": "CartManagement_Api\\Controllers\\CartsController.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -456,9 +452,7 @@
               "DocumentIndex": 21,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "..\\..\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "..\\..\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-05T15:54:55.646Z"
@@ -467,9 +461,9 @@
               "$type": "Document",
               "DocumentIndex": 37,
               "Title": "UserProfile.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Profiles\\UserProfile.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Profiles\\UserProfile.cs",
               "RelativeDocumentMoniker": "Users_API\\Profiles\\UserProfile.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Profiles\\UserProfile.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Profiles\\UserProfile.cs",
               "RelativeToolTip": "Users_API\\Profiles\\UserProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -479,9 +473,9 @@
               "$type": "Document",
               "DocumentIndex": 38,
               "Title": "Users_APIContext.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Data\\Users_APIContext.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Data\\Users_APIContext.cs",
               "RelativeDocumentMoniker": "Users_API\\Data\\Users_APIContext.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Data\\Users_APIContext.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\Users_API\\Data\\Users_APIContext.cs",
               "RelativeToolTip": "Users_API\\Data\\Users_APIContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -491,9 +485,9 @@
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Program.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Program.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Program.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\Program.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -503,9 +497,9 @@
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "UsersInfoManagement_APIContext.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Data\\UsersInfoManagement_APIContext.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Data\\UsersInfoManagement_APIContext.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Data\\UsersInfoManagement_APIContext.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Data\\UsersInfoManagement_APIContext.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Data\\UsersInfoManagement_APIContext.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\Data\\UsersInfoManagement_APIContext.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA1wCUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -515,9 +509,9 @@
               "$type": "Document",
               "DocumentIndex": 24,
               "Title": "UsersInfoService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Services\\UsersInfoService.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Services\\UsersInfoService.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Services\\UsersInfoService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Services\\UsersInfoService.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Services\\UsersInfoService.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\Services\\UsersInfoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -527,9 +521,9 @@
               "$type": "Document",
               "DocumentIndex": 25,
               "Title": "IUsersInfoService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Services\\IUsersInfoService.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Services\\IUsersInfoService.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Services\\IUsersInfoService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Services\\IUsersInfoService.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Services\\IUsersInfoService.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\Services\\IUsersInfoService.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAADwvwsAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -539,9 +533,9 @@
               "$type": "Document",
               "DocumentIndex": 26,
               "Title": "UsersInfoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Repositories\\UsersInfoRepository.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Repositories\\UsersInfoRepository.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Repositories\\UsersInfoRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Repositories\\UsersInfoRepository.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Repositories\\UsersInfoRepository.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\Repositories\\UsersInfoRepository.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAYwBEAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -551,9 +545,9 @@
               "$type": "Document",
               "DocumentIndex": 27,
               "Title": "IUsersInfoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Repositories\\IUsersInfoRepository.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Repositories\\IUsersInfoRepository.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Repositories\\IUsersInfoRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Repositories\\IUsersInfoRepository.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Repositories\\IUsersInfoRepository.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\Repositories\\IUsersInfoRepository.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -563,9 +557,9 @@
               "$type": "Document",
               "DocumentIndex": 28,
               "Title": "UsersInfoProfile.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Profile\\UsersInfoProfile.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Profile\\UsersInfoProfile.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Profile\\UsersInfoProfile.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Profile\\UsersInfoProfile.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Profile\\UsersInfoProfile.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\Profile\\UsersInfoProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -575,9 +569,9 @@
               "$type": "Document",
               "DocumentIndex": 29,
               "Title": "UsersInfo.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Models\\UsersInfo.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Models\\UsersInfo.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Models\\UsersInfo.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Models\\UsersInfo.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Models\\UsersInfo.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\Models\\UsersInfo.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAcwBsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -587,9 +581,9 @@
               "$type": "Document",
               "DocumentIndex": 30,
               "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Models\\User.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Models\\User.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Models\\User.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Models\\User.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\Models\\User.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAswAgAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -599,9 +593,9 @@
               "$type": "Document",
               "DocumentIndex": 31,
               "Title": "UsersInfoUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoUpdateDto.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoUpdateDto.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\DTOs\\UsersInfoUpdateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoUpdateDto.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoUpdateDto.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\DTOs\\UsersInfoUpdateDto.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAzwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -611,9 +605,9 @@
               "$type": "Document",
               "DocumentIndex": 32,
               "Title": "UsersInfoReadDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoReadDto.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoReadDto.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\DTOs\\UsersInfoReadDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoReadDto.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoReadDto.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\DTOs\\UsersInfoReadDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -623,9 +617,9 @@
               "$type": "Document",
               "DocumentIndex": 33,
               "Title": "UsersInfoCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoCreateDto.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoCreateDto.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\DTOs\\UsersInfoCreateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoCreateDto.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoCreateDto.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\DTOs\\UsersInfoCreateDto.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAcwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -635,9 +629,9 @@
               "$type": "Document",
               "DocumentIndex": 34,
               "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Controllers\\WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Controllers\\WeatherForecastController.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -647,9 +641,9 @@
               "$type": "Document",
               "DocumentIndex": 35,
               "Title": "UsersInfoesController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
               "RelativeDocumentMoniker": "UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
               "RelativeToolTip": "UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAkwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -660,9 +654,7 @@
               "DocumentIndex": 36,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs",
               "ToolTip": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs",
               "ViewState": "AgIAALQAAAAAAAAAAAAAAMkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-05T11:51:22.11Z"
@@ -675,15 +667,15 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:62:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:62:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         },
@@ -694,6 +686,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:60:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             }
           ]
         },
