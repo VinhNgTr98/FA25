@@ -20,7 +20,7 @@ namespace Users_API.Services
             UserID = u.UserID,
             Email = u.Email,
             FullName = u.FullName,
-            Password = null, // KHÔNG trả về password hash về client
+            Password = u.PasswordHash, 
             IsHotelOwner = u.IsHotelOwner,
             IsTourAgency = u.IsTourAgency,
             IsVehicleAgency = u.IsVehicleAgency,
@@ -29,7 +29,7 @@ namespace Users_API.Services
             IsActive = u.IsActive,
             CountWarning = u.CountWarning,
             CreatedAt = u.CreatedAt,
-            otp_code = u.otp_code, // Chỉ trả về khi cần debug, production nên null
+            otp_code = u.otp_code, 
             otp_expires = u.otp_expires,
             is_verified = u.is_verified
         };
@@ -62,7 +62,8 @@ namespace Users_API.Services
                 Email = dto.Email,
                 FullName = dto.FullName,
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
-
+                otp_code = dto.otp_code,
+                otp_expires = dto.otp_expires,
                 IsHotelOwner = dto.IsHotelOwner,
                 IsTourAgency = dto.IsTourAgency,
                 IsVehicleAgency = dto.IsVehicleAgency,
@@ -146,7 +147,6 @@ namespace Users_API.Services
             var u = await _repo.GetByIdAsync(userId, ct);
             if (u == null) return false;
 
-            // Kiểm tra mã/expiry
             if (string.IsNullOrWhiteSpace(u.otp_code) ||
                 !string.Equals(u.otp_code, otp_code, StringComparison.Ordinal) ||
                 u.otp_expires is null || u.otp_expires < DateTime.UtcNow)

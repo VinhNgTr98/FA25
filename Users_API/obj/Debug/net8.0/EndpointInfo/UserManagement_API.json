@@ -4135,6 +4135,16 @@
           },
           "isModerator": {
             "type": "boolean"
+          },
+          "otp_code": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "otp_expires": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -4289,6 +4299,16 @@
             "maxLength": 255,
             "minLength": 1,
             "type": "string"
+          },
+          "otp_code": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "otp_expires": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           },
           "isHotelOwner": {
             "type": "boolean"

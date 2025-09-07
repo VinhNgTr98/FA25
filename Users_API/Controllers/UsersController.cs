@@ -9,7 +9,7 @@ namespace Users_API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [AllowAnonymous]
+
     public class UsersController : ControllerBase
     {
         private readonly IUserService _svc;
@@ -19,6 +19,7 @@ namespace Users_API.Controllers
         private int? CurrentUserId =>
             int.TryParse(User.FindFirstValue(ClaimTypes.NameIdentifier), out var id) ? id : null;
 
+
         private string? CurrentUserEmail => User.FindFirstValue(ClaimTypes.Email);
         private bool IsAdmin => User.IsInRole("Admin");
 
@@ -26,12 +27,13 @@ namespace Users_API.Controllers
 
         /// <summary>Danh sách user – CHỈ Admin</summary>
         [HttpGet]
+        //[Authorize(Roles = "Admin")]
         public async Task<ActionResult<IEnumerable<UserReadDto>>> GetAll(CancellationToken ct)
             => Ok(await _svc.GetAllAsync(ct));
 
-        /// <summary>Admin tạo user nội bộ (KHÔNG tạo UsersInfo)</summary>
+        // <summary>Admin tạo user nội bộ (KHÔNG tạo UsersInfo)</summary>
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        // [Authorize(Roles = "Admin")]
         public async Task<ActionResult<UserReadDto>> Create([FromBody] UserCreateDto dto, CancellationToken ct)
         {
             var created = await _svc.CreateWithInfoAsync(new UserWithInfoCreateDto
@@ -46,11 +48,13 @@ namespace Users_API.Controllers
                 IsModerator = dto.IsModerator
             }, ct);
 
+
             return CreatedAtAction(nameof(GetById), new { id = created.UserID }, created);
         }
 
         /// <summary>Admin cập nhật bất kỳ user nào</summary>
         [HttpPut("{id:int}")]
+        // [Authorize(Roles = "Admin")]
         public async Task<IActionResult> AdminUpdate(int id, [FromBody] UserUpdateDto dto, CancellationToken ct)
         {
             var ok = await _svc.UpdateAsync(id, dto, ct);
@@ -59,6 +63,7 @@ namespace Users_API.Controllers
 
         /// <summary>Admin xoá user</summary>
         [HttpDelete("{id:int}")]
+        // [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id, CancellationToken ct)
         {
             var ok = await _svc.DeleteAsync(id, ct);
@@ -69,6 +74,7 @@ namespace Users_API.Controllers
 
         /// <summary>Lấy chi tiết user – Admin hoặc chính chủ</summary>
         [HttpGet("{id:int}")]
+        // [Authorize]
         public async Task<ActionResult<UserReadDto>> GetById(int id, CancellationToken ct)
         {
             if (!IsAdmin && CurrentUserId != id) return Forbid();
@@ -77,6 +83,7 @@ namespace Users_API.Controllers
         }
 
         /// <summary>Lấy chi tiết theo username – Admin, hoặc chính chủ (username khớp)</summary>
+        // [Authorize]
         [HttpGet("email/{email}")]
         public async Task<ActionResult<UserReadDto>> GetByEmail(string email, CancellationToken ct)
         {
@@ -89,6 +96,7 @@ namespace Users_API.Controllers
 
         /// <summary>Người dùng xem thông tin của chính mình</summary>
         [HttpGet("me")]
+        // [Authorize]
         public async Task<ActionResult<UserReadDto>> GetMe(CancellationToken ct)
         {
             if (CurrentUserId is null) return Unauthorized();
@@ -98,6 +106,7 @@ namespace Users_API.Controllers
 
         /// <summary>Người dùng tự cập nhật profile của mình</summary>
         [HttpPut("me")]
+        // [Authorize]
         public async Task<IActionResult> UpdateMe([FromBody] UserUpdateDto dto, CancellationToken ct)
         {
             if (CurrentUserId is null) return Unauthorized();
@@ -107,7 +116,7 @@ namespace Users_API.Controllers
 
         /// <summary>Trả về roles hiện có trong JWT để FE hiển thị/disable UI.</summary>
         [HttpGet("me/roles")]
-        [Authorize]
+        //[Authorize]
         public ActionResult<object> GetMyRoles()
         {
             var roles = User.Claims
@@ -127,21 +136,15 @@ namespace Users_API.Controllers
         [AllowAnonymous]
         public async Task<ActionResult<UserReadDto>> PublicRegisterWithInfo([FromBody] UserWithInfoCreateDto dto, CancellationToken ct)
         {
-            try
-            {
-                var created = await _svc.CreateWithInfoAsync(dto, ct);
-                var withOtp = await _svc.GenerateOtpAsync(created.UserID, ct);
-                return CreatedAtAction(nameof(GetById), new { id = withOtp.UserID }, withOtp);
-            }
-            catch (InvalidOperationException ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
+            var created = await _svc.CreateWithInfoAsync(dto, ct);
+            var withOtp = await _svc.GenerateOtpAsync(created.UserID, ct);
+            return CreatedAtAction(nameof(GetById), new { id = withOtp.UserID }, withOtp);
         }
 
-        /// <summary>Xin OTP cho user chưa active (ví dụ sau khi đăng ký) - PUBLIC ACCESS</summary>
+        /// <summary>Xin OTP cho user chưa active (ví dụ sau khi đăng ký)</summary>
         [HttpPost("{id:int}/otp")]
-        [AllowAnonymous] // Đảm bảo public access
+        // [Authorize]
+        [AllowAnonymous]
         public async Task<ActionResult<UserReadDto>> GenerateOtp(int id, CancellationToken ct)
         {
             var updated = await _svc.GenerateOtpAsync(id, ct);
@@ -156,6 +159,7 @@ namespace Users_API.Controllers
             var ok = await _svc.VerifyOtpAsync(id, code, ct);
             return ok ? Ok(new { message = "User verified" })
                       : BadRequest(new { message = "OTP invalid or expired" });
+
         }
     }
 }
