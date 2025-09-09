@@ -5,7 +5,6 @@ using OrderManagement_API.Repositories;
 
 namespace OrderManagement_API.Services
 {
-    
     public class OrderService : IOrderService
     {
         private readonly IOrderRepository _repo;
@@ -17,38 +16,36 @@ namespace OrderManagement_API.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<OrderReadDto>> GetAllAsync()
+        public async Task<IEnumerable<OrderReadDto>> GetAllAsync(CancellationToken ct = default)
         {
-            var orders = await _repo.GetAllAsync();
+            var orders = await _repo.GetAllAsync(ct);
             return _mapper.Map<IEnumerable<OrderReadDto>>(orders);
         }
 
-        public async Task<OrderReadDto?> GetByIdAsync(int id)
+        public async Task<OrderReadDto?> GetByIdAsync(int id, CancellationToken ct = default)
         {
-            var order = await _repo.GetByIdAsync(id);
+            var order = await _repo.GetByIdAsync(id, ct);
             return order == null ? null : _mapper.Map<OrderReadDto>(order);
         }
 
-        public async Task<OrderReadDto> AddAsync(OrderCreateDto dto)
+        public async Task<OrderReadDto> CreateAsync(OrderCreateDto dto, CancellationToken ct = default)
         {
             var order = _mapper.Map<Order>(dto);
-            var created = await _repo.AddAsync(order);
+            order.OrderDate = DateTime.UtcNow;
+            var created = await _repo.AddAsync(order, ct);
             return _mapper.Map<OrderReadDto>(created);
         }
 
-        public async Task<OrderReadDto?> UpdateAsync(int id, OrderUpdateDto dto)
+        public async Task<bool> UpdateAsync(int id, OrderUpdateDto dto, CancellationToken ct = default)
         {
-            var existing = await _repo.GetByIdAsync(id);
-            if (existing == null) return null;
+            var existing = await _repo.GetByIdAsync(id, ct);
+            if (existing == null) return false;
 
             _mapper.Map(dto, existing);
-            var updated = await _repo.UpdateAsync(existing);
-            return updated == null ? null : _mapper.Map<OrderReadDto>(updated);
+            return await _repo.UpdateAsync(existing, ct);
         }
 
-        public async Task<bool> DeleteAsync(int id)
-        {
-            return await _repo.DeleteAsync(id);
-        }
+        public Task<bool> DeleteAsync(int id, CancellationToken ct = default)
+            => _repo.DeleteAsync(id, ct);
     }
 }

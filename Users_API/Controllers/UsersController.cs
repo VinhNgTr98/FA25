@@ -15,7 +15,7 @@ namespace Users_API.Controllers
         private readonly IUserService _svc;
         public UsersController(IUserService svc) => _svc = svc;
 
-        // ===== Helpers =====
+        // ===== Helpers =====z
         private int? CurrentUserId =>
             int.TryParse(User.FindFirstValue(ClaimTypes.NameIdentifier), out var id) ? id : null;
 

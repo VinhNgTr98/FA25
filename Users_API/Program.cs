@@ -62,7 +62,7 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
-
+builder.Services.AddAutoMapper(typeof(UserManagement_API.Profiles.UserProfile).Assembly);
 // ===== OData + Controllers =====
 var odataBuilder = new ODataConventionModelBuilder();
 odataBuilder.EntitySet<UserReadDto>("Users");
