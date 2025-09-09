@@ -5,3 +5,11 @@ obj/
 *.suo
 *.vscode/
 *.vsidx
+# Visual Studio / .NET
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
