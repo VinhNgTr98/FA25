@@ -1,15 +1,35 @@
-bin/
-obj/
+# ---------- Visual Studio ----------
 .vs/
-*.user
 *.suo
-*.vscode/
-*.vsidx
-# Visual Studio / .NET
-.vs/
-bin/
-obj/
 *.user
-*.suo
 *.userosscache
 *.sln.docstates
+
+# ---------- Build outputs ----------
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+
+# ---------- NuGet ----------
+*.nupkg
+*.snupkg
+*.nuspec
+*.nuget.props
+*.nuget.targets
+project.lock.json
+artifacts/
+
+# ---------- Rider/Resharper (nếu dùng) ----------
+.idea/
+_ReSharper*/
+*.DotSettings.user
+
+# ---------- Misc ----------
+*.cache
+*.tmp
+*.DS_Store
+Thumbs.db
+
+# ---------- ASP.NET / IIS ----------
+App_Data/

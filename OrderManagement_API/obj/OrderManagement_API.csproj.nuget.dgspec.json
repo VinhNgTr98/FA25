@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\OrderManagement_API\\OrderManagement_API.csproj": {}
+    "C:\\Users\\ADMIN\\Desktop\\Code\\3\\FA25.3\\FA25\\OrderManagement_API\\OrderManagement_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\CartManagement_Api.csproj": {
+    "C:\\Users\\ADMIN\\Desktop\\Code\\3\\FA25.3\\FA25\\CartManagement_Api\\CartManagement_Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\CartManagement_Api.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\Code\\3\\FA25.3\\FA25\\CartManagement_Api\\CartManagement_Api.csproj",
         "projectName": "CartManagement_Api",
-        "projectPath": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\CartManagement_Api.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\Desktop\\Code\\3\\FA25.3\\FA25\\CartManagement_Api\\CartManagement_Api.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Desktop\\Code\\3\\FA25.3\\FA25\\CartManagement_Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -140,14 +140,14 @@
         }
       }
     },
-    "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\OrderManagement_API\\OrderManagement_API.csproj": {
+    "C:\\Users\\ADMIN\\Desktop\\Code\\3\\FA25.3\\FA25\\OrderManagement_API\\OrderManagement_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\Code\\3\\FA25.3\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
         "projectName": "OrderManagement_API",
-        "projectPath": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\Desktop\\Code\\3\\FA25.3\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\OrderManagement_API\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Desktop\\Code\\3\\FA25.3\\FA25\\OrderManagement_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -168,8 +168,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\CartManagement_Api.csproj": {
-                "projectPath": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\CartManagement_Api.csproj"
+              "C:\\Users\\ADMIN\\Desktop\\Code\\3\\FA25.3\\FA25\\CartManagement_Api\\CartManagement_Api.csproj": {
+                "projectPath": "C:\\Users\\ADMIN\\Desktop\\Code\\3\\FA25.3\\FA25\\CartManagement_Api\\CartManagement_Api.csproj"
               }
             }
           }
