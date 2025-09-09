@@ -1,6 +1,6 @@
 ﻿using CartManagement_Api.Data;
 using CartManagement_Api.Models;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace CartManagement_Api.Repositories
 {
@@ -22,11 +22,11 @@ namespace CartManagement_Api.Repositories
 
         public Task<CartItem?> FindItemAsync(int cartId, CartItemType type, Guid itemId, DateTime? start, DateTime? end, CancellationToken ct = default)
             => _db.CartItems.FirstOrDefaultAsync(i =>
-                    i.CartID == cartId &&
-                    i.ItemType == type &&
-                    i.ItemID == itemId &&
-                    i.StartDate == start &&
-                    i.EndDate == end, ct);
+                i.CartID == cartId &&
+                i.ItemType == type &&
+                i.ItemID == itemId &&
+                i.StartDate == start &&
+                i.EndDate == end, ct);
 
         public Task<CartItem?> GetItemByIdAsync(int cartItemId, CancellationToken ct = default)
             => _db.CartItems.FirstOrDefaultAsync(i => i.CartItemID == cartItemId, ct);

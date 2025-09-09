@@ -4,10 +4,10 @@ namespace OrderManagement_API.Services
 {
     public interface IOrderService
     {
-        Task<IEnumerable<OrderReadDto>> GetAllAsync();
-        Task<OrderReadDto?> GetByIdAsync(int id);
-        Task<OrderReadDto> AddAsync(OrderCreateDto dto);
-        Task<OrderReadDto?> UpdateAsync(int id, OrderUpdateDto dto);
-        Task<bool> DeleteAsync(int id);
+        Task<IEnumerable<OrderReadDto>> GetAllAsync(CancellationToken ct = default);
+        Task<OrderReadDto?> GetByIdAsync(int id, CancellationToken ct = default);
+        Task<OrderReadDto> CreateAsync(OrderCreateDto dto, CancellationToken ct = default);
+        Task<bool> UpdateAsync(int id, OrderUpdateDto dto, CancellationToken ct = default);
+        Task<bool> DeleteAsync(int id, CancellationToken ct = default);
     }
 }
