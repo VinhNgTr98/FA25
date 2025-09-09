@@ -1,130 +1,70 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\",
+  "WorkspaceRootPath": "D:\\FPT\\FA25\\Code\\FA25\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roleupdatemanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|solutionrelative:roleupdatemanagement_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roleupdatemanagement_api\\data\\roleupdateformcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|solutionrelative:roleupdatemanagement_api\\data\\roleupdateformcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roleupdatemanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|solutionrelative:roleupdatemanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Desktop\\Code\\1\\New folder\\FA25\\Users_API\\Controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B335264-C3AE-4FB2-861E-95F59490813F}|ReportManagement_API\\ReportManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\reportmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B335264-C3AE-4FB2-861E-95F59490813F}|ReportManagement_API\\ReportManagement_API.csproj|solutionrelative:reportmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roleupdatemanagement_api\\controllers\\roleupdateformcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|solutionrelative:roleupdatemanagement_api\\controllers\\roleupdateformcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\services\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roleupdatemanagement_api\\dtos\\roleupdateformreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|solutionrelative:roleupdatemanagement_api\\dtos\\roleupdateformreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\dtos\\userwithinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\userwithinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roleupdatemanagement_api\\services\\roleupdateformservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|solutionrelative:roleupdatemanagement_api\\services\\roleupdateformservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roleupdatemanagement_api\\services\\interfaces\\iroleupdateformservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|solutionrelative:roleupdatemanagement_api\\services\\interfaces\\iroleupdateformservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\dtos\\logindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\logindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roleupdatemanagement_api\\repositories\\roleupdateformrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|solutionrelative:roleupdatemanagement_api\\repositories\\roleupdateformrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\users_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roleupdatemanagement_api\\repositories\\interfaces\\iroleupdateformrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|solutionrelative:roleupdatemanagement_api\\repositories\\interfaces\\iroleupdateformrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Desktop\\Code\\1\\New folder\\Users_API\\Controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roleupdatemanagement_api\\profiles\\roleupdateformprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|solutionrelative:roleupdatemanagement_api\\profiles\\roleupdateformprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\cartmanagement_api\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roleupdatemanagement_api\\dtos\\roleupdateformupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|solutionrelative:roleupdatemanagement_api\\dtos\\roleupdateformupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\cartmanagement_api\\cartmanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\cartmanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roleupdatemanagement_api\\dtos\\roleupdateformcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|solutionrelative:roleupdatemanagement_api\\dtos\\roleupdateformcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{231B8680-4E27-419A-A44B-91E3F6B0CCB2}|ImageManagement_API\\ImageManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\imagemanagement_api\\imagemanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{231B8680-4E27-419A-A44B-91E3F6B0CCB2}|ImageManagement_API\\ImageManagement_API.csproj|solutionrelative:imagemanagement_api\\imagemanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roleupdatemanagement_api\\models\\roleupdateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|solutionrelative:roleupdatemanagement_api\\models\\roleupdateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\categories_api\\categorymanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|solutionrelative:categories_api\\categorymanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7B335264-C3AE-4FB2-861E-95F59490813F}|ReportManagement_API\\ReportManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\reportmanagement_api\\data\\reportcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B335264-C3AE-4FB2-861E-95F59490813F}|ReportManagement_API\\ReportManagement_API.csproj|solutionrelative:reportmanagement_api\\data\\reportcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\cartmanagement_api\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44809844-1386-4EF2-BE54-991F7A9EF7C2}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Desktop\\Code\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\data\\usersinfomanagement_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\data\\usersinfomanagement_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\services\\usersinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\services\\usersinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\services\\iusersinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\services\\iusersinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\repositories\\usersinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\repositories\\usersinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\repositories\\iusersinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\repositories\\iusersinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\profile\\usersinfoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\profile\\usersinfoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\models\\usersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\models\\usersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\dtos\\usersinfoupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\dtos\\usersinfoupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\dtos\\usersinforeaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\dtos\\usersinforeaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\dtos\\usersinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\dtos\\usersinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|c:\\users\\admin\\desktop\\code\\1\\fa25\\usersinfomanagement_api\\controllers\\usersinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98804D04-B7D8-4F68-8383-012B5408E81F}|UsersInfoManagement_API\\UsersInfoManagement_API.csproj|solutionrelative:usersinfomanagement_api\\controllers\\usersinfoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|d:\\fpt\\fa25\\code\\fa25\\roleupdatemanagement_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FC078F91-A44F-4F48-B917-26028FBBAB22}|RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj|solutionrelative:roleupdatemanagement_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -134,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -165,393 +105,197 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:67:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Users_API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Users_API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAAwJgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T14:55:52.437Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "JwtTokenService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\JwtTokenService.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\JwtTokenService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\JwtTokenService.cs",
-              "RelativeToolTip": "Users_API\\Services\\JwtTokenService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T14:54:20.605Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IJwtTokenService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\IJwtTokenService.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\IJwtTokenService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\IJwtTokenService.cs",
-              "RelativeToolTip": "Users_API\\Services\\IJwtTokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T14:54:18.155Z"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Services\\UserService.cs",
-              "RelativeToolTip": "Users_API\\Services\\UserService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T14:54:11.612Z",
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Dockerfile",
+              "RelativeDocumentMoniker": "RoleUpdateManagement_API\\Dockerfile",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Dockerfile",
+              "RelativeToolTip": "RoleUpdateManagement_API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-09T09:56:55.732Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Users_API\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Users_API\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ReportManagement_API\\Program.cs",
+              "RelativeDocumentMoniker": "ReportManagement_API\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\ReportManagement_API\\Program.cs",
+              "RelativeToolTip": "ReportManagement_API\\Program.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAgwFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T14:54:12.629Z"
+              "WhenOpened": "2025-09-09T09:50:41.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\New folder\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "..\\New folder\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\New folder\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "..\\New folder\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAIYAAAAAAAAAAAAAwKYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Program.cs",
+              "RelativeDocumentMoniker": "RoleUpdateManagement_API\\Program.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Program.cs",
+              "RelativeToolTip": "RoleUpdateManagement_API\\Program.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwGAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T14:58:10.063Z"
+              "WhenOpened": "2025-09-09T09:50:19.627Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "UserWithInfoCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserWithInfoCreateDto.cs",
-              "RelativeDocumentMoniker": "Users_API\\DTOs\\UserWithInfoCreateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserWithInfoCreateDto.cs",
-              "RelativeToolTip": "Users_API\\DTOs\\UserWithInfoCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Title": "RoleUpdateFormService.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Services\\RoleUpdateFormService.cs",
+              "RelativeDocumentMoniker": "RoleUpdateManagement_API\\Services\\RoleUpdateFormService.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Services\\RoleUpdateFormService.cs",
+              "RelativeToolTip": "RoleUpdateManagement_API\\Services\\RoleUpdateFormService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T14:54:05.876Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginDtos.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\LoginDtos.cs",
-              "RelativeDocumentMoniker": "Users_API\\DTOs\\LoginDtos.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\LoginDtos.cs",
-              "RelativeToolTip": "Users_API\\DTOs\\LoginDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T14:53:56.556Z"
+              "WhenOpened": "2025-09-09T09:44:56.725Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "UserCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserCreateDto.cs",
-              "RelativeDocumentMoniker": "Users_API\\DTOs\\UserCreateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\DTOs\\UserCreateDto.cs",
-              "RelativeToolTip": "Users_API\\DTOs\\UserCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Title": "IRoleUpdateFormService.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Services\\Interfaces\\IRoleUpdateFormService.cs",
+              "RelativeDocumentMoniker": "RoleUpdateManagement_API\\Services\\Interfaces\\IRoleUpdateFormService.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Services\\Interfaces\\IRoleUpdateFormService.cs",
+              "RelativeToolTip": "RoleUpdateManagement_API\\Services\\Interfaces\\IRoleUpdateFormService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T14:53:40.765Z"
+              "WhenOpened": "2025-09-09T09:44:50.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RoleUpdateFormRepository.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Repositories\\RoleUpdateFormRepository.cs",
+              "RelativeDocumentMoniker": "RoleUpdateManagement_API\\Repositories\\RoleUpdateFormRepository.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Repositories\\RoleUpdateFormRepository.cs",
+              "RelativeToolTip": "RoleUpdateManagement_API\\Repositories\\RoleUpdateFormRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBEAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T09:43:24.748Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Users_API\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Users_API\\Models\\User.cs",
-              "RelativeToolTip": "Users_API\\Models\\User.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwCMAAAAYAAAAAAAAAA==",
+              "Title": "IRoleUpdateFormRepository.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Repositories\\Interfaces\\IRoleUpdateFormRepository.cs",
+              "RelativeDocumentMoniker": "RoleUpdateManagement_API\\Repositories\\Interfaces\\IRoleUpdateFormRepository.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Repositories\\Interfaces\\IRoleUpdateFormRepository.cs",
+              "RelativeToolTip": "RoleUpdateManagement_API\\Repositories\\Interfaces\\IRoleUpdateFormRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T14:53:36.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\New folder\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "..\\New folder\\Users_API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\New folder\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "..\\New folder\\Users_API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAAJ4AAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T14:50:05.797Z"
+              "WhenOpened": "2025-09-09T09:43:08.794Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "CartManagement_Api\\Models\\Cart.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\Models\\Cart.cs",
-              "RelativeToolTip": "CartManagement_Api\\Models\\Cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "RoleUpdateFormUpdateDTO.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\DTOs\\RoleUpdateFormUpdateDTO.cs",
+              "RelativeDocumentMoniker": "RoleUpdateManagement_API\\DTOs\\RoleUpdateFormUpdateDTO.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\DTOs\\RoleUpdateFormUpdateDTO.cs",
+              "RelativeToolTip": "RoleUpdateManagement_API\\DTOs\\RoleUpdateFormUpdateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T07:07:30.257Z"
+              "WhenOpened": "2025-09-09T09:42:01.956Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "CartManagement_Api.csproj",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\CartManagement_Api.csproj",
-              "RelativeDocumentMoniker": "CartManagement_Api\\CartManagement_Api.csproj",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\CartManagement_Api.csproj",
-              "RelativeToolTip": "CartManagement_Api\\CartManagement_Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-06T07:08:23.661Z"
+              "Title": "RoleUpdateFormCreateDTO.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\DTOs\\RoleUpdateFormCreateDTO.cs",
+              "RelativeDocumentMoniker": "RoleUpdateManagement_API\\DTOs\\RoleUpdateFormCreateDTO.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\DTOs\\RoleUpdateFormCreateDTO.cs",
+              "RelativeToolTip": "RoleUpdateManagement_API\\DTOs\\RoleUpdateFormCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T09:41:37.152Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ImageManagement_API.csproj",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\ImageManagement_API\\ImageManagement_API.csproj",
-              "RelativeDocumentMoniker": "ImageManagement_API\\ImageManagement_API.csproj",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\ImageManagement_API\\ImageManagement_API.csproj",
-              "RelativeToolTip": "ImageManagement_API\\ImageManagement_API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-05T14:00:05.658Z"
+              "DocumentIndex": 5,
+              "Title": "RoleUpdateFormReadDTO.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\DTOs\\RoleUpdateFormReadDTO.cs",
+              "RelativeDocumentMoniker": "RoleUpdateManagement_API\\DTOs\\RoleUpdateFormReadDTO.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\DTOs\\RoleUpdateFormReadDTO.cs",
+              "RelativeToolTip": "RoleUpdateManagement_API\\DTOs\\RoleUpdateFormReadDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T09:41:31.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoleUpdateFormController.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Controllers\\RoleUpdateFormController.cs",
+              "RelativeDocumentMoniker": "RoleUpdateManagement_API\\Controllers\\RoleUpdateFormController.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Controllers\\RoleUpdateFormController.cs",
+              "RelativeToolTip": "RoleUpdateManagement_API\\Controllers\\RoleUpdateFormController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T09:41:02.856Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "CategoryManagement_API.csproj",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Categories_API\\CategoryManagement_API.csproj",
-              "RelativeDocumentMoniker": "Categories_API\\CategoryManagement_API.csproj",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\Categories_API\\CategoryManagement_API.csproj",
-              "RelativeToolTip": "Categories_API\\CategoryManagement_API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-06T07:08:17.887Z"
+              "Title": "ReportContext.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\ReportManagement_API\\Data\\ReportContext.cs",
+              "RelativeDocumentMoniker": "ReportManagement_API\\Data\\ReportContext.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\ReportManagement_API\\Data\\ReportContext.cs",
+              "RelativeToolTip": "ReportManagement_API\\Data\\ReportContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T09:38:47.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoleUpdateFormContext.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Data\\RoleUpdateFormContext.cs",
+              "RelativeDocumentMoniker": "RoleUpdateManagement_API\\Data\\RoleUpdateFormContext.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Data\\RoleUpdateFormContext.cs",
+              "RelativeToolTip": "RoleUpdateManagement_API\\Data\\RoleUpdateFormContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T09:38:24.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RoleUpdateFormProfile.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Profiles\\RoleUpdateFormProfile.cs",
+              "RelativeDocumentMoniker": "RoleUpdateManagement_API\\Profiles\\RoleUpdateFormProfile.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Profiles\\RoleUpdateFormProfile.cs",
+              "RelativeToolTip": "RoleUpdateManagement_API\\Profiles\\RoleUpdateFormProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T09:37:53.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RoleUpdateForm.cs",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Models\\RoleUpdateForm.cs",
+              "RelativeDocumentMoniker": "RoleUpdateManagement_API\\Models\\RoleUpdateForm.cs",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\Models\\RoleUpdateForm.cs",
+              "RelativeToolTip": "RoleUpdateManagement_API\\Models\\RoleUpdateForm.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T09:37:24.88Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "CartsController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\Controllers\\CartsController.cs",
-              "RelativeDocumentMoniker": "CartManagement_Api\\Controllers\\CartsController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\CartManagement_Api\\Controllers\\CartsController.cs",
-              "RelativeToolTip": "CartManagement_Api\\Controllers\\CartsController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T07:08:13.071Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "..\\..\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "..\\..\\2\\FA25\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T15:54:55.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Program.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Program.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Program.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:54:04.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UsersInfoManagement_APIContext.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Data\\UsersInfoManagement_APIContext.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Data\\UsersInfoManagement_APIContext.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Data\\UsersInfoManagement_APIContext.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Data\\UsersInfoManagement_APIContext.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA1wCUAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:54:56.272Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UsersInfoService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Services\\UsersInfoService.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Services\\UsersInfoService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Services\\UsersInfoService.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Services\\UsersInfoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:51:17.057Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IUsersInfoService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Services\\IUsersInfoService.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Services\\IUsersInfoService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Services\\IUsersInfoService.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Services\\IUsersInfoService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAADwvwsAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:51:08.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UsersInfoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Repositories\\UsersInfoRepository.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Repositories\\UsersInfoRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Repositories\\UsersInfoRepository.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Repositories\\UsersInfoRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBEAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:49:44.664Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IUsersInfoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Repositories\\IUsersInfoRepository.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Repositories\\IUsersInfoRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Repositories\\IUsersInfoRepository.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Repositories\\IUsersInfoRepository.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAwAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:49:32.441Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UsersInfoProfile.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Profile\\UsersInfoProfile.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Profile\\UsersInfoProfile.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Profile\\UsersInfoProfile.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Profile\\UsersInfoProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:52:13.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "UsersInfo.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Models\\UsersInfo.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Models\\UsersInfo.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Models\\UsersInfo.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Models\\UsersInfo.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAcwBsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:18:36.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Models\\User.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Models\\User.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Models\\User.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAswAgAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:18:30.925Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UsersInfoUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoUpdateDto.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\DTOs\\UsersInfoUpdateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoUpdateDto.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\DTOs\\UsersInfoUpdateDto.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:52:45.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "UsersInfoReadDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoReadDto.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\DTOs\\UsersInfoReadDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoReadDto.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\DTOs\\UsersInfoReadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:52:39.375Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UsersInfoCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoCreateDto.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\DTOs\\UsersInfoCreateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\DTOs\\UsersInfoCreateDto.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\DTOs\\UsersInfoCreateDto.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAcwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:52:34.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:53:51.354Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "UsersInfoesController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
-              "RelativeDocumentMoniker": "UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\1\\FA25\\UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
-              "RelativeToolTip": "UsersInfoManagement_API\\Controllers\\UsersInfoesController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAkwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T12:52:59.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa11684.21849\\UsersController.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAAAAMkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T11:51:22.11Z"
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\appsettings.json",
+              "RelativeDocumentMoniker": "RoleUpdateManagement_API\\appsettings.json",
+              "ToolTip": "D:\\FPT\\FA25\\Code\\FA25\\RoleUpdateManagement_API\\appsettings.json",
+              "RelativeToolTip": "RoleUpdateManagement_API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-09T09:36:52.426Z"
             }
           ]
         },
@@ -561,15 +305,15 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:62:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:62:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         },
@@ -580,6 +324,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:60:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             }
           ]
         },
