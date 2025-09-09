@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WishListManagement_API.props" />
+</Project>

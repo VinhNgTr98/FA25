@@ -4,14 +4,12 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OData.ModelBuilder;
 using Microsoft.OpenApi.Models;
 using System.Text;
-
-using User_API.Models;
 using User_API.Repositories;
 using Users_API.Data;
-using Users_API.Services;
 using User_API.DTOs;
 using Microsoft.AspNetCore.OData;
 using UserManagement_API.Services;
+using Microsoft.Extensions.Caching.Memory;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +24,11 @@ builder.Services.AddCors(options =>
     });
 });
 
+builder.Services.AddMemoryCache();
+builder.Services.AddSingleton<IOtpLimiter, MemoryOtpLimiter>();
+//Email
+builder.Services.Configure<SmtpOptions>(builder.Configuration.GetSection("Smtp"));
+builder.Services.AddSingleton<IEmailSender, SmtpEmailSender>();
 // DbContext (MySQL)
 builder.Services.AddDbContext<Users_APIContext>(options =>
     options.UseMySql(

@@ -1873,10 +1873,10 @@ C:\Users\ADMIN\Desktop\Code\1\FA25\Users_API\obj\Debug\net8.0\staticwebassets\ms
 C:\Users\ADMIN\Desktop\Code\1\FA25\Users_API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.UserManagement_API.props
 C:\Users\ADMIN\Desktop\Code\1\FA25\Users_API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.UserManagement_API.props
 C:\Users\ADMIN\Desktop\Code\1\FA25\Users_API\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\ADMIN\Desktop\Code\1\FA25\Users_API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\ADMIN\Desktop\Code\1\FA25\Users_API\obj\Debug\net8.0\UserMana.A0F38C6D.Up2Date
 C:\Users\ADMIN\Desktop\Code\1\FA25\Users_API\obj\Debug\net8.0\UserManagement_API.dll
 C:\Users\ADMIN\Desktop\Code\1\FA25\Users_API\obj\Debug\net8.0\refint\UserManagement_API.dll
 C:\Users\ADMIN\Desktop\Code\1\FA25\Users_API\obj\Debug\net8.0\UserManagement_API.pdb
 C:\Users\ADMIN\Desktop\Code\1\FA25\Users_API\obj\Debug\net8.0\UserManagement_API.genruntimeconfig.cache
 C:\Users\ADMIN\Desktop\Code\1\FA25\Users_API\obj\Debug\net8.0\ref\UserManagement_API.dll
-C:\Users\ADMIN\Desktop\Code\1\FA25\Users_API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

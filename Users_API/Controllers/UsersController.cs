@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-using Users_API.Services;
 using User_API.DTOs;
 using UserManagement_API.DTOs;
+using UserManagement_API.Services;
 
 namespace Users_API.Controllers
 {
@@ -36,21 +36,36 @@ namespace Users_API.Controllers
         // [Authorize(Roles = "Admin")]
         public async Task<ActionResult<UserReadDto>> Create([FromBody] UserCreateDto dto, CancellationToken ct)
         {
-            var created = await _svc.CreateWithInfoAsync(new UserWithInfoCreateDto
+            try
             {
-                Email = dto.Email,
-                FullName = dto.FullName,
-                Password = dto.Password,
-                IsHotelOwner = dto.IsHotelOwner,
-                IsTourAgency = dto.IsTourAgency,
-                IsVehicleAgency = dto.IsVehicleAgency,
-                IsWebAdmin = dto.IsWebAdmin,
-                IsModerator = dto.IsModerator
-            }, ct);
+                var (user, isResend) = await _svc.CreateWithInfoAsync(new UserWithInfoCreateDto
+                {
+                    Email = dto.Email,
+                    FullName = dto.FullName,
+                    Password = dto.Password,
+                    IsHotelOwner = dto.IsHotelOwner,
+                    IsTourAgency = dto.IsTourAgency,
+                    IsVehicleAgency = dto.IsVehicleAgency,
+                    IsWebAdmin = dto.IsWebAdmin,
+                    IsModerator = dto.IsModerator
+                }, ct);
 
+                if (isResend)
+                    return Accepted(new { message = "OTP sent to your email" });
 
-            return CreatedAtAction(nameof(GetById), new { id = created.UserID }, created);
+                return CreatedAtAction(nameof(GetById), new { id = user.UserID }, user);
+            }
+            catch (InvalidOperationException ex) when (ex.Message == "EMAIL_EXISTS")
+            {
+                return Conflict(new { message = "Email đã được đăng ký và đã xác thực. Vui lòng dùng email khác hoặc đăng nhập." });
+            }
+            catch (InvalidOperationException ex) when (ex.Message == "OTP_RATE_LIMIT")
+            {
+                return StatusCode(StatusCodes.Status429TooManyRequests,
+                    new { message = "Bạn vừa yêu cầu OTP quá nhanh hoặc vượt quá giới hạn trong ngày. Vui lòng thử lại sau." });
+            }
         }
+
 
         /// <summary>Admin cập nhật bất kỳ user nào</summary>
         [HttpPut("{id:int}")]
@@ -136,19 +151,45 @@ namespace Users_API.Controllers
         [AllowAnonymous]
         public async Task<ActionResult<UserReadDto>> PublicRegisterWithInfo([FromBody] UserWithInfoCreateDto dto, CancellationToken ct)
         {
-            var created = await _svc.CreateWithInfoAsync(dto, ct);
-            var withOtp = await _svc.GenerateOtpAsync(created.UserID, ct);
-            return CreatedAtAction(nameof(GetById), new { id = withOtp.UserID }, withOtp);
+            try
+            {
+                var (user, isResend) = await _svc.CreateWithInfoAsync(dto, ct);
+
+                if (isResend)
+                    return Accepted(new { message = "OTP sent to your email" });
+
+                return CreatedAtAction(nameof(GetById), new { id = user.UserID }, user);
+            }
+            catch (InvalidOperationException ex) when (ex.Message == "EMAIL_EXISTS")
+            {
+                return Conflict(new { message = "Email đã được đăng ký và đã xác thực. Vui lòng dùng email khác hoặc đăng nhập." });
+            }
+            catch (InvalidOperationException ex) when (ex.Message == "OTP_RATE_LIMIT")
+            {
+                return StatusCode(StatusCodes.Status429TooManyRequests,
+                    new { message = "Bạn vừa yêu cầu OTP quá nhanh hoặc vượt quá giới hạn trong ngày. Vui lòng thử lại sau." });
+            }
         }
+
 
         /// <summary>Xin OTP cho user chưa active (ví dụ sau khi đăng ký)</summary>
         [HttpPost("{id:int}/otp")]
-        // [Authorize]
         [AllowAnonymous]
-        public async Task<ActionResult<UserReadDto>> GenerateOtp(int id, CancellationToken ct)
+        public async Task<ActionResult> GenerateOtp(int id, CancellationToken ct)
         {
-            var updated = await _svc.GenerateOtpAsync(id, ct);
-            return updated == null ? NotFound() : Ok(updated);
+            try
+            {
+                var updated = await _svc.GenerateOtpAsync(id, ct);
+                if (updated == null) return NotFound();
+
+                // 202 Accepted cho action “send email”, không trả OTP
+                return Accepted(new { message = "OTP sent to your email" });
+            }
+            catch (InvalidOperationException ex) when (ex.Message.Contains("rate", StringComparison.OrdinalIgnoreCase))
+            {
+                return StatusCode(StatusCodes.Status429TooManyRequests,
+                    new { message = "Too many OTP requests. Please wait before trying again." });
+            }
         }
 
         /// <summary>Verify OTP (public – thường dùng ngay sau khi đăng ký)</summary>

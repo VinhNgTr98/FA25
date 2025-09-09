@@ -26,6 +26,7 @@ namespace WishListManagement_API.Services
             var added = await _repo.AddAsync(entity, ct);
             return _mapper.Map<WishlistDto>(added);
         }
+        
 
         public async Task<WishlistDto?> GetByIdAsync(int id, CancellationToken ct = default)
         {
@@ -54,5 +55,21 @@ namespace WishListManagement_API.Services
 
         public Task DeleteAsync(int id, CancellationToken ct = default)
             => _repo.DeleteAsync(id, ct);
+
+        public async Task<IReadOnlyList<WishlistDto>> GetAllAsync(WishlistTargetType? targetType = null, CancellationToken ct = default)
+        {
+            // Yêu cầu repo có GetAllAsync(); nếu repo bạn chưa có, hãy thêm method tương ứng.
+            var entities = await _repo.GetAllAsync(ct);       
+            if (targetType.HasValue)
+            {
+                entities = entities.Where(e =>
+                    (targetType == WishlistTargetType.Hotel && e.HotelId != null) ||
+                    (targetType == WishlistTargetType.Vehicle && e.VehiclesId != null) ||
+                    (targetType == WishlistTargetType.Tour && e.TourId != null) ||
+                    (targetType == WishlistTargetType.Service && e.ServiceId != null)
+                ).ToList();
+            }
+            return entities.Select(_mapper.Map<WishlistDto>).ToList();
+        }
     }
 }
