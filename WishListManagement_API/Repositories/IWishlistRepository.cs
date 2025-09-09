@@ -11,5 +11,6 @@ namespace WishListManagement_API.Repositories
         Task<bool> ExistsAsync(int userId, WishlistTargetType type, Guid targetId, CancellationToken ct = default);
         Task UpdateAsync(Wishlist item, CancellationToken ct = default);
         Task DeleteAsync(int id, CancellationToken ct = default);
+        Task<IReadOnlyList<Wishlist>> GetAllAsync(CancellationToken ct = default);
     }
 }

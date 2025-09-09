@@ -17,7 +17,10 @@ namespace WishListManagement_API.Repositories
             await _db.SaveChangesAsync(ct);
             return item;
         }
-
+        public async Task<IReadOnlyList<Wishlist>> GetAllAsync(CancellationToken ct = default) =>
+            await _db.Wishlist.AsNoTracking()
+                              .OrderByDescending(x => x.AddedAt)
+                              .ToListAsync(ct);
         public Task<Wishlist?> GetByIdAsync(int id, CancellationToken ct = default) =>
             _db.Wishlist.FirstOrDefaultAsync(x => x.WishlistId == id, ct);
 
@@ -60,5 +63,8 @@ namespace WishListManagement_API.Repositories
             _db.Wishlist.Remove(entity);
             await _db.SaveChangesAsync(ct);
         }
+
+        
+        
     }
 }

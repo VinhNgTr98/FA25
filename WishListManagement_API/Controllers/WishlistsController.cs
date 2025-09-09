@@ -26,6 +26,13 @@ namespace WishListManagement_API.Controllers
             return CreatedAtAction(nameof(GetById), new { id = result.WishlistId }, result);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetAll([FromQuery] WishlistTargetType? targetType, CancellationToken ct)
+        {
+            var list = await _service.GetAllAsync(targetType, ct);
+            return Ok(list);
+        }
+
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetById(int id, CancellationToken ct)
         {

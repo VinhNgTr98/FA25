@@ -1,13 +1,13 @@
 ﻿using User_API.DTOs;
 using UserManagement_API.DTOs;
 
-namespace Users_API.Services
+namespace UserManagement_API.Services
 {
     public interface IUserService
     {
         Task<IEnumerable<UserReadDto>> GetAllAsync(CancellationToken ct = default);
         Task<UserReadDto?> GetByIdAsync(int id, CancellationToken ct = default);
-        Task<UserReadDto> CreateWithInfoAsync(UserWithInfoCreateDto dto, CancellationToken ct = default);
+        Task<(UserReadDto User, bool IsResend)> CreateWithInfoAsync(UserWithInfoCreateDto dto, CancellationToken ct = default);
         Task<bool> UpdateAsync(int id, UserUpdateDto dto, CancellationToken ct = default);
         Task<bool> DeleteAsync(int id, CancellationToken ct = default);
 

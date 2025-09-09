@@ -41,6 +41,13 @@ namespace User_API.Repositories
             _ctx.User.Remove(user);
             await _ctx.SaveChangesAsync(ct);
         }
+        public async Task<User> CreateWithInfoAsync(User user, CancellationToken ct = default)
+        {
+            // Nếu bạn có UsersInfo gán trong user.UsersInfo thì EF sẽ insert cả 2 bản ghi trong 1 SaveChanges
+            _ctx.User.Add(user);
+            await _ctx.SaveChangesAsync(ct);
+            return user;
+        }
     }
 
 }

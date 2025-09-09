@@ -9,5 +9,6 @@ namespace WishListManagement_API.Services
         Task<IReadOnlyList<WishlistDto>> GetByUserAsync(int userId, CancellationToken ct = default);
         Task UpdateAsync(int id, UpdateWishlistDto dto, CancellationToken ct = default);
         Task DeleteAsync(int id, CancellationToken ct = default);
+        Task<IReadOnlyList<WishlistDto>> GetAllAsync(WishlistTargetType? targetType = null, CancellationToken ct = default);
     }
 }
