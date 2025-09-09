@@ -9,7 +9,6 @@ using Users_API.Data;
 using User_API.DTOs;
 using Microsoft.AspNetCore.OData;
 using UserManagement_API.Services;
-using Microsoft.Extensions.Caching.Memory;
 
 var builder = WebApplication.CreateBuilder(args);
 
