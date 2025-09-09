@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using CartManagement_Api.Data;
 using CartManagement_Api.Repositories;
 using CartManagement_Api.Services;
+using CartManagement_Api.Profiles;
 var builder = WebApplication.CreateBuilder(args);
 //builder.Services.AddDbContext<CartManagement_ApiContext>(options =>
 //    options.UseSqlServer(builder.Configuration.GetConnectionString("CartManagement_ApiContext") ?? throw new InvalidOperationException("Connection string 'CartManagement_ApiContext' not found.")));
@@ -17,6 +18,8 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader();
     });
 });
+// AutoMapper đăng ký với CartProfile
+builder.Services.AddAutoMapper(typeof(CartProfile));
 // DbContext (MySQL)
 builder.Services.AddDbContext<CartManagement_ApiContext>(options =>
     options.UseMySql(

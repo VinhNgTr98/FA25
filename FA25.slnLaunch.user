@@ -3,11 +3,15 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "Users_API\\UserManagement_API.csproj",
+        "Path": "OrderManagement_API\\OrderManagement_API.csproj",
         "Action": "Start"
       },
       {
-        "Path": "UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
+        "Path": "CartManagement_Api\\CartManagement_Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RoomManagement_API\\RoomManagement_API.csproj",
         "Action": "Start"
       }
     ]

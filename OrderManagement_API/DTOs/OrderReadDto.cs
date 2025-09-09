@@ -8,5 +8,8 @@
         public decimal TotalAmount { get; set; }
         public string Status { get; set; }
         public decimal? TaxAmount { get; set; }
+        public int? CouponId { get; set; }
+        public string? OrderNote { get; set; }
+        public ICollection<OrderItemReadDto> Items { get; set; }
     }
 }

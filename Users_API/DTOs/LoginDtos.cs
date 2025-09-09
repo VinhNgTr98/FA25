@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using User_API.DTOs;
 
 namespace UserManagement_API.DTOs
 {
@@ -16,5 +17,6 @@ namespace UserManagement_API.DTOs
         public string AccessToken { get; set; } = default!;
         public DateTime ExpiresAt { get; set; }
         public string? Message { get; internal set; }
+        public UserReadDto User { get; set; }
     }
 }

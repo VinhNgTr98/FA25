@@ -1,27 +1,17 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-
-namespace OrderManagement_API.Models
+﻿namespace OrderManagement_API.Models
 {
     public class Order
     {
-        [Key]
         public int OrderID { get; set; }
-
-        [Required]
         public int UserID { get; set; }
-
-        public DateTime OrderDate { get; set; } = DateTime.Now;
-
-        [Required]
-        [Column(TypeName = "decimal(10,2)")]
+        public DateTime OrderDate { get; set; } = DateTime.UtcNow;
         public decimal TotalAmount { get; set; }
-
-        [Required]
-        [StringLength(50)]
-        public string Status { get; set; } // Pending, Confirmed, Cancelled
-
-        [Column(TypeName = "decimal(10,2)")]
+        public string Status { get; set; } = "Pending";
         public decimal? TaxAmount { get; set; }
+        public int? CouponId { get; set; }
+        public string? OrderNote { get; set; }
+
+        // Navigation
+        public ICollection<OrderItem> Items { get; set; } = new List<OrderItem>();
     }
 }

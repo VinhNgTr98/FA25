@@ -3743,6 +3743,9 @@
             "type": "string",
             "nullable": true,
             "readOnly": true
+          },
+          "user": {
+            "$ref": "#/components/schemas/UserReadDto"
           }
         },
         "additionalProperties": false

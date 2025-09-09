@@ -1,59 +1,39 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using OrderManagement_API.Data;      // <-- namespace của OrderManagement_APIContext
-using OrderManagement_API.Models;    // <-- namespace chứa model Order
+﻿using Microsoft.EntityFrameworkCore;
+using OrderManagement_API.Data;
+using OrderManagement_API.Models;
 
 namespace OrderManagement_API.Repositories
 {
     public class OrderRepository : IOrderRepository
     {
         private readonly OrderManagement_APIContext _db;
+        public OrderRepository(OrderManagement_APIContext db) => _db = db;
 
-        public OrderRepository(OrderManagement_APIContext db)
+        public async Task<IEnumerable<Order>> GetAllAsync(CancellationToken ct = default)
+            => await _db.Orders.Include(o => o.Items).ToListAsync(ct);
+
+        public Task<Order?> GetByIdAsync(int id, CancellationToken ct = default)
+            => _db.Orders.Include(o => o.Items).FirstOrDefaultAsync(o => o.OrderID == id, ct);
+
+        public async Task<Order> AddAsync(Order order, CancellationToken ct = default)
         {
-            _db = db;
+            _db.Orders.Add(order);
+            await _db.SaveChangesAsync(ct);
+            return order;
         }
 
-        public async Task<IEnumerable<Order>> GetAllAsync()
+        public async Task<bool> UpdateAsync(Order order, CancellationToken ct = default)
         {
-            // EF Core async + không tracking để đọc nhanh
-            return await _db.Order.AsNoTracking().ToListAsync();
+            _db.Orders.Update(order);
+            return await _db.SaveChangesAsync(ct) > 0;
         }
 
-        public Task<Order?> GetByIdAsync(int id)
+        public async Task<bool> DeleteAsync(int id, CancellationToken ct = default)
         {
-            return _db.Order.AsNoTracking()
-                     .FirstOrDefaultAsync(o => o.OrderID == id);
-        }
-
-        public async Task<Order> AddAsync(Order entity)
-        {
-            _db.Order.Add(entity);
-            await _db.SaveChangesAsync();
-            return entity;
-        }
-
-        public async Task<Order?> UpdateAsync(Order entity)
-        {
-            // Lấy entity đang có trong DB
-            var current = await _db.Order.FirstOrDefaultAsync(o => o.OrderID == entity.OrderID);
-            if (current == null) return null;
-
-            // Gán giá trị mới (không đụng PK)
-            _db.Entry(current).CurrentValues.SetValues(entity);
-
-            await _db.SaveChangesAsync();
-            return current;
-        }
-
-        public async Task<bool> DeleteAsync(int id)
-        {
-            var current = await _db.Order.FirstOrDefaultAsync(o => o.OrderID == id);
-            if (current == null) return false;
-
-            _db.Order.Remove(current);
-            return (await _db.SaveChangesAsync()) > 0;
+            var order = await _db.Orders.FindAsync(new object?[] { id }, ct);
+            if (order == null) return false;
+            _db.Orders.Remove(order);
+            return await _db.SaveChangesAsync(ct) > 0;
         }
     }
 }
