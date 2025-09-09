@@ -1,57 +1,47 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// Controllers/OrdersController.cs
+using Microsoft.AspNetCore.Mvc;
 using OrderManagement_API.DTOs;
 using OrderManagement_API.Services;
 
 namespace OrderManagement_API.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class OrdersController : ControllerBase
     {
-        private readonly IOrderService _service;
-
-        public OrdersController(IOrderService service)
-        {
-            _service = service;
-        }
+        private readonly IOrderService _svc;
+        public OrdersController(IOrderService svc) => _svc = svc;
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<OrderReadDto>>> GetAll()
-        {
-            return Ok(await _service.GetAllAsync());
-        }
+        public async Task<ActionResult<IEnumerable<OrderReadDto>>> GetAll(CancellationToken ct)
+            => Ok(await _svc.GetAllAsync(ct));
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<OrderReadDto>> GetById(int id)
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<OrderReadDto>> GetById(int id, CancellationToken ct)
         {
-            var order = await _service.GetByIdAsync(id);
-            if (order == null) return NotFound();
-            return Ok(order);
+            var o = await _svc.GetByIdAsync(id, ct);
+            return o == null ? NotFound() : Ok(o);
         }
 
         [HttpPost]
-        public async Task<ActionResult<OrderReadDto>> Create(OrderCreateDto dto)
+        public async Task<ActionResult<OrderReadDto>> Create([FromBody] OrderCreateDto dto, CancellationToken ct)
         {
-            if (!ModelState.IsValid) return ValidationProblem(ModelState);
-            var created = await _service.AddAsync(dto);
+            var created = await _svc.CreateAsync(dto, ct);
             return CreatedAtAction(nameof(GetById), new { id = created.OrderID }, created);
         }
 
-        [HttpPut("{id}")]
-        public async Task<ActionResult<OrderReadDto>> Update(int id, OrderUpdateDto dto)
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Update(int id, [FromBody] OrderUpdateDto dto, CancellationToken ct)
         {
-            if (!ModelState.IsValid) return ValidationProblem(ModelState);
-            var updated = await _service.UpdateAsync(id, dto);
-            if (updated == null) return NotFound();
-            return Ok(updated);
+            var ok = await _svc.UpdateAsync(id, dto, ct);
+            return ok ? NoContent() : NotFound();
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id, CancellationToken ct)
         {
-            var deleted = await _service.DeleteAsync(id);
-            if (!deleted) return NotFound();
-            return NoContent();
+            var ok = await _svc.DeleteAsync(id, ct);
+            return ok ? NoContent() : NotFound();
         }
     }
 }

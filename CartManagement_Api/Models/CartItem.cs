@@ -1,27 +1,42 @@
-﻿namespace CartManagement_Api.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace CartManagement_Api.Models
 {
-    public enum CartItemType
-    {
-        Room = 1,
-        Tour = 2,
-        Vehicle = 3,
-        Service = 4
-    }
     public class CartItem
     {
+        [Key]
         public int CartItemID { get; set; }
+
+        [Required]
         public int CartID { get; set; }
 
-        public CartItemType ItemType { get; set; }                 // lưu enum, map ra string
-        public Guid ItemID { get; set; }                           // uniqueidentifier
-        public int Quantity { get; set; }                          // not null
+        [Required]
+        public CartItemType ItemType { get; set; }
 
-        public DateTime? StartDate { get; set; }                   // cho Room/Vehicle
+        [Required]
+        public Guid ItemID { get; set; }
+
+        [Required]
+        [Range(1, int.MaxValue)]
+        public int Quantity { get; set; } = 1;
+
+        public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
-        public Cart Cart { get; set; }                             // navigation về Cart
+        // Navigation property
+        [ForeignKey("CartID")]
+        public virtual Cart Cart { get; set; }
+    }
+
+    public enum CartItemType
+    {
+        Room,      
+        Tour,     
+        Vehicle,   
+        Service    
     }
 }

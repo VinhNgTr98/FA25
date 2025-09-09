@@ -241,5 +241,3 @@ E:\New folder\FPT\FA25\Code\FA25\TourManagement\bin\Debug\net8.0\runtimes\win\li
 E:\New folder\FPT\FA25\Code\FA25\TourManagement\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 E:\New folder\FPT\FA25\Code\FA25\TourManagement\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 E:\New folder\FPT\FA25\Code\FA25\TourManagement\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
-C:\Users\ADMIN\Desktop\Code\1\FA25\TourManagement\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
-C:\Users\ADMIN\Desktop\Code\1\FA25\TourManagement\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
