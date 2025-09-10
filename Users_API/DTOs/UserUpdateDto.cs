@@ -27,6 +27,4 @@ namespace UserManagement_API.DTOs
         public DateTime? otp_expires { get; set; }
         public bool? is_verified { get; set; }
     }
-
 }
-

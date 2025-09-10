@@ -11,15 +11,14 @@ namespace CartManagement_Api.Models
         [Required]
         public int CartID { get; set; }
 
-        [Required]
-        public CartItemType ItemType { get; set; }
+        [Required, MaxLength(50)]
+        public string ItemType { get; set; } = default!; // Room | Tour | Vehicle | Service
 
         [Required]
         public Guid ItemID { get; set; }
 
-        [Required]
         [Range(1, int.MaxValue)]
-        public int Quantity { get; set; } = 1;
+        public int Quantity { get; set; }
 
         public DateTime? StartDate { get; set; }
         public DateTime? EndDate { get; set; }
@@ -27,16 +26,10 @@ namespace CartManagement_Api.Models
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
-        // Navigation property
-        [ForeignKey("CartID")]
-        public virtual Cart Cart { get; set; }
-    }
+        [Timestamp]
+        public byte[]? RowVersion { get; set; }
 
-    public enum CartItemType
-    {
-        Room,      
-        Tour,     
-        Vehicle,   
-        Service    
+        [ForeignKey(nameof(CartID))]
+        public Cart Cart { get; set; } = null!;
     }
 }

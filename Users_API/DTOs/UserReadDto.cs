@@ -14,7 +14,6 @@ namespace User_API.DTOs
         [Required, MaxLength(100)]
         public string FullName { get; set; } = default!;
 
-
         [Required, MaxLength(255)]
         public string Password { get; set; } = default!;
         public bool IsHotelOwner { get; set; }
@@ -31,5 +30,4 @@ namespace User_API.DTOs
         public DateTime? otp_expires { get; set; }
         public bool is_verified { get; set; }
     }
-
 }

@@ -4,8 +4,9 @@
     {
         public int CartID { get; set; }
         public int UserID { get; set; }
+        public List<CartItemReadDto> Items { get; set; } = new();
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
-        public List<CartItemReadDto> Items { get; set; } = new();
+        public string? RowVersion { get; set; }
     }
 }

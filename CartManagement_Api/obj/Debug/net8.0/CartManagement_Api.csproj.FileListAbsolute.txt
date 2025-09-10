@@ -269,3 +269,14 @@ C:\Users\ADMIN\Desktop\Code\3\FA25.3\FA25\CartManagement_Api\obj\Debug\net8.0\re
 C:\Users\ADMIN\Desktop\Code\3\FA25.3\FA25\CartManagement_Api\obj\Debug\net8.0\CartManagement_Api.pdb
 C:\Users\ADMIN\Desktop\Code\3\FA25.3\FA25\CartManagement_Api\obj\Debug\net8.0\CartManagement_Api.genruntimeconfig.cache
 C:\Users\ADMIN\Desktop\Code\3\FA25.3\FA25\CartManagement_Api\obj\Debug\net8.0\ref\CartManagement_Api.dll
+C:\Users\ADMIN\Desktop\Code\4\FA25\CartManagement_Api\obj\Debug\net8.0\CartManagement_Api.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\Code\4\FA25\CartManagement_Api\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\ADMIN\Desktop\Code\4\FA25\CartManagement_Api\obj\Debug\net8.0\CartManagement_Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Desktop\Code\4\FA25\CartManagement_Api\obj\Debug\net8.0\CartManagement_Api.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Desktop\Code\4\FA25\CartManagement_Api\obj\Debug\net8.0\CartManagement_Api.AssemblyInfo.cs
+C:\Users\ADMIN\Desktop\Code\4\FA25\CartManagement_Api\obj\Debug\net8.0\CartManagement_Api.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\Code\4\FA25\CartManagement_Api\obj\Debug\net8.0\CartManagement_Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ADMIN\Desktop\Code\4\FA25\CartManagement_Api\obj\Debug\net8.0\CartManagement_Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ADMIN\Desktop\Code\4\FA25\CartManagement_Api\obj\Debug\net8.0\CartManagement_Api.RazorAssemblyInfo.cache
+C:\Users\ADMIN\Desktop\Code\4\FA25\CartManagement_Api\obj\Debug\net8.0\CartManagement_Api.RazorAssemblyInfo.cs
+C:\Users\ADMIN\Desktop\Code\4\FA25\CartManagement_Api\obj\Debug\net8.0\CartManagement_Api.sourcelink.json

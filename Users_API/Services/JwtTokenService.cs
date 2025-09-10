@@ -20,11 +20,7 @@ namespace UserManagement_API.Services
             {
                 new(JwtRegisteredClaimNames.Sub, userId.ToString()),
                 new(JwtRegisteredClaimNames.UniqueName, username),
-
-                new(ClaimTypes.NameIdentifier, userId.ToString()),
-                new(ClaimTypes.Email, username)
             };
-
             claims.AddRange(roles.Select(r => new Claim(ClaimTypes.Role, r)));
 
             var minutes = int.Parse(jwt["AccessTokenMinutes"]!);

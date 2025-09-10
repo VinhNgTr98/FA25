@@ -9,13 +9,13 @@ namespace UserManagement_API.Profiles
     {
         public UserProfile()
         {
-            // Entity -> Read DTO (trả đầy đủ theo yêu cầu)
+            // Entity -> DTO đầy đủ (cho GetById và Login)
             CreateMap<User, UserReadDto>()
                 .ForMember(d => d.Password, opt => opt.MapFrom(s => s.PasswordHash))
                 .ForMember(d => d.otp_code, opt => opt.MapFrom(s => s.otp_code))
                 .ForMember(d => d.otp_expires, opt => opt.MapFrom(s => s.otp_expires));
 
-            // Create (KHÔNG hash ở đây – hash sẽ làm trong Service)
+            // Create
             CreateMap<UserCreateDto, User>()
                 .ForMember(d => d.PasswordHash, opt => opt.Ignore())
                 .ForMember(d => d.UsersInfo, opt => opt.Ignore());
@@ -32,7 +32,7 @@ namespace UserManagement_API.Profiles
                     Email = s.Email
                 }));
 
-            // Update – không đổi password & UsersInfo ở đây (nếu cần update UsersInfo thì tạo DTO riêng)
+            // Update (không đổi Password ở đây)
             CreateMap<UserUpdateDto, User>()
                 .ForMember(d => d.PasswordHash, opt => opt.Ignore())
                 .ForMember(d => d.UsersInfo, opt => opt.Ignore());

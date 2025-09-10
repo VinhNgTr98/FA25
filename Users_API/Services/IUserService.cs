@@ -15,6 +15,4 @@ namespace UserManagement_API.Services
         Task<bool> VerifyOtpAsync(int userId, string otpCode, CancellationToken ct = default);
         Task<UserReadDto?> GetByEmailAsync(string email, CancellationToken ct = default);
     }
-
-
 }
