@@ -1,54 +1,92 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
+﻿using System.Security.Claims;
+using System.Text;
 using CartManagement_Api.Data;
+using CartManagement_Api.Profiles;
 using CartManagement_Api.Repositories;
 using CartManagement_Api.Services;
-using CartManagement_Api.Profiles;
-var builder = WebApplication.CreateBuilder(args);
-//builder.Services.AddDbContext<CartManagement_ApiContext>(options =>
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("CartManagement_ApiContext") ?? throw new InvalidOperationException("Connection string 'CartManagement_ApiContext' not found.")));
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
-// ===== CORS =====
-builder.Services.AddCors(options =>
+var builder = WebApplication.CreateBuilder(args);
+
+// CORS
+builder.Services.AddCors(o =>
 {
-    options.AddPolicy("AllowAll", policy =>
-    {
-        policy.AllowAnyOrigin()
-              .AllowAnyMethod()
-              .AllowAnyHeader();
-    });
+    o.AddPolicy("AllowAll", p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 });
-// AutoMapper đăng ký với CartProfile
-builder.Services.AddAutoMapper(typeof(CartProfile));
-// DbContext (MySQL)
-builder.Services.AddDbContext<CartManagement_ApiContext>(options =>
-    options.UseMySql(
+
+// DbContext MySQL
+builder.Services.AddDbContext<CartManagement_ApiContext>(opt =>
+{
+    opt.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
-        new MySqlServerVersion(new Version(8, 0, 36))
-));
-// Add services to the container.
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection")));
+});
+
+// AutoMapper
+builder.Services.AddAutoMapper(typeof(CartProfile));
+
+// DI
 builder.Services.AddScoped<ICartRepository, CartRepository>();
 builder.Services.AddScoped<ICartService, CartService>();
 
+// JWT mock
+var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("DevOnly_SuperSecretKey_ChangeMe!123"));
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(o =>
+    {
+        o.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = key,
+            ValidateLifetime = false
+        };
+    });
+builder.Services.AddAuthorization();
+
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+app.UseGlobalException();
+app.UseCors("AllowAll");
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-// Bật CORS (đặt trước Authentication/Authorization)
-app.UseCors("AllowAll");
+app.UseAuthentication();
 app.UseAuthorization();
 
+// Dev token endpoint
+app.MapPost("/dev/token", (int userId, string? role) =>
+{
+    var claims = new List<Claim> { new(ClaimTypes.NameIdentifier, userId.ToString()) };
+    if (!string.IsNullOrWhiteSpace(role))
+        claims.Add(new Claim(ClaimTypes.Role, role));
+    var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+    var token = new System.IdentityModel.Tokens.Jwt.JwtSecurityToken(
+        claims: claims,
+        expires: DateTime.UtcNow.AddHours(12),
+        signingCredentials: creds);
+    var jwt = new System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler().WriteToken(token);
+    return Results.Ok(new { token = jwt });
+});
+
 app.MapControllers();
+
+// Auto migrate (dev)
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<CartManagement_ApiContext>();
+    await db.Database.MigrateAsync();
+}
 
 app.Run();

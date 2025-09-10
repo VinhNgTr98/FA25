@@ -35,7 +35,6 @@ namespace User_API.Models
         [MaxLength(10)]
         public string? otp_code { get; set; }
 
-
         public DateTime? otp_expires { get; set; }
 
         public bool is_verified { get; set; } = false;

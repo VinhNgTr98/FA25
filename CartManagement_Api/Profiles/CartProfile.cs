@@ -1,5 +1,4 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using CartManagement_Api.DTOs;
 using CartManagement_Api.Models;
 
@@ -9,20 +8,18 @@ namespace CartManagement_Api.Profiles
     {
         public CartProfile()
         {
-            // Entity -> Read DTO
-            CreateMap<Cart, CartReadDto>();
-            CreateMap<CartItem, CartItemReadDto>();
+            CreateMap<CartItem, CartItemReadDto>()
+                .ForMember(d => d.RowVersion,
+                    o => o.MapFrom(s => s.RowVersion != null ? Convert.ToBase64String(s.RowVersion) : string.Empty));
 
-            // Create DTO -> Entity
+            CreateMap<Cart, CartReadDto>()
+                .ForMember(d => d.RowVersion,
+                    o => o.MapFrom(s => s.RowVersion != null ? Convert.ToBase64String(s.RowVersion) : null));
+
             CreateMap<CartItemCreateDto, CartItem>()
-                .ForMember(d => d.CreatedAt, opt => opt.MapFrom(_ => DateTime.UtcNow))
-                .ForMember(d => d.UpdatedAt, opt => opt.MapFrom(_ => DateTime.UtcNow));
-
-            // Update DTO -> Entity (chỉ map StartDate/EndDate nếu != null)
-            CreateMap<CartItemUpdateDto, CartItem>()
-                .ForMember(d => d.StartDate, opt => opt.Condition(src => src.StartDate.HasValue))
-                .ForMember(d => d.EndDate, opt => opt.Condition(src => src.EndDate.HasValue))
-                .ForMember(d => d.UpdatedAt, opt => opt.MapFrom(_ => DateTime.UtcNow));
+                .ForMember(d => d.RowVersion, o => o.Ignore())
+                .ForMember(d => d.CartItemID, o => o.Ignore())
+                .ForMember(d => d.Cart, o => o.Ignore());
         }
     }
 }

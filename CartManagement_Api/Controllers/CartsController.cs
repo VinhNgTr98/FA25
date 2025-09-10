@@ -1,75 +1,98 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
+﻿using System.Security.Claims;
 using CartManagement_Api.DTOs;
 using CartManagement_Api.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CartManagement_Api.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/cart")]
+    [Authorize] // Sau khi mock JWT
     public class CartController : ControllerBase
     {
         private readonly ICartService _service;
+        public CartController(ICartService service) => _service = service;
 
-        public CartController(ICartService service)
+        private int GetUserId()
         {
-            _service = service;
+            var claim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (int.TryParse(claim, out var id)) return id;
+            if (Request.Query.TryGetValue("userId", out var q) && int.TryParse(q, out id)) return id;
+            throw new ArgumentException("Cannot determine user id");
         }
 
-        // GET /api/cart/{userId}
-        [HttpGet("{userId:int}")]
-        public async Task<ActionResult<CartReadDto>> GetCart(int userId, CancellationToken ct)
+        [HttpGet]
+        public async Task<ActionResult<CartReadDto>> Get(CancellationToken ct)
         {
-            var cart = await _service.GetCartByUserIdAsync(userId, ct);
+            var cart = await _service.GetOrCreateCartAsync(GetUserId(), ct);
             return Ok(cart);
         }
 
-        // POST /api/cart/{userId}/items
-        [HttpPost("{userId:int}/items")]
-        public async Task<ActionResult<CartItemReadDto>> AddItem(
-            int userId,
-            [FromBody] CartItemCreateDto dto,
-            CancellationToken ct)
+        [HttpGet("summary")]
+        public async Task<ActionResult<CartSummaryDto>> Summary(CancellationToken ct)
         {
-            if (!ModelState.IsValid) return ValidationProblem(ModelState);
-
-            var item = await _service.AddItemAsync(userId, dto, ct);
-
-            // 201 Created
-            return CreatedAtAction(nameof(GetCart), new { userId }, item);
+            var sum = await _service.GetSummaryAsync(GetUserId(), ct);
+            return Ok(sum);
         }
 
-        // PUT /api/cart/items/{cartItemId}
-        [HttpPut("items/{cartItemId:int}")]
-        public async Task<ActionResult<CartItemReadDto>> UpdateItem(
-            int cartItemId,
-            [FromBody] CartItemUpdateDto dto,
-            CancellationToken ct)
+        [HttpGet("items/{id:int}")]
+        public async Task<ActionResult<CartItemReadDto>> GetItem(int id, CancellationToken ct)
         {
-            if (!ModelState.IsValid) return ValidationProblem(ModelState);
-
-            var updated = await _service.UpdateItemAsync(cartItemId, dto, ct);
-            if (updated == null) return NotFound();
-
-            return Ok(updated);
+            var cart = await _service.GetCartByUserAsync(GetUserId(), ct);
+            if (cart == null) return NotFound();
+            var item = cart.Items.FirstOrDefault(i => i.CartItemID == id);
+            return item == null ? NotFound() : Ok(item);
         }
 
-        // DELETE /api/cart/items/{cartItemId}
-        [HttpDelete("items/{cartItemId:int}")]
-        public async Task<IActionResult> RemoveItem(int cartItemId, CancellationToken ct)
+        [HttpPost("items")]
+        public async Task<ActionResult<CartReadDto>> AddItem([FromBody] CartItemCreateDto req, CancellationToken ct)
         {
-            var removed = await _service.RemoveItemAsync(cartItemId, ct);
-            if (!removed) return NotFound();
+            var userId = GetUserId();
+            var before = await _service.GetCartByUserAsync(userId, ct);
+            var after = await _service.AddItemAsync(userId, req, ct);
+
+            if (IsNew(before, after, req))
+                return CreatedAtAction(nameof(Get), new { }, after);
+            return Ok(after);
+        }
+
+        private static bool IsNew(CartReadDto? before, CartReadDto after, CartItemCreateDto req)
+        {
+            if (before == null) return true;
+            if (after.Items.Count > before.Items.Count) return true;
+            var existedBefore = before.Items.Any(i =>
+                i.ItemType.Equals(req.ItemType, StringComparison.OrdinalIgnoreCase) &&
+                i.ItemID == req.ItemID &&
+                i.StartDate == req.StartDate &&
+                i.EndDate == req.EndDate);
+            var existsAfter = after.Items.Any(i =>
+                i.ItemType.Equals(req.ItemType, StringComparison.OrdinalIgnoreCase) &&
+                i.ItemID == req.ItemID &&
+                i.StartDate == req.StartDate &&
+                i.EndDate == req.EndDate);
+            return !existedBefore && existsAfter;
+        }
+
+        [HttpPatch("items/{id:int}")]
+        public async Task<ActionResult<CartReadDto>> UpdateItem(int id, [FromBody] CartItemUpdateDto req, CancellationToken ct)
+        {
+            var cart = await _service.UpdateItemAsync(GetUserId(), id, req, ct);
+            return Ok(cart);
+        }
+
+        [HttpDelete("items/{id:int}")]
+        public async Task<IActionResult> RemoveItem(int id, [FromQuery] string rowVersion, CancellationToken ct)
+        {
+            var ok = await _service.RemoveItemAsync(GetUserId(), id, rowVersion, ct);
+            if (!ok) return NotFound();
             return NoContent();
         }
 
-        // DELETE /api/cart/{userId}
-        [HttpDelete("{userId:int}")]
-        public async Task<IActionResult> ClearCart(int userId, CancellationToken ct)
+        [HttpDelete("clear")]
+        public async Task<IActionResult> Clear(CancellationToken ct)
         {
-            var cleared = await _service.ClearCartAsync(userId, ct);
-            if (!cleared) return NotFound();
+            await _service.ClearCartAsync(GetUserId(), ct);
             return NoContent();
         }
     }

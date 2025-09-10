@@ -10,7 +10,7 @@ namespace Users_API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [AllowAnonymous]
+    [AllowAnonymous] // login không cần token
     public class AuthController : ControllerBase
     {
         private readonly IUserRepository _repo;
@@ -40,6 +40,7 @@ namespace Users_API.Controllers
             }
 
             var user = await _repo.GetByEmailAsync(dto.Email, ct);
+
             if (user == null)
                 return Unauthorized(new ProblemDetails { Title = "Login failed", Detail = "User does not exist", Status = 401 });
 
@@ -57,7 +58,6 @@ namespace Users_API.Controllers
             if (user.IsVehicleAgency) roles.Add("VehicleAgency");
 
             var accessToken = _jwt.CreateAccessToken(user.UserID, user.Email, roles, out var expiresAt);
-
             var userDto = _mapper.Map<UserReadDto>(user);
 
             return Ok(new LoginResponseDto
@@ -70,7 +70,7 @@ namespace Users_API.Controllers
                     UserID = user.UserID,
                     Email = user.Email,
                     FullName = user.FullName,
-                    Password = user.PasswordHash,
+                    Password = user.PasswordHash,      // hash (không phải plain)
                     IsHotelOwner = user.IsHotelOwner,
                     IsTourAgency = user.IsTourAgency,
                     IsVehicleAgency = user.IsVehicleAgency,
@@ -84,6 +84,9 @@ namespace Users_API.Controllers
                     is_verified = user.is_verified
                 }
             });
+
         }
+
     }
 }
+

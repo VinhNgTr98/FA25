@@ -23,5 +23,4 @@ namespace UserManagement_API.DTOs
         public string? otp_code { get; set; }
         public DateTime? otp_expires { get; set; }
     }
-
 }

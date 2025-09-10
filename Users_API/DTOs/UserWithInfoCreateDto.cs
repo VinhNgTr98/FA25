@@ -33,5 +33,4 @@ namespace UserManagement_API.DTOs
         [MaxLength(255)]
         public string? Address { get; set; }
     }
-
 }
