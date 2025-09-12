@@ -26,10 +26,5 @@ namespace CartManagement_Api.Models
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
-        [Timestamp]
-        public byte[]? RowVersion { get; set; }
-
-        [ForeignKey(nameof(CartID))]
-        public Cart Cart { get; set; } = null!;
     }
 }
