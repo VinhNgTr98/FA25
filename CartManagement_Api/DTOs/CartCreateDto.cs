@@ -1,6 +1,6 @@
 ﻿namespace CartManagement_Api.DTOs
 {
-    public class CartSummaryDto
+    public class CartCreateDto
     {
         public int CartID { get; set; }
         public int TotalDistinctItems { get; set; }

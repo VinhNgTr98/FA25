@@ -2,7 +2,8 @@
 {
     public class CartItemCreateDto
     {
-        public string ItemType { get; set; } = string.Empty;
+        public int CartID { get; set; }
+        public string ItemType { get; set; } = default!;
         public Guid ItemID { get; set; }
         public int Quantity { get; set; }
         public DateTime? StartDate { get; set; }

@@ -80,26 +80,7 @@ namespace CartManagement_Api.Migrations
 
                     b.HasKey("CartItemID");
 
-                    b.HasIndex("CartID", "ItemType", "ItemID", "StartDate", "EndDate")
-                        .IsUnique();
-
                     b.ToTable("CartItems");
-                });
-
-            modelBuilder.Entity("CartManagement_Api.Models.CartItem", b =>
-                {
-                    b.HasOne("CartManagement_Api.Models.Cart", "Cart")
-                        .WithMany("Items")
-                        .HasForeignKey("CartID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Cart");
-                });
-
-            modelBuilder.Entity("CartManagement_Api.Models.Cart", b =>
-                {
-                    b.Navigation("Items");
                 });
 #pragma warning restore 612, 618
         }

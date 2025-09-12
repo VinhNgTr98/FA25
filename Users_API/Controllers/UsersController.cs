@@ -92,7 +92,7 @@ namespace Users_API.Controllers
         // [Authorize]
         public async Task<ActionResult<UserReadDto>> GetById(int id, CancellationToken ct)
         {
-            if (!IsAdmin && CurrentUserId != id) return Forbid();
+           // if (!IsAdmin && CurrentUserId != id) return Forbid();
             var u = await _svc.GetByIdAsync(id, ct);
             return u is null ? NotFound() : Ok(u);
         }
@@ -102,7 +102,7 @@ namespace Users_API.Controllers
         [HttpGet("email/{email}")]
         public async Task<ActionResult<UserReadDto>> GetByEmail(string email, CancellationToken ct)
         {
-            if (!IsAdmin && !string.Equals(CurrentUserEmail, email, StringComparison.OrdinalIgnoreCase))
+            //if (!IsAdmin && !string.Equals(CurrentUserEmail, email, StringComparison.OrdinalIgnoreCase))
                 return Forbid();
 
             var u = await _svc.GetByEmailAsync(email, ct);
@@ -114,7 +114,7 @@ namespace Users_API.Controllers
         // [Authorize]
         public async Task<ActionResult<UserReadDto>> GetMe(CancellationToken ct)
         {
-            if (CurrentUserId is null) return Unauthorized();
+            //if (CurrentUserId is null) return Unauthorized();
             var u = await _svc.GetByIdAsync(CurrentUserId.Value, ct);
             return u is null ? NotFound() : Ok(u);
         }
@@ -124,7 +124,7 @@ namespace Users_API.Controllers
         // [Authorize]
         public async Task<IActionResult> UpdateMe([FromBody] UserUpdateDto dto, CancellationToken ct)
         {
-            if (CurrentUserId is null) return Unauthorized();
+            //if (CurrentUserId is null) return Unauthorized();
             var ok = await _svc.UpdateAsync(CurrentUserId.Value, dto, ct);
             return ok ? NoContent() : NotFound();
         }
