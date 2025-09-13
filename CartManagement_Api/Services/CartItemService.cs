@@ -7,52 +7,54 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CartManagement_Api.Services
 {
-    public class CartItemService : ICartService
+    public class CartItemService : ICartItemService
     {
-        private readonly CartManagement_ApiContext _ctx;
-        private readonly ICartRepository _repo;
+        private readonly ICartItemRepository _repository;
         private readonly IMapper _mapper;
-        private readonly ILogger<CartService> _logger;
 
-        private static readonly HashSet<string> ValidItemTypes =
-            new(new[] { "Room", "Tour", "Vehicle", "Service" }, StringComparer.OrdinalIgnoreCase);
-
-        public CartItemService(CartManagement_ApiContext ctx, ICartRepository repo, IMapper mapper, ILogger<CartService> logger)
+        public CartItemService(ICartItemRepository repository, IMapper mapper)
         {
-            _ctx = ctx;
-            _repo = repo;
+            _repository = repository;
             _mapper = mapper;
-            _logger = logger;
         }
 
-       
-        #region Helpers
-        private void Validate(string itemType, int quantity, DateTime? start, DateTime? end)
+        public async Task<IEnumerable<CartItemReadDto>> GetAllAsync()
         {
-            if (!ValidItemTypes.Contains(itemType))
-                throw new ArgumentException($"Invalid ItemType: {itemType}");
-
-            if (quantity <= 0)
-                throw new ArgumentException("Quantity must be > 0.");
-
-            var norm = Normalize(itemType);
-
-            if (norm is "Room" or "Vehicle")
-            {
-                if (start is null || end is null)
-                    throw new ArgumentException($"{norm} requires StartDate & EndDate.");
-                if (start > end)
-                    throw new ArgumentException("StartDate must be <= EndDate.");
-            }
-            if (norm == "Service")
-            {
-                if (start != null || end != null)
-                    throw new ArgumentException("Service must not have StartDate/EndDate.");
-            }
+            var items = await _repository.GetAllAsync();
+            return _mapper.Map<IEnumerable<CartItemReadDto>>(items);
         }
 
-        private static string Normalize(string s) =>
-            string.IsNullOrWhiteSpace(s) ? s : char.ToUpperInvariant(s[0]) + s[1..].ToLowerInvariant();
-        #endregion
+        public async Task<CartItemReadDto?> GetByIdAsync(int cartItemId)
+        {
+            var item = await _repository.GetByIdAsync(cartItemId);
+            return _mapper.Map<CartItemReadDto?>(item);
+        }
+
+        public async Task<CartItemReadDto> CreateAsync(CartItemCreateDto dto)
+        {
+            var item = _mapper.Map<CartItem>(dto);
+            item.CreatedAt = DateTime.UtcNow;
+            item.UpdatedAt = DateTime.UtcNow;
+
+            var created = await _repository.AddAsync(item);
+            return _mapper.Map<CartItemReadDto>(created);
+        }
+
+        public async Task<CartItemReadDto?> UpdateAsync(int cartItemId, CartItemUpdateDto dto)
+        {
+            var existing = await _repository.GetByIdAsync(cartItemId);
+            if (existing == null) return null;
+
+            _mapper.Map(dto, existing);
+            existing.UpdatedAt = DateTime.UtcNow;
+
+            var updated = await _repository.UpdateAsync(existing);
+            return _mapper.Map<CartItemReadDto>(updated);
+        }
+
+        public async Task<bool> DeleteAsync(int cartItemId)
+        {
+            return await _repository.DeleteAsync(cartItemId);
+        }
     }
 }
