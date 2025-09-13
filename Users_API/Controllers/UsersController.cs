@@ -179,9 +179,6 @@ namespace Users_API.Controllers
                     new { message = "Bạn vừa yêu cầu OTP quá nhanh hoặc vượt quá giới hạn trong ngày. Vui lòng thử lại sau." });
             }
         }
-
-
-        /// <summary>Xin OTP cho user chưa active (ví dụ sau khi đăng ký)</summary>
         [HttpPost("{id:int}/otp")]
         [AllowAnonymous]
         public async Task<ActionResult> GenerateOtp(int id, CancellationToken ct)
@@ -210,43 +207,6 @@ namespace Users_API.Controllers
             return ok ? Ok(new { message = "User verified" })
                       : BadRequest(new { message = "OTP invalid or expired" });
 
-        }
-
-
-        ///// <summary>Yêu cầu đổi password: phát OTP (user đã đăng nhập)</summary>
-        //[HttpPost("me/change-password-request-OTP")]
-        //// [Authorize]
-        //public async Task<IActionResult> RequestChangePassword(CancellationToken ct)
-        //{
-        //    if (CurrentUserId is null) return Unauthorized();
-
-        //    try
-        //    {
-        //        var ok = await _svc.RequestChangePasswordAsync(CurrentUserId.Value, ct);
-        //        return ok ? Accepted(new { message = "OTP sent to your email" })
-        //                  : NotFound(new { message = "User not found" });
-        //    }
-        //    catch (InvalidOperationException ex) when (ex.Message == "OTP_RATE_LIMIT")
-        //    {
-        //        return StatusCode(StatusCodes.Status429TooManyRequests,
-        //            new { message = "Too many OTP requests. Please wait before trying again." });
-        //    }
-        //}
-
-        [HttpPost("{id:int}/change-password-request")]
-        [AllowAnonymous]
-        public async Task<IActionResult> RequestChangePassword(int id, CancellationToken ct)
-        {
-            try
-            {
-                var ok = await _svc.RequestChangePasswordAsync(id, ct);
-                return ok ? Accepted(new { message = "OTP sent to your email" }) : NotFound(new { message = "User not found" });
-            }
-            catch (InvalidOperationException ex) when (ex.Message == "OTP_RATE_LIMIT")
-            {
-                return StatusCode(StatusCodes.Status429TooManyRequests,
-                    new { message = "Too many OTP requests. Please wait before trying again." });
-            }
         }
 
         //[HttpPost("me/change-password-confirm")]

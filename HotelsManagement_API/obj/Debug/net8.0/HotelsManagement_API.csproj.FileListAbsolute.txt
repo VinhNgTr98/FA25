@@ -1311,3 +1311,4 @@ C:\Users\ADMIN\Desktop\Code\4\FA25\HotelsManagement_API\obj\Debug\net8.0\refint\
 C:\Users\ADMIN\Desktop\Code\4\FA25\HotelsManagement_API\obj\Debug\net8.0\HotelsManagement_API.pdb
 C:\Users\ADMIN\Desktop\Code\4\FA25\HotelsManagement_API\obj\Debug\net8.0\HotelsManagement_API.genruntimeconfig.cache
 C:\Users\ADMIN\Desktop\Code\4\FA25\HotelsManagement_API\obj\Debug\net8.0\ref\HotelsManagement_API.dll
+C:\Users\ADMIN\Desktop\Code\5\FA25\HotelsManagement_API\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Features.resources.dll

@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{1BF7B8C2-9D70-D1DD-61B0-31FDCC4C3A71}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\services\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\services\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\services\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\services\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,34 +86,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Users_API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\Users_API\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Users_API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAALAAAAAAAAAAAAAiwOQAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T05:09:19.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Program.cs",
-              "RelativeDocumentMoniker": "CartManagement_Api\\Program.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Program.cs",
-              "RelativeToolTip": "CartManagement_Api\\Program.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAwBYAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T22:31:46.125Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 6,
@@ -140,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "CartsController.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Controllers\\CartsController.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Controllers\\CartsController.cs",
@@ -152,19 +126,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "ExceptionHandlingMiddleware.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Services\\ExceptionHandlingMiddleware.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Services\\ExceptionHandlingMiddleware.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Services\\ExceptionHandlingMiddleware.cs",
               "RelativeToolTip": "CartManagement_Api\\Services\\ExceptionHandlingMiddleware.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAwEMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAqwBgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T22:31:29.754Z"
+              "WhenOpened": "2025-09-09T22:31:29.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\Users_API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Users_API\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\Users_API\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Users_API\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAABAAAAAAAAAAAAwA0BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T05:09:19.223Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Program.cs",
+              "RelativeDocumentMoniker": "CartManagement_Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Program.cs",
+              "RelativeToolTip": "CartManagement_Api\\Program.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAwBYAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-09T22:31:46.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ICartService.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Services\\ICartService.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Services\\ICartService.cs",

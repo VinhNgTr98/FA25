@@ -366,22 +366,6 @@
   },
   {
     "ContainingType": "Users_API.Controllers.UsersController",
-    "Method": "RequestChangePassword",
-    "RelativePath": "api/Users/{id}/change-password-request",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Users_API.Controllers.UsersController",
     "Method": "GenerateOtp",
     "RelativePath": "api/Users/{id}/otp",
     "HttpMethod": "POST",
