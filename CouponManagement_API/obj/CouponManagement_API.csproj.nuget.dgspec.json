@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CouponManagement_API\\CouponManagement_API.csproj": {}
+    "C:\\Users\\ADMIN\\Desktop\\Code\\5.1\\FA25\\CouponManagement_API\\CouponManagement_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CouponManagement_API\\CouponManagement_API.csproj": {
+    "C:\\Users\\ADMIN\\Desktop\\Code\\5.1\\FA25\\CouponManagement_API\\CouponManagement_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CouponManagement_API\\CouponManagement_API.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\Code\\5.1\\FA25\\CouponManagement_API\\CouponManagement_API.csproj",
         "projectName": "CouponManagement_API",
-        "projectPath": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CouponManagement_API\\CouponManagement_API.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\Desktop\\Code\\5.1\\FA25\\CouponManagement_API\\CouponManagement_API.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CouponManagement_API\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Desktop\\Code\\5.1\\FA25\\CouponManagement_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

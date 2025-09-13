@@ -7648,11 +7648,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\Code\\5.1\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
       "projectName": "OrderManagement_API",
-      "projectPath": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\Code\\5.1\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\OrderManagement_API\\obj\\",
+      "outputPath": "C:\\Users\\ADMIN\\Desktop\\Code\\5.1\\FA25\\OrderManagement_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

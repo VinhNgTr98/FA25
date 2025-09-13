@@ -91,6 +91,9 @@ namespace UserManagement_API.Services
             if (string.IsNullOrWhiteSpace(dto.Password))
                 throw new InvalidOperationException("PASSWORD_REQUIRED");
 
+            if (!ValidateNewPassword(dto.Password))
+                throw new InvalidOperationException("PASSWORD_POLICY");
+
             var passwordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
 
             var u = new User
@@ -289,7 +292,7 @@ namespace UserManagement_API.Services
             if (string.IsNullOrWhiteSpace(password) || password.Length < 8)
                 return false;
 
-            // Ít nhất: 1 chữ hoa, 1 chữ thường, 1 số. (Bạn có thể nới hoặc thêm ký tự đặc biệt)
+            // Ít nhất: 1 chữ hoa, 1 chữ thường, 1 số, 1 ký tự đặc biệt.
             var hasUpper = password.Any(char.IsUpper);
             var hasLower = password.Any(char.IsLower);
             var hasDigit = password.Any(char.IsDigit);

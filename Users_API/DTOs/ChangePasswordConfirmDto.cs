@@ -8,7 +8,10 @@ namespace UserManagement_API.DTOs
         public string OldPassword { get; set; } = default!;
 
         [Required]
-        [MinLength(8, ErrorMessage = "New password must be at least 8 characters")]
+        [RegularExpression(
+        @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$",
+        ErrorMessage = "Password must be at least 8 characters and include at least 1 uppercase, 1 lowercase, 1 number, and 1 special character."
+    )]
         public string NewPassword { get; set; } = default!;
 
         [Required]

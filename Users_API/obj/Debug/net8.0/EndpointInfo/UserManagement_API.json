@@ -3677,7 +3677,8 @@
             "type": "string"
           },
           "newPassword": {
-            "minLength": 8,
+            "minLength": 1,
+            "pattern": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z0-9]).{8,}$",
             "type": "string"
           },
           "confirmNewPassword": {
@@ -4355,6 +4356,7 @@
           "password": {
             "maxLength": 255,
             "minLength": 1,
+            "pattern": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z0-9]).{8,}$",
             "type": "string"
           },
           "otp_code": {
