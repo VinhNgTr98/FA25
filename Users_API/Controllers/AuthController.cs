@@ -70,7 +70,7 @@ namespace Users_API.Controllers
                     UserID = user.UserID,
                     Email = user.Email,
                     FullName = user.FullName,
-                    Password = user.PasswordHash,      // hash (không phải plain)
+                    Password = user.PasswordHash,  
                     IsHotelOwner = user.IsHotelOwner,
                     IsTourAgency = user.IsTourAgency,
                     IsVehicleAgency = user.IsVehicleAgency,

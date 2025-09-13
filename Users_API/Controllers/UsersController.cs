@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using User_API.DTOs;
 using UserManagement_API.DTOs;
@@ -16,11 +17,19 @@ namespace Users_API.Controllers
         public UsersController(IUserService svc) => _svc = svc;
 
         // ===== Helpers =====z
+        //private int? CurrentUserId =>
+        //    int.TryParse(User.FindFirstValue(ClaimTypes.NameIdentifier), out var id) ? id : null;
+        //private string? CurrentUserEmail => User.FindFirstValue(ClaimTypes.Email);
         private int? CurrentUserId =>
-            int.TryParse(User.FindFirstValue(ClaimTypes.NameIdentifier), out var id) ? id : null;
+    int.TryParse(
+        User.FindFirstValue(ClaimTypes.NameIdentifier) ??
+        User.FindFirstValue(JwtRegisteredClaimNames.Sub),
+        out var id) ? id : null;
 
-
-        private string? CurrentUserEmail => User.FindFirstValue(ClaimTypes.Email);
+        private string? CurrentUserEmail =>
+            User.FindFirstValue(ClaimTypes.Email) ??
+            User.FindFirstValue(JwtRegisteredClaimNames.UniqueName);
+        
         private bool IsAdmin => User.IsInRole("Admin");
 
         // ================= ADMIN ZONE =================
@@ -102,8 +111,10 @@ namespace Users_API.Controllers
         [HttpGet("email/{email}")]
         public async Task<ActionResult<UserReadDto>> GetByEmail(string email, CancellationToken ct)
         {
-            //if (!IsAdmin && !string.Equals(CurrentUserEmail, email, StringComparison.OrdinalIgnoreCase))
-               // return Forbid();
+
+          //  if (!IsAdmin && !string.Equals(CurrentUserEmail, email, StringComparison.OrdinalIgnoreCase))
+          //      return Forbid();
+
 
             var u = await _svc.GetByEmailAsync(email, ct);
             return u is null ? NotFound() : Ok(u);
@@ -114,7 +125,8 @@ namespace Users_API.Controllers
         // [Authorize]
         public async Task<ActionResult<UserReadDto>> GetMe(CancellationToken ct)
         {
-            //if (CurrentUserId is null) return Unauthorized();
+          //  if (CurrentUserId is null) return Unauthorized();
+
             var u = await _svc.GetByIdAsync(CurrentUserId.Value, ct);
             return u is null ? NotFound() : Ok(u);
         }
@@ -124,7 +136,8 @@ namespace Users_API.Controllers
         // [Authorize]
         public async Task<IActionResult> UpdateMe([FromBody] UserUpdateDto dto, CancellationToken ct)
         {
-            //if (CurrentUserId is null) return Unauthorized();
+         //   if (CurrentUserId is null) return Unauthorized();
+
             var ok = await _svc.UpdateAsync(CurrentUserId.Value, dto, ct);
             return ok ? NoContent() : NotFound();
         }
@@ -170,9 +183,6 @@ namespace Users_API.Controllers
                     new { message = "Bạn vừa yêu cầu OTP quá nhanh hoặc vượt quá giới hạn trong ngày. Vui lòng thử lại sau." });
             }
         }
-
-
-        /// <summary>Xin OTP cho user chưa active (ví dụ sau khi đăng ký)</summary>
         [HttpPost("{id:int}/otp")]
         [AllowAnonymous]
         public async Task<ActionResult> GenerateOtp(int id, CancellationToken ct)
@@ -202,5 +212,63 @@ namespace Users_API.Controllers
                       : BadRequest(new { message = "OTP invalid or expired" });
 
         }
+
+        //[HttpPost("me/change-password-confirm")]
+        //// [Authorize]
+        //public async Task<IActionResult> ConfirmChangePassword([FromBody] ChangePasswordConfirmDto dto, CancellationToken ct)
+        //{
+        //    if (CurrentUserId is null) return Unauthorized();
+
+        //    if (!ModelState.IsValid)
+        //        return ValidationProblem(ModelState);
+
+        //    if (!string.Equals(dto.NewPassword, dto.ConfirmNewPassword, StringComparison.Ordinal))
+        //    {
+        //        return BadRequest(new
+        //        {
+        //            message = "New password and confirmation do not match."
+        //        });
+        //    }
+
+        //    var ok = await _svc.ConfirmChangePasswordAsync(
+        //        CurrentUserId.Value,
+        //        dto.OldPassword,
+        //        dto.NewPassword,
+        //        dto.OtpCode,
+        //        ct);
+
+        //    return ok
+        //        ? Ok(new { message = "Password changed" })
+        //        : BadRequest(new { message = "Invalid old password, OTP, or password policy not met." });
+        //}
+
+        [HttpPost("{id:int}/change-password-confirm")]
+        [AllowAnonymous] // hoặc [Authorize] nếu muốn bảo vệ endpoint
+        public async Task<IActionResult> ConfirmChangePassword(int id, [FromBody] ChangePasswordConfirmDto dto, CancellationToken ct)
+        {
+            if (!ModelState.IsValid)
+                return ValidationProblem(ModelState);
+
+            if (!string.Equals(dto.NewPassword, dto.ConfirmNewPassword, StringComparison.Ordinal))
+            {
+                return BadRequest(new
+                {
+                    message = "New password and confirmation do not match."
+                });
+            }
+
+            var ok = await _svc.ConfirmChangePasswordAsync(
+                id,
+                dto.OldPassword,
+                dto.NewPassword,
+                dto.OtpCode,
+                ct);
+
+            return ok
+                ? Ok(new { message = "Password changed" })
+                : BadRequest(new { message = "Invalid old password, OTP, or password policy not met." });
+        }
+
+
     }
 }

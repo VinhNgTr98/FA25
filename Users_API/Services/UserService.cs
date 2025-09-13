@@ -4,8 +4,6 @@ using User_API.Models;
 using User_API.Repositories;
 using UserManagement_API.DTOs;
 using System.Security.Cryptography;
-using System.Net;
-using UserManagement_API.Services;
 
 namespace UserManagement_API.Services
 {
@@ -92,6 +90,9 @@ namespace UserManagement_API.Services
 
             if (string.IsNullOrWhiteSpace(dto.Password))
                 throw new InvalidOperationException("PASSWORD_REQUIRED");
+
+            if (!ValidateNewPassword(dto.Password))
+                throw new InvalidOperationException("PASSWORD_POLICY");
 
             var passwordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
 
@@ -227,5 +228,78 @@ namespace UserManagement_API.Services
             await _repo.UpdateAsync(u, ct);
             return true;
         }
+
+        public async Task<bool> RequestChangePasswordAsync(int userId, CancellationToken ct = default)
+        {
+            var u = await _repo.GetByIdAsync(userId, ct);
+            if (u == null) return false;
+
+            // Rate limit OTP
+            if (!await _limiter.CanSendAsync(userId, ct))
+                throw new InvalidOperationException("OTP_RATE_LIMIT");
+
+            u.otp_code = GenerateOtp6();
+            u.otp_expires = DateTime.UtcNow.AddMinutes(5);
+
+            await _repo.UpdateAsync(u, ct);
+
+            var subject = "Password change verification code";
+            var html = $@"
+                <p>Hi {System.Net.WebUtility.HtmlEncode(u.FullName)},</p>
+                <p>You requested to change your password.</p>
+                <p>Your OTP code is:</p>
+                <h2 style=""letter-spacing:4px;"">{u.otp_code}</h2>
+                <p>This code expires in 5 minutes.</p>
+                <p>If you did not request this, please ignore.</p>";
+
+            await _email.SendAsync(u.Email, subject, html, ct);
+            await _limiter.RecordSendAsync(userId, ct);
+            return true;
+        }
+
+        public async Task<bool> ConfirmChangePasswordAsync(int userId, string oldPassword, string newPassword, string otpCode, CancellationToken ct = default)
+        {
+            var u = await _repo.GetByIdAsync(userId, ct);
+            if (u == null) return false;
+
+            // Check old password
+            if (!BCrypt.Net.BCrypt.Verify(oldPassword, u.PasswordHash))
+                return false;
+
+            // Validate OTP
+            if (string.IsNullOrWhiteSpace(u.otp_code) ||
+                !string.Equals(u.otp_code, otpCode, StringComparison.Ordinal) ||
+                u.otp_expires is null || u.otp_expires < DateTime.UtcNow)
+            {
+                return false;
+            }
+
+            // Validate new password strength (có thể relax tuỳ ý)
+            if (!ValidateNewPassword(newPassword))
+                return false;
+
+            // Update password
+            u.PasswordHash = BCrypt.Net.BCrypt.HashPassword(newPassword);
+            u.otp_code = null;
+            u.otp_expires = null;
+
+            await _repo.UpdateAsync(u, ct);
+            return true;
+        }
+
+        private bool ValidateNewPassword(string password)
+        {
+            if (string.IsNullOrWhiteSpace(password) || password.Length < 8)
+                return false;
+
+            // Ít nhất: 1 chữ hoa, 1 chữ thường, 1 số, 1 ký tự đặc biệt.
+            var hasUpper = password.Any(char.IsUpper);
+            var hasLower = password.Any(char.IsLower);
+            var hasDigit = password.Any(char.IsDigit);
+            var hasSpecial = password.Any(ch => !char.IsLetterOrDigit(ch) && !char.IsWhiteSpace(ch));
+            return hasUpper && hasLower && hasDigit && hasSpecial;
+        }
     }
+
+
 }
