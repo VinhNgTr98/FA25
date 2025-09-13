@@ -1,51 +1,10 @@
+# Build results
+bin/
+obj/
+
 # Visual Studio
 .vs/
-*.suo
 *.user
-*.userosscache
-*.sln.docstates
-*.vssscc
-*.dbmdl
-*.cache
-
-# Build outputs
-[Bb]in/
-[Oo]bj/
-[Dd]ebug/
-[Rr]elease/
-x64/
-x86/
-[Aa][Rr][Mm]/
-[Aa][Rr][Mm]64/
-
-# .NET
-*.dll
-*.exe
-*.pdb
-*.deps.json
-*.runtimeconfig.json
-*.assets.cache
-*.nuget.props
-*.nuget.targets
-*.csproj.nuget.dgspec.json
-*.csproj.nuget.g.props
-*.csproj.nuget.g.targets
-project.lock.json
-artifacts/
-
-# Design/Project evaluation caches
-*.dtbcache.v2
-*.futdcache.v2
-*.v9.bin
-DocumentLayout.json
-DocumentLayout.backup.json
-
-# Copilot indices
-.vs/**/CopilotIndices/
-
-# OS/editor
-*.log
-*.tmp
-*.swp
-*.DS_Store
-.vscode/
+*.suo
+*.vsidx
+*.vscode/
