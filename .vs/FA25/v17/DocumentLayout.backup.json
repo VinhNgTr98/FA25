@@ -1,165 +1,81 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\",
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{1BF7B8C2-9D70-D1DD-61B0-31FDCC4C3A71}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\users_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BF7B8C2-9D70-D1DD-61B0-31FDCC4C3A71}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\services\\memoryotplimiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\memoryotplimiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\services\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\ijwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\services\\iotplimiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\iotplimiter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\services\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\services\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\profiles\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\dtos\\logindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\logindtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\userupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\dtos\\userwithinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\userwithinfocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\dtos\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\dtos\\userreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\models\\usersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\models\\usersinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\users_api\\data\\users_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3280E0CC-F010-41D5-9DD1-F184382240FF}|Users_API\\UserManagement_API.csproj|solutionrelative:users_api\\data\\users_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\services\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\services\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\services\\icartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\controllers\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\services\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\services\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\services\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\repositories\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\repositories\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\repositories\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\data\\cartmanagement_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\data\\cartmanagement_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\data\\cartmanagement_apicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\profiles\\cartprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\profiles\\cartprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\profiles\\cartprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\dtos\\cartsummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\dtos\\cartsummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\dtos\\cartsummarydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\dtos\\cartreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\dtos\\cartreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\dtos\\cartreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\dtos\\cartitemupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\dtos\\cartitemupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\dtos\\cartitemupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\dtos\\cartitemreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\dtos\\cartitemreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\dtos\\cartitemreaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\cartmanagement_api\\dtos\\cartitemcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\cartmanagement_api\\dtos\\cartitemcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AA0830EA-0A10-00CD-FE2F-2C30887CB5E9}|CartManagement_Api\\CartManagement_Api.csproj|solutionrelative:cartmanagement_api\\dtos\\cartitemcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\categories_api\\categorymanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\categories_api\\categorymanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{62387C5E-60A1-4751-BB3C-733A8161FAA6}|Categories_API\\CategoryManagement_API.csproj|solutionrelative:categories_api\\categorymanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1CFF043-AE8D-4966-9F28-1C145F9B1B28}|OrderManagement_API\\OrderManagement_API.csproj|c:\\users\\admin\\desktop\\code\\4\\fa25\\ordermanagement_api\\ordermanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{D1CFF043-AE8D-4966-9F28-1C145F9B1B28}|OrderManagement_API\\OrderManagement_API.csproj|c:\\users\\admin\\desktop\\code\\5\\fa25\\ordermanagement_api\\ordermanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{D1CFF043-AE8D-4966-9F28-1C145F9B1B28}|OrderManagement_API\\OrderManagement_API.csproj|solutionrelative:ordermanagement_api\\ordermanagement_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -170,313 +86,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\IUserService.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\IUserService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\IUserService.cs",
-              "RelativeToolTip": "Users_API\\Services\\IUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAIwBEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:20:27.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\UserService.cs",
-              "RelativeToolTip": "Users_API\\Services\\UserService.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAAAOYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T20:50:14.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\appsettings.json",
-              "RelativeDocumentMoniker": "Users_API\\appsettings.json",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\appsettings.json",
-              "RelativeToolTip": "Users_API\\appsettings.json",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAQwA4AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-10T11:24:25.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Controllers\\UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\Users_API\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Users_API\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\Users_API\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Users_API\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAALQAAAAAAAAAAAAQwM0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAALAAAAAAAAAAAAAiwOQAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:10:15.674Z",
+              "WhenOpened": "2025-09-13T05:09:19.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Users_API\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Users_API\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Program.cs",
+              "RelativeDocumentMoniker": "CartManagement_Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Program.cs",
+              "RelativeToolTip": "CartManagement_Api\\Program.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAwBYAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:21:51.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MemoryOtpLimiter.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\MemoryOtpLimiter.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\MemoryOtpLimiter.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\MemoryOtpLimiter.cs",
-              "RelativeToolTip": "Users_API\\Services\\MemoryOtpLimiter.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAQwCgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:20:52.832Z",
+              "WhenOpened": "2025-09-09T22:31:46.125Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "JwtTokenService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\JwtTokenService.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\JwtTokenService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\JwtTokenService.cs",
-              "RelativeToolTip": "Users_API\\Services\\JwtTokenService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:20:39.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IJwtTokenService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\IJwtTokenService.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\IJwtTokenService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\IJwtTokenService.cs",
-              "RelativeToolTip": "Users_API\\Services\\IJwtTokenService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:19:53.574Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IOtpLimiter.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\IOtpLimiter.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\IOtpLimiter.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\IOtpLimiter.cs",
-              "RelativeToolTip": "Users_API\\Services\\IOtpLimiter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:20:18.692Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EmailSender.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\EmailSender.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\EmailSender.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\EmailSender.cs",
-              "RelativeToolTip": "Users_API\\Services\\EmailSender.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAQwCsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:19:38.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IEmailSender.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\IEmailSender.cs",
-              "RelativeDocumentMoniker": "Users_API\\Services\\IEmailSender.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Services\\IEmailSender.cs",
-              "RelativeToolTip": "Users_API\\Services\\IEmailSender.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:19:42.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Users_API\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "Users_API\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAQwDQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:21:20.913Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Repositories\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Users_API\\Repositories\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Repositories\\IUserRepository.cs",
-              "RelativeToolTip": "Users_API\\Repositories\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAIwBMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:21:10.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UserProfile.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Profiles\\UserProfile.cs",
-              "RelativeDocumentMoniker": "Users_API\\Profiles\\UserProfile.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Profiles\\UserProfile.cs",
-              "RelativeToolTip": "Users_API\\Profiles\\UserProfile.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:34:14.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LoginDtos.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\DTOs\\LoginDtos.cs",
-              "RelativeDocumentMoniker": "Users_API\\DTOs\\LoginDtos.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\DTOs\\LoginDtos.cs",
-              "RelativeToolTip": "Users_API\\DTOs\\LoginDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:22:14.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\DTOs\\UserCreateDto.cs",
-              "RelativeDocumentMoniker": "Users_API\\DTOs\\UserCreateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\DTOs\\UserCreateDto.cs",
-              "RelativeToolTip": "Users_API\\DTOs\\UserCreateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:22:22.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\DTOs\\UserUpdateDto.cs",
-              "RelativeDocumentMoniker": "Users_API\\DTOs\\UserUpdateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\DTOs\\UserUpdateDto.cs",
-              "RelativeToolTip": "Users_API\\DTOs\\UserUpdateDto.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAzwB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:22:36.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UserWithInfoCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\DTOs\\UserWithInfoCreateDto.cs",
-              "RelativeDocumentMoniker": "Users_API\\DTOs\\UserWithInfoCreateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\DTOs\\UserWithInfoCreateDto.cs",
-              "RelativeToolTip": "Users_API\\DTOs\\UserWithInfoCreateDto.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwCMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:22:44.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UserReadDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\DTOs\\UserReadDto.cs",
-              "RelativeDocumentMoniker": "Users_API\\DTOs\\UserReadDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\DTOs\\UserReadDto.cs",
-              "RelativeToolTip": "Users_API\\DTOs\\UserReadDto.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAzwCAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:22:28.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UsersInfo.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Models\\UsersInfo.cs",
-              "RelativeDocumentMoniker": "Users_API\\Models\\UsersInfo.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Models\\UsersInfo.cs",
-              "RelativeToolTip": "Users_API\\Models\\UsersInfo.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:18:54.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Users_API\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Models\\User.cs",
-              "RelativeToolTip": "Users_API\\Models\\User.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAQwCsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:18:39.204Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Users_APIContext.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Data\\Users_APIContext.cs",
-              "RelativeDocumentMoniker": "Users_API\\Data\\Users_APIContext.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Users_API\\Data\\Users_APIContext.cs",
-              "RelativeToolTip": "Users_API\\Data\\Users_APIContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T11:32:35.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Program.cs",
-              "RelativeDocumentMoniker": "CartManagement_Api\\Program.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Program.cs",
-              "RelativeToolTip": "CartManagement_Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAQwBgAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T22:31:46.125Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
               "Title": "CartRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Repositories\\CartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Repositories\\CartRepository.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Repositories\\CartRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Repositories\\CartRepository.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Repositories\\CartRepository.cs",
               "RelativeToolTip": "CartManagement_Api\\Repositories\\CartRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAcwBwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -484,11 +128,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 7,
               "Title": "ICartRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Repositories\\ICartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Repositories\\ICartRepository.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Repositories\\ICartRepository.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Repositories\\ICartRepository.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Repositories\\ICartRepository.cs",
               "RelativeToolTip": "CartManagement_Api\\Repositories\\ICartRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -496,11 +140,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 3,
               "Title": "CartsController.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Controllers\\CartsController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Controllers\\CartsController.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Controllers\\CartsController.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Controllers\\CartsController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Controllers\\CartsController.cs",
               "RelativeToolTip": "CartManagement_Api\\Controllers\\CartsController.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAAwGIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -508,11 +152,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 4,
               "Title": "ExceptionHandlingMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Services\\ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Services\\ExceptionHandlingMiddleware.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Services\\ExceptionHandlingMiddleware.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Services\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Services\\ExceptionHandlingMiddleware.cs",
               "RelativeToolTip": "CartManagement_Api\\Services\\ExceptionHandlingMiddleware.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAAwEMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -520,11 +164,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 2,
               "Title": "ICartService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Services\\ICartService.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Services\\ICartService.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Services\\ICartService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Services\\ICartService.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Services\\ICartService.cs",
               "RelativeToolTip": "CartManagement_Api\\Services\\ICartService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -532,11 +176,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 8,
               "Title": "CartManagement_ApiContext.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Data\\CartManagement_ApiContext.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Data\\CartManagement_ApiContext.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Data\\CartManagement_ApiContext.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Data\\CartManagement_ApiContext.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Data\\CartManagement_ApiContext.cs",
               "RelativeToolTip": "CartManagement_Api\\Data\\CartManagement_ApiContext.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAkwEIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -544,11 +188,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 5,
               "Title": "CartService.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Services\\CartService.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Services\\CartService.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Services\\CartService.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Services\\CartService.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Services\\CartService.cs",
               "RelativeToolTip": "CartManagement_Api\\Services\\CartService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -556,11 +200,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 10,
               "Title": "CartSummaryDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\DTOs\\CartSummaryDto.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\DTOs\\CartSummaryDto.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\DTOs\\CartSummaryDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\DTOs\\CartSummaryDto.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\DTOs\\CartSummaryDto.cs",
               "RelativeToolTip": "CartManagement_Api\\DTOs\\CartSummaryDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -568,11 +212,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 12,
               "Title": "CartItemUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\DTOs\\CartItemUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\DTOs\\CartItemUpdateDto.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\DTOs\\CartItemUpdateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\DTOs\\CartItemUpdateDto.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\DTOs\\CartItemUpdateDto.cs",
               "RelativeToolTip": "CartManagement_Api\\DTOs\\CartItemUpdateDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -580,11 +224,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 11,
               "Title": "CartReadDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\DTOs\\CartReadDto.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\DTOs\\CartReadDto.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\DTOs\\CartReadDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\DTOs\\CartReadDto.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\DTOs\\CartReadDto.cs",
               "RelativeToolTip": "CartManagement_Api\\DTOs\\CartReadDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -592,11 +236,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 9,
               "Title": "CartProfile.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Profiles\\CartProfile.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Profiles\\CartProfile.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Profiles\\CartProfile.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Profiles\\CartProfile.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Profiles\\CartProfile.cs",
               "RelativeToolTip": "CartManagement_Api\\Profiles\\CartProfile.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -604,11 +248,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 13,
               "Title": "CartItemReadDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\DTOs\\CartItemReadDto.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\DTOs\\CartItemReadDto.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\DTOs\\CartItemReadDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\DTOs\\CartItemReadDto.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\DTOs\\CartItemReadDto.cs",
               "RelativeToolTip": "CartManagement_Api\\DTOs\\CartItemReadDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -616,11 +260,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 14,
               "Title": "CartItem.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Models\\CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Models\\CartItem.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Models\\CartItem.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Models\\CartItem.cs",
               "RelativeToolTip": "CartManagement_Api\\Models\\CartItem.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAYwAUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -628,11 +272,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 15,
               "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Models\\Cart.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\Models\\Cart.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\Models\\Cart.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\Models\\Cart.cs",
               "RelativeToolTip": "CartManagement_Api\\Models\\Cart.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -640,11 +284,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 16,
               "Title": "CartItemCreateDto.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\DTOs\\CartItemCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\DTOs\\CartItemCreateDto.cs",
               "RelativeDocumentMoniker": "CartManagement_Api\\DTOs\\CartItemCreateDto.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\CartManagement_Api\\DTOs\\CartItemCreateDto.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\CartManagement_Api\\DTOs\\CartItemCreateDto.cs",
               "RelativeToolTip": "CartManagement_Api\\DTOs\\CartItemCreateDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -652,11 +296,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 17,
               "Title": "CategoryManagement_API.csproj",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Categories_API\\CategoryManagement_API.csproj",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\Categories_API\\CategoryManagement_API.csproj",
               "RelativeDocumentMoniker": "Categories_API\\CategoryManagement_API.csproj",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\Categories_API\\CategoryManagement_API.csproj",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\Categories_API\\CategoryManagement_API.csproj",
               "RelativeToolTip": "Categories_API\\CategoryManagement_API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -664,11 +308,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 18,
               "Title": "OrderManagement_API.csproj",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
               "RelativeDocumentMoniker": "OrderManagement_API\\OrderManagement_API.csproj",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\4\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\Code\\5\\FA25\\OrderManagement_API\\OrderManagement_API.csproj",
               "RelativeToolTip": "OrderManagement_API\\OrderManagement_API.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
