@@ -36,28 +36,15 @@ builder.Services.AddAutoMapper(typeof(CartProfile));
 // DI
 builder.Services.AddScoped<ICartRepository, CartRepository>();
 builder.Services.AddScoped<ICartService, CartService>();
-
-// JWT mock
-var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("DevOnly_SuperSecretKey_ChangeMe!123"));
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(o =>
-    {
-        o.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = false,
-            ValidateAudience = false,
-            ValidateIssuerSigningKey = true,
-            IssuerSigningKey = key,
-            ValidateLifetime = false
-        };
-    });
+builder.Services.AddScoped<ICartItemRepository, CartItemRepository>();
+builder.Services.AddScoped<ICartItemService, CartItemService>();
 builder.Services.AddAuthorization();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "RoleUpdateManagementAPI", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "CartManagementAPI", Version = "v1" });
 
     // Cấu hình hỗ trợ Bearer token
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -111,28 +98,9 @@ app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
 
-// Dev token endpoint
-app.MapPost("/dev/token", (int userId, string? role) =>
-{
-    var claims = new List<Claim> { new(ClaimTypes.NameIdentifier, userId.ToString()) };
-    if (!string.IsNullOrWhiteSpace(role))
-        claims.Add(new Claim(ClaimTypes.Role, role));
-    var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-    var token = new System.IdentityModel.Tokens.Jwt.JwtSecurityToken(
-        claims: claims,
-        expires: DateTime.UtcNow.AddHours(12),
-        signingCredentials: creds);
-    var jwt = new System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler().WriteToken(token);
-    return Results.Ok(new { token = jwt });
-});
+
 
 app.MapControllers();
 
-// Auto migrate (dev)
-using (var scope = app.Services.CreateScope())
-{
-    var db = scope.ServiceProvider.GetRequiredService<CartManagement_ApiContext>();
-    await db.Database.MigrateAsync();
-}
 
 app.Run();
