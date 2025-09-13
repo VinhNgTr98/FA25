@@ -103,7 +103,7 @@ namespace Users_API.Controllers
         public async Task<ActionResult<UserReadDto>> GetByEmail(string email, CancellationToken ct)
         {
             //if (!IsAdmin && !string.Equals(CurrentUserEmail, email, StringComparison.OrdinalIgnoreCase))
-                return Forbid();
+               // return Forbid();
 
             var u = await _svc.GetByEmailAsync(email, ct);
             return u is null ? NotFound() : Ok(u);
