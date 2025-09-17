@@ -17,9 +17,5 @@ namespace UserManagement_API.DTOs
         [Required]
         [MinLength(8)]
         public string ConfirmNewPassword { get; set; } = default!;
-
-        [Required]
-        [MaxLength(6)]
-        public string OtpCode { get; set; } = default!;
     }
 }
