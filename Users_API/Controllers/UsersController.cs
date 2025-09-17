@@ -213,62 +213,27 @@ namespace Users_API.Controllers
 
         }
 
-        //[HttpPost("me/change-password-confirm")]
-        //// [Authorize]
-        //public async Task<IActionResult> ConfirmChangePassword([FromBody] ChangePasswordConfirmDto dto, CancellationToken ct)
-        //{
-        //    if (CurrentUserId is null) return Unauthorized();
 
-        //    if (!ModelState.IsValid)
-        //        return ValidationProblem(ModelState);
-
-        //    if (!string.Equals(dto.NewPassword, dto.ConfirmNewPassword, StringComparison.Ordinal))
-        //    {
-        //        return BadRequest(new
-        //        {
-        //            message = "New password and confirmation do not match."
-        //        });
-        //    }
-
-        //    var ok = await _svc.ConfirmChangePasswordAsync(
-        //        CurrentUserId.Value,
-        //        dto.OldPassword,
-        //        dto.NewPassword,
-        //        dto.OtpCode,
-        //        ct);
-
-        //    return ok
-        //        ? Ok(new { message = "Password changed" })
-        //        : BadRequest(new { message = "Invalid old password, OTP, or password policy not met." });
-        //}
-
-        [HttpPost("{id:int}/change-password-confirm")]
-        [AllowAnonymous] // hoặc [Authorize] nếu muốn bảo vệ endpoint
-        public async Task<IActionResult> ConfirmChangePassword(int id, [FromBody] ChangePasswordConfirmDto dto, CancellationToken ct)
+        [HttpPost("{id:int}/change-password")]
+        [AllowAnonymous] 
+        public async Task<IActionResult> ChangePassword(int id, [FromBody] ChangePasswordConfirmDto dto, CancellationToken ct)
         {
             if (!ModelState.IsValid)
                 return ValidationProblem(ModelState);
 
+            // Kiểm tra nhập lại mật khẩu mới khớp
             if (!string.Equals(dto.NewPassword, dto.ConfirmNewPassword, StringComparison.Ordinal))
-            {
-                return BadRequest(new
-                {
-                    message = "New password and confirmation do not match."
-                });
-            }
+                return BadRequest(new { message = "New password and confirmation do not match." });
 
             var ok = await _svc.ConfirmChangePasswordAsync(
                 id,
                 dto.OldPassword,
                 dto.NewPassword,
-                dto.OtpCode,
                 ct);
 
             return ok
                 ? Ok(new { message = "Password changed" })
-                : BadRequest(new { message = "Invalid old password, OTP, or password policy not met." });
+                : BadRequest(new { message = "Invalid old password or password policy not met." });
         }
-
-
     }
 }

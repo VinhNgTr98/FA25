@@ -257,35 +257,7 @@ namespace UserManagement_API.Services
             return true;
         }
 
-        public async Task<bool> ConfirmChangePasswordAsync(int userId, string oldPassword, string newPassword, string otpCode, CancellationToken ct = default)
-        {
-            var u = await _repo.GetByIdAsync(userId, ct);
-            if (u == null) return false;
-
-            // Check old password
-            if (!BCrypt.Net.BCrypt.Verify(oldPassword, u.PasswordHash))
-                return false;
-
-            // Validate OTP
-            if (string.IsNullOrWhiteSpace(u.otp_code) ||
-                !string.Equals(u.otp_code, otpCode, StringComparison.Ordinal) ||
-                u.otp_expires is null || u.otp_expires < DateTime.UtcNow)
-            {
-                return false;
-            }
-
-            // Validate new password strength (có thể relax tuỳ ý)
-            if (!ValidateNewPassword(newPassword))
-                return false;
-
-            // Update password
-            u.PasswordHash = BCrypt.Net.BCrypt.HashPassword(newPassword);
-            u.otp_code = null;
-            u.otp_expires = null;
-
-            await _repo.UpdateAsync(u, ct);
-            return true;
-        }
+        
 
         private bool ValidateNewPassword(string password)
         {
@@ -298,6 +270,26 @@ namespace UserManagement_API.Services
             var hasDigit = password.Any(char.IsDigit);
             var hasSpecial = password.Any(ch => !char.IsLetterOrDigit(ch) && !char.IsWhiteSpace(ch));
             return hasUpper && hasLower && hasDigit && hasSpecial;
+        }
+
+        public async Task<bool> ConfirmChangePasswordAsync(int userId, string oldPassword, string newPassword, CancellationToken ct = default)
+        {
+            var u = await _repo.GetByIdAsync(userId, ct);
+            if (u == null) return false;
+
+            // Kiểm tra mật khẩu cũ
+            if (!BCrypt.Net.BCrypt.Verify(oldPassword, u.PasswordHash))
+                return false;
+
+            // Kiểm tra policy mật khẩu mới
+            if (!ValidateNewPassword(newPassword))
+                return false;
+
+            // Cập nhật mật khẩu
+            u.PasswordHash = BCrypt.Net.BCrypt.HashPassword(newPassword);
+
+            await _repo.UpdateAsync(u, ct);
+            return true;
         }
     }
 
