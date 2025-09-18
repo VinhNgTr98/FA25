@@ -32,6 +32,13 @@ public class HotelsController : ControllerBase
         if (hotel == null) return NotFound();
         return Ok(_mapper.Map<HotelReadDto>(hotel));
     }
+    [HttpGet("GetByUserID/{id:int}")]
+    public async Task<ActionResult<HotelReadDto>> GetByUserID(int id)
+    {
+        var hotel = await _db.Hotel.AsNoTracking().FirstOrDefaultAsync(h => h.UserID == id);
+        if (hotel == null) return NotFound();
+        return Ok(_mapper.Map<HotelReadDto>(hotel));
+    }
 
     [HttpPost]
     public async Task<ActionResult<HotelReadDto>> Create([FromBody] HotelCreateDto dto)

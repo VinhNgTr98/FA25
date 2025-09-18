@@ -11,11 +11,26 @@
         "Action": "Start"
       },
       {
+<<<<<<< HEAD
+=======
+        "Path": "TourManagement\\TourManagement.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "HotelsManagement_API\\HotelsManagement_API.csproj",
+        "Action": "Start"
+      },
+      {
+>>>>>>> 3b4281e6e4e95a1d044681832b2645a921024b4d
         "Path": "RoomManagement_API\\RoomManagement_API.csproj",
         "Action": "Start"
       },
       {
+<<<<<<< HEAD
         "Path": "FeedbackManagement_API\\FeedbackManagement_API.csproj",
+=======
+        "Path": "ImageManagement_API\\ImageManagement_API.csproj",
+>>>>>>> 3b4281e6e4e95a1d044681832b2645a921024b4d
         "Action": "Start"
       }
     ]

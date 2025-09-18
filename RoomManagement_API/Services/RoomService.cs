@@ -64,6 +64,28 @@ namespace RoomManagement_API.Services.Rooms
             if (checkIn.HasValue && checkOut.HasValue && checkOut <= checkIn)
                 throw new ArgumentException("Check-out must be later than check-in");
         }
+        public async Task<decimal?> GetLowestPriceAsync(CancellationToken ct)
+        {
+            return await _repo.GetLowestPriceAsync(ct);
+        }
+        public async Task<decimal?> GetHighestPriceAsync(CancellationToken ct)
+        {
+            return await _repo.GetHighestPriceAsync(ct);
+        }
+        public async Task<decimal?> GetLowestPriceByHotelAsync(Guid hotelId, CancellationToken ct)
+        {
+            return await _repo.GetLowestPriceByHotelAsync(hotelId, ct);
+        }
+        public async Task<decimal?> GetHighestPriceByHotelAsync(Guid hotelId, CancellationToken ct)
+        {
+            return await _repo.GetLowestPriceByHotelAsync(hotelId, ct);
+        }
+
+        public IQueryable<RoomReadDto> AsQueryable()
+        {
+            return _repo.AsQueryable().Select(r => _mapper.Map<RoomReadDto>(r));
+        }
+
     }
 
 }
