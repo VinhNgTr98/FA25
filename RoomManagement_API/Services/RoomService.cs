@@ -51,8 +51,6 @@ namespace RoomManagement_API.Services.Rooms
             if (dto.RoomCapacity <= 0) throw new ArgumentException("RoomCapacity must be > 0");
             if (dto.Price < 0) throw new ArgumentException("Price must be >= 0");
 
-            // TODO: xác nhận RoomType / HotelId nếu cho phép đổi
-
             var entity = _mapper.Map<Room>(dto);
             var saved = await _repo.UpdateAsync(entity, ct);
             return saved == null ? null : _mapper.Map<RoomReadDto>(saved);
