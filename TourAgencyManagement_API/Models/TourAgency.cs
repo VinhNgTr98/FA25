@@ -10,7 +10,7 @@ namespace TourAgencyManagement_API.Models
 
         [Required]
         
-        public Guid UserId { get; set; }
+        public int UserID { get; set; }
 
         [Required, MaxLength(255)]
         public string Location { get; set; }

@@ -36,13 +36,8 @@ namespace RoomManagement_API.Services.Rooms
 
         public async Task<RoomReadDto> CreateAsync(RoomCreateDto dto, CancellationToken ct)
         {
-            // Validate nghiệp vụ bổ sung (ngoài DataAnnotations)
-            ValidateTimes(dto.CheckInTime, dto.CheckOutTime);
             if (dto.RoomCapacity <= 0) throw new ArgumentException("RoomCapacity must be > 0");
             if (dto.Price < 0) throw new ArgumentException("Price must be >= 0");
-
-            // TODO: gọi Categories API để xác nhận RoomType thuộc CategoryType = "room"
-            // TODO: gọi Hotels API để xác nhận HotelId tồn tại
 
             var entity = _mapper.Map<Room>(dto);
             entity.RoomId = Guid.NewGuid();
@@ -53,7 +48,6 @@ namespace RoomManagement_API.Services.Rooms
 
         public async Task<RoomReadDto?> UpdateAsync(RoomUpdateDto dto, CancellationToken ct)
         {
-            ValidateTimes(dto.CheckInTime, dto.CheckOutTime);
             if (dto.RoomCapacity <= 0) throw new ArgumentException("RoomCapacity must be > 0");
             if (dto.Price < 0) throw new ArgumentException("Price must be >= 0");
 
