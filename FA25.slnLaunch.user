@@ -9,6 +9,22 @@
       {
         "Path": "UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "TourManagement\\TourManagement.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "HotelsManagement_API\\HotelsManagement_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RoomManagement_API\\RoomManagement_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ImageManagement_API\\ImageManagement_API.csproj",
+        "Action": "Start"
       }
     ]
   }

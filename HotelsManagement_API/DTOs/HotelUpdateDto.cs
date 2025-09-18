@@ -7,8 +7,7 @@ namespace HotelsManagement_API.DTOs
         [Required]
         public Guid HotelId { get; set; }
 
-        [Required(ErrorMessage = "UserID is required")]
-        public int UserID { get; set; }
+        
 
         [Required(ErrorMessage = "Category is required")]
         public int Category { get; set; }
@@ -17,14 +16,13 @@ namespace HotelsManagement_API.DTOs
         [StringLength(50, ErrorMessage = "HotelStatus cannot exceed 50 characters")]
         public string HotelStatus { get; set; }
 
-        [StringLength(200, ErrorMessage = "Tiles cannot exceed 200 characters")]
-        public string? Tiles { get; set; }
+        [StringLength(200, ErrorMessage = "Hotel name cannot exceed 200 characters")]
+        public string? HotelName { get; set; }
 
         [Required(ErrorMessage = "Location is required")]
         public string Location { get; set; }
 
         public string? CheckInPolicy { get; set; }
-        public string? CancellationPolicy { get; set; }
         public string? Description { get; set; }
 
         [Required(ErrorMessage = "Address is required")]
@@ -36,5 +34,6 @@ namespace HotelsManagement_API.DTOs
 
         [EmailAddress(ErrorMessage = "Invalid email address")]
         public string? Email { get; set; }
+        public string? TaxNumber { get; set; }
     }
 }
