@@ -15,12 +15,6 @@ namespace RoomManagement_API.DTOs
         [Range(0, 5, ErrorMessage = "Invalid room type value")]
         public int RoomType { get; set; }
 
-        [Required(ErrorMessage = "Check-in time is required")]
-        public DateTime? CheckInTime { get; set; }
-
-        [Required(ErrorMessage = "Check-out time is required")]
-        public DateTime? CheckOutTime { get; set; }
-
         [StringLength(500, ErrorMessage = "Amenities cannot exceed 500 characters")]
         public string Amenities { get; set; }
 

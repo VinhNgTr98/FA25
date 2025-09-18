@@ -48,5 +48,31 @@ namespace RoomManagement_API.Repositories.Rooms
             await _db.SaveChangesAsync(ct);
             return true;
         }
+        public async Task<decimal?> GetLowestPriceAsync(CancellationToken ct) =>
+       await _db.Room.OrderBy(r => r.Price)
+                       .Select(r => (decimal?)r.Price)
+                       .FirstOrDefaultAsync(ct);
+        public async Task<decimal?> GetHighestPriceAsync(CancellationToken ct) =>
+    await _db.Room.OrderByDescending(r => r.Price)
+                    .Select(r => (decimal?)r.Price)
+                    .FirstOrDefaultAsync(ct);
+        public async Task<decimal?> GetLowestPriceByHotelAsync(Guid hotelId, CancellationToken ct)
+        {
+            return await _db.Room
+                .Where(r => r.HotelId == hotelId)
+                .OrderBy(r => r.Price)
+                .Select(r => (decimal?)r.Price)
+                .FirstOrDefaultAsync(ct);
+        }
+        public async Task<decimal?> GetHighestPriceByHotelAsync(Guid hotelId, CancellationToken ct)
+        {
+            return await _db.Room
+                .Where(r => r.HotelId == hotelId)
+                .OrderByDescending(r => r.Price)
+                .Select(r => (decimal?)r.Price)
+                .FirstOrDefaultAsync(ct);
+        }
+
+        public IQueryable<Room> AsQueryable() => _db.Room.AsQueryable();
     }
 }
