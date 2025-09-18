@@ -7,7 +7,12 @@ namespace UserManagement_API.DTOs
         // User
         [Required, MaxLength(100), EmailAddress]
         public string Email { get; set; } = default!;
+
         [Required, MaxLength(255)]
+        [RegularExpression(
+        @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$",
+        ErrorMessage = "Password must be at least 8 characters and include at least 1 uppercase, 1 lowercase, 1 number, and 1 special character."
+    )]
         public string Password { get; set; } = default!;
 
         [MaxLength(10)]

@@ -19,8 +19,8 @@ namespace UserManagement_API.DTOs
         public bool IsWebAdmin { get; set; }
         public bool IsModerator { get; set; }
 
-        public bool? IsActive { get; set; }   // optional, chỉ admin mới sửa
-        public int? CountWarning { get; set; }  // optional, chỉ system logic sửa
+        public bool? IsActive { get; set; }   
+        public int? CountWarning { get; set; }  
 
         [MaxLength(6)]
         public string? otp_code { get; set; }
