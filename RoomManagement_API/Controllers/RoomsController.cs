@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
 using RoomManagement_API.DTOs;
 using RoomManagement_API.Models;
 using RoomManagement_API.Services.Rooms;
@@ -78,6 +79,37 @@ namespace RoomManagement_API.Controllers
             var ok = await _svc.DeleteAsync(id, ct);
             return ok ? NoContent() : NotFound();
         }
+        // GET api/rooms/highest-price
+        [HttpGet("highest-price")]
+        public async Task<ActionResult<decimal?>> GetHighestPrice(CancellationToken ct)
+        {
+            var price = await _svc.GetHighestPriceAsync(ct);
+            return Ok(price);
+        }
+        // GET api/rooms/lowest-price
+        [HttpGet("lowest-price")]
+        public async Task<ActionResult<decimal?>> GetLowestPrice(CancellationToken ct)
+        {
+            var price = await _svc.GetLowestPriceAsync(ct);
+            return Ok(price);
+        }
+        // GET api/rooms/lowest-price/by-hotel/{hotelId}
+        [HttpGet("lowest-price/by-hotel/{hotelId:guid}")]
+        public async Task<ActionResult<decimal?>> GetLowestPriceByHotel(Guid hotelId, CancellationToken ct)
+        {
+            var price = await _svc.GetLowestPriceByHotelAsync(hotelId, ct);
+            return price.HasValue ? Ok(price) : NotFound(new { message = "No rooms found for this hotel" });
+        }
+        // GET api/rooms/lowest-price/by-hotel/{hotelId}
+        [HttpGet("highest-price/by-hotel/{hotelId:guid}")]
+        public async Task<ActionResult<decimal?>> GetHighestPriceByHotel(Guid hotelId, CancellationToken ct)
+        {
+            var price = await _svc.GetHighestPriceByHotelAsync(hotelId, ct);
+            return price.HasValue ? Ok(price) : NotFound(new { message = "No rooms found for this hotel" });
+        }
+
+
+
     }
 
 }
