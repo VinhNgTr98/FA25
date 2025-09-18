@@ -9,6 +9,14 @@
       {
         "Path": "UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "RoomManagement_API\\RoomManagement_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "FeedbackManagement_API\\FeedbackManagement_API.csproj",
+        "Action": "Start"
       }
     ]
   }
