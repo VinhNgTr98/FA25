@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TourAgencyManagement_API.DTOs;
-using TourAgencyManagement_API.Services;
 using TourAgencyManagement_API.Services.Interfaces;
 
 namespace TourAgencyManagement_API.Controllers
@@ -11,7 +10,7 @@ namespace TourAgencyManagement_API.Controllers
     {
         private readonly ITourAgencyService _service;
 
-        public TourAgencyController(ITourAgencyService service) // ✅ dùng interface
+        public TourAgencyController(ITourAgencyService service)
         {
             _service = service;
         }
@@ -23,7 +22,7 @@ namespace TourAgencyManagement_API.Controllers
             return Ok(agencies);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id:guid}")]
         public async Task<IActionResult> GetById(Guid id)
         {
             var agency = await _service.GetByIdAsync(id);
@@ -32,21 +31,25 @@ namespace TourAgencyManagement_API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(TourAgencyCreateDTO dto)
+        public async Task<IActionResult> Create([FromBody] TourAgencyCreateDto dto)
         {
+            if (!ModelState.IsValid) return ValidationProblem(ModelState);
+
             var created = await _service.CreateAsync(dto);
-            return Ok(created);
+            return CreatedAtAction(nameof(GetById), new { id = created.TourAgencyId }, created);
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(Guid id, TourAgencyUpdateDTO dto)
+        [HttpPut("{id:guid}")]
+        public async Task<IActionResult> Update(Guid id, [FromBody] TourAgencyUpdateDto dto)
         {
+            if (!ModelState.IsValid) return ValidationProblem(ModelState);
+
             var result = await _service.UpdateAsync(id, dto);
             if (!result) return NotFound();
             return NoContent();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             var result = await _service.DeleteAsync(id);
@@ -54,5 +57,4 @@ namespace TourAgencyManagement_API.Controllers
             return NoContent();
         }
     }
-
 }

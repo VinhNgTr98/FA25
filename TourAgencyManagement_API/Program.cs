@@ -54,12 +54,13 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
+
+
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<ITourAgencyRepository, TourAgencyRepository>();
 builder.Services.AddScoped<ITourAgencyService, TourAgencyService>();
 
 var odataBuilder = new ODataConventionModelBuilder();
-odataBuilder.EntitySet<TourAgencyReadDTO>("TourAgencies");
 // Add services to the container.
 
 builder.Services.AddControllers().AddOData(options => options

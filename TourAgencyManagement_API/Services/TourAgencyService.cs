@@ -17,34 +17,36 @@ namespace TourAgencyManagement_API.Services
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<TourAgencyReadDTO>> GetAllAsync()
+        public async Task<IEnumerable<TourAgencyReadDto>> GetAllAsync()
         {
             var agencies = await _repository.GetAllAsync();
-            return _mapper.Map<IEnumerable<TourAgencyReadDTO>>(agencies);
+            return _mapper.Map<IEnumerable<TourAgencyReadDto>>(agencies);
         }
 
-        public async Task<TourAgencyReadDTO?> GetByIdAsync(Guid id)
+        public async Task<TourAgencyReadDto?> GetByIdAsync(Guid id)
         {
             var agency = await _repository.GetByIdAsync(id);
-            return _mapper.Map<TourAgencyReadDTO?>(agency);
+            return _mapper.Map<TourAgencyReadDto?>(agency);
         }
 
-        public async Task<TourAgencyReadDTO> CreateAsync(TourAgencyCreateDTO dto)
+        public async Task<TourAgencyReadDto> CreateAsync(TourAgencyCreateDto dto)
         {
             var agency = _mapper.Map<TourAgency>(dto);
             agency.TourAgencyId = Guid.NewGuid();
+            agency.CreatedAt = DateTime.UtcNow;
 
             var created = await _repository.AddAsync(agency);
-            return _mapper.Map<TourAgencyReadDTO>(created);
+            return _mapper.Map<TourAgencyReadDto>(created);
         }
 
-
-        public async Task<bool> UpdateAsync(Guid id, TourAgencyUpdateDTO dto)
+        public async Task<bool> UpdateAsync(Guid id, TourAgencyUpdateDto dto)
         {
             var existing = await _repository.GetByIdAsync(id);
             if (existing == null) return false;
 
             _mapper.Map(dto, existing);
+            existing.UpdatedAt = DateTime.UtcNow;
+
             await _repository.UpdateAsync(existing);
             return true;
         }

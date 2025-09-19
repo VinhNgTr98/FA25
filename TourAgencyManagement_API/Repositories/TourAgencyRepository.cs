@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
 using TourAgencyManagement_API.Data;
 using TourAgencyManagement_API.Models;
 using TourAgencyManagement_API.Repositories.Interfaces;
@@ -10,7 +9,6 @@ namespace TourAgencyManagement_API.Repositories
     {
         private readonly TourAgencyContext _context;
 
-
         public TourAgencyRepository(TourAgencyContext context)
         {
             _context = context;
@@ -18,11 +16,12 @@ namespace TourAgencyManagement_API.Repositories
 
         public async Task<IEnumerable<TourAgency>> GetAllAsync()
         {
-            return await _context.TourAgencies.ToListAsync();
+            return await _context.TourAgencies.AsNoTracking().ToListAsync();
         }
 
         public async Task<TourAgency?> GetByIdAsync(Guid id)
         {
+            // FindAsync dùng key, có tracking (phù hợp Update/Delete)
             return await _context.TourAgencies.FindAsync(id);
         }
 
@@ -32,7 +31,6 @@ namespace TourAgencyManagement_API.Repositories
             await _context.SaveChangesAsync();
             return agency;
         }
-
 
         public async Task UpdateAsync(TourAgency agency)
         {
