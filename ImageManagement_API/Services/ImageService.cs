@@ -85,6 +85,42 @@ namespace ImageManagement_API.Services
 
             return _mapper.Map<ImageReadDTO>(entity);
         }
+        public async Task<IEnumerable<ImageReadDTO>> UploadAndSaveManyAsync(ImageCreateWithFilesDTO dto)
+        {
+            var uploadResults = await _cloudinaryService.UploadImagesAsync(dto.Files, "pet_app");
+            var entities = new List<Image>();
+
+            foreach (var result in uploadResults)
+            {
+                if (!result.Success) continue;
+
+                var entity = new Image
+                {
+                    IsHotelImg = dto.IsHotelImg,
+                    IsRoomImg = dto.IsRoomImg,
+                    IsTourImg = dto.IsTourImg,
+                    IsVehicleImage = dto.IsVehicleImage,
+                    LinkedId = dto.LinkedId,
+                    Caption = dto.Caption,
+                    IsCover = dto.IsCover,
+                    ImageUrl = result.Url ?? "",
+                    UploadedAt = DateTime.Now
+                };
+                entities.Add(entity);
+                await _repository.AddAsync(entity);
+            }
+
+            if (entities.Any())
+                await _repository.SaveChangesAsync();
+
+            return _mapper.Map<IEnumerable<ImageReadDTO>>(entities);
+        }
+        public async Task<IEnumerable<ImageReadDTO>> GetByLinkedIdAsync(Guid linkedId)
+        {
+            var images = await _repository.GetAllAsync();
+            var filtered = images.Where(img => img.LinkedId == linkedId);
+            return _mapper.Map<IEnumerable<ImageReadDTO>>(filtered);
+        }
 
     }
 }

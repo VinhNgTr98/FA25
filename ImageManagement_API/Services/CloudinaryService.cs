@@ -56,6 +56,47 @@ namespace ImageManagement_API.Services
             var result = await _cloudinary.DestroyAsync(deletionParams);
             return result.Result == "ok";
         }
+
+        public async Task<List<ImageUploadResultDTO>> UploadImagesAsync(IFormFileCollection files, string folder = "pet_app")
+        {
+            var results = new List<ImageUploadResultDTO>();
+
+            foreach (var file in files)
+            {
+                if (file == null || file.Length == 0)
+                {
+                    results.Add(new ImageUploadResultDTO { Success = false, Message = "File is empty" });
+                    continue;
+                }
+
+                using var stream = file.OpenReadStream();
+                var uploadParams = new ImageUploadParams
+                {
+                    File = new FileDescription(file.FileName, stream),
+                    Folder = folder,
+                    Transformation = new Transformation().Width(800).Height(800).Crop("limit")
+                };
+
+                var uploadResult = await _cloudinary.UploadAsync(uploadParams);
+
+                if (uploadResult.Error != null)
+                {
+                    results.Add(new ImageUploadResultDTO { Success = false, Message = uploadResult.Error.Message });
+                    continue;
+                }
+
+                results.Add(new ImageUploadResultDTO
+                {
+                    Success = true,
+                    Message = "Upload successful",
+                    Url = uploadResult.SecureUrl?.ToString(),
+                    PublicId = uploadResult.PublicId
+                });
+            }
+
+            return results;
+        }
+
     }
 
 }

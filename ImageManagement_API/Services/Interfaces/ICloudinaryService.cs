@@ -7,5 +7,7 @@ namespace ImageManagement_API.Services.Interfaces
     {
         Task<ImageUploadResultDTO> UploadImageAsync(IFormFile file, string folder = "pet_app");
         Task<bool> DeleteImageAsync(string publicId);
+
+        Task<List<ImageUploadResultDTO>> UploadImagesAsync(IFormFileCollection files, string folder = "pet_app");
     }
 }

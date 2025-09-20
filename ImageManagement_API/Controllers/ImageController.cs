@@ -1,4 +1,5 @@
 ﻿using ImageManagement_API.DTOs;
+using ImageManagement_API.Services;
 using ImageManagement_API.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -67,5 +68,28 @@ namespace ImageManagement_API.Controllers
 
             return Ok(result);
         }
+
+        [HttpPost("upload-multiple")]
+        public async Task<IActionResult> UploadMultiple([FromForm] ImageCreateWithFilesDTO dto)
+        {
+            var images = await _imageService.UploadAndSaveManyAsync(dto);
+
+            if (!images.Any())
+                return BadRequest("Upload failed for all files.");
+
+            return Ok(images);
+        }
+        // GET: api/Image/getByLinkedId/{linkedId}
+        [HttpGet("getByLinkedId/{linkedId}")]
+        public async Task<ActionResult<IEnumerable<ImageReadDTO>>> GetByLinkedId(Guid linkedId)
+        {
+            var images = await _imageService.GetByLinkedIdAsync(linkedId);
+            if (!images.Any())
+                return NotFound(new { message = "No images found for this LinkedId" });
+
+            return Ok(images);
+        }
+
+
     }
 }
