@@ -15,10 +15,6 @@
         "Action": "Start"
       },
       {
-        "Path": "RoleUpdateManagement_API\\RoleUpdateManagement_API.csproj",
-        "Action": "Start"
-      },
-      {
         "Path": "Users_API\\UserManagement_API.csproj",
         "Action": "Start"
       }
