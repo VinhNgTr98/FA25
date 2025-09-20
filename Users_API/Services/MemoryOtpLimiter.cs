@@ -34,7 +34,7 @@ namespace UserManagement_API.Services
             else
                 s = s with { LastSentUtc = now, CountToday = s.CountToday + 1 };
 
-            _cache.Set(key, s, now.Date.AddDays(1) - now); // hết hạn cuối ngày
+            _cache.Set(key, s, now.Date.AddDays(1) - now); 
             return Task.CompletedTask;
         }
     }

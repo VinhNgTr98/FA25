@@ -8,9 +8,17 @@ namespace TourAgencyManagement_API.Profiles
     {
         public TourAgencyProfile()
         {
-            CreateMap<TourAgency, TourAgencyReadDTO>();
-            CreateMap<TourAgencyCreateDTO, TourAgency>();
-            CreateMap<TourAgencyUpdateDTO, TourAgency>();
+            // Model -> Read DTO
+            CreateMap<TourAgency, TourAgencyReadDto>()
+                .ForMember(d => d.UserId, o => o.MapFrom(s => s.UserID));
+
+            // Create DTO -> Model
+            CreateMap<TourAgencyCreateDto, TourAgency>()
+                .ForMember(d => d.UserID, o => o.MapFrom(s => s.UserId));
+
+            // Update DTO -> Model
+            CreateMap<TourAgencyUpdateDto, TourAgency>()
+                .ForMember(d => d.UserID, o => o.MapFrom(s => s.UserId));
         }
     }
 }

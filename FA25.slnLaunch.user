@@ -3,12 +3,24 @@
     "Name": "New Profile",
     "Projects": [
       {
+<<<<<<< HEAD
+=======
+        "Path": "HotelsManagement_API\\HotelsManagement_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RoomManagement_API\\RoomManagement_API.csproj",
+        "Action": "Start"
+      },
+      {
+>>>>>>> c4ebfb8b57551fc5244a1ef2b64b40962c82dc0a
         "Path": "UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
         "Action": "StartWithoutDebugging",
         "DebugTarget": "https"
       },
       {
         "Path": "Users_API\\UserManagement_API.csproj",
+<<<<<<< HEAD
         "Action": "StartWithoutDebugging",
         "DebugTarget": "https"
       },
@@ -18,6 +30,8 @@
       },
       {
         "Path": "RoomManagement_API\\RoomManagement_API.csproj",
+=======
+>>>>>>> c4ebfb8b57551fc5244a1ef2b64b40962c82dc0a
         "Action": "Start"
       }
     ]

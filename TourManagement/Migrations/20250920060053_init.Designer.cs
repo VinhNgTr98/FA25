@@ -12,8 +12,8 @@ using TourManagement.Data;
 namespace TourManagement.Migrations
 {
     [DbContext(typeof(TourContext))]
-    [Migration("20250918100717_Update1809")]
-    partial class Update1809
+    [Migration("20250920060053_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
