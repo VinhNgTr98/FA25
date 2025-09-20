@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 //builder.Services.AddDbContext<OrderManagement_APIContext>(options =>
 //    options.UseSqlite(builder.Configuration.GetConnectionString("OrderManagement_APIContext") ?? throw new InvalidOperationException("Connection string 'OrderManagement_APIContext' not found.")));
 
-builder.Services.AddDbContext<OrderManagement_APIContext>(options =>
+builder.Services.AddDbContext<BookingManagement_APIContext>(options =>
    options.UseMySql(
        builder.Configuration.GetConnectionString("DefaultConnection"),
        new MySqlServerVersion(new Version(8, 0, 36))
@@ -15,8 +15,8 @@ builder.Services.AddDbContext<OrderManagement_APIContext>(options =>
 );
 
 
-builder.Services.AddScoped<IOrderRepository, OrderRepository>();
-builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IBookingRepository, BookingRepository>();
+builder.Services.AddScoped<IBookingService, BookingService>();
 
 builder.Services.AddAutoMapper(typeof(Program));
 

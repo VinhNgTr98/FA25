@@ -11,7 +11,7 @@ using OrderManagement_API.Data;
 
 namespace OrderManagement_API.Migrations
 {
-    [DbContext(typeof(OrderManagement_APIContext))]
+    [DbContext(typeof(BookingManagement_APIContext))]
     [Migration("20250909184807_init")]
     partial class init
     {

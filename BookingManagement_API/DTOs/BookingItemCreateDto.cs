@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace OrderManagement_API.DTOs
+namespace BookingManagement_API.DTOs
 {
-    public class OrderItemCreateDto
+    public class BookingItemCreateDto
     {
         [Required, StringLength(32)] public string ItemType { get; set; } = default!;
         [Required] public Guid ItemID { get; set; }

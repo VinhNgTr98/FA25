@@ -5,41 +5,41 @@ using OrderManagement_API.Repositories;
 
 namespace OrderManagement_API.Services
 {
-    public class OrderService : IOrderService
+    public class BookingService : IBookingService
     {
-        private readonly IOrderRepository _repo;
+        private readonly IBookingRepository _repo;
         private readonly IMapper _mapper;
 
-        public OrderService(IOrderRepository repo, IMapper mapper)
+        public BookingService(IBookingRepository repo, IMapper mapper)
         {
             _repo = repo;
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<OrderReadDto>> GetAllAsync(CancellationToken ct = default)
+        public async Task<IEnumerable<BookingReadDto>> GetAllAsync(CancellationToken ct = default)
         {
             var orders = await _repo.GetAllAsync(ct);
-            return _mapper.Map<IEnumerable<OrderReadDto>>(orders);
+            return _mapper.Map<IEnumerable<BookingReadDto>>(orders);
         }
 
-        public async Task<OrderReadDto?> GetByIdAsync(int id, CancellationToken ct = default)
+        public async Task<BookingReadDto?> GetByIdAsync(int id, CancellationToken ct = default)
         {
             var order = await _repo.GetByIdAsync(id, ct);
-            return order == null ? null : _mapper.Map<OrderReadDto>(order);
+            return order == null ? null : _mapper.Map<BookingReadDto>(order);
         }
 
-        public async Task<OrderReadDto> CreateAsync(OrderCreateDto dto, CancellationToken ct = default)
+        public async Task<BookingReadDto> CreateAsync(BookingCreateDto dto, CancellationToken ct = default)
         {
-            var order = _mapper.Map<Order>(dto);
+            var order = _mapper.Map<Booking>(dto);
             order.Status = "Pending";
-            order.OrderDate = DateTime.UtcNow;
+            order.BookingDate = DateTime.UtcNow;
             order.TotalAmount = (order.TaxAmount ?? 0m); 
 
             var created = await _repo.AddAsync(order, ct);
-            return _mapper.Map<OrderReadDto>(created);
+            return _mapper.Map<BookingReadDto>(created);
         }
 
-        public async Task<bool> UpdateAsync(int id, OrderUpdateDto dto, CancellationToken ct = default)
+        public async Task<bool> UpdateAsync(int id, BookingUpdateDto dto, CancellationToken ct = default)
         {
             var existing = await _repo.GetByIdAsync(id, ct);
             if (existing == null) return false;
@@ -51,27 +51,27 @@ namespace OrderManagement_API.Services
         public Task<bool> DeleteAsync(int id, CancellationToken ct = default)
             => _repo.DeleteAsync(id, ct);
 
-        public async Task<IEnumerable<OrderReadDto>> GetByUserIdAsync(int userId, CancellationToken ct = default)
+        public async Task<IEnumerable<BookingReadDto>> GetByUserIdAsync(int userId, CancellationToken ct = default)
         {
             var orders = await _repo.GetByUserIdAsync(userId, ct);
-            return _mapper.Map<IEnumerable<OrderReadDto>>(orders);
+            return _mapper.Map<IEnumerable<BookingReadDto>>(orders);
         }
 
-        public async Task<IEnumerable<OrderItemReadDto>> GetItemsByOrderIdAsync(int orderId, CancellationToken ct = default)
+        public async Task<IEnumerable<BookingItemReadDto>> GetItemsByOrderIdAsync(int orderId, CancellationToken ct = default)
         {
             var items = await _repo.GetItemsByOrderIdAsync(orderId, ct);
-            return _mapper.Map<IEnumerable<OrderItemReadDto>>(items);
+            return _mapper.Map<IEnumerable<BookingItemReadDto>>(items);
         }
 
-        public async Task<OrderItemReadDto?> AddItemAsync(int orderId, OrderItemCreateDto dto, CancellationToken ct = default)
+        public async Task<BookingItemReadDto?> AddItemAsync(int orderId, BookingItemCreateDto dto, CancellationToken ct = default)
         {
             // Tìm order trước (để trả NotFound nếu không có và để tính lại total)
             var order = await _repo.GetByIdAsync(orderId, ct);
             if (order == null) return null;
 
             // Tạo item
-            var entity = _mapper.Map<OrderItem>(dto);
-            entity.OrderID = orderId;
+            var entity = _mapper.Map<BookingItem>(dto);
+            entity.BookingId = orderId;
             var created = await _repo.AddItemAsync(entity, ct);
 
             // Tính lại tổng tiền của Order = sum(items) + tax
@@ -81,7 +81,7 @@ namespace OrderManagement_API.Services
             order.TotalAmount = Math.Round(itemsTotal + tax, 2, MidpointRounding.AwayFromZero);
             await _repo.UpdateAsync(order, ct);
 
-            return _mapper.Map<OrderItemReadDto>(created);
+            return _mapper.Map<BookingItemReadDto>(created);
         }
     }
 }

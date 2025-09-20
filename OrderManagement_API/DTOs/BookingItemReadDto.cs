@@ -1,8 +1,8 @@
 ﻿namespace OrderManagement_API.DTOs
 {
-    public class OrderItemReadDto
+    public class BookingItemReadDto
     {
-        public int OrderItemID { get; set; }
+        public int BookingItemID { get; set; }
         public string ItemType { get; set; }
         public Guid ItemID { get; set; }
         public int Quantity { get; set; }

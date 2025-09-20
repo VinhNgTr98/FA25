@@ -6,19 +6,19 @@ namespace OrderManagement_API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class OrdersController : ControllerBase
+    public class BookingController : ControllerBase
     {
-        private readonly IOrderService _svc;
-        public OrdersController(IOrderService svc) => _svc = svc;
+        private readonly IBookingService _svc;
+        public BookingController(IBookingService svc) => _svc = svc;
 
         // GET /api/orders
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<OrderReadDto>>> GetAll(CancellationToken ct)
+        public async Task<ActionResult<IEnumerable<BookingReadDto>>> GetAll(CancellationToken ct)
             => Ok(await _svc.GetAllAsync(ct));
 
         // GET /api/orders/{id}
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<OrderReadDto>> GetById(int id, CancellationToken ct)
+        public async Task<ActionResult<BookingReadDto>> GetById(int id, CancellationToken ct)
         {
             var o = await _svc.GetByIdAsync(id, ct);
             return o == null ? NotFound() : Ok(o);
@@ -26,25 +26,25 @@ namespace OrderManagement_API.Controllers
 
         // GET /api/orders/by-user/{userId}
         [HttpGet("by-user/{userId:int}")]
-        public async Task<ActionResult<IEnumerable<OrderReadDto>>> GetByUserId(int userId, CancellationToken ct)
+        public async Task<ActionResult<IEnumerable<BookingReadDto>>> GetByUserId(int userId, CancellationToken ct)
             => Ok(await _svc.GetByUserIdAsync(userId, ct));
 
         // GET /api/orders/{orderId}/items
         [HttpGet("{orderId:int}/items")]
-        public async Task<ActionResult<IEnumerable<OrderItemReadDto>>> GetItemsByOrderId(int orderId, CancellationToken ct)
+        public async Task<ActionResult<IEnumerable<BookingItemReadDto>>> GetItemsByOrderId(int orderId, CancellationToken ct)
             => Ok(await _svc.GetItemsByOrderIdAsync(orderId, ct));
 
         // POST /api/orders
         [HttpPost]
-        public async Task<ActionResult<OrderReadDto>> Create([FromBody] OrderCreateDto dto, CancellationToken ct)
+        public async Task<ActionResult<BookingReadDto>> Create([FromBody] BookingCreateDto dto, CancellationToken ct)
         {
             var created = await _svc.CreateAsync(dto, ct);
-            return CreatedAtAction(nameof(GetById), new { id = created.OrderID }, created);
+            return CreatedAtAction(nameof(GetById), new { id = created.BookingId }, created);
         }
 
         // POST /api/orders/{orderId}/items
         [HttpPost("{orderId:int}/items")]
-        public async Task<ActionResult<OrderItemReadDto>> AddItem(int orderId, [FromBody] OrderItemCreateDto dto, CancellationToken ct)
+        public async Task<ActionResult<BookingItemReadDto>> AddItem(int orderId, [FromBody] BookingItemCreateDto dto, CancellationToken ct)
         {
             var created = await _svc.AddItemAsync(orderId, dto, ct);
             if (created == null) return NotFound("Order not found.");
@@ -54,7 +54,7 @@ namespace OrderManagement_API.Controllers
 
         // PUT /api/orders/{id}
         [HttpPut("{id:int}")]
-        public async Task<IActionResult> Update(int id, [FromBody] OrderUpdateDto dto, CancellationToken ct)
+        public async Task<IActionResult> Update(int id, [FromBody] BookingUpdateDto dto, CancellationToken ct)
         {
             var ok = await _svc.UpdateAsync(id, dto, ct);
             return ok ? NoContent() : NotFound();

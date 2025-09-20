@@ -1,9 +1,9 @@
 ﻿namespace OrderManagement_API.Models
 {
-    public class OrderItem
+    public class BookingItem
     {
-        public int OrderItemID { get; set; }
-        public int OrderID { get; set; }
+        public int BookingItemID { get; set; }
+        public int BookingId { get; set; }
         public string ItemType { get; set; } = default!; // Room, Tour, Vehicle, Service
         public Guid ItemID { get; set; }
         public int Quantity { get; set; }
@@ -12,6 +12,6 @@
         public DateTime? EndDate { get; set; }
 
         // Navigation
-        public Order Order { get; set; }
+        public Booking Booking { get; set; }
     }
 }
