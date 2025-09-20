@@ -55,12 +55,12 @@ namespace RoomManagement_API.Controllers
             }
         }
 
-        // PUT api/rooms
-        [HttpPut]
-        public async Task<ActionResult<RoomReadDto>> Put([FromBody] RoomUpdateDto dto, CancellationToken ct)
+        // PUT api/rooms/{id}
+        [HttpPut("{id:guid}")]
+        public async Task<ActionResult<RoomReadDto>> Put(Guid id, [FromBody] RoomUpdateDto dto, CancellationToken ct)
         {
             if (!ModelState.IsValid) return ValidationProblem(ModelState);
-
+            if (id != dto.RoomId) return BadRequest("Route id != body RoomId");
             try
             {
                 var updated = await _svc.UpdateAsync(dto, ct);
