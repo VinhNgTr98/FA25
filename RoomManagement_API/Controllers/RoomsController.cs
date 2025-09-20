@@ -108,8 +108,6 @@ namespace RoomManagement_API.Controllers
             return price.HasValue ? Ok(price) : NotFound(new { message = "No rooms found for this hotel" });
         }
 
-
-
     }
 
 }
