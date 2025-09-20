@@ -57,5 +57,15 @@ namespace ImageManagement_API.Controllers
             if (!success) return NotFound();
             return NoContent();
         }
+
+        [HttpPost("upload")]
+        public async Task<IActionResult> Upload([FromForm] ImageCreateWithFileDTO dto)
+        {
+            var result = await _imageService.UploadAndSaveAsync(dto);
+            if (result == null)
+                return BadRequest(new { success = false, message = "Upload failed" });
+
+            return Ok(result);
+        }
     }
 }
