@@ -1,13 +1,12 @@
-﻿using TourManagement.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using TourManagement.Data;
 using TourManagement.Model;
 using TourManagement.Repositories.Interfaces;
-using TourManagement.Services.Interfaces;
 
 namespace TourManagement.Repositories
 {
     public class TourRepository : ITourRepository
     {
-
         private readonly TourContext _context;
 
         public TourRepository(TourContext context)
@@ -17,7 +16,7 @@ namespace TourManagement.Repositories
 
         public IQueryable<Tour> GetAllAsync()
         {
-            return _context.Tours.AsQueryable();
+            return _context.Tours.AsNoTracking().AsQueryable();
         }
 
         public async Task<Tour?> GetByIdAsync(Guid id)
@@ -25,19 +24,19 @@ namespace TourManagement.Repositories
             return await _context.Tours.FindAsync(id);
         }
 
-        public async Task AddAsync(Tour Tour)
+        public async Task AddAsync(Tour tour)
         {
-            await _context.Tours.AddAsync(Tour);
+            await _context.Tours.AddAsync(tour);
         }
 
-        public void Update(Tour Tour)
+        public void Update(Tour tour)
         {
-            _context.Tours.Update(Tour);
+            _context.Tours.Update(tour);
         }
 
-        public void Delete(Tour Tour)
+        public void Delete(Tour tour)
         {
-            _context.Tours.Remove(Tour);
+            _context.Tours.Remove(tour);
         }
 
         public async Task<bool> SaveChangesAsync()

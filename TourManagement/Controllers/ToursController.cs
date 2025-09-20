@@ -1,21 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using TourManagement.Data;
-using TourManagement.Model;
-using TourManagement.Services.Interfaces;
-using TourManagement.DTOs;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
+using TourManagement.DTOs;
+using TourManagement.Services.Interfaces;
 
 namespace TourManagement.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize] // Yêu cầu có token hợp lệ
     public class ToursController : ControllerBase
     {
         private readonly ITourService _tourService;
@@ -26,66 +17,51 @@ namespace TourManagement.Controllers
         }
 
         // GET: api/Tours
+        // Hỗ trợ OData filter/sort/select/top qua [EnableQuery] trên IQueryable<TourReadDTO>
         [HttpGet]
-        [EnableQuery]
-        public IQueryable<TourReadDTO> GetToursAsync()
+        [EnableQuery(PageSize = 100)] // giới hạn mặc định
+        public IQueryable<TourReadDTO> GetTours()
         {
-           return _tourService.GetAllToursAsync();
-                     
+            return _tourService.GetAllToursAsync();
         }
 
-        // GET: api/Tours/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Tour>> GetTour(Guid id)
+        // GET: api/Tours/{id}
+        [HttpGet("{id:guid}")]
+        public async Task<ActionResult<TourReadDTO>> GetTour(Guid id)
         {
             var tour = await _tourService.GetTourByIdAsync(id);
-
-            if (tour == null)
-            {
-                return NotFound();
-            }
-
+            if (tour == null) return NotFound();
             return Ok(tour);
         }
 
-        // PUT: api/Tours/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutTour(Guid id, TourUpdateDTO tour)
+        // PUT: api/Tours/{id}
+        [HttpPut("{id:guid}")]
+        public async Task<IActionResult> PutTour(Guid id, [FromBody] TourUpdateDTO tour)
         {
-            if (id != tour.TourID)
-            {
-                return BadRequest();
-            }
+            if (id != tour.TourID) return BadRequest("Route id khác body id.");
+
             var success = await _tourService.UpdateTourAsync(tour);
             if (!success) return NotFound();
             return NoContent();
         }
 
         // POST: api/Tours
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Tour>> PostTour(TourCreateDTO tour)
+        public async Task<ActionResult<TourReadDTO>> PostTour([FromBody] TourCreateDTO tour)
         {
             var newTour = await _tourService.CreateTourAsync(tour);
-
-            return CreatedAtAction("GetTour", new { id = newTour.TourID }, newTour);
+            return CreatedAtAction(nameof(GetTour), new { id = newTour.TourID }, newTour);
         }
 
-        // DELETE: api/Tours/5
-        [HttpDelete("{id}")]
+        // DELETE: api/Tours/{id}
+        [HttpDelete("{id:guid}")]
         public async Task<IActionResult> DeleteTour(Guid id)
         {
-            var tour = await _tourService.GetTourByIdAsync(id);
-            if (tour == null)
-            {
-                return NotFound();
-            }
-;
-            await _tourService.DeleteTourAsync(id);
+            var existed = await _tourService.GetTourByIdAsync(id);
+            if (existed == null) return NotFound();
 
-            return NoContent();
+            var ok = await _tourService.DeleteTourAsync(id);
+            return ok ? NoContent() : NotFound();
         }
-
     }
 }
