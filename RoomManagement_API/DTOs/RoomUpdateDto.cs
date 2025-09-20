@@ -5,7 +5,7 @@ namespace RoomManagement_API.DTOs
     public class RoomUpdateDto
     {
         [Required]
-        public Guid RoomId { get; set; }   // Lấy từ body để so khớp với {id} trên route
+        public Guid RoomId { get; set; }
 
         [Required(ErrorMessage = "Room name is required")]
         [StringLength(100, ErrorMessage = "Room name cannot exceed 100 characters")]
@@ -27,8 +27,8 @@ namespace RoomManagement_API.DTOs
         [Range(1, 50, ErrorMessage = "Room capacity must be between 1 and 50")]
         public int RoomCapacity { get; set; }
 
-        [Required(ErrorMessage = "Hotel ID is required")]
-        public Guid HotelId { get; set; }
+        //[Required(ErrorMessage = "Hotel ID is required")]
+        //public Guid HotelId { get; set; }
 
         [StringLength(1000, ErrorMessage = "Description cannot exceed 1000 characters")]
         public string Description { get; set; }

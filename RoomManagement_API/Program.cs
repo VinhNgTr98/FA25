@@ -72,16 +72,15 @@ builder.Services.AddControllers().AddOData(options => options
 // ===== CORS =====
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", policy =>
-    {
-        policy.AllowAnyOrigin()
+    options.AddPolicy("AllowFrontend", policy =>
+        policy.WithOrigins("http://localhost:3000")
+              .AllowAnyHeader()
               .AllowAnyMethod()
-              .AllowAnyHeader();
-    });
+              .AllowCredentials());
 });
 var app = builder.Build();
 
-app.UseCors("AllowAll");
+app.UseCors("AllowFrontend");
 // Configure the HTTP request pipeline.
 
     app.UseSwagger();

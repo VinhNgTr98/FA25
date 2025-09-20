@@ -25,7 +25,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend",
         policy => policy.WithOrigins("http://localhost:3000")
                         .AllowAnyHeader()
-                        .AllowAnyMethod());
+                        .AllowAnyMethod()
+                        .AllowCredentials()); // Cho phép credentials
 });
 
 builder.Services.AddEndpointsApiExplorer();
