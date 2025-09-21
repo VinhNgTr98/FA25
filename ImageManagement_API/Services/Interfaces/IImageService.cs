@@ -9,5 +9,9 @@ namespace ImageManagement_API.Services.Interfaces
         Task<ImageReadDTO> CreateAsync(ImageCreateDTO dto);
         Task<bool> UpdateAsync(int id, ImageUpdateDTO dto);
         Task<bool> DeleteAsync(int id);
+        Task<ImageReadDTO?> UploadAndSaveAsync(ImageCreateWithFileDTO dto);
+        Task<IEnumerable<ImageReadDTO>> UploadAndSaveManyAsync(ImageCreateWithFilesDTO dto);
+        Task<IEnumerable<ImageReadDTO>> GetByLinkedIdAsync(Guid linkedId);
+
     }
 }

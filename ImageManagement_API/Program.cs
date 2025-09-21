@@ -1,6 +1,7 @@
 ﻿
 using ImageManagement_API.Data;
 using ImageManagement_API.DTOs;
+using ImageManagement_API.Models;
 using ImageManagement_API.Repositories;
 using ImageManagement_API.Repositories.Interfaces;
 using ImageManagement_API.Services;
@@ -22,6 +23,10 @@ namespace ImageManagement_API
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.Configure<Models.CloudinarySettings>(
+    builder.Configuration.GetSection("Cloudinary"));
+            
+
             builder.Services.AddDbContext<Image_APIContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -64,6 +69,7 @@ namespace ImageManagement_API
             builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             builder.Services.AddScoped<IImageRepository, ImageRepository>();
             builder.Services.AddScoped<IImageService, ImageService>();
+            builder.Services.AddScoped<ICloudinaryService, CloudinaryService>();
             var odataBuilder = new ODataConventionModelBuilder();
             odataBuilder.EntitySet<ImageReadDTO>("Image");
             // Add services to the container.
@@ -76,7 +82,18 @@ namespace ImageManagement_API
                .OrderBy()
                .Expand()
                .Select());
+            // ===== CORS =====
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFrontend", policy =>
+                    policy.WithOrigins("http://localhost:3000")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod()
+                          .AllowCredentials());
+            });
             var app = builder.Build();
+
+            app.UseCors("AllowFrontend");
 
             // Configure the HTTP request pipeline.
             /*if (app.Environment.IsDevelopment())

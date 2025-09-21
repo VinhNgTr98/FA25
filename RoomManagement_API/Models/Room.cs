@@ -16,9 +16,6 @@ namespace RoomManagement_API.Models
         [Required]
         public int RoomType { get; set; }              // FK -> Categories.CategoryID (type = room)
 
-        public DateTime? CheckInTime { get; set; }
-        public DateTime? CheckOutTime { get; set; }
-
         [MaxLength(500)]
         public string? Amenities { get; set; }
 

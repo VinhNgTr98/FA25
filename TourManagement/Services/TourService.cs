@@ -20,41 +20,54 @@ namespace TourManagement.Services
 
         public IQueryable<TourReadDTO> GetAllToursAsync()
         {
-            var books = _tourRepository.GetAllAsync();
-            return books.ProjectTo<TourReadDTO>(_mapper.ConfigurationProvider);
+            // Dựng IQueryable DTO để OData áp filter/sort/select ở DB
+            return _tourRepository.GetAllAsync()
+                                  .ProjectTo<TourReadDTO>(_mapper.ConfigurationProvider);
         }
 
         public async Task<TourReadDTO?> GetTourByIdAsync(Guid id)
         {
-            var book = await _tourRepository.GetByIdAsync(id);
-            if (book == null) return null;
-            return _mapper.Map<TourReadDTO>(book);
+            var tour = await _tourRepository.GetByIdAsync(id);
+            return tour == null ? null : _mapper.Map<TourReadDTO>(tour);
         }
 
         public async Task<TourReadDTO> CreateTourAsync(TourCreateDTO tourCreateDto)
         {
-            var book = _mapper.Map<Tour>(tourCreateDto);
-            await _tourRepository.AddAsync(book);
+            var tour = _mapper.Map<Tour>(tourCreateDto);
+
+            // Nếu entity Tour có CreatedAt/UpdatedAt, set ở đây
+            var now = DateTime.UtcNow;
+            var propCreated = tour.GetType().GetProperty("CreatedAt");
+            var propUpdated = tour.GetType().GetProperty("UpdatedAt");
+            propCreated?.SetValue(tour, now);
+            propUpdated?.SetValue(tour, now);
+
+            await _tourRepository.AddAsync(tour);
             await _tourRepository.SaveChangesAsync();
-            return _mapper.Map<TourReadDTO>(book);
+            return _mapper.Map<TourReadDTO>(tour);
         }
 
         public async Task<bool> UpdateTourAsync(TourUpdateDTO tourUpdateDto)
         {
-            var existingTour = await _tourRepository.GetByIdAsync(tourUpdateDto.TourID);
-            if (existingTour == null) return false;
+            var existing = await _tourRepository.GetByIdAsync(tourUpdateDto.TourID);
+            if (existing == null) return false;
 
-            _mapper.Map(tourUpdateDto, existingTour);
-            _tourRepository.Update(existingTour);
+            _mapper.Map(tourUpdateDto, existing);
+
+            // Cập nhật UpdatedAt nếu có
+            var propUpdated = existing.GetType().GetProperty("UpdatedAt");
+            propUpdated?.SetValue(existing, DateTime.UtcNow);
+
+            _tourRepository.Update(existing);
             return await _tourRepository.SaveChangesAsync();
         }
 
         public async Task<bool> DeleteTourAsync(Guid id)
         {
-            var existingTour = await _tourRepository.GetByIdAsync(id);
-            if (existingTour == null) return false;
+            var existing = await _tourRepository.GetByIdAsync(id);
+            if (existing == null) return false;
 
-            _tourRepository.Delete(existingTour);
+            _tourRepository.Delete(existing);
             return await _tourRepository.SaveChangesAsync();
         }
     }

@@ -1,98 +1,125 @@
-﻿using System.Security.Claims;
-using CartManagement_Api.DTOs;
+﻿using CartManagement_Api.DTOs;
 using CartManagement_Api.Services;
+using CartManagement_Api.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace CartManagement_Api.Controllers
 {
     [ApiController]
-    [Route("api/cart")]
-    [Authorize] // Sau khi mock JWT
+    [Route("api/[controller]")]
     public class CartController : ControllerBase
     {
-        private readonly ICartService _service;
-        public CartController(ICartService service) => _service = service;
+        private readonly ICartService _cartService;
+        private readonly ICartItemService _cartItemService;
 
-        private int GetUserId()
+        public CartController(ICartService cartService, ICartItemService cartItemService)
         {
-            var claim = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (int.TryParse(claim, out var id)) return id;
-            if (Request.Query.TryGetValue("userId", out var q) && int.TryParse(q, out id)) return id;
-            throw new ArgumentException("Cannot determine user id");
+            _cartService = cartService;
+            _cartItemService = cartItemService;
         }
 
+        // ===== Cart =====
         [HttpGet]
-        public async Task<ActionResult<CartReadDto>> Get(CancellationToken ct)
+        public async Task<ActionResult<IEnumerable<CartReadDto>>> GetAllCarts()
         {
-            var cart = await _service.GetOrCreateCartAsync(GetUserId(), ct);
-            return Ok(cart);
+            return Ok(await _cartService.GetAllAsync());
         }
 
-        [HttpGet("summary")]
-        public async Task<ActionResult<CartSummaryDto>> Summary(CancellationToken ct)
+        [HttpGet("{cartId}")]
+        public async Task<ActionResult<CartReadDto>> GetCart(int cartId)
         {
-            var sum = await _service.GetSummaryAsync(GetUserId(), ct);
-            return Ok(sum);
-        }
-
-        [HttpGet("items/{id:int}")]
-        public async Task<ActionResult<CartItemReadDto>> GetItem(int id, CancellationToken ct)
-        {
-            var cart = await _service.GetCartByUserAsync(GetUserId(), ct);
+            var cart = await _cartService.GetByIdAsync(cartId);
             if (cart == null) return NotFound();
-            var item = cart.Items.FirstOrDefault(i => i.CartItemID == id);
-            return item == null ? NotFound() : Ok(item);
-        }
-
-        [HttpPost("items")]
-        public async Task<ActionResult<CartReadDto>> AddItem([FromBody] CartItemCreateDto req, CancellationToken ct)
-        {
-            var userId = GetUserId();
-            var before = await _service.GetCartByUserAsync(userId, ct);
-            var after = await _service.AddItemAsync(userId, req, ct);
-
-            if (IsNew(before, after, req))
-                return CreatedAtAction(nameof(Get), new { }, after);
-            return Ok(after);
-        }
-
-        private static bool IsNew(CartReadDto? before, CartReadDto after, CartItemCreateDto req)
-        {
-            if (before == null) return true;
-            if (after.Items.Count > before.Items.Count) return true;
-            var existedBefore = before.Items.Any(i =>
-                i.ItemType.Equals(req.ItemType, StringComparison.OrdinalIgnoreCase) &&
-                i.ItemID == req.ItemID &&
-                i.StartDate == req.StartDate &&
-                i.EndDate == req.EndDate);
-            var existsAfter = after.Items.Any(i =>
-                i.ItemType.Equals(req.ItemType, StringComparison.OrdinalIgnoreCase) &&
-                i.ItemID == req.ItemID &&
-                i.StartDate == req.StartDate &&
-                i.EndDate == req.EndDate);
-            return !existedBefore && existsAfter;
-        }
-
-        [HttpPatch("items/{id:int}")]
-        public async Task<ActionResult<CartReadDto>> UpdateItem(int id, [FromBody] CartItemUpdateDto req, CancellationToken ct)
-        {
-            var cart = await _service.UpdateItemAsync(GetUserId(), id, req, ct);
             return Ok(cart);
         }
 
-        [HttpDelete("items/{id:int}")]
-        public async Task<IActionResult> RemoveItem(int id, [FromQuery] string rowVersion, CancellationToken ct)
+        [HttpPost]
+        public async Task<ActionResult<CartReadDto>> CreateCart([FromBody] CartCreateDto dto)
         {
-            var ok = await _service.RemoveItemAsync(GetUserId(), id, rowVersion, ct);
-            if (!ok) return NotFound();
+            var created = await _cartService.CreateAsync(dto);
+            return CreatedAtAction(nameof(GetCart), new { cartId = created.CartID }, created);
+        }
+
+        [HttpPut("{cartId}")]
+        public async Task<ActionResult<CartReadDto>> UpdateCart(int cartId, [FromBody] CartUpdateDto dto)
+        {
+            var updated = await _cartService.UpdateAsync(cartId, dto);
+            if (updated == null) return NotFound();
+            return Ok(updated);
+        }
+
+        [HttpDelete("{cartId}")]
+        public async Task<IActionResult> DeleteCart(int cartId)
+        {
+            var success = await _cartService.DeleteAsync(cartId);
+            if (!success) return NotFound();
             return NoContent();
         }
 
-        [HttpDelete("clear")]
-        public async Task<IActionResult> Clear(CancellationToken ct)
+        // ===== CartItem xử lý tại Controller =====
+        [HttpPost("{userId}/items")]
+        public async Task<ActionResult<CartItemReadDto>> AddItemToCart(int userId, [FromBody] CartItemCreateDto dto)
         {
-            await _service.ClearCartAsync(GetUserId(), ct);
+            // 1. Kiểm tra user đã có cart chưa
+            var allCarts = await _cartService.GetAllAsync();
+            var cart = allCarts.FirstOrDefault(c => c.UserID == userId);
+
+            if (cart == null)
+            {
+                // tạo cart mới
+                var newCart = await _cartService.CreateAsync(new CartCreateDto { UserID = userId });
+                cart = newCart;
+            }
+
+            // 2. Lấy toàn bộ item trong cart
+            var allItems = await _cartItemService.GetAllAsync();
+            var itemsOfCart = allItems.Where(i => i.CartID == cart.CartID);
+
+            // 3. Kiểm tra trùng Item
+            var existing = itemsOfCart.FirstOrDefault(i =>
+                i.ItemType == dto.ItemType &&
+                i.ItemID == dto.ItemID &&
+                i.StartDate == dto.StartDate &&
+                i.EndDate == dto.EndDate
+            );
+
+            if (existing != null)
+            {
+                // update số lượng
+                var updateDto = new CartItemUpdateDto
+                {
+                    ItemType = existing.ItemType,
+                    ItemID = existing.ItemID,
+                    Quantity = existing.Quantity + dto.Quantity,
+                    StartDate = existing.StartDate,
+                    EndDate = existing.EndDate
+                };
+
+                var updated = await _cartItemService.UpdateAsync(existing.CartItemID, updateDto);
+                return Ok(updated);
+            }
+
+            // 4. Nếu chưa có hoặc khác ngày thì thêm mới
+            dto.CartID = cart.CartID;
+            var created = await _cartItemService.CreateAsync(dto);
+            return Ok(created);
+        }
+
+        [HttpPut("{cartId}/items/{itemId}")]
+        public async Task<ActionResult<CartItemReadDto>> UpdateCartItem(int cartId, int itemId, [FromBody] CartItemUpdateDto dto)
+        {
+            var updated = await _cartItemService.UpdateAsync(itemId, dto);
+            if (updated == null) return NotFound();
+            return Ok(updated);
+        }
+
+        [HttpDelete("{cartId}/items/{itemId}")]
+        public async Task<IActionResult> DeleteCartItem(int cartId, int itemId)
+        {
+            var success = await _cartItemService.DeleteAsync(itemId);
+            if (!success) return NotFound();
             return NoContent();
         }
     }

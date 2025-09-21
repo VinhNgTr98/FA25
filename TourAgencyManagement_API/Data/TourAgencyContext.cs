@@ -11,5 +11,14 @@ namespace TourAgencyManagement_API.Data
         }
 
         public DbSet<TourAgency> TourAgencies { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<TourAgency>()
+                        .Property(x => x.TourAgencyId)
+                        .ValueGeneratedNever();
+
+            
+        }
     }
 }

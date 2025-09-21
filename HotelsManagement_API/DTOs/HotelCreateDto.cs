@@ -21,7 +21,6 @@ namespace HotelsManagement_API.DTOs
         public string Location { get; set; }
 
         public string? CheckInPolicy { get; set; }
-        public string? CancellationPolicy { get; set; }
         public string? Description { get; set; }
 
         [Required(ErrorMessage = "Address is required")]
@@ -33,6 +32,7 @@ namespace HotelsManagement_API.DTOs
 
         [EmailAddress(ErrorMessage = "Invalid email address")]
         public string? Email { get; set; }
+        public string? TaxNumber { get; set; }
     }
 
 

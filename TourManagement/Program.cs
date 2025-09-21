@@ -1,5 +1,4 @@
-﻿
-using Microsoft.AspNetCore.OData;
+﻿using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OData.ModelBuilder;
 using Microsoft.OpenApi.Models;
@@ -18,23 +17,35 @@ namespace TourManagement
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            // OData EDM cho DTO đọc
+            var odataBuilder = new ODataConventionModelBuilder();
+            odataBuilder.EntitySet<TourReadDTO>("Tours");
 
-            builder.Services.AddControllers();
+            // Controllers + OData (gộp 1 lần)
+            builder.Services.AddControllers()
+                .AddOData(options => options
+                    .AddRouteComponents("odata", odataBuilder.GetEdmModel())
+                    .SetMaxTop(100)
+                    .Count()
+                    .Filter()
+                    .OrderBy()
+                    .Expand()
+                    .Select());
+
+            // DbContext MySQL
             builder.Services.AddDbContext<TourContext>(options =>
-    options.UseMySql(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        new MySqlServerVersion(new Version(8, 0, 36)) // đổi đúng version MySQL trên Railway
-    )
-);
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+                options.UseMySql(
+                    builder.Configuration.GetConnectionString("DefaultConnection"),
+                    new MySqlServerVersion(new Version(8, 0, 36))
+                )
+            );
+
+            // Swagger + Bearer
             builder.Services.AddEndpointsApiExplorer();
-            //swagger authen
             builder.Services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TourManagementAPI", Version = "v1" });
 
-                // Cấu hình hỗ trợ Bearer token
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Name = "Authorization",
@@ -46,49 +57,29 @@ namespace TourManagement
                 });
 
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
                 {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            Array.Empty<string>()
-        }
-    });
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "Bearer" }
+                        },
+                        Array.Empty<string>()
+                    }
+                });
             });
+
+            // AutoMapper + DI
             builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             builder.Services.AddScoped<ITourRepository, TourRepository>();
             builder.Services.AddScoped<ITourService, TourService>();
 
-            var odataBuilder = new ODataConventionModelBuilder();
-            odataBuilder.EntitySet<TourReadDTO>("Tours");
-            // Add services to the container.
-
-            builder.Services.AddControllers().AddOData(options => options
-              .AddRouteComponents("odata", odataBuilder.GetEdmModel())
-              .SetMaxTop(100)
-               .Count()
-               .Filter()
-               .OrderBy()
-               .Expand()
-               .Select());
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
-            /*if (app.Environment.IsDevelopment())
-            {*/
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            /*}*/
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
 
             app.MapControllers();
 

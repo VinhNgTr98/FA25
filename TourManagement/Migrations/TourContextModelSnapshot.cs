@@ -28,36 +28,70 @@ namespace TourManagement.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
+                    b.Property<Guid>("AgencyID")
+                        .HasColumnType("char(36)");
+
+                    b.Property<decimal>("BasePrice")
+                        .HasColumnType("decimal(65,30)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Currency")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Description")
                         .HasColumnType("longtext");
+
+                    b.Property<string>("Destination")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("DurationDays")
+                        .HasColumnType("int");
 
                     b.Property<DateTime?>("EndDate")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<string>("Itinerary")
+                    b.Property<string>("Languages")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("Length")
+                    b.Property<int>("MaxCapacity")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(65,30)");
+                    b.Property<string>("Policies")
+                        .HasColumnType("longtext");
 
-                    b.Property<string>("Resident")
+                    b.Property<string>("Slug")
+                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<DateTime?>("StartDate")
                         .HasColumnType("datetime(6)");
 
-                    b.Property<Guid>("TourAgencyID")
-                        .HasColumnType("char(36)");
+                    b.Property<string>("StartingPoint")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
-                    b.Property<int>("TourCapacity")
-                        .HasColumnType("int");
+                    b.Property<string>("Status")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Tags")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("TourName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Transportation")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
 
                     b.HasKey("TourID");
 

@@ -32,9 +32,6 @@ namespace HotelsManagement_API.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<string>("CancellationPolicy")
-                        .HasColumnType("longtext");
-
                     b.Property<int>("Category")
                         .HasColumnType("int");
 
@@ -45,6 +42,9 @@ namespace HotelsManagement_API.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("Email")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("HotelName")
                         .HasColumnType("longtext");
 
                     b.Property<string>("HotelStatus")
@@ -58,7 +58,7 @@ namespace HotelsManagement_API.Migrations
                     b.Property<string>("Phone")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Tiles")
+                    b.Property<string>("TaxNumber")
                         .HasColumnType("longtext");
 
                     b.Property<int>("UserID")

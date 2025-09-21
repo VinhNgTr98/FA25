@@ -36,13 +36,8 @@ namespace RoomManagement_API.Services.Rooms
 
         public async Task<RoomReadDto> CreateAsync(RoomCreateDto dto, CancellationToken ct)
         {
-            // Validate nghiệp vụ bổ sung (ngoài DataAnnotations)
-            ValidateTimes(dto.CheckInTime, dto.CheckOutTime);
             if (dto.RoomCapacity <= 0) throw new ArgumentException("RoomCapacity must be > 0");
             if (dto.Price < 0) throw new ArgumentException("Price must be >= 0");
-
-            // TODO: gọi Categories API để xác nhận RoomType thuộc CategoryType = "room"
-            // TODO: gọi Hotels API để xác nhận HotelId tồn tại
 
             var entity = _mapper.Map<Room>(dto);
             entity.RoomId = Guid.NewGuid();
@@ -53,11 +48,8 @@ namespace RoomManagement_API.Services.Rooms
 
         public async Task<RoomReadDto?> UpdateAsync(RoomUpdateDto dto, CancellationToken ct)
         {
-            ValidateTimes(dto.CheckInTime, dto.CheckOutTime);
             if (dto.RoomCapacity <= 0) throw new ArgumentException("RoomCapacity must be > 0");
             if (dto.Price < 0) throw new ArgumentException("Price must be >= 0");
-
-            // TODO: xác nhận RoomType / HotelId nếu cho phép đổi
 
             var entity = _mapper.Map<Room>(dto);
             var saved = await _repo.UpdateAsync(entity, ct);
@@ -72,6 +64,28 @@ namespace RoomManagement_API.Services.Rooms
             if (checkIn.HasValue && checkOut.HasValue && checkOut <= checkIn)
                 throw new ArgumentException("Check-out must be later than check-in");
         }
+        public async Task<decimal?> GetLowestPriceAsync(CancellationToken ct)
+        {
+            return await _repo.GetLowestPriceAsync(ct);
+        }
+        public async Task<decimal?> GetHighestPriceAsync(CancellationToken ct)
+        {
+            return await _repo.GetHighestPriceAsync(ct);
+        }
+        public async Task<decimal?> GetLowestPriceByHotelAsync(Guid hotelId, CancellationToken ct)
+        {
+            return await _repo.GetLowestPriceByHotelAsync(hotelId, ct);
+        }
+        public async Task<decimal?> GetHighestPriceByHotelAsync(Guid hotelId, CancellationToken ct)
+        {
+            return await _repo.GetLowestPriceByHotelAsync(hotelId, ct);
+        }
+
+        public IQueryable<RoomReadDto> AsQueryable()
+        {
+            return _repo.AsQueryable().Select(r => _mapper.Map<RoomReadDto>(r));
+        }
+
     }
 
 }

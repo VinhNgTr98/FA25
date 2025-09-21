@@ -3,7 +3,11 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "Users_API\\UserManagement_API.csproj",
+        "Path": "HotelsManagement_API\\HotelsManagement_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RoomManagement_API\\RoomManagement_API.csproj",
         "Action": "Start"
       },
       {
@@ -11,6 +15,7 @@
         "Action": "Start"
       },
       {
+<<<<<<< HEAD
         "Path": "VehicleAgencyManagement_API\\VehicleAgencyManagement_API.csproj",
         "Action": "Start"
       },
@@ -20,6 +25,9 @@
       },
       {
         "Path": "HotelsManagement_API\\HotelsManagement_API.csproj",
+=======
+        "Path": "Users_API\\UserManagement_API.csproj",
+>>>>>>> 7553704ea72ab6030fb8cbc082e137ed51fac306
         "Action": "Start"
       }
     ]

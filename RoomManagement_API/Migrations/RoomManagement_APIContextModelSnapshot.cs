@@ -32,12 +32,6 @@ namespace RoomManagement_API.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("varchar(500)");
 
-                    b.Property<DateTime?>("CheckInTime")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<DateTime?>("CheckOutTime")
-                        .HasColumnType("datetime(6)");
-
                     b.Property<string>("Description")
                         .HasMaxLength(500)
                         .HasColumnType("varchar(500)");
