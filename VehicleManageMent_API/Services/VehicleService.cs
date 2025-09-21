@@ -20,13 +20,26 @@ namespace VehicleManageMent_API.Services
         public async Task<IEnumerable<VehicleReadDTO>> GetAllAsync()
         {
             var list = await _repo.GetAllAsync();
-            return _mapper.Map<IEnumerable<VehicleReadDTO>>(list);
+            var mappedList = _mapper.Map<IEnumerable<VehicleReadDTO>>(list);
+
+            // Format Price for each item
+            foreach (var item in mappedList)
+            {
+                item.Price = Math.Round(item.Price, 2); // Round to 2 decimal places
+            }
+
+            return mappedList;
         }
 
         public async Task<VehicleReadDTO?> GetByIdAsync(Guid id)
         {
             var entity = await _repo.GetByIdAsync(id);
-            return entity == null ? null : _mapper.Map<VehicleReadDTO>(entity);
+            if (entity == null) return null;
+
+            var mappedEntity = _mapper.Map<VehicleReadDTO>(entity);
+            mappedEntity.Price = Math.Round(mappedEntity.Price, 2); // Round to 2 decimal places
+
+            return mappedEntity;
         }
 
         public async Task<VehicleReadDTO> CreateAsync(VehicleCreateDTO dto)
@@ -43,7 +56,15 @@ namespace VehicleManageMent_API.Services
             var entity = await _repo.GetByIdAsync(id);
             if (entity == null) return false;
 
-            _mapper.Map(dto, entity);
+            // Ensure all fields are mapped correctly
+            entity.Name = dto.Name;
+            entity.VehicleType = dto.VehicleType;
+            entity.AvailabilityStatus = dto.AvailabilityStatus;
+            entity.Description = dto.Description;
+            entity.LicensePlate = dto.LicensePlate;
+            entity.ImageUrl = dto.ImageUrl;
+            entity.Price = dto.Price;
+
             await _repo.UpdateAsync(entity);
             await _repo.SaveChangesAsync();
             return true;

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VehicleAgencyManagement_API.Data;
 
@@ -11,9 +12,11 @@ using VehicleAgencyManagement_API.Data;
 namespace VehicleAgencyManagement_API.Migrations
 {
     [DbContext(typeof(VehicleAgencyContext))]
-    partial class VehicleAgencyContextModelSnapshot : ModelSnapshot
+    [Migration("20250918092532_update1908")]
+    partial class update1908
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

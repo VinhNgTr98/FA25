@@ -8,6 +8,9 @@ namespace VehicleAgencyManagement_API.Models
         [Key]
         public Guid VehicleAgencyId { get; set; }
 
+        [Required, MaxLength(255)]
+        public string Name { get; set; } // Name of the agency
+
         [Required]
         
         public Guid UserId { get; set; }
