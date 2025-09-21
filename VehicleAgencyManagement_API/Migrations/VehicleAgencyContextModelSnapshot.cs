@@ -42,6 +42,11 @@ namespace VehicleAgencyManagement_API.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("varchar(255)");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("varchar(255)");
+
                     b.Property<string>("Phone")
                         .HasMaxLength(15)
                         .HasColumnType("varchar(15)");

@@ -9,14 +9,25 @@ namespace VehicleManageMent_API.Models
 
         public Guid VehicleAgencyId { get; set; } // FK -> VehicleAgency
 
-        public string VehicleType { get; set; } = string.Empty; // varchar(50), not null
+        [Required, MaxLength(255)]
+        public string Name { get; set; } = string.Empty; // Name of the vehicle
 
-        public string AvailabilityStatus { get; set; } = string.Empty; // varchar(50), not null
+        [Required, MaxLength(50)]
+        public string VehicleType { get; set; } = string.Empty;
 
-        public int Category { get; set; } // FK -> Categories.CategoryID
+        [Required, MaxLength(50)]
+        public string AvailabilityStatus { get; set; } = string.Empty; // Changed to support Unicode
 
+        [MaxLength(500)]
         public string? Description { get; set; } // nvarchar(500), nullable
 
+        [Required, MaxLength(15)]
+        public string LicensePlate { get; set; } = string.Empty; // License plate of the vehicle
+
+        [MaxLength(500)]
+        public string? ImageUrl { get; set; } // URL for the vehicle image
+
+        [Required]
         public decimal Price { get; set; } // decimal(10,2), not null
     }
 }

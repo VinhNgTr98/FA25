@@ -17,37 +17,37 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UsersInfoManagement_API
 build_property.RootNamespace = UsersInfoManagement_API
-build_property.ProjectDir = D:\Final_Project_FA25\PassimProject_BE\FA25\UsersInfoManagement_API\
+build_property.ProjectDir = D:\FA25\Final_Project_FA25\Projects\FA25\UsersInfoManagement_API\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Final_Project_FA25\PassimProject_BE\FA25\UsersInfoManagement_API
+build_property.MSBuildProjectDirectory = D:\FA25\Final_Project_FA25\Projects\FA25\UsersInfoManagement_API
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/Final_Project_FA25/PassimProject_BE/FA25/UsersInfoManagement_API/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/FA25/Final_Project_FA25/Projects/FA25/UsersInfoManagement_API/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Final_Project_FA25/PassimProject_BE/FA25/UsersInfoManagement_API/Views/UsersInfoes/Create.cshtml]
+[D:/FA25/Final_Project_FA25/Projects/FA25/UsersInfoManagement_API/Views/UsersInfoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNJbmZvZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Final_Project_FA25/PassimProject_BE/FA25/UsersInfoManagement_API/Views/UsersInfoes/Delete.cshtml]
+[D:/FA25/Final_Project_FA25/Projects/FA25/UsersInfoManagement_API/Views/UsersInfoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNJbmZvZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Final_Project_FA25/PassimProject_BE/FA25/UsersInfoManagement_API/Views/UsersInfoes/Details.cshtml]
+[D:/FA25/Final_Project_FA25/Projects/FA25/UsersInfoManagement_API/Views/UsersInfoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNJbmZvZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Final_Project_FA25/PassimProject_BE/FA25/UsersInfoManagement_API/Views/UsersInfoes/Edit.cshtml]
+[D:/FA25/Final_Project_FA25/Projects/FA25/UsersInfoManagement_API/Views/UsersInfoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNJbmZvZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Final_Project_FA25/PassimProject_BE/FA25/UsersInfoManagement_API/Views/UsersInfoes/Index.cshtml]
+[D:/FA25/Final_Project_FA25/Projects/FA25/UsersInfoManagement_API/Views/UsersInfoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNJbmZvZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

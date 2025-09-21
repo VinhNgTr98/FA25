@@ -9,6 +9,18 @@
       {
         "Path": "UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "VehicleAgencyManagement_API\\VehicleAgencyManagement_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "VehicleManageMent_API\\VehicleManageMent_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "HotelsManagement_API\\HotelsManagement_API.csproj",
+        "Action": "Start"
       }
     ]
   }
