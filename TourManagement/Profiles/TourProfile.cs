@@ -16,6 +16,10 @@
 
             // UpdateDTO -> Tour
             CreateMap<TourUpdateDTO, Tour>();
+
+            CreateMap<Itinerary, ItineraryReadDTO>();
+            CreateMap<ItineraryCreateDTO, Itinerary>();
+            CreateMap<ItineraryUpdateDTO, Itinerary>();
         }
     }
 }

@@ -1,67 +1,112 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
 using TourManagement.DTOs;
 using TourManagement.Services.Interfaces;
 
 namespace TourManagement.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
-    public class ToursController : ControllerBase
+    [Route("api/[controller]")]
+    public class TourController : ControllerBase
     {
         private readonly ITourService _tourService;
+        private readonly IItineraryService _itineraryService;
 
-        public ToursController(ITourService tourService)
+        public TourController(ITourService tourService, IItineraryService itineraryService)
         {
             _tourService = tourService;
+            _itineraryService = itineraryService;
         }
 
-        // GET: api/Tours
-        // Hỗ trợ OData filter/sort/select/top qua [EnableQuery] trên IQueryable<TourReadDTO>
+        // ---------------------- TOUR ----------------------
+
         [HttpGet]
-        [EnableQuery(PageSize = 100)] // giới hạn mặc định
-        public IQueryable<TourReadDTO> GetTours()
+        public IActionResult GetAllTours()
         {
-            return _tourService.GetAllToursAsync();
+            var tours = _tourService.GetAllToursAsync();
+            return Ok(tours);
         }
 
-        // GET: api/Tours/{id}
         [HttpGet("{id:guid}")]
-        public async Task<ActionResult<TourReadDTO>> GetTour(Guid id)
+        public async Task<IActionResult> GetTourById(Guid id)
         {
             var tour = await _tourService.GetTourByIdAsync(id);
             if (tour == null) return NotFound();
             return Ok(tour);
         }
 
-        // PUT: api/Tours/{id}
-        [HttpPut("{id:guid}")]
-        public async Task<IActionResult> PutTour(Guid id, [FromBody] TourUpdateDTO tour)
+        [HttpPost]
+        public async Task<IActionResult> CreateTour([FromBody] TourCreateDTO dto)
         {
-            if (id != tour.TourID) return BadRequest("Route id khác body id.");
+            var created = await _tourService.CreateTourAsync(dto);
+            return CreatedAtAction(nameof(GetTourById), new { id = created.TourID }, created);
+        }
 
-            var success = await _tourService.UpdateTourAsync(tour);
-            if (!success) return NotFound();
+        [HttpPut("{id:guid}")]
+        public async Task<IActionResult> UpdateTour(Guid id, [FromBody] TourUpdateDTO dto)
+        {
+            if (id != dto.TourID) return BadRequest("ID mismatch");
+
+            var result = await _tourService.UpdateTourAsync(dto);
+            if (!result) return NotFound();
+
             return NoContent();
         }
 
-        // POST: api/Tours
-        [HttpPost]
-        public async Task<ActionResult<TourReadDTO>> PostTour([FromBody] TourCreateDTO tour)
-        {
-            var newTour = await _tourService.CreateTourAsync(tour);
-            return CreatedAtAction(nameof(GetTour), new { id = newTour.TourID }, newTour);
-        }
-
-        // DELETE: api/Tours/{id}
         [HttpDelete("{id:guid}")]
         public async Task<IActionResult> DeleteTour(Guid id)
         {
-            var existed = await _tourService.GetTourByIdAsync(id);
-            if (existed == null) return NotFound();
+            var result = await _tourService.DeleteTourAsync(id);
+            if (!result) return NotFound();
 
-            var ok = await _tourService.DeleteTourAsync(id);
-            return ok ? NoContent() : NotFound();
+            return NoContent();
+        }
+
+        // ---------------------- ITINERARY ----------------------
+
+        [HttpGet("{tourId:guid}/itineraries")]
+        public async Task<IActionResult> GetItinerariesByTour(Guid tourId)
+        {
+            var itineraries = await _itineraryService.GetByTourIdAsync(tourId);
+            return Ok(itineraries);
+        }
+
+        [HttpGet("itinerary/{id:guid}")]
+        public async Task<IActionResult> GetItineraryById(Guid id)
+        {
+            var itinerary = await _itineraryService.GetByIdAsync(id);
+            if (itinerary == null) return NotFound();
+            return Ok(itinerary);
+        }
+
+        [HttpPost("{tourId:guid}/itineraries")]
+        public async Task<IActionResult> CreateItinerary(Guid tourId, [FromBody] ItineraryCreateDTO dto)
+        {
+            if (tourId != dto.TourID) return BadRequest("TourID mismatch");
+
+            var created = await _itineraryService.CreateAsync(dto);
+            return CreatedAtAction(nameof(GetItineraryById), new { id = created.ItineraryId }, created);
+        }
+
+        [HttpPut("itinerary/{id:guid}")]
+        public async Task<IActionResult> UpdateItinerary(Guid id, [FromBody] ItineraryUpdateDTO dto)
+        {
+            if (id != dto.ItineraryId) return BadRequest("ID mismatch");
+
+            var result = await _itineraryService.UpdateAsync(id, dto);
+            if (!result) return NotFound();
+
+            return NoContent();
+        }
+
+        [HttpDelete("itinerary/{id:guid}")]
+        public async Task<IActionResult> DeleteItinerary(Guid id)
+        {
+            var result = await _itineraryService.DeleteAsync(id);
+            if (!result) return NotFound();
+
+            return NoContent();
         }
     }
 }
