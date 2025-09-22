@@ -8,7 +8,7 @@ namespace FeedbackManagement_API.Model
         public int FeedbackId { get; set; }
 
         [Required]
-        public int UserID { get; set; } // ĐÃ CHUẨN HÓA
+        public int UserID { get; set; } 
 
         [Required]
         public Guid LinkedId { get; set; }  // Đối tượng được feedback
