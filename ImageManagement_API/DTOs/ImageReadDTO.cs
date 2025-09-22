@@ -14,7 +14,6 @@ namespace ImageManagement_API.DTOs
         public bool IsVehicleAgencyImage { get; set; }
         public Guid LinkedId { get; set; }
         public string ImageUrl { get; set; }
-        public string? Caption { get; set; }
         public bool IsCover { get; set; }
         public DateTime UploadedAt { get; set; }
     }
