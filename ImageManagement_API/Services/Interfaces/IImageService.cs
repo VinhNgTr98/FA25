@@ -12,6 +12,7 @@ namespace ImageManagement_API.Services.Interfaces
         Task<ImageReadDTO?> UploadAndSaveAsync(ImageCreateWithFileDTO dto);
         Task<IEnumerable<ImageReadDTO>> UploadAndSaveManyAsync(ImageCreateWithFilesDTO dto);
         Task<IEnumerable<ImageReadDTO>> GetByLinkedIdAsync(Guid linkedId);
-
+        
+        Task<ImageReadDTO?> UpdateImageFileAsync(int id, IFormFile newFile);
     }
 }

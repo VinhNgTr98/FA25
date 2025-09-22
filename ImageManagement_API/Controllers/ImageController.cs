@@ -90,6 +90,18 @@ namespace ImageManagement_API.Controllers
             return Ok(images);
         }
 
+        [HttpPut("updateImageUrl/{id}")]
+        public async Task<IActionResult> UpdateImageFile(int id, IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+                return BadRequest("File is required");
+
+            var updated = await _imageService.UpdateImageFileAsync(id, file);
+            if (updated == null)
+                return NotFound();
+
+            return Ok(updated);
+        }
 
     }
 }

@@ -74,7 +74,6 @@ namespace ImageManagement_API.Services
                 IsTourImg = dto.IsTourImg,
                 IsVehicleImage = dto.IsVehicleImage,
                 LinkedId = dto.LinkedId,
-                Caption = dto.Caption,
                 IsCover = dto.IsCover,
                 ImageUrl = uploadResult.Url ?? "",
                 UploadedAt = DateTime.Now
@@ -101,7 +100,6 @@ namespace ImageManagement_API.Services
                     IsTourImg = dto.IsTourImg,
                     IsVehicleImage = dto.IsVehicleImage,
                     LinkedId = dto.LinkedId,
-                    Caption = dto.Caption,
                     IsCover = dto.IsCover,
                     ImageUrl = result.Url ?? "",
                     UploadedAt = DateTime.Now
@@ -120,6 +118,51 @@ namespace ImageManagement_API.Services
             var images = await _repository.GetAllAsync();
             var filtered = images.Where(img => img.LinkedId == linkedId);
             return _mapper.Map<IEnumerable<ImageReadDTO>>(filtered);
+        }
+
+        public async Task<ImageReadDTO?> UpdateImageFileAsync(int id, IFormFile newFile)
+        {
+            var existing = await _repository.GetByIdAsync(id);
+            if (existing == null) return null;
+
+            var oldPublicId = ExtractPublicIdFromUrl(existing.ImageUrl);
+
+            var uploadResult = await _cloudinaryService.UploadImageAsync(newFile, "pet_app");
+            if (!uploadResult.Success) return null;
+
+            if (!string.IsNullOrEmpty(oldPublicId))
+            {
+                await _cloudinaryService.DeleteImageAsync(oldPublicId);
+            }
+
+            existing.ImageUrl = uploadResult.Url!;
+            existing.UploadedAt = DateTime.Now;
+
+            _repository.Update(existing);
+            await _repository.SaveChangesAsync();
+
+            return _mapper.Map<ImageReadDTO>(existing);
+        }
+        private static string? ExtractPublicIdFromUrl(string? imageUrl)
+        {
+            if (string.IsNullOrEmpty(imageUrl))
+                return null;
+
+            try
+            {
+                var uri = new Uri(imageUrl);
+                var segments = uri.AbsolutePath.Split('/', StringSplitOptions.RemoveEmptyEntries);
+                
+                var lastSegment = segments.Last(); // abcxyz123.jpg
+                var folder = segments[segments.Length - 2]; // pet_app
+
+                var publicId = $"{folder}/{Path.GetFileNameWithoutExtension(lastSegment)}";
+                return publicId;
+            }
+            catch
+            {
+                return null;
+            }
         }
 
     }

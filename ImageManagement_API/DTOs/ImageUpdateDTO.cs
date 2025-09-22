@@ -10,8 +10,6 @@
         public bool IsVehicleAgencyImage { get; set; }
         public string ImageUrl { get; set; } = string.Empty;
 
-        public string? Caption { get; set; }
-
         public bool IsCover { get; set; }
     }
 }

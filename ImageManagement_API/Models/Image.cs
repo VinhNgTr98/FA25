@@ -17,8 +17,6 @@ namespace ImageManagement_API.Models
 
         public string ImageUrl { get; set; } = string.Empty; // varchar(255), not null
 
-        public string? Caption { get; set; } // nvarchar(255), nullable
-
         public bool IsCover { get; set; } = false; // default 0
 
         public DateTime UploadedAt { get; set; } = DateTime.Now; // default GETDATE()
