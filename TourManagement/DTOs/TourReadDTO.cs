@@ -45,5 +45,6 @@ namespace TourManagement.DTOs
 
         // Navigation property
         public ICollection<Itinerary> Itineraries { get; set; } = new List<Itinerary>();
+        public Guid TourGuideId { get; set; }
     }
 }

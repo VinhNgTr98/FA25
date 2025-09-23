@@ -70,5 +70,17 @@ namespace TourManagement.Services
             _tourRepository.Delete(existing);
             return await _tourRepository.SaveChangesAsync();
         }
+        public async Task<bool> AssignGuideToTourAsync(Guid tourId, Guid tourGuideId)
+        {
+            var tour = await _tourRepository.GetByIdAsync(tourId);
+            if (tour == null) return false;
+
+            tour.TourGuideId = tourGuideId;
+            tour.UpdatedAt = DateTime.UtcNow;
+
+            _tourRepository.Update(tour);
+            return await _tourRepository.SaveChangesAsync();
+        }
+
     }
 }
