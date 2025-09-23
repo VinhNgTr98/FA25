@@ -10,7 +10,6 @@
         public bool IsTourAgencyImg { get; set; } = false;
         public bool IsVehicleAgencyImage { get; set; } = false;
         public Guid LinkedId { get; set; }
-        public string? Caption { get; set; }
         public bool IsCover { get; set; }
     }
 }
