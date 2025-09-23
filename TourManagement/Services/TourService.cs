@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
+using Microsoft.EntityFrameworkCore;
 using TourManagement.DTOs;
 using TourManagement.Model;
 using TourManagement.Repositories.Interfaces;
@@ -81,6 +82,16 @@ namespace TourManagement.Services
             _tourRepository.Update(tour);
             return await _tourRepository.SaveChangesAsync();
         }
+        public async Task<IEnumerable<TourReadDTO>> GetToursByAgencyIdAsync(Guid agencyId)
+        {
+            var tours = await _tourRepository.GetAllAsync()
+                                             .Where(t => t.AgencyID == agencyId)
+                                             .ProjectTo<TourReadDTO>(_mapper.ConfigurationProvider)
+                                             .ToListAsync();
+
+            return tours;
+        }
+
 
     }
 }

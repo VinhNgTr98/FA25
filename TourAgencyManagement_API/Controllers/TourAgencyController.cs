@@ -56,5 +56,13 @@ namespace TourAgencyManagement_API.Controllers
             if (!result) return NotFound();
             return NoContent();
         }
+        [HttpGet("by-user/{userId:int}")]
+        public async Task<IActionResult> GetByUserId(int userId)
+        {
+            var agency = await _service.GetByUserIdAsync(userId);
+            if (agency == null) return NotFound();
+            return Ok(agency);
+        }
+
     }
 }

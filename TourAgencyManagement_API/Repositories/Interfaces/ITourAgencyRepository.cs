@@ -10,5 +10,7 @@ namespace TourAgencyManagement_API.Repositories.Interfaces
 
         Task UpdateAsync(TourAgency agency);
         Task DeleteAsync(Guid id);
+        Task<TourAgency?> GetByUserIdAsync(int userId);
+
     }
 }

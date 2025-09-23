@@ -65,6 +65,14 @@ namespace TourManagement.Controllers
 
             return NoContent();
         }
+        [HttpGet("getToursByAgencyId/{agencyId:guid}")]
+        public async Task<IActionResult> GetToursByAgency(Guid agencyId)
+        {
+            var tours = await _tourService.GetToursByAgencyIdAsync(agencyId);
+            if (tours == null || !tours.Any()) return NotFound("No tours found for this agency");
+
+            return Ok(tours);
+        }
 
         // ---------------------- ITINERARY ----------------------
 
