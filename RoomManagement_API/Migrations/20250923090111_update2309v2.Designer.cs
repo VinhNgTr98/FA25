@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RoomManagement_API.Data;
 
@@ -11,9 +12,11 @@ using RoomManagement_API.Data;
 namespace RoomManagement_API.Migrations
 {
     [DbContext(typeof(RoomManagement_APIContext))]
-    partial class RoomManagement_APIContextModelSnapshot : ModelSnapshot
+    [Migration("20250923090111_update2309v2")]
+    partial class update2309v2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

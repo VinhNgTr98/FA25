@@ -13,14 +13,18 @@ namespace RoomManagement_API.Models
         [Required, MaxLength(100)]
         public string RoomName { get; set; } = default!;
 
-        [Required]
-        public String RoomType { get; set; }             
+        public string RoomType { get; set; }             
 
         [MaxLength(500)]
         public string? Amenities { get; set; }
 
         [Required, MaxLength(50)]
         public string RoomStatus { get; set; } = "Available"; // Available|Booked|Maintenance
+        
+        public int? NumberOfBedrooms { get; set; }
+
+        [Required]
+        public int TotalRooms { get; set; }
 
         [Required]
         public int RoomCapacity { get; set; }
