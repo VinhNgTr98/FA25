@@ -11,7 +11,7 @@ namespace RoomManagement_API.DTOs
 
         [Required(ErrorMessage = "Room type is required")]
         [Range(0, 5, ErrorMessage = "Invalid room type value")]
-        public int RoomType { get; set; }
+        public String RoomType { get; set; }
 
         [StringLength(500, ErrorMessage = "Amenities cannot exceed 500 characters")]
         public string Amenities { get; set; }

@@ -4,8 +4,8 @@
     {
         public Guid RoomId { get; set; }
         public string RoomName { get; set; } = default!;
-        public int RoomType { get; set; }
-        public string? Amenities { get; set; }
+        public String RoomType { get; set; }
+        public string Amenities { get; set; }
         public string RoomStatus { get; set; } = default!;
         public int RoomCapacity { get; set; }
         public Guid HotelId { get; set; }
