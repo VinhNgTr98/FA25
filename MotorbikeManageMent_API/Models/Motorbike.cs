@@ -13,7 +13,6 @@ namespace MotorbikeManageMent_API.Models
         [Required, MaxLength(100)]
         public string MotorbikeName { get; set; } = default!;
 
-
         [Required, MaxLength(50)]
         public string MotorbikeBrand { get; set; } = default!;
 

@@ -56,8 +56,10 @@ namespace CarManagement_API.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("varchar(20)");
 
-                    b.Property<int?>("EngineCC")
-                        .HasColumnType("int");
+                    b.Property<string>("Gear")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("varchar(20)");
 
                     b.Property<decimal?>("HourlyPrice")
                         .HasColumnType("decimal(65,30)");
@@ -71,11 +73,6 @@ namespace CarManagement_API.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Status")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("varchar(20)");
-
-                    b.Property<string>("Transmission")
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("varchar(20)");

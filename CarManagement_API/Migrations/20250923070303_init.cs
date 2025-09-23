@@ -26,11 +26,10 @@ namespace CarManagement_API.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     CarType = table.Column<string>(type: "varchar(50)", maxLength: 50, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Transmission = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: false)
+                    Gear = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Engine = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    EngineCC = table.Column<int>(type: "int", nullable: true),
                     SeatingCapacity = table.Column<int>(type: "int", nullable: true),
                     LicensePlate = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),

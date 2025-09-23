@@ -17,12 +17,10 @@ namespace CarManagement_API.DTOs
         public string CarType { get; set; }
 
         [Required, MaxLength(20)]
-        public string Transmission { get; set; }
+        public string Gear { get; set; }
 
         [Required, MaxLength(20)]
         public string Engine { get; set; }
-
-        public int? EngineCC { get; set; }
 
         [MaxLength(20)]
         public string LicensePlate { get; set; }

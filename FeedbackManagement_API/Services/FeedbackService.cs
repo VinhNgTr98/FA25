@@ -33,7 +33,6 @@ namespace FeedbackManagement_API.Services
             return (avg, dist);
         }
 
-        // CHỈ tạo feedback gốc: luôn ReplyId = null, IsReply = false
         public async Task<Feedbacks> CreateAsync(FeedbackCreateDTO dto, CancellationToken ct = default)
         {
             if (!dto.Rating.HasValue)
@@ -44,12 +43,11 @@ namespace FeedbackManagement_API.Services
 
             var entity = new Feedbacks
             {
-                // Nếu model là UserID thì thay bằng UserID = dto.UserId;
                 UserID = dto.UserID,
                 LinkedId = dto.LinkedId,
                 LinkedType = dto.LinkedType,
                 IsReply = false,
-                ReplyId = null,                 // ÉP null cho lần tạo đầu
+                ReplyId = null,
                 Rating = dto.Rating.Value,
                 Comment = dto.Comment,
                 CreatedAt = DateTime.UtcNow
@@ -65,7 +63,6 @@ namespace FeedbackManagement_API.Services
             var entity = await _repo.GetByIdAsync(id, ct);
             if (entity is null) return null;
 
-            // Không cho sửa rating của reply
             if (!entity.IsReply && dto.Rating.HasValue)
             {
                 if (dto.Rating is < 1 or > 5)
@@ -91,7 +88,6 @@ namespace FeedbackManagement_API.Services
             return true;
         }
 
-        // Tạo reply tách riêng endpoint /api/feedback/{id}/reply
         public async Task<Feedbacks> CreateReplyAsync(int parentId, FeedbackReplyDTO dto, CancellationToken ct = default)
         {
             var parent = await _repo.GetByIdAsync(parentId, ct);
@@ -100,13 +96,12 @@ namespace FeedbackManagement_API.Services
 
             var entity = new Feedbacks
             {
-                // Nếu model là UserID thì đổi sang UserID = dto.UserID;
-                UserID = dto.UserID,                // hoặc dto.UserId nếu đã thống nhất
+                UserID = dto.UserID,
                 LinkedId = parent.LinkedId,
                 LinkedType = parent.LinkedType,
                 IsReply = true,
                 ReplyId = parent.FeedbackId,
-                Rating = parent.Rating,             // cột int: kế thừa rating cha
+                Rating = parent.Rating, 
                 Comment = dto.Comment,
                 CreatedAt = DateTime.UtcNow
             };
@@ -115,5 +110,28 @@ namespace FeedbackManagement_API.Services
             await _repo.SaveChangesAsync(ct);
             return entity;
         }
+
+        // NEW: generic GETs (paged)
+        public async Task<(IEnumerable<Feedbacks> items, long total)> GetAllPagedAsync(int page, int pageSize, CancellationToken ct = default)
+            => await _repo.GetAllPagedAsync(page, pageSize, ct);
+
+        public async Task<(IEnumerable<Feedbacks> items, long total)> GetByLinkedTypePagedAsync(string linkedType, int page, int pageSize, CancellationToken ct = default)
+            => await _repo.GetByLinkedTypePagedAsync(linkedType, page, pageSize, ct);
+
+        public async Task<(IEnumerable<Feedbacks> items, long total)> GetByLinkedIdPagedAsync(Guid linkedId, int page, int pageSize, CancellationToken ct = default)
+            => await _repo.GetByLinkedIdPagedAsync(linkedId, page, pageSize, ct);
+
+        public async Task<(IEnumerable<Feedbacks> items, long total)> GetByUserIDPagedAsync(int userID, int page, int pageSize, CancellationToken ct = default)
+            => await _repo.GetByUserIDPagedAsync(userID, page, pageSize, ct);
+
+        public async Task<(IEnumerable<Feedbacks> items, long total)> GetByRatingPagedAsync(int rating, int page, int pageSize, CancellationToken ct = default)
+            => await _repo.GetByRatingPagedAsync(rating, page, pageSize, ct);
+
+        // Replies
+        public async Task<IEnumerable<Feedbacks>> GetRepliesByFeedbackIdAsync(int feedbackId, CancellationToken ct = default)
+            => await _repo.GetRepliesByFeedbackIdAsync(feedbackId, ct);
+
+        public async Task<(IEnumerable<Feedbacks> items, long total)> GetRepliesByFeedbackIdPagedAsync(int feedbackId, int page, int pageSize, CancellationToken ct = default)
+            => await _repo.GetRepliesByFeedbackIdPagedAsync(feedbackId, page, pageSize, ct);
     }
 }
