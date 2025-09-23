@@ -74,6 +74,10 @@ namespace TourManagement
             builder.Services.AddScoped<ITourService, TourService>();
             builder.Services.AddScoped<IItineraryRepository, ItineraryRepository>();
             builder.Services.AddScoped<IItineraryService, ItineraryService>();
+            builder.Services.AddScoped<ITourGuideRepository, TourGuideRepository>();
+            builder.Services.AddScoped<ITourGuideService, TourGuideService>();
+            builder.Services.AddScoped<ITourMemberRepository, TourMemberRepository>();
+            builder.Services.AddScoped<ITourMemberService, TourMemberService>();
 
             // ===== CORS =====
             builder.Services.AddCors(options =>

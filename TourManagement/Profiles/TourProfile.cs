@@ -7,19 +7,25 @@
     {
         public TourProfile()
         {
-            // CreateDTO -> Tour
+            // ----------- TOUR -----------
             CreateMap<TourCreateDTO, Tour>();
-
-            // Tour -> ReadDTO
             CreateMap<Tour, TourReadDTO>();
-
-
-            // UpdateDTO -> Tour
             CreateMap<TourUpdateDTO, Tour>();
 
-            CreateMap<Itinerary, ItineraryReadDTO>();
+            // ----------- ITINERARY -----------
             CreateMap<ItineraryCreateDTO, Itinerary>();
+            CreateMap<Itinerary, ItineraryReadDTO>();
             CreateMap<ItineraryUpdateDTO, Itinerary>();
+
+            // ----------- TOUR GUIDE -----------
+            CreateMap<TourGuideCreateDTO, TourGuide>();
+            CreateMap<TourGuide, TourGuideReadDTO>();
+            CreateMap<TourGuideUpdateDTO, TourGuide>();
+
+            // ----------- TOUR MEMBER -----------
+            CreateMap<TourMemberCreateDTO, TourMember>();
+            CreateMap<TourMember, TourMemberReadDTO>();
+            CreateMap<TourMemberUpdateDTO, TourMember>();
         }
     }
 }

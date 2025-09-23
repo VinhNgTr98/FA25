@@ -11,6 +11,8 @@ namespace TourManagement.Data
         }
 
         public DbSet<Tour> Tours { get; set; }
+        public DbSet<TourGuide> TourGuides { get; set; }
+        public DbSet<TourMember> TourMembers { get; set; }
         public DbSet<Itinerary> Itineraries { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

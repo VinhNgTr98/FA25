@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using TourAgencyManagement_API.DTOs;
 using TourAgencyManagement_API.Models;
 using TourAgencyManagement_API.Repositories.Interfaces;
@@ -59,5 +60,12 @@ namespace TourAgencyManagement_API.Services
             await _repository.DeleteAsync(id);
             return true;
         }
+        public async Task<TourAgencyReadDto?> GetByUserIdAsync(int userId)
+        {
+            var agency = await _repository.GetByUserIdAsync(userId);
+            return _mapper.Map<TourAgencyReadDto?>(agency);
+        }
+
+
     }
 }

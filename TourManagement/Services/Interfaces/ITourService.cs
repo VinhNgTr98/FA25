@@ -10,5 +10,8 @@ namespace TourManagement.Services.Interfaces
         Task<TourReadDTO> CreateTourAsync(TourCreateDTO bookCreateDto);
         Task<bool> UpdateTourAsync(TourUpdateDTO bookUpdateDto);
         Task<bool> DeleteTourAsync(Guid id);
+        Task<bool> AssignGuideToTourAsync(Guid tourId, Guid tourGuideId);
+        Task<IEnumerable<TourReadDTO>> GetToursByAgencyIdAsync(Guid agencyId);
+
     }
 }

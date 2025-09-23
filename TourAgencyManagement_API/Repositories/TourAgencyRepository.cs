@@ -47,5 +47,11 @@ namespace TourAgencyManagement_API.Repositories
                 await _context.SaveChangesAsync();
             }
         }
+        public async Task<TourAgency?> GetByUserIdAsync(int userId)
+        {
+            return await _context.TourAgencies
+                                 .FirstOrDefaultAsync(a => a.UserID == userId);
+        }
+
     }
 }

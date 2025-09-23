@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TourManagement.Data;
 
@@ -11,9 +12,11 @@ using TourManagement.Data;
 namespace TourManagement.Migrations
 {
     [DbContext(typeof(TourContext))]
-    partial class TourContextModelSnapshot : ModelSnapshot
+    [Migration("20250923060232_Update2309")]
+    partial class Update2309
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -153,9 +156,8 @@ namespace TourManagement.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<int>("PhoneNumber")
+                        .HasColumnType("int");
 
                     b.Property<int>("TourGuideIdNumber")
                         .HasColumnType("int");
@@ -181,9 +183,8 @@ namespace TourManagement.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasColumnType("longtext");
+                    b.Property<int>("PhoneNumber")
+                        .HasColumnType("int");
 
                     b.Property<Guid>("TourId")
                         .HasColumnType("char(36)");
