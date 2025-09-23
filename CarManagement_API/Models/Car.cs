@@ -25,14 +25,11 @@ namespace CarManagement_API.Models
 
         // Hộp số (Automatic, Manual)
         [Required, MaxLength(20)]
-        public string Transmission { get; set; } = default!;
+        public string Gear { get; set; } = default!;
 
         // Loại động cơ (Gasoline, Diesel, Electric)
         [Required, MaxLength(20)]
         public string Engine { get; set; } = default!;
-
-        // Dung tích động cơ (cc)
-        public int? EngineCC { get; set; }
 
         // Số chỗ ngồi 
         [Range(1, 50, ErrorMessage = "Số chỗ ngồi phải lớn hơn 0 và nhỏ hơn hoặc bằng 50.")]

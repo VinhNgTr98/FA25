@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarManagement_API.Migrations
 {
     [DbContext(typeof(CarManagement_APIContext))]
-    [Migration("20250922161119_init")]
+    [Migration("20250923070303_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -59,8 +59,10 @@ namespace CarManagement_API.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("varchar(20)");
 
-                    b.Property<int?>("EngineCC")
-                        .HasColumnType("int");
+                    b.Property<string>("Gear")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("varchar(20)");
 
                     b.Property<decimal?>("HourlyPrice")
                         .HasColumnType("decimal(65,30)");
@@ -74,11 +76,6 @@ namespace CarManagement_API.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Status")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("varchar(20)");
-
-                    b.Property<string>("Transmission")
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("varchar(20)");

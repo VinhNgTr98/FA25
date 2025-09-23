@@ -58,7 +58,7 @@ namespace CarManagement_API.Repositories
             var query = _context.Car.AsQueryable();
 
             if (!string.IsNullOrEmpty(transmission))
-                query = query.Where(c => c.Transmission.Contains(transmission));
+                query = query.Where(c => c.Gear.Contains(transmission));
 
             if (!string.IsNullOrEmpty(fuel))
                 query = query.Where(c => c.Engine.Contains(fuel));
@@ -68,9 +68,6 @@ namespace CarManagement_API.Repositories
 
             if (!string.IsNullOrEmpty(carName))
                 query = query.Where(c => c.CarName.Contains(carName));
-
-            if (engineCc.HasValue)
-                query = query.Where(c => c.EngineCC == engineCc.Value);
 
             return await query.ToListAsync();
         }

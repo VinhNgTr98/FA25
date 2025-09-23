@@ -16,11 +16,9 @@ namespace CarManagement_API.DTOs
 
         public string CarType { get; set; }
 
-        public string Transmission { get; set; }
+        public string Gear { get; set; }
 
         public string Engine { get; set; }
-
-        public int? EngineCC { get; set; }
 
         public string LicensePlate { get; set; }
 
