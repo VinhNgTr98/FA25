@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RoomManagement_API.Data;
 
@@ -11,9 +12,11 @@ using RoomManagement_API.Data;
 namespace RoomManagement_API.Migrations
 {
     [DbContext(typeof(RoomManagement_APIContext))]
-    partial class RoomManagement_APIContextModelSnapshot : ModelSnapshot
+    [Migration("20250923085200_update2309")]
+    partial class update2309
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,9 +42,6 @@ namespace RoomManagement_API.Migrations
                     b.Property<Guid>("HotelId")
                         .HasColumnType("char(36)");
 
-                    b.Property<int?>("NumberOfBedrooms")
-                        .HasColumnType("int");
-
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(10,2)");
 
@@ -61,9 +61,6 @@ namespace RoomManagement_API.Migrations
                     b.Property<string>("RoomType")
                         .IsRequired()
                         .HasColumnType("longtext");
-
-                    b.Property<int>("TotalRooms")
-                        .HasColumnType("int");
 
                     b.HasKey("RoomId");
 

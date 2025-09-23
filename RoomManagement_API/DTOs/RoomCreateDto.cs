@@ -10,16 +10,20 @@ namespace RoomManagement_API.DTOs
         public string RoomName { get; set; } = default!;
 
         [Required(ErrorMessage = "Room type is required")]
-        [Range(0, 5, ErrorMessage = "Invalid room type value")]
-        public int RoomType { get; set; }
+        public string RoomType { get; set; }
 
         [StringLength(500, ErrorMessage = "Amenities cannot exceed 500 characters")]
         public string Amenities { get; set; }
 
         [Required(ErrorMessage = "Room status is required")]
-        [RegularExpression("^(Available|Booked|Maintenance)$",
-        ErrorMessage = "Invalid room status. Allowed values: Available, Booked, Maintenance")]
+        [RegularExpression("^(Available|Booked|Maintenance|StopServices)$",
+        ErrorMessage = "Invalid room status. Allowed values: Available, Booked, Maintenance, StopServices")]
         public string RoomStatus { get; set; }
+
+        public int? NumberOfBedrooms { get; set; }
+
+        [Required]
+        public int TotalRooms { get; set; }
 
         [Required(ErrorMessage = "Room capacity is required")]
         [Range(1, 50, ErrorMessage = "Room capacity must be between 1 and 50")]
