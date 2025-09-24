@@ -18,8 +18,8 @@ namespace Payment_API.Helpers
 
         public string CreatePaymentUrl(Guid paymentId, decimal amount, string returnUrl, string orderInfo)
         {
-            var vnpayConfig = _configuration.GetSection("VNPayConfig");
-            var vnp_Url = vnpayConfig["Url"];
+            var vnpayConfig = _configuration.GetSection("VNPAY");
+            var vnp_Url = vnpayConfig["BaseUrl"];
             var vnp_TmnCode = vnpayConfig["TmnCode"];
             var vnp_HashSecret = vnpayConfig["HashSecret"];
 
@@ -94,7 +94,7 @@ namespace Payment_API.Helpers
                 return false;
             }
 
-            var vnp_HashSecret = _configuration["VNPayConfig:HashSecret"];
+            var vnp_HashSecret = _configuration["VNPAY:HashSecret"];
 
             // Remove secure hash from dictionary to validate
             vnpayData.Remove("vnp_SecureHash");

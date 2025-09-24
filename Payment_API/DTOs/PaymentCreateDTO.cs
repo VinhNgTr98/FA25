@@ -6,6 +6,5 @@
         public decimal Amount { get; set; }
         public string Currency { get; set; } = "VND";
         public string PaymentMethod { get; set; } = "VNPAY";
-        public string ReturnUrl { get; set; } = string.Empty;
     }
 }

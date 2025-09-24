@@ -12,12 +12,14 @@ namespace Payment_API.Services
         private readonly IPaymentRepository _paymentRepository;
         private readonly IMapper _mapper;
         private readonly VNPayHelper _vnpayHelper;
+        private readonly IConfiguration _configuration;
 
-        public PaymentService(IPaymentRepository paymentRepository, IMapper mapper, VNPayHelper vnpayHelper)
+        public PaymentService(IPaymentRepository paymentRepository, IMapper mapper, VNPayHelper vnpayHelper, IConfiguration configuration)
         {
             _paymentRepository = paymentRepository;
             _mapper = mapper;
             _vnpayHelper = vnpayHelper;
+            _configuration = configuration;
         }
 
         public async Task<IEnumerable<PaymentReadDTO>> GetAllPaymentsAsync()
@@ -48,12 +50,14 @@ namespace Payment_API.Services
         {
             var paymentModel = _mapper.Map<Payment>(paymentCreateDto);
             paymentModel.PaymentId = Guid.NewGuid();
-
+            var returnUrl = _configuration["VNPAY:ReturnUrl"];
+            if (string.IsNullOrEmpty(returnUrl))
+                throw new InvalidOperationException("ReturnUrl is not configured in appsettings.json");
             // Generate VNPay payment URL
             var vnpayPaymentUrl = _vnpayHelper.CreatePaymentUrl(
                 paymentModel.PaymentId,
                 paymentModel.Amount,
-                paymentCreateDto.ReturnUrl,
+                returnUrl,
                 "Payment for booking " + paymentModel.BookingId
             );
 
