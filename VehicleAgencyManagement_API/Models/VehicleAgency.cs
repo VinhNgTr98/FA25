@@ -13,7 +13,7 @@ namespace VehicleAgencyManagement_API.Models
 
         [Required]
         
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
 
         [Required, MaxLength(255)]
         public string Location { get; set; }
