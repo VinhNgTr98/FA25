@@ -15,7 +15,7 @@ namespace HotelsManagement_API.DTOs
         public string HotelStatus { get; set; }
 
         [StringLength(200, ErrorMessage = "Tiles cannot exceed 200 characters")]
-        public string? Tiles { get; set; }
+        public string? HotelName { get; set; }
 
         [Required(ErrorMessage = "Location is required")]
         public string Location { get; set; }
