@@ -40,8 +40,9 @@ namespace BookingManagement_API.Services
                 TaxAmount = dto.TaxAmount,
                 CouponId = dto.CouponId,
                 BookingNote = dto.BookingNote,
-                // Ban đầu chưa có item, tổng tiền = thuế (nếu có)
-                TotalAmount = dto.TaxAmount ?? 0m
+                TotalAmount = dto.TaxAmount ?? 0m,
+                CreatedAt = DateTime.UtcNow,
+                UpdatedAt = DateTime.UtcNow
             };
 
             var created = await _repo.AddAsync(booking, ct);
@@ -58,6 +59,7 @@ namespace BookingManagement_API.Services
             existing.TaxAmount = dto.TaxAmount;
             existing.CouponId = dto.CouponId;
             existing.BookingNote = dto.BookingNote;
+            existing.UpdatedAt = DateTime.UtcNow;
 
             return await _repo.UpdateAsync(existing, ct);
         }
@@ -71,7 +73,6 @@ namespace BookingManagement_API.Services
             return bookings.Select(MapToReadDto);
         }
 
-        // Lưu ý: tên method trong interface dùng "Order" nhưng thực chất là bookingId
         public async Task<IEnumerable<BookingItemReadDto>> GetItemsByOrderIdAsync(int BookingId, CancellationToken ct = default)
         {
             var items = await _repo.GetItemsByOrderIdAsync(BookingId, ct);
@@ -96,14 +97,22 @@ namespace BookingManagement_API.Services
 
             var created = await _repo.AddItemAsync(item, ct);
 
-            // Tính lại tổng tiền = sum(items) + tax
+            // Recalculate total = sum(items) + tax
             var allItems = await _repo.GetItemsByOrderIdAsync(BookingId, ct);
             var itemsTotal = allItems.Sum(i => i.Quantity * i.UnitPrice);
             var tax = booking.TaxAmount ?? 0m;
             booking.TotalAmount = Math.Round(itemsTotal + tax, 2, MidpointRounding.AwayFromZero);
+            booking.UpdatedAt = DateTime.UtcNow;
+
             await _repo.UpdateAsync(booking, ct);
 
             return MapToItemReadDto(created);
+        }
+
+        public async Task<int> CleanupExpiredPendingAsync(TimeSpan ttl, CancellationToken ct = default)
+        {
+            // TTL mặc định bạn có thể dùng TimeSpan.FromMinutes(5)
+            return await _repo.DeletenotefisnitBoking(ttl, ct);
         }
 
         private static BookingReadDto MapToReadDto(Booking b)

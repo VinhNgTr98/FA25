@@ -90,5 +90,14 @@ namespace BookingManagement_API.Controllers
             var ok = await _svc.DeleteAsync(id, ct);
             return ok ? NoContent() : NotFound();
         }
+
+        // DELETE /api/bookings/cleanup/pending?minutes=5
+        [HttpDelete("cleanup/pending")]
+        public async Task<IActionResult> CleanupPending([FromQuery] int minutes = 5, CancellationToken ct = default)
+        {
+            if (minutes <= 0) return BadRequest(new { message = "minutes must be > 0" });
+            var removed = await _svc.CleanupExpiredPendingAsync(TimeSpan.FromMinutes(minutes), ct);
+            return Ok(new { removed });
+        }
     }
 }

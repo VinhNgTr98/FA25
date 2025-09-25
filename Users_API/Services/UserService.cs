@@ -291,49 +291,44 @@ namespace UserManagement_API.Services
             await _repo.UpdateAsync(u, ct);
             return true;
         }
-        public async Task<bool> UpdateSingleRoleAsync(UpdateUserRoleDto dto, CancellationToken ct = default)
+        public async Task<bool> UpdateSingleRoleAsync(int userId, UpdateUserRoleDto dto, CancellationToken ct = default)
         {
-            var user = await _repo.GetByIdAsync(dto.UserID, ct);
+            var user = await _repo.GetByIdAsync(userId, ct);
             if (user == null) return false;
 
-            // Xác định đúng 1 role được gửi (bool? để biết null = không đổi)
             var candidates = new List<(string name, bool? value)>
-    {
-        ("HotelOwner", dto.IsHotelOwner),
-        ("TourAgency", dto.IsTourAgency),
-        ("VehicleAgency", dto.IsVehicleAgency)
-    };
+            {
+                ("HotelOwner", dto.IsHotelOwner),
+                ("TourAgency", dto.IsTourAgency),
+                ("VehicleAgency", dto.IsVehicleAgency)
+            };
             var selected = candidates.Where(x => x.value.HasValue).ToList();
             if (selected.Count != 1)
                 throw new ArgumentException("Phải gửi đúng 1 role mỗi lần (IsHotelOwner / IsTourAgency / IsVehicleAgency).");
 
             var (roleName, desired) = (selected[0].name, selected[0].value!.Value);
 
+            if (!desired && string.IsNullOrWhiteSpace(dto.RejectedNote))
+                throw new ArgumentException($"Tắt/Từ chối {roleName} cần RejectedNote.");
+
             switch (roleName)
             {
                 case "HotelOwner":
                     {
-                        if (!desired && string.IsNullOrWhiteSpace(dto.RejectedNote))
-                            throw new ArgumentException("Tắt/Từ chối HotelOwner cần RejectedNote.");  // Kiểm tra RejectedNote không trống
-
                         if (desired)
                         {
                             if (!user.IsHotelOwner) user.IsHotelOwner = true;
-                            user.RejectedNote = null; // bật: không cần lý do
+                            user.RejectedNote = null;
                         }
                         else
                         {
                             if (user.IsHotelOwner) user.IsHotelOwner = false;
-                            user.RejectedNote = dto.RejectedNote!.Trim(); // luôn lưu lý do khi value=false
+                            user.RejectedNote = dto.RejectedNote!.Trim();
                         }
                         break;
                     }
-
                 case "TourAgency":
                     {
-                        if (!desired && string.IsNullOrWhiteSpace(dto.RejectedNote))
-                            throw new ArgumentException("Tắt/Từ chối TourAgency cần RejectedNote.");  // Kiểm tra RejectedNote không trống
-
                         if (desired)
                         {
                             if (!user.IsTourAgency) user.IsTourAgency = true;
@@ -346,12 +341,8 @@ namespace UserManagement_API.Services
                         }
                         break;
                     }
-
                 case "VehicleAgency":
                     {
-                        if (!desired && string.IsNullOrWhiteSpace(dto.RejectedNote))
-                            throw new ArgumentException("Tắt/Từ chối VehicleAgency cần RejectedNote.");  // Kiểm tra RejectedNote không trống
-
                         if (desired)
                         {
                             if (!user.IsVehicleAgency) user.IsVehicleAgency = true;
@@ -364,7 +355,6 @@ namespace UserManagement_API.Services
                         }
                         break;
                     }
-
                 default:
                     throw new ArgumentException("Role không hợp lệ.");
             }
