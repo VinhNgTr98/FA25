@@ -103,6 +103,10 @@ namespace UsersInfoManagement_API.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("varchar(255)");
 
+                    b.Property<string>("Sex")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<int>("UserID")
                         .HasColumnType("int");
 

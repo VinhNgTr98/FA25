@@ -11,7 +11,6 @@ namespace RoleUpdateManagement_API.DTOs
         public string Name { get; set; } = string.Empty;
         public string Address { get; set; } = string.Empty;
         public string? TaxNumber { get; set; }
-        public string? LicenceImg { get; set; }
         public int FormStatus { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }

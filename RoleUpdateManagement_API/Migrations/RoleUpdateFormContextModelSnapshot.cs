@@ -38,9 +38,6 @@ namespace RoleUpdateManagement_API.Migrations
                     b.Property<int>("FormStatus")
                         .HasColumnType("int");
 
-                    b.Property<string>("LicenceImg")
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");

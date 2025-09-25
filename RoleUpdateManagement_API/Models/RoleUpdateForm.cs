@@ -18,8 +18,6 @@ namespace RoleUpdateManagement_API.Models
 
         public string? TaxNumber { get; set; }
 
-        public string? LicenceImg { get; set; }
-
         public int FormStatus { get; set; } // 0 = Pending, 1 = Approved, 2 = Rejected
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;

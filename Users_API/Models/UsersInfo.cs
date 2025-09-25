@@ -23,6 +23,9 @@ namespace User_API.Models
         [MaxLength(15)]
         public string? PhoneNumber { get; set; }
 
+        [Required]
+        public string Sex { get; set; } = default!;
+
         [MaxLength(255)]
         public string? Address { get; set; }
 

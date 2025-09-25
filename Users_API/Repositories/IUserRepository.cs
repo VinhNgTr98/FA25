@@ -15,6 +15,7 @@ namespace User_API.Repositories
         Task<User> UpdateAsync(User user, CancellationToken ct = default);
         Task DeleteAsync(User user, CancellationToken ct = default);
         Task<User> CreateWithInfoAsync(User user, CancellationToken ct = default);
+        Task SaveChangesAsync(CancellationToken ct = default);
     }
 
 }

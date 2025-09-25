@@ -23,6 +23,9 @@ namespace User_API.DTOs
         public bool IsModerator { get; set; }
 
         public bool IsActive { get; set; }
+
+        [MaxLength(400)]
+        public string? RejectedlNote { get; set; }
         public int CountWarning { get; set; }
         public DateTime CreatedAt { get; set; }
 
