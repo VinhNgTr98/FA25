@@ -16,5 +16,7 @@ namespace ForumPostManagement_API.Repositories
 
         Task<List<ForumPost>> GetByTypeAsync(string type, CancellationToken ct = default);
         Task<List<ForumPost>> GetByContentAsync(string keyword, CancellationToken ct = default);
+        // New: get by ApprovalStatus = Pending | Approved | Rejected
+        Task<List<ForumPost>> GetByApprovalStatusAsync(string status, CancellationToken ct = default);
     }
 }

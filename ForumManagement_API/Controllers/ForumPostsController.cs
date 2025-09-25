@@ -68,6 +68,22 @@ namespace ForumPostManagement_API.Controllers
             return Ok(list);
         }
 
+        // New: GET /api/forum-posts/approval?status=Pending|Approved|Rejected
+        [HttpGet("approval")]
+        [Produces("application/json")]
+        public async Task<ActionResult<IReadOnlyList<ForumPostReadDto>>> GetByApprovalStatus([FromQuery] string status, CancellationToken ct)
+        {
+            try
+            {
+                var list = await _service.GetByApprovalStatusAsync(status, ct);
+                return Ok(list);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
         [HttpPatch("{id:guid}/approval")]
         public async Task<ActionResult<ForumPostReadDto>> ChangeApprovalStatus(Guid id, [FromBody] ChangeApprovalStatusDto dto, CancellationToken ct)
         {
@@ -86,5 +102,6 @@ namespace ForumPostManagement_API.Controllers
                 return Conflict(new { message = ex.Message });
             }
         }
+        
     }
 }

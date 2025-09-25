@@ -9,7 +9,7 @@ namespace ForumPostManagement_API.DTOs
         [Required, MaxLength(20)]
         [RegularExpression("^(Approved|Rejected)$")]
         [DefaultValue("Approved")]
-        public string Status { get; set; } = null!;
+        public string ApprovalStatus { get; set; } = null!;
 
         // Bắt buộc khi Status = "Rejected"; khi "Approved" có thể null
         [MaxLength(400)]
