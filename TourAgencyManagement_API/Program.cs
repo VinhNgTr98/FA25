@@ -69,7 +69,19 @@ builder.Services.AddSingleton(mapper);
 builder.Services.AddScoped<ITourAgencyRepository, TourAgencyRepository>();
 builder.Services.AddScoped<ITourAgencyService, TourAgencyService>();
 
+
+// ===== CORS =====
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+        policy.WithOrigins("http://localhost:3000")
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials());
+});
 var app = builder.Build();
+
+app.UseCors("AllowFrontend");
 
 // Configure the HTTP request pipeline.
 app.UseSwagger();
