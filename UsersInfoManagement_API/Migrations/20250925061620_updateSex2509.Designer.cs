@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UsersInfoManagement_API.Data;
 
@@ -11,9 +12,11 @@ using UsersInfoManagement_API.Data;
 namespace UsersInfoManagement_API.Migrations
 {
     [DbContext(typeof(UsersInfoManagement_APIContext))]
-    partial class UsersInfoManagement_APIContextModelSnapshot : ModelSnapshot
+    [Migration("20250925061620_updateSex2509")]
+    partial class updateSex2509
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

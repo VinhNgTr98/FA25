@@ -235,5 +235,20 @@ namespace Users_API.Controllers
                 ? Ok(new { message = "Password changed" })
                 : BadRequest(new { message = "Invalid old password or password policy not met." });
         }
+
+        [HttpPatch("roles")]
+        public async Task<IActionResult> UpdateSingleRole([FromBody] UpdateUserRoleDto dto, CancellationToken ct)
+        {
+            try
+            {
+                var ok = await _svc.UpdateSingleRoleAsync(dto, ct);
+                if (!ok) return NotFound(new { message = "User không tồn tại." });
+                return NoContent();
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
     }
 }

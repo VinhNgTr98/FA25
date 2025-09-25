@@ -26,6 +26,9 @@ namespace User_API.Models
         public bool IsWebAdmin { get; set; } = false;
         public bool IsModerator { get; set; } = false;
 
+        // Lý do khi Rejected (yêu cầu khi chuyển sang Rejected)
+        [MaxLength(400)]
+        public string? RejectedNote { get; set; }
         public bool IsActive { get; set; }
 
         public int CountWarning { get; set; } = 0;

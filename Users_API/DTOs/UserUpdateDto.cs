@@ -19,7 +19,10 @@ namespace UserManagement_API.DTOs
         public bool IsWebAdmin { get; set; }
         public bool IsModerator { get; set; }
 
-        public bool? IsActive { get; set; }   
+        public bool? IsActive { get; set; }
+
+        [MaxLength(400)]
+        public string? RejectedlNote { get; set; }
         public int? CountWarning { get; set; }  
 
         [MaxLength(6)]

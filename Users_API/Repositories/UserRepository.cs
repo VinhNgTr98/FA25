@@ -48,6 +48,8 @@ namespace User_API.Repositories
             await _ctx.SaveChangesAsync(ct);
             return user;
         }
+        public Task SaveChangesAsync(CancellationToken ct = default)
+    => _ctx.SaveChangesAsync(ct);
     }
 
 }

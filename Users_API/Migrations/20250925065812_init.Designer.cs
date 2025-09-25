@@ -12,7 +12,7 @@ using Users_API.Data;
 namespace UserManagement_API.Migrations
 {
     [DbContext(typeof(Users_APIContext))]
-    [Migration("20250906062217_init")]
+    [Migration("20250925065812_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -55,7 +55,7 @@ namespace UserManagement_API.Migrations
                     b.Property<bool>("IsHotelOwner")
                         .HasColumnType("tinyint(1)");
 
-                    b.Property<bool>("IsSupervisor")
+                    b.Property<bool>("IsModerator")
                         .HasColumnType("tinyint(1)");
 
                     b.Property<bool>("IsTourAgency")
@@ -72,11 +72,16 @@ namespace UserManagement_API.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("varchar(255)");
 
+                    b.Property<string>("RejectedlNote")
+                        .HasMaxLength(400)
+                        .HasColumnType("varchar(400)");
+
                     b.Property<bool>("is_verified")
                         .HasColumnType("tinyint(1)");
 
                     b.Property<string>("otp_code")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar(10)");
 
                     b.Property<DateTime?>("otp_expires")
                         .HasColumnType("datetime(6)");
@@ -118,6 +123,10 @@ namespace UserManagement_API.Migrations
                     b.Property<string>("ProfilePictureUrl")
                         .HasMaxLength(255)
                         .HasColumnType("varchar(255)");
+
+                    b.Property<string>("Sex")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<int>("UserID")
                         .HasColumnType("int");

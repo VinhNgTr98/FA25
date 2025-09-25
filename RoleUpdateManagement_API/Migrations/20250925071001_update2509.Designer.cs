@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RoleUpdateManagement_API.Data;
 
@@ -11,9 +12,11 @@ using RoleUpdateManagement_API.Data;
 namespace RoleUpdateManagement_API.Migrations
 {
     [DbContext(typeof(RoleUpdateFormContext))]
-    partial class RoleUpdateFormContextModelSnapshot : ModelSnapshot
+    [Migration("20250925071001_update2509")]
+    partial class update2509
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
