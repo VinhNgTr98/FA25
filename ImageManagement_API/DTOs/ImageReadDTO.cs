@@ -12,6 +12,7 @@ namespace ImageManagement_API.DTOs
         public bool IsVehicleImage { get; set; }
         public bool IsTourAgencyImg { get; set; }
         public bool IsVehicleAgencyImage { get; set; }
+        public bool IsLicenseImage { get; set; } = false;
         public Guid LinkedId { get; set; }
         public string ImageUrl { get; set; }
         public bool IsCover { get; set; }
