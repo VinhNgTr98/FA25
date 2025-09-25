@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
 
 namespace RoomManagement_API.DTOs
 {
@@ -19,7 +20,7 @@ namespace RoomManagement_API.DTOs
 
         [Required(ErrorMessage = "Room status is required")]
         [RegularExpression("^(Available|Booked|Maintenance|StopServices)$",
-ErrorMessage = "Invalid room status. Allowed values: Available, Booked, Maintenance, StopServices")]
+        ErrorMessage = "Invalid room status. Allowed values: Available, Booked, Maintenance, StopServices")]
         public string RoomStatus { get; set; }
 
         public int? NumberOfBedrooms { get; set; }
