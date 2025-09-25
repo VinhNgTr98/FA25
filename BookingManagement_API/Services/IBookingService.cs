@@ -14,5 +14,7 @@ namespace BookingManagement_API.Services
         Task<IEnumerable<BookingReadDto>> GetByUserIdAsync(int userId, CancellationToken ct = default);
         Task<IEnumerable<BookingItemReadDto>> GetItemsByOrderIdAsync(int BookingId, CancellationToken ct = default);
         Task<BookingItemReadDto?> AddItemAsync(int BookingId, BookingItemCreateDto dto, CancellationToken ct = default);
+
+        Task<int> CleanupExpiredPendingAsync(TimeSpan ttl, CancellationToken ct = default);
     }
 }

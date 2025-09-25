@@ -65,5 +65,35 @@ namespace BookingManagement_API.Repositories
             await _db.SaveChangesAsync(ct);
             return item;
         }
+        public async Task<int> DeletenotefisnitBoking(TimeSpan ttl, CancellationToken ct = default)
+        {
+            var threshold = DateTime.UtcNow - ttl;
+
+            // Lấy danh sách id booking quá hạn và đang Pending
+            var expiredBookingIds = await _db.Booking
+                .Where(b => b.Status == "Pending" && b.CreatedAt < threshold)
+                .Select(b => b.BookingId)
+                .ToListAsync(ct);
+
+            if (expiredBookingIds.Count == 0) return 0;
+
+            // Xóa BookingItem trước (nếu chưa cấu hình cascade)
+            var items = await _db.BookingItems
+                .Where(i => expiredBookingIds.Contains(i.BookingId))
+                .ToListAsync(ct);
+
+            if (items.Count > 0)
+                _db.BookingItems.RemoveRange(items);
+
+            // Xóa Booking
+            var bookings = await _db.Booking
+                .Where(b => expiredBookingIds.Contains(b.BookingId))
+                .ToListAsync(ct);
+
+            _db.Booking.RemoveRange(bookings);
+
+            await _db.SaveChangesAsync(ct);
+            return bookings.Count;
+        }
     }
 }

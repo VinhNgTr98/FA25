@@ -1,13 +1,11 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace UserManagement_API.DTOs
 {
     public class UpdateUserRoleDto
     {
-        [Required]
-        public int UserID { get; set; }
-
         public bool? IsHotelOwner { get; set; } = null;
         public bool? IsTourAgency { get; set; } = null;
         public bool? IsVehicleAgency { get; set; } = null;

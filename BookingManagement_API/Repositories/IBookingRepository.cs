@@ -14,5 +14,8 @@ namespace BookingManagement_API.Repositories
         Task<IEnumerable<Booking>> GetByUserIdAsync(int userId, CancellationToken ct = default);
         Task<IEnumerable<BookingItem>> GetItemsByOrderIdAsync(int bookingId, CancellationToken ct = default);
         Task<BookingItem> AddItemAsync(BookingItem item, CancellationToken ct = default);
+
+        // NEW: xóa các booking Pending quá TTL, trả về số booking bị xóa
+        Task<int> DeletenotefisnitBoking(TimeSpan ttl, CancellationToken ct = default);
     }
 }
