@@ -39,7 +39,7 @@ namespace ForumPostManagement_API.Models
 
         // Lý do khi Rejected (yêu cầu khi chuyển sang Rejected)
         [MaxLength(400)]
-        public string? RejectedNote { get; set; } 
+        public string? RejectedlNote { get; set; }
 
         // Trạng thái ẩn / hiển thị của bài viết (Visible, Hidden)
         [Required]
