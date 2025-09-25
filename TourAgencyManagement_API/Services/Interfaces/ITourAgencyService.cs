@@ -10,6 +10,8 @@ namespace TourAgencyManagement_API.Services.Interfaces
         Task<TourAgencyReadDto> CreateAsync(TourAgencyCreateDto dto);
         Task<bool> UpdateAsync(Guid id, TourAgencyUpdateDto dto);
         Task<bool> DeleteAsync(Guid id);
+        Task<TourAgencyReadDto?> GetByUserIdAsync(int userId);
+
 
     }
 }

@@ -15,19 +15,65 @@
         "Action": "Start"
       },
       {
-<<<<<<< HEAD
+        "Path": "ImageManagement_API\\ImageManagement_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Users_API\\UserManagement_API.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "New Profile (1)",
+    "Projects": [
+      {
+        "Path": "TourManagement\\TourManagement.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ImageManagement_API\\ImageManagement_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "TourAgencyManagement_API\\TourAgencyManagement_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Users_API\\UserManagement_API.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "New Profile (2)",
+    "Projects": [
+      {
+        "Path": "UsersInfoManagement_API\\UsersInfoManagement_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ImageManagement_API\\ImageManagement_API.csproj",
+        "Action": "Start"
+      },
+      {
         "Path": "VehicleAgencyManagement_API\\VehicleAgencyManagement_API.csproj",
         "Action": "Start"
       },
       {
-        "Path": "VehicleManageMent_API\\VehicleManageMent_API.csproj",
+        "Path": "Users_API\\UserManagement_API.csproj",
         "Action": "Start"
       },
       {
-        "Path": "HotelsManagement_API\\HotelsManagement_API.csproj",
-=======
-        "Path": "Users_API\\UserManagement_API.csproj",
->>>>>>> 7553704ea72ab6030fb8cbc082e137ed51fac306
+        "Path": "MotorbikeManageMent_API\\MotorbikeManageMent_API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "CarManagement_API\\CarManagement_API.csproj",
         "Action": "Start"
       }
     ]

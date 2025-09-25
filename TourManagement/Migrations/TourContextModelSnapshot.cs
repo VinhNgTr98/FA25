@@ -119,6 +119,9 @@ namespace TourManagement.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<Guid>("TourGuideId")
+                        .HasColumnType("char(36)");
+
                     b.Property<string>("TourName")
                         .IsRequired()
                         .HasColumnType("longtext");
@@ -133,6 +136,68 @@ namespace TourManagement.Migrations
                     b.HasKey("TourID");
 
                     b.ToTable("Tours");
+                });
+
+            modelBuilder.Entity("TourManagement.Model.TourGuide", b =>
+                {
+                    b.Property<Guid>("TourGuideId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<Guid>("AgencyId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("TourGuideIdNumber")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TourGuideName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("TourGuideId");
+
+                    b.ToTable("TourGuides");
+                });
+
+            modelBuilder.Entity("TourManagement.Model.TourMember", b =>
+                {
+                    b.Property<Guid>("MemberId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("char(36)");
+
+                    b.Property<DateOnly>("DateOfBirth")
+                        .HasColumnType("date");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<Guid>("TourId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<int>("TourMemberIdNumber")
+                        .HasColumnType("int");
+
+                    b.Property<string>("TourMemberName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("MemberId");
+
+                    b.ToTable("TourMembers");
                 });
 
             modelBuilder.Entity("TourManagement.Model.Itinerary", b =>

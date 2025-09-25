@@ -43,6 +43,8 @@ namespace TourManagement.Model
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
+        public Guid TourGuideId { get; set; }
+
         // Navigation property
         public ICollection<Itinerary> Itineraries { get; set; } = new List<Itinerary>();
     }

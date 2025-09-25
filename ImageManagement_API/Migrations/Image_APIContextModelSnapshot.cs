@@ -40,6 +40,9 @@ namespace ImageManagement_API.Migrations
                     b.Property<bool>("IsHotelImg")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<bool>("IsLicenseImage")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<bool>("IsRoomImg")
                         .HasColumnType("tinyint(1)");
 

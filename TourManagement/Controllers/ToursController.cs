@@ -12,11 +12,14 @@ namespace TourManagement.Controllers
     {
         private readonly ITourService _tourService;
         private readonly IItineraryService _itineraryService;
-
-        public TourController(ITourService tourService, IItineraryService itineraryService)
+        private readonly ITourGuideService _tourGuideService;
+        private readonly ITourMemberService _tourMemberService;
+        public TourController(ITourService tourService, IItineraryService itineraryService, ITourGuideService tourGuideService, ITourMemberService tourMemberService)
         {
             _tourService = tourService;
             _itineraryService = itineraryService;
+            _tourGuideService = tourGuideService;
+            _tourMemberService = tourMemberService;
         }
 
         // ---------------------- TOUR ----------------------
@@ -61,6 +64,14 @@ namespace TourManagement.Controllers
             if (!result) return NotFound();
 
             return NoContent();
+        }
+        [HttpGet("getToursByAgencyId/{agencyId:guid}")]
+        public async Task<IActionResult> GetToursByAgency(Guid agencyId)
+        {
+            var tours = await _tourService.GetToursByAgencyIdAsync(agencyId);
+            if (tours == null || !tours.Any()) return NotFound("No tours found for this agency");
+
+            return Ok(tours);
         }
 
         // ---------------------- ITINERARY ----------------------
@@ -108,5 +119,107 @@ namespace TourManagement.Controllers
 
             return NoContent();
         }
+        // ---------------------- TOUR GUIDE ----------------------
+
+        [HttpGet("{tourId:guid}/guide")]
+        public async Task<IActionResult> GetGuideByTour(Guid tourId)
+        {
+            var tour = await _tourService.GetTourByIdAsync(tourId);
+            if (tour == null) return NotFound("Tour not found");
+
+            var guide = await _tourGuideService.GetByIdAsync(tour.TourGuideId);
+            if (guide == null) return NotFound("Tour guide not found");
+
+            return Ok(guide);
+        }
+
+        [HttpGet("guides/{id:guid}")]
+        public async Task<IActionResult> GetGuideById(Guid id)
+        {
+            var guide = await _tourGuideService.GetByIdAsync(id);
+            if (guide == null) return NotFound();
+            return Ok(guide);
+        }
+        [HttpPost("{tourId:guid}/guide")]
+        public async Task<IActionResult> AssignGuideToTour(Guid tourId, [FromBody] TourGuideCreateDTO dto)
+        {
+            // Không cần check dto.TourId nữa vì model không có TourId
+            var created = await _tourGuideService.CreateAsync(dto);
+
+            // Gắn guide vào tour
+            var updated = await _tourService.AssignGuideToTourAsync(tourId, created.TourGuideId);
+            if (!updated) return BadRequest("Failed to assign guide to tour");
+
+            return CreatedAtAction(nameof(GetGuideById), new { id = created.TourGuideId }, created);
+        }
+
+
+        [HttpPut("guides/{id:guid}")]
+        public async Task<IActionResult> UpdateGuide(Guid id, [FromBody] TourGuideUpdateDTO dto)
+        {
+            if (id != dto.TourGuideId) return BadRequest("ID mismatch");
+
+            var result = await _tourGuideService.UpdateAsync(dto);
+            if (!result) return NotFound();
+
+            return NoContent();
+        }
+
+        [HttpDelete("guides/{id:guid}")]
+        public async Task<IActionResult> DeleteGuide(Guid id)
+        {
+            var result = await _tourGuideService.DeleteAsync(id);
+            if (!result) return NotFound();
+
+            return NoContent();
+        }
+
+        // ---------------------- TOUR MEMBER ----------------------
+
+        [HttpGet("{tourId:guid}/members")]
+        public async Task<IActionResult> GetMembersByTour(Guid tourId)
+        {
+            var members = await _tourMemberService.GetAllAsync();
+            var tourMembers = members.Where(m => m.TourId == tourId);
+            return Ok(tourMembers);
+        }
+
+        [HttpGet("members/{id:guid}")]
+        public async Task<IActionResult> GetMemberById(Guid id)
+        {
+            var member = await _tourMemberService.GetByIdAsync(id);
+            if (member == null) return NotFound();
+            return Ok(member);
+        }
+
+        [HttpPost("{tourId:guid}/members")]
+        public async Task<IActionResult> CreateMember(Guid tourId, [FromBody] TourMemberCreateDTO dto)
+        {
+            if (tourId != dto.TourId) return BadRequest("TourID mismatch");
+
+            var created = await _tourMemberService.CreateAsync(dto);
+            return CreatedAtAction(nameof(GetMemberById), new { id = created.MemberId }, created);
+        }
+
+        [HttpPut("members/{id:guid}")]
+        public async Task<IActionResult> UpdateMember(Guid id, [FromBody] TourMemberUpdateDTO dto)
+        {
+            if (id != dto.MemberId) return BadRequest("ID mismatch");
+
+            var result = await _tourMemberService.UpdateAsync(dto);
+            if (!result) return NotFound();
+
+            return NoContent();
+        }
+
+        [HttpDelete("members/{id:guid}")]
+        public async Task<IActionResult> DeleteMember(Guid id)
+        {
+            var result = await _tourMemberService.DeleteAsync(id);
+            if (!result) return NotFound();
+
+            return NoContent();
+        }
+
     }
 }
