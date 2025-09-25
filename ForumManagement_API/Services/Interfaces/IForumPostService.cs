@@ -15,5 +15,7 @@ namespace ForumPostManagement_API.Services
         Task<IReadOnlyList<ForumPostReadDto>> GetByTypeAsync(string type, CancellationToken ct = default);
         Task<IReadOnlyList<ForumPostReadDto>> GetByContentAsync(string keyword, CancellationToken ct = default);
         Task<ForumPostReadDto?> ChangeApprovalStatusAsync(Guid id, ChangeApprovalStatusDto dto, CancellationToken ct = default);
+
+        Task<IReadOnlyList<ForumPostReadDto>> GetByApprovalStatusAsync(string status, CancellationToken ct = default);
     }
 }

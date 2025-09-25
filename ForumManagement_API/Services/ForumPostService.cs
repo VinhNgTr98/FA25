@@ -100,7 +100,7 @@ namespace ForumPostManagement_API.Services
             if (!string.Equals(entity.ApprovalStatus, "Pending", StringComparison.OrdinalIgnoreCase))
                 throw new InvalidOperationException("Chỉ được đổi trạng thái khi bài viết đang ở Pending.");
 
-            var status = dto.Status?.Trim();
+            var status = dto.ApprovalStatus?.Trim();
             if (!string.Equals(status, "Approved", StringComparison.OrdinalIgnoreCase) &&
                 !string.Equals(status, "Rejected", StringComparison.OrdinalIgnoreCase))
             {
@@ -130,6 +130,13 @@ namespace ForumPostManagement_API.Services
             await _repo.SaveChangesAsync(ct);
 
             return _mapper.Map<ForumPostReadDto>(entity);
+        }
+
+        // New: get all by ApprovalStatus
+        public async Task<IReadOnlyList<ForumPostReadDto>> GetByApprovalStatusAsync(string status, CancellationToken ct = default)
+        {
+            var list = await _repo.GetByApprovalStatusAsync(status, ct);
+            return list.Select(_mapper.Map<ForumPostReadDto>).ToList();
         }
 
         // ================= Helpers =================

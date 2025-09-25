@@ -61,5 +61,21 @@ namespace ForumPostManagement_API.Repositories
                 .OrderByDescending(p => p.CreatedAtUtc)
                 .ToListAsync(ct);
         }
+
+        // New: get by ApprovalStatus (Pending | Approved | Rejected)
+        public Task<List<ForumPost>> GetByApprovalStatusAsync(string status, CancellationToken ct = default)
+        {
+            var allowed = new[] { "Pending", "Approved", "Rejected" };
+            if (string.IsNullOrWhiteSpace(status) || !allowed.Any(s => s.Equals(status, StringComparison.OrdinalIgnoreCase)))
+                throw new ArgumentException("ApprovalStatus phải là 'Pending', 'Approved' hoặc 'Rejected'.");
+
+            // Chuẩn hóa về dạng canonical để so sánh chính xác
+            var canonical = allowed.First(s => s.Equals(status, StringComparison.OrdinalIgnoreCase));
+
+            return _db.ForumPost.AsNoTracking()
+                .Where(p => p.ApprovalStatus == canonical)
+                .OrderByDescending(p => p.CreatedAtUtc)
+                .ToListAsync(ct);
+        }
     }
 }

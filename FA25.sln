@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarManagement_API", "CarMan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumPostManagement_API", "ForumManagement_API\ForumPostManagement_API.csproj", "{0A67BDF2-A15C-4EF0-AABE-EBD70C16E1F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment_API", "Payment_API\Payment_API.csproj", "{006848A6-75B7-CCD3-B45E-902157B3EACA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{0A67BDF2-A15C-4EF0-AABE-EBD70C16E1F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A67BDF2-A15C-4EF0-AABE-EBD70C16E1F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A67BDF2-A15C-4EF0-AABE-EBD70C16E1F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{006848A6-75B7-CCD3-B45E-902157B3EACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{006848A6-75B7-CCD3-B45E-902157B3EACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{006848A6-75B7-CCD3-B45E-902157B3EACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{006848A6-75B7-CCD3-B45E-902157B3EACA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
