@@ -243,7 +243,8 @@ namespace Users_API.Controllers
             try
             {
                 var ok = await _svc.UpdateSingleRoleAsync(id, dto, ct);
-                if (!ok) return NotFound(new { message = "User không tồn tại." });
+                if (!ok) 
+                    return NotFound(new { message = "User không tồn tại." });
                 return NoContent();
             }
             catch (ArgumentException ex)
