@@ -183,6 +183,24 @@ namespace Users_API.Controllers
                     new { message = "Bạn vừa yêu cầu OTP quá nhanh hoặc vượt quá giới hạn trong ngày. Vui lòng thử lại sau." });
             }
         }
+
+        [HttpGet("{id:int}/is-active")]
+        [AllowAnonymous]
+        public async Task<IActionResult> IsActive(int id, CancellationToken ct)
+        {
+            var flag = await _svc.IsActiveAsync(id, ct);
+            if (flag is null) return NotFound(new { message = "User không tồn tại." });
+            return Ok(new { userId = id, isActive = flag.Value });
+        }
+
+        [HttpGet("email/{email}/is-active")]
+        [AllowAnonymous]
+        public async Task<IActionResult> IsActiveByEmail(string email, CancellationToken ct)
+        {
+            var flag = await _svc.IsActiveByEmailAsync(email, ct);
+            if (flag is null) return NotFound(new { message = "User không tồn tại." });
+            return Ok(new { email, isActive = flag.Value });
+        }
         [HttpPost("{id:int}/otp")]
         [AllowAnonymous]
         public async Task<ActionResult> GenerateOtp(int id, CancellationToken ct)
@@ -236,16 +254,44 @@ namespace Users_API.Controllers
                 : BadRequest(new { message = "Invalid old password or password policy not met." });
         }
 
-
         [HttpPut("{id:int}/roles")]
         public async Task<IActionResult> UpdateSingleRole([FromRoute] int id, [FromBody] UpdateUserRoleDto dto, CancellationToken ct)
         {
+            string? roleName = null;
+            bool? newValue = null;
+            if (dto.IsHotelOwner.HasValue) { roleName = "HotelOwner"; newValue = dto.IsHotelOwner.Value; }
+            if (dto.IsTourAgency.HasValue)
+            {
+                if (roleName != null) roleName = null; else { roleName = "TourAgency"; newValue = dto.IsTourAgency.Value; }
+            }
+            if (dto.IsVehicleAgency.HasValue)
+            {
+                if (roleName != null) roleName = null; else { roleName = "VehicleAgency"; newValue = dto.IsVehicleAgency.Value; }
+            }
+
             try
             {
                 var ok = await _svc.UpdateSingleRoleAsync(id, dto, ct);
-                if (!ok) 
+                if (!ok)
                     return NotFound(new { message = "User không tồn tại." });
-                return NoContent();
+
+                var actionVerb = (roleName != null && newValue.HasValue)
+                    ? (newValue.Value ? "đã được bật" : "đã bị tắt")
+                    : "đã được cập nhật";
+
+                return Ok(new
+                {
+                    message = roleName != null
+                        ? $"Role {roleName} {actionVerb} thành công."
+                        : "Cập nhật role thành công.",
+                    role = roleName,
+                    value = newValue,
+                    rejectedNote = (newValue.HasValue && !newValue.Value) ? dto.RejectedNote : null
+                });
+            }
+            catch (InvalidOperationException ex) when (ex.Message == "USER_NOT_ACTIVE")
+            {
+                return Conflict(new { message = "User chưa Active (hoặc chưa xác thực) nên không thể cập nhật role." });
             }
             catch (ArgumentException ex)
             {

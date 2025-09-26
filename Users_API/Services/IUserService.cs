@@ -18,6 +18,9 @@ namespace UserManagement_API.Services
         Task<bool> RequestChangePasswordAsync(int userId, CancellationToken ct = default);
         Task<bool> ConfirmChangePasswordAsync(int userId, string oldPassword, string newPassword, CancellationToken ct = default);
         Task<bool> UpdateSingleRoleAsync(int userId, UpdateUserRoleDto dto, CancellationToken ct = default);
+
+        Task<bool?> IsActiveAsync(int userId, CancellationToken ct = default);
+        Task<bool?> IsActiveByEmailAsync(string email, CancellationToken ct = default);
     }
 
 }

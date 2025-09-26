@@ -292,10 +292,26 @@ namespace UserManagement_API.Services
             await _repo.UpdateAsync(u, ct);
             return true;
         }
+
+        public async Task<bool?> IsActiveAsync(int userId, CancellationToken ct = default)
+        {
+            var u = await _repo.GetByIdAsync(userId, ct);
+            return u?.IsActive; 
+        }
+
+        public async Task<bool?> IsActiveByEmailAsync(string email, CancellationToken ct = default)
+        {
+            var u = await _repo.GetByEmailAsync(email, ct);
+            return u?.IsActive;
+        }
         public async Task<bool> UpdateSingleRoleAsync(int userId, UpdateUserRoleDto dto, CancellationToken ct = default)
         {
             var user = await _repo.GetByIdAsync(userId, ct);
             if (user == null) return false;
+
+            if (!user.IsActive /* || !user.is_verified */)
+                throw new InvalidOperationException("USER_NOT_ACTIVE");
+
 
             var candidates = new List<(string name, bool? value)>
             {
@@ -320,6 +336,7 @@ namespace UserManagement_API.Services
                         {
                             if (!user.IsHotelOwner) user.IsHotelOwner = true;
                             user.RejectedNote = null;
+                            throw new ArgumentException("Update role thành công ");
                         }
                         else
                         {
