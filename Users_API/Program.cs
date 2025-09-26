@@ -30,10 +30,21 @@ builder.Services.Configure<SmtpOptions>(builder.Configuration.GetSection("Smtp")
 builder.Services.AddSingleton<IEmailSender, SmtpEmailSender>();
 // DbContext (MySQL)
 builder.Services.AddDbContext<Users_APIContext>(options =>
+{
+    var cs = builder.Configuration.GetConnectionString("DefaultConnection");
+
     options.UseMySql(
-        builder.Configuration.GetConnectionString("DefaultConnection"),
-        new MySqlServerVersion(new Version(8, 0, 36))
-));
+        cs,
+        ServerVersion.AutoDetect(cs), 
+        mySqlOptions =>
+        {
+            mySqlOptions.EnableRetryOnFailure(
+                maxRetryCount: 5,
+                maxRetryDelay: TimeSpan.FromSeconds(10),
+                errorNumbersToAdd: null
+            );
+        });
+});
 
 // ===== Swagger =====
 builder.Services.AddEndpointsApiExplorer();

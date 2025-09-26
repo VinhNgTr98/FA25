@@ -104,11 +104,11 @@ namespace UserManagement_API.Services
                 is_verified = false,
                 IsActive = false,
                 CreatedAt = DateTime.UtcNow,
-                IsHotelOwner = dto.IsHotelOwner,
-                IsTourAgency = dto.IsTourAgency,
-                IsVehicleAgency = dto.IsVehicleAgency,
-                IsWebAdmin = dto.IsWebAdmin,
-                IsModerator = dto.IsModerator,
+                IsHotelOwner = dto.IsHotelOwner = false,
+                IsTourAgency = dto.IsTourAgency = false,
+                IsVehicleAgency = dto.IsVehicleAgency = false,
+                IsWebAdmin = dto.IsWebAdmin = false,
+                IsModerator = dto.IsModerator = false,
                 UsersInfo = new UsersInfo
                 {
                     FullName = dto.FullName,
@@ -116,6 +116,7 @@ namespace UserManagement_API.Services
                     ProfilePictureUrl = dto.ProfilePictureUrl,
                     Email = dto.Email,
                     PhoneNumber = dto.PhoneNumber,
+                    Sex = dto.Sex,
                     Address = dto.Address
                 }
             };
