@@ -51,6 +51,32 @@ namespace BookingManagement_API.Controllers
             return Ok(items);
         }
 
+        // GET: api/booking/items/by-type/{itemType}
+        [HttpGet("items/by-type/{itemType}")]
+        public async Task<ActionResult<IEnumerable<BookingItemReadDto>>> GetItemsByItemType(
+            [FromRoute] string itemType,
+            CancellationToken ct)
+        {
+            if (string.IsNullOrWhiteSpace(itemType))
+                return BadRequest("itemType is required.");
+            var items = await _svc.GetItemsByItemTypeAsync(itemType, ct);
+
+            return Ok(items);
+        }
+
+        // GET: api/booking/{bookingId}/items/by-type/{itemType}
+        [HttpGet("{bookingId:int}/items/by-type/{itemType}")]
+        public async Task<ActionResult<IEnumerable<BookingItemReadDto>>> GetItemsByBookingAndItemType(
+            [FromRoute] int bookingId,
+            [FromRoute] string itemType,
+            CancellationToken ct)
+        {
+            if (string.IsNullOrWhiteSpace(itemType))
+                return BadRequest("itemType is required.");
+            var items = await _svc.GetItemsByBookingAndItemTypeAsync(bookingId, itemType, ct);
+            return Ok(items);
+        }
+
         // POST: api/booking
         [HttpPost]
         public async Task<ActionResult<BookingReadDto>> Create([FromBody] BookingCreateDto dto, CancellationToken ct)

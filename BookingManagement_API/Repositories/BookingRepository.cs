@@ -95,5 +95,23 @@ namespace BookingManagement_API.Repositories
             await _db.SaveChangesAsync(ct);
             return bookings.Count;
         }
+
+
+        // Lấy các BookingItem theo bookingId và itemType 
+        public async Task<IEnumerable<BookingItem>> GetItemsByItemTypeAsync(string itemType, CancellationToken ct = default)
+        {
+            // So sánh không phân biệt hoa thường
+            return await _db.BookingItems
+                .AsNoTracking()
+                .Where(i => i.ItemType.ToLower() == itemType.ToLower())
+                .ToListAsync(ct);
+        }
+        public async Task<IEnumerable<BookingItem>> GetItemsByBookingAndItemTypeAsync(int bookingId, string itemType, CancellationToken ct = default)
+        {
+            return await _db.BookingItems
+                .AsNoTracking()
+                .Where(i => i.BookingId == bookingId && i.ItemType.ToLower() == itemType.ToLower())
+                .ToListAsync(ct);
+        }
     }
 }
