@@ -16,5 +16,6 @@ namespace CarManagement_API.Services.Interfaces
             string? carName = null,
             int? engineCc = null
         );
+        Task<IEnumerable<CarReadDto>> GetByVehicleAgencyIdAsync(Guid vehicleAgencyId);
     }
 }

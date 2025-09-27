@@ -18,5 +18,6 @@ namespace CarManagement_API.Repositories.Interfaces
             string? carName = null,
             int? engineCc = null
         );
+        Task<List<Car>> GetByVehicleAgencyIdAsync(Guid vehicleAgencyId);
     }
 }

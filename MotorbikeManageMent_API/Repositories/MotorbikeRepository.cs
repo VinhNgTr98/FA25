@@ -80,5 +80,12 @@ namespace MotorbikeManageMent_API.Repositories
 
             return await query.ToListAsync();
         }
+
+        public async Task<List<Motorbike>> GetByVehicleAgencyIdAsync(Guid vehicleAgencyId)
+        {
+            return await _context.Motorbike
+                .Where(c => c.VehicleAgencyId == vehicleAgencyId)
+                .ToListAsync();
+        }
     }
 }

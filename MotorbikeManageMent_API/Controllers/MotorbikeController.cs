@@ -22,7 +22,7 @@ namespace MotorbikeManageMent_API.Controllers
             var motorbikes = await _service.GetAllAsync();
             return Ok(motorbikes);
         }
-
+        // Lấy xe theo Id
         [HttpGet("{id}")]
         public async Task<ActionResult<MotorbikeReadDto>> GetMotorbike(Guid id)
         {
@@ -46,14 +46,14 @@ namespace MotorbikeManageMent_API.Controllers
             var motorbikes = await _service.GetFilteredMotorbikesAsync(transmission, fuel, motorbikeBrand, motorbikeName, engineCc);
             return Ok(motorbikes);
         }
-
+        // Tạo mới xe
         [HttpPost]
         public async Task<ActionResult<MotorbikeReadDto>> CreateMotorbike([FromBody] MotorbikeCreateDto dto)
         {
             var motorbike = await _service.CreateAsync(dto);
             return CreatedAtAction(nameof(GetMotorbike), new { id = motorbike.MotorbikeId }, motorbike);
         }
-
+        // Cập nhật xe
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateMotorbike(Guid id, [FromBody] MotorbikeUpdateDto dto)
         {
@@ -64,7 +64,7 @@ namespace MotorbikeManageMent_API.Controllers
             }
             return NoContent();
         }
-
+        // Xóa xe
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteMotorbike(Guid id)
         {
@@ -75,5 +75,23 @@ namespace MotorbikeManageMent_API.Controllers
             }
             return NoContent();
         }
+        // Phương thức lấy các xe theo VehicleAgencyId
+        [HttpGet("agency/{agencyId:guid}")]
+        public async Task<ActionResult<IEnumerable<MotorbikeReadDto>>> GetMotorbikesByVehicleAgencyId(Guid agencyId)
+        {
+            var motorbikes = await _service.GetByVehicleAgencyIdAsync(agencyId);
+            if (motorbikes == null || !motorbikes.Any())
+            {
+                return NotFound(new ProblemDetails
+                {
+                    Title = "Không tìm thấy xe",
+                    Detail = $"Không có xe nào thuộc agency với ID = {agencyId}",
+                    Status = StatusCodes.Status404NotFound,
+                    Instance = HttpContext.Request.Path
+                });
+            }
+            return Ok(motorbikes);
+        }
+
     }
 }

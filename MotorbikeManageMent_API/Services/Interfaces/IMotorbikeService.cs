@@ -20,5 +20,7 @@ namespace MotorbikeManageMent_API.Services.Interfaces
             string? motorbikeName = null,
             int? engineCc = null
         );
+
+        Task<IEnumerable<MotorbikeReadDto>> GetByVehicleAgencyIdAsync(Guid vehicleAgencyId);
     }
 }

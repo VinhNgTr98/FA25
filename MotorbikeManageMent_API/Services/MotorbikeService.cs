@@ -75,6 +75,12 @@ namespace MotorbikeManageMent_API.Services
             var motorbikes = await _repository.GetFilteredMotorbikesAsync(transmission, fuel, motorbikeBrand, motorbikeName, engineCc);
             return _mapper.Map<IEnumerable<MotorbikeReadDto>>(motorbikes);
         }
+        // Lấy xe theo VehicleAgencyId
+        public async Task<IEnumerable<MotorbikeReadDto>> GetByVehicleAgencyIdAsync(Guid vehicleAgencyId)
+        {
+            var motorbikes = await _repository.GetByVehicleAgencyIdAsync(vehicleAgencyId);
+            return _mapper.Map<IEnumerable<MotorbikeReadDto>>(motorbikes);
+        }
 
     }
 }
