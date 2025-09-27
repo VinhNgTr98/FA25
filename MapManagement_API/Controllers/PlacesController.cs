@@ -1,9 +1,10 @@
-using MapManagement_API.DTOs;
+﻿using MapManagement_API.DTOs;
 using MapManagement_API.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MapManagement_API.Controllers
 {
+    //Gọi Google Places Autocomplete API để gợi ý địa điểm khi người dùng nhập input.
     [ApiController]
     [Route("api/[controller]")]
     public class PlacesController : ControllerBase

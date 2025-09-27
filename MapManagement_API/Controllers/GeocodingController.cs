@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MapManagement_API.Controllers
 {
+
+    // Gọi Google Geocoding API để chuyển đổi từ địa chỉ sang tọa độ lat/lng (hoặc ngược lại nếu mở rộng)
     [ApiController]
     [Route("api/[controller]")]
     public class GeocodingController : ControllerBase

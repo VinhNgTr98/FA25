@@ -7,7 +7,7 @@ namespace MapManagement_API.DTOs
         [Required]
         public string Input { get; set; } = default!;
         public string? Language { get; set; }
-        public string? Types { get; set; } // ví dụ: "address"
-        public string? LocationBias { get; set; } // ví dụ: "circle:2000@21.03,105.85"
+        public string? Types { get; set; } 
+        public string? LocationBias { get; set; } 
     }
 }
