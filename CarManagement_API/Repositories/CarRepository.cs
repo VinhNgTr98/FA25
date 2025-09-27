@@ -71,5 +71,11 @@ namespace CarManagement_API.Repositories
 
             return await query.ToListAsync();
         }
+        public async Task<List<Car>> GetByVehicleAgencyIdAsync(Guid vehicleAgencyId)
+        {
+            return await _context.Car
+                .Where(c => c.VehicleAgencyId == vehicleAgencyId)
+                .ToListAsync();
+        }
     }
 }

@@ -74,5 +74,11 @@ namespace CarManagement_API.Services
             var cars = await _repository.GetFilteredCarsAsync(transmission, fuel, carBrand, carName, engineCc);
             return _mapper.Map<IEnumerable<CarReadDto>>(cars);
         }
+
+        public async Task<IEnumerable<CarReadDto>> GetByVehicleAgencyIdAsync(Guid vehicleAgencyId)
+        {
+            var cars = await _repository.GetByVehicleAgencyIdAsync(vehicleAgencyId);
+            return _mapper.Map<IEnumerable<CarReadDto>>(cars);
+        }
     }
 }

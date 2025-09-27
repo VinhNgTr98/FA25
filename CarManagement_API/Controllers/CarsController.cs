@@ -81,5 +81,22 @@ namespace CarManagement_API.Controllers
             }
             return NoContent();
         }
+
+        [HttpGet("agency/{agencyId:guid}")]
+        public async Task<ActionResult<IEnumerable<CarReadDto>>> GetByAgency(Guid agencyId)
+        {
+            var cars = await _service.GetByVehicleAgencyIdAsync(agencyId);
+            if (cars == null || !cars.Any())
+            {
+                return NotFound(new ProblemDetails
+                {
+                    Title = "Không tìm thấy xe",
+                    Detail = $"Không có xe nào thuộc agency với ID = {agencyId}",
+                    Status = StatusCodes.Status404NotFound,
+                    Instance = HttpContext.Request.Path
+                });
+            }
+            return Ok(cars);
+        }
     }
 }
