@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MapManagement_API.Controllers
 {
+    // API lấy chỉ đường (directions) từ Google Maps
     [ApiController]
     [Route("api/[controller]")]
     public class DirectionsController : ControllerBase
