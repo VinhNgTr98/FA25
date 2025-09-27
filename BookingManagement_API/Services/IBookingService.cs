@@ -9,12 +9,11 @@ namespace BookingManagement_API.Services
         Task<BookingReadDto> CreateAsync(BookingCreateDto dto, CancellationToken ct = default);
         Task<bool> UpdateAsync(int id, BookingUpdateDto dto, CancellationToken ct = default);
         Task<bool> DeleteAsync(int id, CancellationToken ct = default);
-
-        // New
         Task<IEnumerable<BookingReadDto>> GetByUserIdAsync(int userId, CancellationToken ct = default);
         Task<IEnumerable<BookingItemReadDto>> GetItemsByOrderIdAsync(int BookingId, CancellationToken ct = default);
         Task<BookingItemReadDto?> AddItemAsync(int BookingId, BookingItemCreateDto dto, CancellationToken ct = default);
-
         Task<int> CleanupExpiredPendingAsync(TimeSpan ttl, CancellationToken ct = default);
+        Task<IEnumerable<BookingItemReadDto>> GetItemsByItemTypeAsync(string itemType, CancellationToken ct = default);
+        Task<IEnumerable<BookingItemReadDto>> GetItemsByBookingAndItemTypeAsync(int bookingId, string itemType, CancellationToken ct = default);
     }
 }

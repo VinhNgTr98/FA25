@@ -146,5 +146,18 @@ namespace BookingManagement_API.Services
                 EndDate = i.EndDate
             };
         }
+
+        // Lấy các BookingItem theo loại ItemType (ví dụ: "Room", "Service", ...)
+        public async Task<IEnumerable<BookingItemReadDto>> GetItemsByItemTypeAsync(string itemType, CancellationToken ct = default)
+        {
+            var items = await _repo.GetItemsByItemTypeAsync(itemType, ct);
+            return items.Select(MapToItemReadDto);
+        }
+
+        public async Task<IEnumerable<BookingItemReadDto>> GetItemsByBookingAndItemTypeAsync(int bookingId, string itemType, CancellationToken ct = default)
+        {
+            var items = await _repo.GetItemsByBookingAndItemTypeAsync(bookingId, itemType, ct);
+            return items.Select(MapToItemReadDto);
+        }
     }
 }
